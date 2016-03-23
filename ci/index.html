@@ -1,1 +1,430 @@
-foo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Kaitai Struct: test results</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .passed {
+            background: #dff0d8;
+        }
+        .failed {
+            background: #f2dede;
+        }
+        .no-run {
+            background: #f2bebe;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Kaitai Struct: continuous integration</h1>
+
+    <table class="table">
+    <tr>
+        <th>Test</th>
+
+        <th>java</th>
+
+        <th>javascript</th>
+
+        <th>python</th>
+
+        <th>ruby</th>
+
+    </tr>
+
+
+    <tr>
+        <td>buffered_struct</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>default_big_endian</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="failed">failed</td>
+
+    </tr>
+
+    <tr>
+        <td>enum0</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+    </tr>
+
+    <tr>
+        <td>enum_0</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>enum_if</td>
+
+        <td class="failed">failed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>expr0</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="no-run">didn't run</td>
+
+    </tr>
+
+    <tr>
+        <td>expr1</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="no-run">didn't run</td>
+
+    </tr>
+
+    <tr>
+        <td>expr2</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+    </tr>
+
+    <tr>
+        <td>expr_0</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>expr_1</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>expr_2</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>fixed_struct</td>
+
+        <td class="passed">passed</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>hello_world</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>if_struct</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>instance_io_user</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>instance_std</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>instance_std_array</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>instance_user_array</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>nav_parent</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>nav_root</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>position_abs</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>process_xor_const</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>process_xor_value</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>repeat_eos_struct</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>repeat_eos_u4</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>repeat_n_struct</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>repeat_n_strz</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>str_encodings</td>
+
+        <td class="passed">passed</td>
+
+        <td class="failed">failed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>term_strz</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+             
+
+    </table>
+    </div>
+</body>
+</html>
