@@ -1,0 +1,70 @@
+body {
+    font-family: Exo;
+    margin-top: 70px;    
+}
+
+pre, code {
+    font-family: 'Share Tech Mono';
+}
+
+section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#quick-start {
+    background: #D1EADD;
+    color: #111111;
+}
+
+#quick-start pre, #quick-start code {
+    background: #E1FAED;
+}
+
+#format-gallery {
+    background: #E1EBCD;
+    color: #111111;
+}
+
+code {
+    color: #880000;
+}
+
+#main-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#main-footer i {
+    vertical-align: middle;
+}
+
+/* Scroller stuff */
+
+#scroller {
+    background: #000000;
+    overflow: hidden;
+    position: relative;
+}
+
+#pane1, #pane2 {
+    color: #3050A0;
+    font-family: 'Share Tech Mono';
+    white-space: nowrap;
+    position: absolute;
+}
+
+.fx {
+    animation: fader 15s;
+}
+
+@keyframes fader {
+    0% {
+        color: #FFFFFF;
+        text-shadow: #FFFFFF 0 0 2px, #6080FF 0 0 10px;
+    }
+    100% {
+        color: #3050A0;
+        text-shadow: #000000 0 0 2px, #000000 0 0 10px;
+    }            
+}
