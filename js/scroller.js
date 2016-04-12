@@ -64,7 +64,6 @@ $(document).ready(function() {
         var spans = (Math.random() < 0.5) ? spans1 : spans2;
         var span = spans[Math.floor(Math.random() * spans.length)];
         $(span).addClass('fx');
-        console.log(span);
     }
 
     animate();
