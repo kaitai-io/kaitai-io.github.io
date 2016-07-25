@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2016-07-25 08:50:14 UTC</title>
+    <title>Kaitai Struct: test results - 2016-07-25 16:48:19 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -36,11 +36,13 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2016-07-25 08:50:14 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2016-07-25 16:48:19 UTC</h1>
 
     <table class="table">
     <tr>
         <th>Test</th>
+
+        <th>_expr</th>
 
         <th>cpp_stl</th>
 
@@ -56,7 +58,7 @@
 
     </tr>
     <tr>
-        <th colspan="7" class="section">
+        <th colspan="8" class="section">
             Expressions
         </th>
     </tr>
@@ -64,23 +66,65 @@
     <tr>
         <th>% passed</th>
 
-        <td>61%</td>
+        <td>100%</td>
 
-        <td>65%</td>
+        <td>71%</td>
 
         <td>100%</td>
 
-        <td>96%</td>
+        <td>100%</td>
 
-        <td>96%</td>
+        <td>100%</td>
 
-        <td>96%</td>
+        <td>100%</td>
+
+        <td>97%</td>
 
     </tr>
 
 
     <tr>
         <td>(1 + 2) / (7 * 8)</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>(1 + 2) / (7 * 8.1)</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>-123.456</td>
+
+        <td class="passed">passed</td>
 
         <td class="passed">passed</td>
 
@@ -111,10 +155,14 @@
 
         <td class="passed">passed</td>
 
+        <td class="passed">passed</td>
+
     </tr>
 
     <tr>
         <td>0x1234</td>
+
+        <td class="passed">passed</td>
 
         <td class="passed">passed</td>
 
@@ -145,10 +193,33 @@
 
         <td class="passed">passed</td>
 
+        <td class="passed">passed</td>
+
     </tr>
 
     <tr>
         <td>1 + 2 + 5</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>1 + 3.4</td>
+
+        <td class="passed">passed</td>
 
         <td class="passed">passed</td>
 
@@ -179,10 +250,109 @@
 
         <td class="passed">passed</td>
 
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>1.0</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>1.0 &lt; 2</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>1.2 + 3</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>1.2 + 3.4</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
     </tr>
 
     <tr>
         <td>123</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>123.456</td>
+
+        <td class="passed">passed</td>
 
         <td class="passed">passed</td>
 
@@ -213,12 +383,14 @@
 
         <td class="passed">passed</td>
 
+        <td class="passed">passed</td>
+
     </tr>
 
     <tr>
         <td>2 &lt; 3 ? &quot;foo&quot; : &quot;bar&quot;</td>
 
-        <td class="no-spec">no spec</td>
+        <td class="passed">passed</td>
 
         <td class="no-spec">no spec</td>
 
@@ -226,7 +398,9 @@
 
         <td class="passed">passed</td>
 
-        <td class="failed">failed</td>
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
 
         <td class="no-spec">no spec</td>
 
@@ -234,6 +408,8 @@
 
     <tr>
         <td>223</td>
+
+        <td class="passed">passed</td>
 
         <td class="passed">passed</td>
 
@@ -264,10 +440,33 @@
 
         <td class="passed">passed</td>
 
+        <td class="passed">passed</td>
+
+    </tr>
+
+    <tr>
+        <td>3 / 2.0</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
+
     </tr>
 
     <tr>
         <td>999</td>
+
+        <td class="passed">passed</td>
 
         <td class="passed">passed</td>
 
@@ -286,9 +485,11 @@
     <tr>
         <td>[0, 1, 100500]</td>
 
-        <td class="no-spec">no spec</td>
+        <td class="passed">passed</td>
 
         <td class="no-spec">no spec</td>
+
+        <td class="passed">passed</td>
 
         <td class="passed">passed</td>
 
@@ -305,7 +506,9 @@
 
         <td class="passed">passed</td>
 
-        <td class="no-spec">no spec</td>
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
 
         <td class="passed">passed</td>
 
@@ -320,9 +523,11 @@
     <tr>
         <td>_root.foo</td>
 
-        <td class="no-spec">no spec</td>
+        <td class="passed">passed</td>
 
         <td class="no-spec">no spec</td>
+
+        <td class="passed">passed</td>
 
         <td class="passed">passed</td>
 
@@ -337,9 +542,11 @@
     <tr>
         <td>a != 2 and a != 5</td>
 
-        <td class="no-spec">no spec</td>
+        <td class="passed">passed</td>
 
         <td class="no-spec">no spec</td>
+
+        <td class="passed">passed</td>
 
         <td class="passed">passed</td>
 
@@ -354,9 +561,11 @@
     <tr>
         <td>a.first</td>
 
+        <td class="passed">passed</td>
+
         <td class="failed">failed</td>
 
-        <td class="no-spec">no spec</td>
+        <td class="passed">passed</td>
 
         <td class="passed">passed</td>
 
@@ -371,13 +580,15 @@
     <tr>
         <td>a.last</td>
 
-        <td class="no-spec">no spec</td>
+        <td class="passed">passed</td>
 
         <td class="no-spec">no spec</td>
 
         <td class="passed">passed</td>
 
-        <td class="failed">failed</td>
+        <td class="passed">passed</td>
+
+        <td class="passed">passed</td>
 
         <td class="passed">passed</td>
 
@@ -388,9 +599,11 @@
     <tr>
         <td>a[42 - 2]</td>
 
-        <td class="no-spec">no spec</td>
+        <td class="passed">passed</td>
 
         <td class="no-spec">no spec</td>
+
+        <td class="passed">passed</td>
 
         <td class="passed">passed</td>
 
@@ -405,9 +618,11 @@
     <tr>
         <td>a[42]</td>
 
-        <td class="no-spec">no spec</td>
+        <td class="passed">passed</td>
 
         <td class="no-spec">no spec</td>
+
+        <td class="passed">passed</td>
 
         <td class="passed">passed</td>
 
@@ -421,6 +636,8 @@
 
     <tr>
         <td>foo.bar</td>
+
+        <td class="passed">passed</td>
 
         <td class="no-spec">no spec</td>
 
@@ -438,6 +655,8 @@
 
     <tr>
         <td>foo.inner.baz</td>
+
+        <td class="passed">passed</td>
 
         <td class="no-spec">no spec</td>
 
@@ -468,10 +687,14 @@
 
         <td class="passed">passed</td>
 
+        <td class="passed">passed</td>
+
     </tr>
 
     <tr>
         <td>foo_str</td>
+
+        <td class="passed">passed</td>
 
         <td class="passed">passed</td>
 
@@ -502,6 +725,8 @@
 
         <td class="passed">passed</td>
 
+        <td class="passed">passed</td>
+
     </tr>
 
     <tr>
@@ -519,16 +744,20 @@
 
         <td class="passed">passed</td>
 
+        <td class="passed">passed</td>
+
     </tr>
 
     <tr>
-        <th colspan="7" class="section">
+        <th colspan="8" class="section">
             KSY compilation
         </th>
     </tr>
 
     <tr>
         <th>% passed</th>
+
+        <td>0%</td>
 
         <td>56%</td>
 
@@ -550,6 +779,8 @@
 
         <td class="no-run">didn't run</td>
 
+        <td class="no-run">didn't run</td>
+
         <td class="passed">passed</td>
 
         <td class="passed">passed</td>
@@ -564,6 +795,8 @@
 
     <tr>
         <td>DefaultBigEndian</td>
+
+        <td class="no-run">didn't run</td>
 
         <td class="no-run">didn't run</td>
 
@@ -584,6 +817,8 @@
 
         <td class="no-run">didn't run</td>
 
+        <td class="no-run">didn't run</td>
+
         <td class="passed">passed</td>
 
         <td class="passed">passed</td>
@@ -598,6 +833,8 @@
 
     <tr>
         <td>EnumIf</td>
+
+        <td class="no-run">didn't run</td>
 
         <td class="no-run">didn't run</td>
 
@@ -616,6 +853,8 @@
     <tr>
         <td>Expr0</td>
 
+        <td class="no-run">didn't run</td>
+
         <td class="passed">passed</td>
 
         <td class="passed">passed</td>
@@ -632,6 +871,8 @@
 
     <tr>
         <td>Expr1</td>
+
+        <td class="no-run">didn't run</td>
 
         <td class="passed">passed</td>
 
@@ -652,6 +893,8 @@
 
         <td class="no-run">didn't run</td>
 
+        <td class="no-run">didn't run</td>
+
         <td class="passed">passed</td>
 
         <td class="passed">passed</td>
@@ -666,6 +909,8 @@
 
     <tr>
         <td>FixedStruct</td>
+
+        <td class="no-run">didn't run</td>
 
         <td class="passed">passed</td>
 
@@ -684,6 +929,8 @@
     <tr>
         <td>HelloWorld</td>
 
+        <td class="no-run">didn't run</td>
+
         <td class="passed">passed</td>
 
         <td class="passed">passed</td>
@@ -700,6 +947,8 @@
 
     <tr>
         <td>IfStruct</td>
+
+        <td class="no-run">didn't run</td>
 
         <td class="passed">passed</td>
 
@@ -720,6 +969,8 @@
 
         <td class="no-run">didn't run</td>
 
+        <td class="no-run">didn't run</td>
+
         <td class="passed">passed</td>
 
         <td class="passed">passed</td>
@@ -734,6 +985,8 @@
 
     <tr>
         <td>InstanceStd</td>
+
+        <td class="no-run">didn't run</td>
 
         <td class="passed">passed</td>
 
@@ -754,6 +1007,8 @@
 
         <td class="no-run">didn't run</td>
 
+        <td class="no-run">didn't run</td>
+
         <td class="passed">passed</td>
 
         <td class="passed">passed</td>
@@ -768,6 +1023,8 @@
 
     <tr>
         <td>InstanceUserArray</td>
+
+        <td class="no-run">didn't run</td>
 
         <td class="no-run">didn't run</td>
 
@@ -788,6 +1045,8 @@
 
         <td class="no-run">didn't run</td>
 
+        <td class="no-run">didn't run</td>
+
         <td class="passed">passed</td>
 
         <td class="passed">passed</td>
@@ -802,6 +1061,8 @@
 
     <tr>
         <td>NavRoot</td>
+
+        <td class="no-run">didn't run</td>
 
         <td class="no-run">didn't run</td>
 
@@ -820,6 +1081,8 @@
     <tr>
         <td>PositionAbs</td>
 
+        <td class="no-run">didn't run</td>
+
         <td class="passed">passed</td>
 
         <td class="passed">passed</td>
@@ -837,6 +1100,8 @@
     <tr>
         <td>PositionInSeq</td>
 
+        <td class="no-run">didn't run</td>
+
         <td class="passed">passed</td>
 
         <td class="passed">passed</td>
@@ -853,6 +1118,8 @@
 
     <tr>
         <td>ProcessRotate</td>
+
+        <td class="no-run">didn't run</td>
 
         <td class="passed">passed</td>
 
@@ -873,6 +1140,8 @@
 
         <td class="no-run">didn't run</td>
 
+        <td class="no-run">didn't run</td>
+
         <td class="passed">passed</td>
 
         <td class="passed">passed</td>
@@ -887,6 +1156,8 @@
 
     <tr>
         <td>ProcessXor4Const</td>
+
+        <td class="no-run">didn't run</td>
 
         <td class="passed">passed</td>
 
@@ -905,6 +1176,8 @@
     <tr>
         <td>ProcessXor4Value</td>
 
+        <td class="no-run">didn't run</td>
+
         <td class="passed">passed</td>
 
         <td class="passed">passed</td>
@@ -921,6 +1194,8 @@
 
     <tr>
         <td>ProcessXorConst</td>
+
+        <td class="no-run">didn't run</td>
 
         <td class="passed">passed</td>
 
@@ -939,6 +1214,8 @@
     <tr>
         <td>ProcessXorValue</td>
 
+        <td class="no-run">didn't run</td>
+
         <td class="passed">passed</td>
 
         <td class="passed">passed</td>
@@ -955,6 +1232,8 @@
 
     <tr>
         <td>RepeatEosStruct</td>
+
+        <td class="no-run">didn't run</td>
 
         <td class="passed">passed</td>
 
@@ -973,6 +1252,8 @@
     <tr>
         <td>RepeatEosU4</td>
 
+        <td class="no-run">didn't run</td>
+
         <td class="passed">passed</td>
 
         <td class="passed">passed</td>
@@ -990,6 +1271,8 @@
     <tr>
         <td>RepeatNStruct</td>
 
+        <td class="no-run">didn't run</td>
+
         <td class="passed">passed</td>
 
         <td class="passed">passed</td>
@@ -1006,6 +1289,8 @@
 
     <tr>
         <td>RepeatNStrz</td>
+
+        <td class="no-run">didn't run</td>
 
         <td class="passed">passed</td>
 
@@ -1026,6 +1311,8 @@
 
         <td class="no-run">didn't run</td>
 
+        <td class="no-run">didn't run</td>
+
         <td class="passed">passed</td>
 
         <td class="passed">passed</td>
@@ -1040,6 +1327,8 @@
 
     <tr>
         <td>StrEos</td>
+
+        <td class="no-run">didn't run</td>
 
         <td class="no-run">didn't run</td>
 
@@ -1058,6 +1347,8 @@
     <tr>
         <td>TermStrz</td>
 
+        <td class="no-run">didn't run</td>
+
         <td class="passed">passed</td>
 
         <td class="passed">passed</td>
@@ -1074,6 +1365,8 @@
 
     <tr>
         <td>ZlibWithHeader78</td>
+
+        <td class="no-run">didn't run</td>
 
         <td class="no-run">didn't run</td>
 
