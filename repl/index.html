@@ -55,10 +55,10 @@
 
         <div style="background: red; color: white" id="err_msg"></div>
         <p><button class="btn btn-default" id="compile" onclick="ksCompile()">Compile!</button></p>
-        <p>or try loading some examples: <ul id="examples"></ul></p>
+        <p>or try loading some examples: <span id="examples"></span></p>
 
         <div style="display: none">
-<div class="example" data-name="dos_mz">meta:
+<div class="example" data-name="DOS MZ">meta:
   id: dos_mz
   extension: exe
   endian: le
@@ -110,6 +110,121 @@ types:
         type: u2
       - id: seg
         type: u2
+</div>
+<div class="example" data-name="Doom .wad (simple)">meta:
+  id: doom_wad
+  endian: le
+  application: id Tech 1
+seq:
+  - id: magic
+    type: str
+    size: 4
+    encoding: ASCII
+  - id: index_qty
+    type: s4
+  - id: index_offset
+    type: s4
+instances:
+  index:
+    pos: index_offset
+    type: index_entry
+    repeat: expr
+    repeat-expr: index_qty
+types:
+  index_entry:
+    seq:
+      - id: offset
+        type: s4
+      - id: size
+        type: s4
+      - id: name
+        type: str
+        size: 8
+        encoding: ASCII
+    instances:
+      contents:
+        io: _root._io
+        pos: offset
+        size: size
+</div>
+<div class="example" data-name="Doom .wad">meta:
+  id: doom_wad
+  endian: le
+  application: id Tech 1
+seq:
+  - id: magic
+    type: str
+    size: 4
+    encoding: ASCII
+  - id: qty_index_entries
+    type: s4
+  - id: index_offset
+    type: s4
+types:
+  index_entry:
+    seq:
+      - id: offset
+        type: s4
+      - id: size
+        type: s4
+      - id: name
+        type: str
+        size: 8
+        encoding: ASCII
+    instances:
+      contents:
+        io: _root._io
+        pos: offset
+        size: size
+        if: name != "THINGS\0\0" and name != "LINEDEFS"
+      things_contents:
+        io: _root._io
+        pos: offset
+        size: size
+        if: name == "THINGS\0\0"
+        type: thing
+        repeat: eos
+      linedef_contents:
+        io: _root._io
+        pos: offset
+        size: size
+        if: name == "LINEDEFS"
+        type: linedef
+        repeat: eos
+  thing:
+    seq:
+      - id: x
+        type: s2
+      - id: y
+        type: s2
+      - id: angle
+        type: u2
+      - id: type
+        type: u2
+      - id: flags
+        type: u2
+  linedef:
+    seq:
+      - id: vertex_start_idx
+        type: u2
+      - id: vertex_end_idx
+        type: u2
+      - id: flags
+        type: u2
+      - id: line_type
+        type: u2
+      - id: sector_tag
+        type: u2
+      - id: sidedef_right_idx
+        type: u2
+      - id: sidedef_left_idx
+        type: u2
+instances:
+  index:
+    pos: index_offset
+    type: index_entry
+    repeat: expr
+    repeat-expr: qty_index_entries
 </div>
 </div>
 
