@@ -8,6 +8,9 @@ function ksInit() {
     }
 
     $('#target_lang').html(langs);
+
+    // Set some nice default
+    $('#target_lang')[0].value = 'java';
 }
 
 function ksCompile() {
@@ -31,7 +34,11 @@ function ksCompile() {
     }
     dest.addClass(targetLang);
 
-    dest.text(r);
+    if (r.length == 2) {
+        dest.text("// ================ HEADER\n\n" + r[1] + "\n// ================ SOURCE\n\n" + r[0]);
+    } else {
+        dest.text(r[0]);
+    }
     hljs.highlightBlock(dest[0]);
 
     errMsgEl.innerHTML = "";
