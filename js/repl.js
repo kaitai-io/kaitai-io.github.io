@@ -1,7 +1,18 @@
 function ksInit() {
+    var ks = io.kaitai.struct.MainJs();
+    var langs = '';
+
+    for (var i = 0; i < ks.languages.length; i++) {
+        var lang = ks.languages[i];
+        langs += "<option value=\"" + lang + "\">" + lang + "</option>";
+    }
+
+    $('#target_lang').html(langs);
 }
 
 function ksCompile() {
+    var ks = io.kaitai.struct.MainJs();
+
     var errMsgEl = document.getElementById("err_msg")
     var targetLang = document.getElementById("target_lang").value;
     var srcYaml = document.getElementById("source").value;
@@ -12,13 +23,12 @@ function ksCompile() {
         errMsgEl.innerHTML = err;
         return;
     }
-    var r = io.kaitai.struct.MainJs().compile(targetLang, src);
+    var r = ks.compile(targetLang, src);
 
     var dest = $('#compiled');
-    dest.removeClass('java');
-    dest.removeClass('javascript');
-    dest.removeClass('python');
-    dest.removeClass('ruby');
+    for (var i = 0; i < ks.languages.length; i++) {
+        dest.removeClass(ks.languages[i]);
+    }
     dest.addClass(targetLang);
 
     dest.text(r);
@@ -26,3 +36,5 @@ function ksCompile() {
 
     errMsgEl.innerHTML = "";
 }
+
+ksInit();
