@@ -25,7 +25,7 @@ function ksInit() {
 
     $('#examples').html(exList);
 
-    ksLoad("dos_mz");
+    ksLoad("DOS MZ");
 }
 
 function ksLoad(name) {
