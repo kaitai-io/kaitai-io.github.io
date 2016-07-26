@@ -11,6 +11,24 @@ function ksInit() {
 
     // Set some nice default
     $('#target_lang')[0].value = 'java';
+
+    // Set up examples list
+    var exList = '';
+    examples = {};
+    $('.example').each(function(i, el) {
+        var name = $(el).data('name');
+        examples[name] = $(el).text();
+        exList += "<li onclick=\"ksLoad('" + name + "')\">" + name + "</li>";
+    });
+
+    $('#examples').html(exList);
+
+    ksLoad("dos_mz");
+}
+
+function ksLoad(name) {
+    $('#source')[0].value = examples[name];
+    ksCompile();
 }
 
 function ksCompile() {

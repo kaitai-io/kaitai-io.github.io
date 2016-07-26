@@ -47,7 +47,18 @@
             <div class="col-md-7"><h2><select id="target_lang"></select></h2></div>
         </div>
         <div class="row">
-            <div class="col-md-5"><textarea id="source" rows="30" style="width: 100%">meta:
+            <div class="col-md-5"><textarea id="source" rows="30" style="width: 100%"></textarea></div>
+            <div class="col-md-7">
+                <pre><code class="java" id="compiled"></code></pre>
+            </div>
+        </div>
+
+        <div style="background: red; color: white" id="err_msg"></div>
+        <p><button class="btn btn-default" id="compile" onclick="ksCompile()">Compile!</button></p>
+        <p>or try loading some examples: <ul id="examples"></ul></p>
+
+        <div style="display: none">
+<div class="example" data-name="dos_mz">meta:
   id: dos_mz
   extension: exe
   endian: le
@@ -99,14 +110,9 @@ types:
         type: u2
       - id: seg
         type: u2
-</textarea></div>
-            <div class="col-md-7">
-                <pre><code class="java" id="compiled"></code></pre>
-            </div>
-        </div>
+</div>
+</div>
 
-        <div style="background: red; color: white" id="err_msg"></div>
-        <p><button class="btn btn-default" id="compile" onclick="ksCompile()">Compile!</button></p>
     </div>
 
     <footer id="main-footer">
