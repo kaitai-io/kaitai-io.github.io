@@ -18,7 +18,9 @@ function ksInit() {
     $('.example').each(function(i, el) {
         var name = $(el).data('name');
         examples[name] = $(el).text();
-        exList += "<li onclick=\"ksLoad('" + name + "')\">" + name + "</li>";
+        if (i > 0)
+            exList += ", ";
+        exList += "<span onclick=\"ksLoad('" + name + "')\">" + name + "</span>";
     });
 
     $('#examples').html(exList);

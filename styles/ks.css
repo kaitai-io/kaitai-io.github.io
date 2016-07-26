@@ -27,3 +27,14 @@ pre {
 #main-footer a {
 	color: #afcee9;
 }
+
+#examples {
+	list-style: none;
+}
+
+#examples span {
+	display: inline;
+	cursor: pointer;
+        color: #afcee9;
+        border-bottom: 1px dotted #afcee9;
+}
