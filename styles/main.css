@@ -3,7 +3,7 @@ body {
     margin-top: 70px;
 }
 
-pre, code {
+pre, code, #source, #compiled {
     font-family: 'Share Tech Mono';
 }
 
@@ -67,4 +67,14 @@ code {
         color: #3050A0;
         text-shadow: #000000 0 0 2px, #000000 0 0 10px;
     }
+}
+
+/* REPL */
+
+#source {
+	background: #232323;
+}
+
+#source, #compiled {
+	height: 500px;
 }

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Kaitai Struct: demo</title>
+
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/bootstrap-theme.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Exo:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/ks.css">
+    <link rel="stylesheet" href="../styles/highlight/railscasts.css">
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <script type="text/javascript" src="../js/yaml.js"></script>
+    <script type="text/javascript" src="../js/kaitai-struct-compiler-fastopt.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="main-navbar">
+        <div class="container">
+            <ul class="nav navbar-nav nav-stacked">
+                <a class="navbar-brand">Kaitai Struct:</a>
+                <li><a href="../index.html#what-is-it">What is it?</a></li>
+                <li><a href="../index.html#quick-start">Quick Start</a></li>
+                <li><a href="../index.html#download">Download</a></li>
+                <li><a href="../index.html#format-gallery">Format Gallery</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="index.html">Try it</a></li>
+                <li><a href="https://github.com/kaitai-io/kaitai_struct/wiki">Documentation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5"><h2>Kaitai Struct YAML</h2></div>
+            <div class="col-md-7"><h2>
+                <select id="target_lang">
+                    <option value="java">Java</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="ruby">Ruby</option>
+                </select>
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5"><textarea id="source" rows="30" style="width: 100%">meta:
+  id: dos_mz
+  extension: exe
+  endian: le
+seq:
+  - id: mz_header
+    type: mz_header
+  - id: mz_header2
+    size: mz_header.relocations_ofs - 0x1c
+  - id: relocations
+    type: relocation
+    repeat: expr
+    repeat-expr: mz_header.qty_relocations
+  - id: body
+    size-eos: true
+types:
+  mz_header:
+    seq:
+      - id: magic
+        size: 2
+      - id: last_page_extra_bytes
+        type: u2
+      - id: qty_pages
+        type: u2
+      - id: qty_relocations
+        type: u2
+      - id: header_size
+        type: u2
+      - id: min_allocation
+        type: u2
+      - id: max_allocation
+        type: u2
+      - id: initial_ss
+        type: u2
+      - id: initial_sp
+        type: u2
+      - id: checksum
+        type: u2
+      - id: initial_ip
+        type: u2
+      - id: initial_cs
+        type: u2
+      - id: relocations_ofs
+        type: u2
+      - id: overlay_id
+        type: u2
+  relocation:
+    seq:
+      - id: ofs
+        type: u2
+      - id: seg
+        type: u2
+</textarea></div>
+            <div class="col-md-7">
+                <pre><code class="java" id="compiled"></code></pre>
+            </div>
+        </div>
+
+        <div style="background: red; color: white" id="err_msg"></div>
+        <button class="btn btn-default" id="compile" onclick="ksCompile()">Compile!</button>
+    </div>
+
+    <footer id="main-footer">
+        <div class="container">
+            &copy; 2015-2016 Kaitai Project
+
+            <h3>Contacts</h3>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <i class="fa fa-fw fa-2x fa-github"></i> <a href="https://github.com/kaitai-io/kaitai_struct">GitHub</a>
+                </div>
+                <div class="col-sm-4">
+                    <i class="fa fa-fw fa-2x fa-twitter"></i> <a href="https://twitter.com/kaitai_io">@kaitai_io</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="../js/repl.js"></script>
+</body>
+</html>

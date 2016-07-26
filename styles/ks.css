@@ -1,0 +1,21 @@
+body {
+	background: #333333;
+	color: #e6e1dc;
+}
+
+select {
+	color: #232323;
+}
+
+#source {
+	background: #232323;
+}
+
+#source, #compiled {
+	height: 500px;
+}
+
+pre {
+	border: none;
+	padding: 0px;
+}
