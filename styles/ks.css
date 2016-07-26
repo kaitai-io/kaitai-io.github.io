@@ -19,3 +19,11 @@ pre {
 	border: none;
 	padding: 0px;
 }
+
+#main-footer {
+	background: #434343;
+}
+
+#main-footer a {
+	color: #afcee9;
+}
