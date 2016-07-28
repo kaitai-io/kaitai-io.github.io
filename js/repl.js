@@ -36,17 +36,25 @@ function ksLoad(name) {
 function ksCompile() {
     var ks = io.kaitai.struct.MainJs();
 
-    var errMsgEl = document.getElementById("err_msg")
+    var errMsgEl = $("#err_msg");
     var targetLang = document.getElementById("target_lang").value;
     var srcYaml = document.getElementById("source").value;
+
     try {
         var src = YAML.parse(srcYaml);
     } catch (err) {
-        console.log(err);
-        errMsgEl.innerHTML = err;
+        console.log("YAML parsing error: ", err);
+        errMsgEl.text(err);
         return;
     }
-    var r = ks.compile(targetLang, src);
+
+    try {
+        var r = ks.compile(targetLang, src);
+    } catch (err) {
+        console.log("KS compilation error: ", err);
+        errMsgEl.text(err);
+        return;
+    }
 
     var dest = $('#compiled');
     for (var i = 0; i < ks.languages.length; i++) {
@@ -61,7 +69,7 @@ function ksCompile() {
     }
     hljs.highlightBlock(dest[0]);
 
-    errMsgEl.innerHTML = "";
+    errMsgEl.html("");
 }
 
 ksInit();
