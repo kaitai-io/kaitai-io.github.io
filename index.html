@@ -4,14 +4,17 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Kaitai Struct: declarative binary format parsing language</title>
   <meta name="keywords" content="kaitai,struct,binary,format,parsing,decoding,java,javascript,python,ruby,library,metadata">
   <meta name="description" content="Kaitai Struct is a formal language for binary format specification that can be compiled into parser code">
+
   <link rel="stylesheet" href="styles/bootstrap.min.css">
   <link rel="stylesheet" href="styles/bootstrap-theme.min.css">
   <link href='https://fonts.googleapis.com/css?family=Exo:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="styles/main.css" type="text/css">
 
   <link rel="stylesheet" href="styles/highlight/default.css">
@@ -22,12 +25,16 @@
 
     <nav class="navbar navbar-inverse navbar-fixed-top" id="main-navbar">
         <div class="container">
-            <ul class="nav navbar-nav nav-stacked">
+            <ul class="nav navbar-nav">
                 <a class="navbar-brand">Kaitai Struct:</a>
                 <li class="active"><a href="#what-is-it">What is it?</a></li>
                 <li><a href="#quick-start">Quick Start</a></li>
                 <li><a href="#download">Download</a></li>
                 <li><a href="#format-gallery">Format Gallery</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="repl/index.html">Try it</a></li>
+                <li><a href="https://github.com/kaitai-io/kaitai_struct/wiki">Documentation</a></li>
             </ul>
         </div>
     </nav>
@@ -155,7 +162,7 @@ following steps:</p>
                 </div>
                 <div class="col-sm-4">
                     <pre><code class="yaml">meta:
-  id:
+  id: tcp_segment
 seq:
   - id: src_port
     type: u2
@@ -501,9 +508,8 @@ sudo apt-get install kaitai-struct-compiler</pre>
         </div>
     </footer>
 
-<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
-  <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="js/jquery-1.12.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/scroller.js"></script>
 
   <script>
