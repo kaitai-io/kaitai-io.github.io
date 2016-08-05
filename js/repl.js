@@ -1,6 +1,6 @@
 // Generic analytics event registration function; should never fail -
 // even if GA is disabled by AdBlock or failed to load anyhow.
-function ksGaEvent(s1, s2, s3, s4) {
+function ksGaEvent(s1, s2, s3, s4 = 0) {
     if (window.ksDoAnalytics) {
         try {
 //          console.debug("GA try: (", s1, "/", s2, "/", s3, "/", s4, ")");
@@ -30,7 +30,7 @@ function ksInit() {
     // Set up some analytics
     $('#target_lang').change(function() {
         var targetLang = document.getElementById("target_lang").value;
-        ksGaEvent('compiler', 'select-lang', targetLang, null);
+        ksGaEvent('compiler-select-lang', targetLang, null);
     });
 
     // Set up examples list
@@ -53,7 +53,7 @@ function ksInit() {
 
 function ksLoad(name) {
     $('#source')[0].value = examples[name];
-    ksGaEvent('compiler', 'load', name, null);
+    ksGaEvent('compiler-load', name, null);
     ksCompile();
 }
 
@@ -69,7 +69,7 @@ function ksCompile() {
     } catch (err) {
         console.log("YAML parsing error: ", err);
         errMsgEl.text(err);
-        ksGaEvent('compiler', 'compile-err-yaml', targetLang, err);
+        ksGaEvent('compiler-err-yaml', targetLang, err);
         return;
     }
 
@@ -78,7 +78,7 @@ function ksCompile() {
     } catch (err) {
         console.log("KS compilation error: ", err);
         errMsgEl.text(err);
-        ksGaEvent('compiler', 'compile-err-scala', targetLang, err);
+        ksGaEvent('compiler-err-scala', targetLang, err);
         return;
     }
 
@@ -97,7 +97,7 @@ function ksCompile() {
 
     errMsgEl.html("");
 
-    ksGaEvent('compiler', 'compile-ok', targetLang, null);
+    ksGaEvent('compiler-ok', targetLang, null);
 }
 
 ksInit();
