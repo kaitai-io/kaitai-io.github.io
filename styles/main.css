@@ -30,6 +30,20 @@ code {
     color: #880000;
 }
 
+section.news {
+    background: #E1EBCD;
+    color: #111111;
+}
+
+section.news code {
+    background: #f7ffe8;
+    color: #426400;
+}
+
+section.news h1 {
+    margin-bottom: 64px;
+}
+
 #main-footer {
     padding-top: 50px;
     padding-bottom: 50px;
