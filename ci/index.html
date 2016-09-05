@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2016-09-05 06:18:44 UTC</title>
+    <title>Kaitai Struct: test results - 2016-09-05 06:31:58 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2016-09-05 06:18:44 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2016-09-05 06:31:58 UTC</h1>
 
     <table class="table">
     <tr>
@@ -3225,7 +3225,7 @@
 
         <td>34%</td>
 
-        <td>95%</td>
+        <td>97%</td>
 
         <td>100%</td>
 
@@ -4841,35 +4841,20 @@ Error: Cannot find module 'iconv-lite'
 
           <div class="add-info">
 
-              <div class="message">Failed to import test module: test_switch_manual_enum
-Traceback (most recent call last):
-  File "/opt/python/2.7.10/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/opt/python/2.7.10/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_enum.py", line 3, in <module>
-    from switch_manual_enum import SwitchManualEnum
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_enum.py", line 29
-    
-    ^
-IndentationError: expected an indented block
-</div>
+              <div class="message">SwitchManualEnum instance has no attribute 'CodeEnum'</div>
 
               <pre class="trace">
 
-ImportError: Failed to import test module: test_switch_manual_enum
 Traceback (most recent call last):
-  File "/opt/python/2.7.10/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/opt/python/2.7.10/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_enum.py", line 3, in <module>
-    from switch_manual_enum import SwitchManualEnum
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_enum.py", line 29
-    
-    ^
-IndentationError: expected an indented block
-
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_enum.py", line 7, in test_switch_manual_enum
+    r = SwitchManualEnum.from_file("src/switch_opcodes.bin")
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 11, in from_file
+    return cls(KaitaiStream(open(filename, 'rb')))
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_enum.py", line 18, in __init__
+    self.opcodes.append(self._root.Opcode(self._io, self, self._root))
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_enum.py", line 26, in __init__
+    self.code = self._root.CodeEnum(self._io.read_u1())
+AttributeError: SwitchManualEnum instance has no attribute 'CodeEnum'
 
 		</pre>
 
@@ -4916,43 +4901,7 @@ IndentationError: expected an indented block
 
         <td class="no-run">didn't run</td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">Failed to import test module: test_switch_manual_int
-Traceback (most recent call last):
-  File "/opt/python/2.7.10/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/opt/python/2.7.10/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_int.py", line 3, in <module>
-    from switch_manual_int import SwitchManualInt
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int.py", line 29
-    
-    ^
-IndentationError: expected an indented block
-</div>
-
-              <pre class="trace">
-
-ImportError: Failed to import test module: test_switch_manual_int
-Traceback (most recent call last):
-  File "/opt/python/2.7.10/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/opt/python/2.7.10/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_int.py", line 3, in <module>
-    from switch_manual_int import SwitchManualInt
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int.py", line 29
-    
-    ^
-IndentationError: expected an indented block
-
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
