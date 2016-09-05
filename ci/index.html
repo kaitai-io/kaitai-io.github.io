@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2016-09-04 19:42:29 UTC</title>
+    <title>Kaitai Struct: test results - 2016-09-05 06:18:44 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -38,7 +38,7 @@
         }
         .add-info {
             position: absolute;
-            visibility: hidden;
+            display: none;
             background: #F0F0F0;
             border: 1px solid #A0A0A0;
         }
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2016-09-04 19:42:29 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2016-09-05 06:18:44 UTC</h1>
 
     <table class="table">
     <tr>
@@ -3221,7 +3221,7 @@
 
         <td>93%</td>
 
-        <td>74%</td>
+        <td>83%</td>
 
         <td>34%</td>
 
@@ -3881,15 +3881,7 @@ Error: Call to undefined method Kaitai\Struct\Tests\InstanceIoUser\StringsObj::_
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">The test suite died before a plan was produced. You need to have a plan.</div>
-
-              <pre class="trace">No plan</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -4180,15 +4172,7 @@ Trying to get property of non-object
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">The test suite died before a plan was produced. You need to have a plan.</div>
-
-              <pre class="trace">No plan</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -4631,15 +4615,7 @@ Trying to get property of non-object
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">The test suite died before a plan was produced. You need to have a plan.</div>
-
-              <pre class="trace">No plan</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -4676,15 +4652,7 @@ Trying to get property of non-object
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">The test suite died before a plan was produced. You need to have a plan.</div>
-
-              <pre class="trace">No plan</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -5116,10 +5084,7 @@ IndentationError: expected an indented block
 
 <script>
 $('.failed').on('click', function(ev) {
-     var addInfo = $(ev.target).find('.add-info');
-     var v = addInfo.css('visibility');
-     var antiV = (v === 'visible') ? 'hidden' : 'visible';
-     addInfo.css('visibility', antiV);
+     $(ev.target).find('.add-info').toggle();
 });
 </script>
 
