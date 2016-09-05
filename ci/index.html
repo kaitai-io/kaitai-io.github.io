@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2016-09-05 08:07:53 UTC</title>
+    <title>Kaitai Struct: test results - 2016-09-05 09:50:09 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2016-09-05 08:07:53 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2016-09-05 09:50:09 UTC</h1>
 
     <table class="table">
     <tr>
@@ -3213,7 +3213,7 @@
 
         <td></td>
 
-        <td>86%</td>
+        <td>88%</td>
 
         <td>100%</td>
 
@@ -3223,7 +3223,7 @@
 
         <td>81%</td>
 
-        <td>34%</td>
+        <td>45%</td>
 
         <td>97%</td>
 
@@ -3642,7 +3642,25 @@ Failed asserting that 10 matches expected 0.
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">Kaitai\Struct\Tests\FloatingPointsTest::testFloatingPoints
+RuntimeException: Not implemented yet
+
+/home/travis/build/kaitai-io/kaitai_struct/runtime/php/lib/Kaitai/Struct/Stream.php:190
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/FloatingPoints.php:13
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/FloatingPoints.php:10
+/home/travis/build/kaitai-io/kaitai_struct/runtime/php/lib/Kaitai/Struct/Struct.php:18
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/FloatingPointsTest.php:6
+</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed">passed
 
@@ -3809,7 +3827,9 @@ Error: Call to undefined method Kaitai\Struct\Tests\InstanceIoUser\StringsObj::_
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="passed">passed
 
@@ -3885,7 +3905,22 @@ Error: Call to undefined method Kaitai\Struct\Tests\InstanceIoUser\StringsObj::_
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">Kaitai\Struct\Tests\InstanceUserArrayTest::testInstanceUserArray
+Error: Call to undefined function Kaitai\Struct\Tests\get()
+
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/InstanceUserArray.php:29
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/InstanceUserArrayTest.php:12
+</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed">passed
 
@@ -3922,7 +3957,9 @@ Error: Call to undefined method Kaitai\Struct\Tests\InstanceIoUser\StringsObj::_
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="passed">passed
 
@@ -3966,7 +4003,7 @@ Error: Call to undefined method Kaitai\Struct\Tests\InstanceIoUser\StringsObj::_
               <div class="message"></div>
 
               <pre class="trace">Kaitai\Struct\Tests\NavParentTest::testNavParent
-Trying to get property of non-object
+Error: Call to a member function size() on array
 
 /home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/NavParentTest.php:11
 </pre>
@@ -4017,7 +4054,7 @@ Trying to get property of non-object
               <div class="message"></div>
 
               <pre class="trace">Kaitai\Struct\Tests\NavRootTest::testNavRoot
-Trying to get property of non-object
+Error: Call to a member function size() on array
 
 /home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/NavRootTest.php:11
 </pre>
@@ -4139,7 +4176,9 @@ Trying to get property of non-object
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="passed">passed
 
@@ -4215,7 +4254,22 @@ Trying to get property of non-object
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">Kaitai\Struct\Tests\PositionToEndTest::testPositionToEnd
+Error: Call to undefined method Kaitai\Struct\Tests\PositionToEnd::_io()
+
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/PositionToEnd.php:19
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/PositionToEndTest.php:7
+</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed">passed
 
@@ -4252,7 +4306,22 @@ Trying to get property of non-object
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">Kaitai\Struct\Tests\ProcessRotateTest::testProcessRotate
+ParseError: syntax error, unexpected -&gt; (T_OBJECT_OPERATOR)
+
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/ProcessRotate.php:14
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/ProcessRotateTest.php:6
+</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed">passed
 
@@ -4297,7 +4366,22 @@ Trying to get property of non-object
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">Kaitai\Struct\Tests\ProcessToUserTest::testProcessToUser
+ParseError: syntax error, unexpected -&gt; (T_OBJECT_OPERATOR)
+
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/ProcessToUser.php:14
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/ProcessToUserTest.php:6
+</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed">passed
 
@@ -4342,7 +4426,22 @@ Trying to get property of non-object
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">Kaitai\Struct\Tests\ProcessXor4ConstTest::testProcessXor4Const
+ParseError: syntax error, unexpected -&gt; (T_OBJECT_OPERATOR)
+
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/ProcessXor4Const.php:15
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/ProcessXor4ConstTest.php:6
+</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed">passed
 
@@ -4379,7 +4478,22 @@ Trying to get property of non-object
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">Kaitai\Struct\Tests\ProcessXor4ValueTest::testProcessXor4Value
+ParseError: syntax error, unexpected -&gt; (T_OBJECT_OPERATOR)
+
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/ProcessXor4Value.php:15
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/ProcessXor4ValueTest.php:6
+</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed">passed
 
@@ -4424,7 +4538,22 @@ Trying to get property of non-object
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">Kaitai\Struct\Tests\ProcessXorConstTest::testProcessXorConst
+ParseError: syntax error, unexpected -&gt; (T_OBJECT_OPERATOR)
+
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/ProcessXorConst.php:15
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/ProcessXorConstTest.php:6
+</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed">passed
 
@@ -4469,7 +4598,22 @@ Trying to get property of non-object
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">Kaitai\Struct\Tests\ProcessXorValueTest::testProcessXorValue
+ParseError: syntax error, unexpected -&gt; (T_OBJECT_OPERATOR)
+
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/ProcessXorValue.php:15
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/ProcessXorValueTest.php:6
+</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed">passed
 
@@ -4506,7 +4650,21 @@ Trying to get property of non-object
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">Kaitai\Struct\Tests\RepeatEosStructTest::testRepeatEosStruct
+Error: Call to a member function size() on array
+
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/RepeatEosStructTest.php:8
+</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed">passed
 
@@ -4582,7 +4740,21 @@ Trying to get property of non-object
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">Kaitai\Struct\Tests\RepeatNStructTest::testRepeatNStruct
+Error: Call to a member function get() on array
+
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/RepeatNStructTest.php:9
+</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed">passed
 
@@ -4619,7 +4791,9 @@ Trying to get property of non-object
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="passed">passed
 
@@ -4755,7 +4929,26 @@ Error: Cannot find module 'iconv-lite'
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">Kaitai\Struct\Tests\StrEncodingsTest::testStrEncodings
+iconv(): Detected an illegal character in input string
+
+/home/travis/build/kaitai-io/kaitai_struct/runtime/php/lib/Kaitai/Struct/Stream.php:327
+/home/travis/build/kaitai-io/kaitai_struct/runtime/php/lib/Kaitai/Struct/Stream.php:237
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/StrEncodings.php:18
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/StrEncodings.php:10
+/home/travis/build/kaitai-io/kaitai_struct/runtime/php/lib/Kaitai/Struct/Struct.php:18
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/StrEncodingsTest.php:6
+</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed">passed
 
@@ -4918,7 +5111,9 @@ AttributeError: SwitchManualEnum instance has no attribute 'CodeEnum'
 
         <td></td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="passed">passed
 
@@ -4971,7 +5166,9 @@ AttributeError: SwitchManualEnum instance has no attribute 'CodeEnum'
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="passed">passed
 
@@ -5008,7 +5205,21 @@ AttributeError: SwitchManualEnum instance has no attribute 'CodeEnum'
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">Kaitai\Struct\Tests\TypeIntUnaryOpTest::testTypeIntUnaryOp
+Error: Call to a member function shortValue() on integer
+
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/TypeIntUnaryOpTest.php:10
+</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed">passed
 
@@ -5051,7 +5262,22 @@ AttributeError: SwitchManualEnum instance has no attribute 'CodeEnum'
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">Kaitai\Struct\Tests\ZlibWithHeader78Test::testZlibWithHeader78
+ParseError: syntax error, unexpected -&gt; (T_OBJECT_OPERATOR)
+
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/ZlibWithHeader78.php:14
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/ZlibWithHeader78Test.php:6
+</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed">passed
 
