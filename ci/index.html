@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2016-09-06 08:49:34 UTC</title>
+    <title>Kaitai Struct: test results - 2016-09-06 13:36:53 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2016-09-06 08:49:34 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2016-09-06 13:36:53 UTC</h1>
 
     <table class="table">
     <tr>
@@ -82,17 +82,17 @@
 
         <td>100%</td>
 
-        <td>95%</td>
+        <td>97%</td>
+
+        <td>97%</td>
 
         <td>100%</td>
 
         <td>100%</td>
 
-        <td>100%</td>
+        <td>87%</td>
 
-        <td>85%</td>
-
-        <td>76%</td>
+        <td>78%</td>
 
         <td>100%</td>
 
@@ -108,20 +108,65 @@
 
         </td>
 
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>&quot;1234fe&quot;.to_i(16)</td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
         <td class="failed">failed
 
           <div class="add-info">
 
-              <div class="message">"[Long.parseLong(std::string("12345"), 10])" was not equal to "[std::stoi(std::string("12345")])"</div>
+              <div class="message">"[long.Parse("1234fe"])" was not equal to "[Convert.ToInt64("1234fe", 16])"</div>
 
               <pre class="trace">
-      org.scalatest.exceptions.TestFailedException: &quot;[Long.parseLong(std::string(&quot;12345&quot;), 10])&quot; was not equal to &quot;[std::stoi(std::string(&quot;12345&quot;)])&quot;
+      org.scalatest.exceptions.TestFailedException: &quot;[long.Parse(&quot;1234fe&quot;])&quot; was not equal to &quot;[Convert.ToInt64(&quot;1234fe&quot;, 16])&quot;
       at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:287)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:322)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
       at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
       at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -185,10 +230,6 @@
 </pre>
 
           </div>
-
-        </td>
-
-        <td class="passed">passed
 
         </td>
 
@@ -301,7 +342,130 @@
     </tr>
 
     <tr>
+        <td>&quot;str1&quot; != &quot;str2&quot;</td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+    </tr>
+
+    <tr>
         <td>&quot;str1&quot; + &quot;str2&quot;</td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>&quot;str1&quot; &lt; &quot;str2&quot;</td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>&quot;str1&quot; == &quot;str2&quot;</td>
 
         <td class="passed">passed
 
@@ -671,6 +835,47 @@
 
     <tr>
         <td>1 &lt; 2</td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>1 == 2</td>
 
         <td class="passed">passed
 
@@ -1221,9 +1426,9 @@
       at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1555)
       at org.scalatest.Assertions$class.fail(Assertions.scala:1328)
       at org.scalatest.FunSuite.fail(FunSuite.scala:1555)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:289)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:324)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
       at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
       at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -1355,9 +1560,9 @@
       at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1555)
       at org.scalatest.Assertions$class.fail(Assertions.scala:1328)
       at org.scalatest.FunSuite.fail(FunSuite.scala:1555)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:289)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:324)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
       at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
       at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -1473,9 +1678,9 @@
       at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1555)
       at org.scalatest.Assertions$class.fail(Assertions.scala:1328)
       at org.scalatest.FunSuite.fail(FunSuite.scala:1555)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:289)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:324)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
       at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
       at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -1594,9 +1799,9 @@
       at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:287)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:322)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
       at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
       at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -1711,9 +1916,9 @@
       at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:287)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:322)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
       at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
       at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -1825,9 +2030,9 @@
       at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1555)
       at org.scalatest.Assertions$class.fail(Assertions.scala:1328)
       at org.scalatest.FunSuite.fail(FunSuite.scala:1555)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:289)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:324)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
       at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
       at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -1906,9 +2111,9 @@
       at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1555)
       at org.scalatest.Assertions$class.fail(Assertions.scala:1328)
       at org.scalatest.FunSuite.fail(FunSuite.scala:1555)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:289)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:324)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
       at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
       at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -2020,9 +2225,9 @@
       at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1555)
       at org.scalatest.Assertions$class.fail(Assertions.scala:1328)
       at org.scalatest.FunSuite.fail(FunSuite.scala:1555)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:289)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:324)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
       at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
       at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -2101,9 +2306,9 @@
       at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1555)
       at org.scalatest.Assertions$class.fail(Assertions.scala:1328)
       at org.scalatest.FunSuite.fail(FunSuite.scala:1555)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:289)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:324)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
       at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
       at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -2215,9 +2420,9 @@
       at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1555)
       at org.scalatest.Assertions$class.fail(Assertions.scala:1328)
       at org.scalatest.FunSuite.fail(FunSuite.scala:1555)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:289)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:324)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
       at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
       at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -2296,9 +2501,9 @@
       at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1555)
       at org.scalatest.Assertions$class.fail(Assertions.scala:1328)
       at org.scalatest.FunSuite.fail(FunSuite.scala:1555)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:289)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:324)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
       at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
       at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -2410,9 +2615,9 @@
       at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1555)
       at org.scalatest.Assertions$class.fail(Assertions.scala:1328)
       at org.scalatest.FunSuite.fail(FunSuite.scala:1555)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:289)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:324)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
       at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
       at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -2491,9 +2696,9 @@
       at org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1555)
       at org.scalatest.Assertions$class.fail(Assertions.scala:1328)
       at org.scalatest.FunSuite.fail(FunSuite.scala:1555)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:289)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:324)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
       at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
       at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -2649,9 +2854,9 @@
       at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:287)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:322)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
       at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
       at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -2766,9 +2971,9 @@
       at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:287)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:322)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
       at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
       at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -2883,9 +3088,9 @@
       at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:287)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:322)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
       at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
       at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -3000,9 +3205,9 @@
       at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:287)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
-      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:281)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:322)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:316)
       at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
       at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -3215,7 +3420,7 @@
 
         <td>89%</td>
 
-        <td>97%</td>
+        <td>100%</td>
 
         <td>100%</td>
 
@@ -5112,7 +5317,9 @@ AttributeError: SwitchManualEnum instance has no attribute 'CodeEnum'
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="passed">passed
 
