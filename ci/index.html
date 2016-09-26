@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2016-09-26 19:03:29 UTC</title>
+    <title>Kaitai Struct: test results - 2016-09-26 22:01:43 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2016-09-26 19:03:29 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2016-09-26 22:01:43 UTC</h1>
 
     <table class="table">
     <tr>
@@ -6706,7 +6706,7 @@
 
         <td></td>
 
-        <td>93%</td>
+        <td>97%</td>
 
         <td>95%</td>
 
@@ -6814,7 +6814,9 @@
 
         <td></td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="passed">passed
 
@@ -6843,7 +6845,7 @@
               <pre class="trace">Kaitai\Struct\Tests\Enum0Test::testEnum0
 ParseError: syntax error, unexpected 'enum' (T_STRING), expecting variable (T_VARIABLE)
 
-/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/Enum0.php:21
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/Enum0.php:8
 /home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/Enum0Test.php:6
 </pre>
 
@@ -6866,7 +6868,9 @@ ParseError: syntax error, unexpected 'enum' (T_STRING), expecting variable (T_VA
 
         <td></td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="passed">passed
 
@@ -6895,7 +6899,7 @@ ParseError: syntax error, unexpected 'enum' (T_STRING), expecting variable (T_VA
               <pre class="trace">Kaitai\Struct\Tests\EnumIfTest::testEnumIf
 ParseError: syntax error, unexpected identifier (T_STRING), expecting variable (T_VARIABLE)
 
-/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/EnumIf.php:24
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/EnumIf.php:8
 /home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/EnumIfTest.php:6
 </pre>
 
@@ -8518,7 +8522,7 @@ Error: Cannot find module 'iconv-lite'
               <pre class="trace">Kaitai\Struct\Tests\SwitchManualEnumTest::testSwitchManualEnum
 ParseError: syntax error, unexpected identifier (T_STRING), expecting variable (T_VARIABLE)
 
-/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/SwitchManualEnum.php:46
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/SwitchManualEnum.php:26
 /home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/SwitchManualEnumTest.php:6
 </pre>
 
@@ -8541,7 +8545,7 @@ Traceback (most recent call last):
     return cls(KaitaiStream(open(filename, 'rb')))
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_enum.py", line 18, in __init__
     self.opcodes.append(self._root.Opcode(self._io, self, self._root))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_enum.py", line 26, in __init__
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_enum.py", line 30, in __init__
     self.code = self._root.CodeEnum(self._io.read_u1())
 AttributeError: SwitchManualEnum instance has no attribute 'CodeEnum'
 
