@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2016-09-29 14:20:39 UTC</title>
+    <title>Kaitai Struct: test results - 2016-10-05 17:07:47 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2016-09-29 14:20:39 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2016-10-05 17:07:47 UTC</h1>
 
     <table class="table">
     <tr>
@@ -6718,7 +6718,7 @@
 
         <td>92%</td>
 
-        <td>92%</td>
+        <td>94%</td>
 
         <td>98%</td>
 
@@ -6836,20 +6836,7 @@
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message"></div>
-
-              <pre class="trace">Kaitai\Struct\Tests\Enum0Test::testEnum0
-ParseError: syntax error, unexpected 'enum' (T_STRING), expecting variable (T_VARIABLE)
-
-/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/Enum0.php:8
-/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/Enum0Test.php:6
-</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -6897,9 +6884,14 @@ ParseError: syntax error, unexpected 'enum' (T_STRING), expecting variable (T_VA
               <div class="message"></div>
 
               <pre class="trace">Kaitai\Struct\Tests\EnumIfTest::testEnumIf
-ParseError: syntax error, unexpected identifier (T_STRING), expecting variable (T_VARIABLE)
+attempt to autoload "Kaitai\Struct\Tests\EnumIf\Opcodes" failed
 
-/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/EnumIf.php:8
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/_bootstrap.php:16
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/EnumIf.php:35
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/EnumIf.php:31
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/EnumIf.php:13
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/EnumIf.php:10
+/home/travis/build/kaitai-io/kaitai_struct/runtime/php/lib/Kaitai/Struct/Struct.php:18
 /home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/EnumIfTest.php:6
 </pre>
 
@@ -8591,9 +8583,14 @@ Error: Cannot find module 'iconv-lite'
               <div class="message"></div>
 
               <pre class="trace">Kaitai\Struct\Tests\SwitchManualEnumTest::testSwitchManualEnum
-ParseError: syntax error, unexpected identifier (T_STRING), expecting variable (T_VARIABLE)
+attempt to autoload "Kaitai\Struct\Tests\SwitchManualEnum\CodeEnum" failed
 
-/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/SwitchManualEnum.php:26
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/_bootstrap.php:16
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/SwitchManualEnum.php:33
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/SwitchManualEnum.php:28
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/SwitchManualEnum.php:15
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/SwitchManualEnum.php:10
+/home/travis/build/kaitai-io/kaitai_struct/runtime/php/lib/Kaitai/Struct/Struct.php:18
 /home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/SwitchManualEnumTest.php:6
 </pre>
 
