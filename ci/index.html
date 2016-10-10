@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2016-10-10 18:12:16 UTC</title>
+    <title>Kaitai Struct: test results - 2016-10-10 18:24:03 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2016-10-10 18:12:16 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2016-10-10 18:24:03 UTC</h1>
 
     <table class="table">
     <tr>
@@ -6996,7 +6996,7 @@
 
         <td>98%</td>
 
-        <td>66%</td>
+        <td>86%</td>
 
         <td>100%</td>
 
@@ -7445,7 +7445,7 @@
   But was:  4
 </div>
 
-              <pre class="trace">at Kaitai.SpecExprMod.TestExprMod () [0x00063] in <e2077cf0d28d4cf7807b99f170811312>:0</pre>
+              <pre class="trace">at Kaitai.SpecExprMod.TestExprMod () [0x00063] in <5edebab8217c416c92519007d58e00f5>:0</pre>
 
           </div>
 
@@ -7753,30 +7753,7 @@ Exception: Unexpected fixed contents: got b'PACK-1', was waiting for bytearray(b
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">Can't convert 'bytes' object to str implicitly</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_instance_io_user.py", line 7, in test_instance_io_user
-    r = InstanceIoUser.from_file("src/instance_io.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/instance_io_user.py", line 22, in __init__
-    self.strings = self._root.StringsObj(io, self, self._root)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/instance_io_user.py", line 52, in __init__
-    self.str.append(self._io.read_strz("UTF-8", 0, False, True, True))
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
-    r += c
-TypeError: Can't convert 'bytes' object to str implicitly
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -8289,28 +8266,7 @@ TypeError: Can't convert 'bytes' object to str implicitly
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">Can't convert 'bytes' object to str implicitly</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_position_abs.py", line 10, in test_position_abs
-    self.assertEqual(r.index.entry, "foo")
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/position_abs.py", line 32, in index
-    self._m_index = self._root.IndexObj(self._io, self, self._root)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/position_abs.py", line 22, in __init__
-    self.entry = self._io.read_strz("UTF-8", 0, False, True, True)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
-    r += c
-TypeError: Can't convert 'bytes' object to str implicitly
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -8769,30 +8725,7 @@ TypeError: ord() expected string of length 1, but int found
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">unpack requires a bytes object of length 4</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_repeat_eos_struct.py", line 7, in test_repeat_eos_struct
-    r = RepeatEosStruct.from_file("src/repeat_eos_struct.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/repeat_eos_struct.py", line 17, in __init__
-    self.chunks.append(self._root.Chunk(self._io, self, self._root))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/repeat_eos_struct.py", line 25, in __init__
-    self.offset = self._io.read_u4le()
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 131, in read_u4le
-    return unpack('<I', self._io.read(4))[0]
-struct.error: unpack requires a bytes object of length 4
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -8839,28 +8772,7 @@ struct.error: unpack requires a bytes object of length 4
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">unpack requires a bytes object of length 4</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_repeat_eos_u4.py", line 7, in test_repeat_eos_u4
-    r = RepeatEosU4.from_file('src/repeat_eos_struct.bin')
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/repeat_eos_u4.py", line 17, in __init__
-    self.numbers.append(self._io.read_u4le())
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 131, in read_u4le
-    return unpack('<I', self._io.read(4))[0]
-struct.error: unpack requires a bytes object of length 4
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -8954,28 +8866,7 @@ struct.error: unpack requires a bytes object of length 4
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">Can't convert 'bytes' object to str implicitly</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_repeat_n_strz.py", line 7, in test_repeat_n_strz
-    r = RepeatNStrz.from_file("src/repeat_n_strz.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/repeat_n_strz.py", line 18, in __init__
-    self.lines[i] = self._io.read_strz("UTF-8", 0, False, True, True)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
-    r += c
-TypeError: Can't convert 'bytes' object to str implicitly
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -9022,28 +8913,7 @@ TypeError: Can't convert 'bytes' object to str implicitly
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">Can't convert 'bytes' object to str implicitly</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_repeat_n_strz_double.py", line 7, in test_repeat_n_strz_double
-    r = RepeatNStrzDouble.from_file("src/repeat_n_strz.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/repeat_n_strz_double.py", line 18, in __init__
-    self.lines1[i] = self._io.read_strz("UTF-8", 0, False, True, True)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
-    r += c
-TypeError: Can't convert 'bytes' object to str implicitly
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -9137,28 +9007,7 @@ TypeError: Can't convert 'bytes' object to str implicitly
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">Can't convert 'bytes' object to str implicitly</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_repeat_until_s4.py", line 7, in test_repeat_until_s4
-    r = RepeatUntilS4.from_file("src/repeat_until_s4.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/repeat_until_s4.py", line 21, in __init__
-    self.afterall = self._io.read_strz("ASCII", 0, False, True, True)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
-    r += c
-TypeError: Can't convert 'bytes' object to str implicitly
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -9442,32 +9291,7 @@ AttributeError: 'SwitchManualEnum' object has no attribute 'CodeEnum'
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">Can't convert 'bytes' object to str implicitly</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_int.py", line 7, in test_switch_manual_int
-    r = SwitchManualInt.from_file("src/switch_opcodes.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int.py", line 17, in __init__
-    self.opcodes.append(self._root.Opcode(self._io, self, self._root))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int.py", line 30, in __init__
-    self.body = self._root.Opcode.Strval(self._io, self, self._root)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int.py", line 45, in __init__
-    self.value = self._io.read_strz("ASCII", 0, False, True, True)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
-    r += c
-TypeError: Can't convert 'bytes' object to str implicitly
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -9514,32 +9338,7 @@ TypeError: Can't convert 'bytes' object to str implicitly
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">Can't convert 'bytes' object to str implicitly</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_int_else.py", line 7, in test_switch_manual_int_else
-    r = SwitchManualIntElse.from_file("src/switch_opcodes2.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int_else.py", line 17, in __init__
-    self.opcodes.append(self._root.Opcode(self._io, self, self._root))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int_else.py", line 30, in __init__
-    self.body = self._root.Opcode.Strval(self._io, self, self._root)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int_else.py", line 47, in __init__
-    self.value = self._io.read_strz("ASCII", 0, False, True, True)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
-    r += c
-TypeError: Can't convert 'bytes' object to str implicitly
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -9586,24 +9385,14 @@ TypeError: Can't convert 'bytes' object to str implicitly
 
           <div class="add-info">
 
-              <div class="message">Can't convert 'bytes' object to str implicitly</div>
+              <div class="message">b'' != ''</div>
 
               <pre class="trace">
 
 Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_int_size.py", line 7, in test_switch_manual_int_size
-    r = SwitchManualIntSize.from_file("src/switch_tlv.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int_size.py", line 17, in __init__
-    self.chunks.append(self._root.Chunk(self._io, self, self._root))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int_size.py", line 31, in __init__
-    self.body = self._root.Chunk.ChunkMeta(io, self, self._root)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int_size.py", line 44, in __init__
-    self.title = self._io.read_strz("UTF-8", 0, False, True, True)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
-    r += c
-TypeError: Can't convert 'bytes' object to str implicitly
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_int_size.py", line 23, in test_switch_manual_int_size
+    self.assertEqual(r.chunks[3].body, "")
+AssertionError: b'' != ''
 
 		</pre>
 
@@ -9654,24 +9443,14 @@ TypeError: Can't convert 'bytes' object to str implicitly
 
           <div class="add-info">
 
-              <div class="message">Can't convert 'bytes' object to str implicitly</div>
+              <div class="message">b'' != ''</div>
 
               <pre class="trace">
 
 Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_int_size_else.py", line 7, in test_switch_manual_int_size_else
-    r = SwitchManualIntSizeElse.from_file("src/switch_tlv.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int_size_else.py", line 17, in __init__
-    self.chunks.append(self._root.Chunk(self._io, self, self._root))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int_size_else.py", line 31, in __init__
-    self.body = self._root.Chunk.ChunkMeta(io, self, self._root)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int_size_else.py", line 46, in __init__
-    self.title = self._io.read_strz("UTF-8", 0, False, True, True)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
-    r += c
-TypeError: Can't convert 'bytes' object to str implicitly
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_int_size_else.py", line 23, in test_switch_manual_int_size_else
+    self.assertEqual(r.chunks[3].body.rest, "")
+AssertionError: b'' != ''
 
 		</pre>
 
@@ -9722,26 +9501,14 @@ TypeError: Can't convert 'bytes' object to str implicitly
 
           <div class="add-info">
 
-              <div class="message">Can't convert 'bytes' object to str implicitly</div>
+              <div class="message">b'' != ''</div>
 
               <pre class="trace">
 
 Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_int_size_eos.py", line 7, in test_switch_manual_int_size_eos
-    r = SwitchManualIntSizeEos.from_file("src/switch_tlv.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int_size_eos.py", line 17, in __init__
-    self.chunks.append(self._root.Chunk(self._io, self, self._root))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int_size_eos.py", line 29, in __init__
-    self.body = self._root.ChunkBody(io, self, self._root)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int_size_eos.py", line 41, in __init__
-    self.body = self._root.ChunkBody.ChunkMeta(io, self, self._root)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int_size_eos.py", line 54, in __init__
-    self.title = self._io.read_strz("UTF-8", 0, False, True, True)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
-    r += c
-TypeError: Can't convert 'bytes' object to str implicitly
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_int_size_eos.py", line 23, in test_switch_manual_int_size_eos
+    self.assertEqual(r.chunks[3].body.body, "")
+AssertionError: b'' != ''
 
 		</pre>
 
@@ -9792,32 +9559,7 @@ TypeError: Can't convert 'bytes' object to str implicitly
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">Can't convert 'bytes' object to str implicitly</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_str.py", line 7, in test_switch_manual_str
-    r = SwitchManualStr.from_file("src/switch_opcodes.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_str.py", line 17, in __init__
-    self.opcodes.append(self._root.Opcode(self._io, self, self._root))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_str.py", line 30, in __init__
-    self.body = self._root.Opcode.Strval(self._io, self, self._root)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_str.py", line 45, in __init__
-    self.value = self._io.read_strz("ASCII", 0, False, True, True)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
-    r += c
-TypeError: Can't convert 'bytes' object to str implicitly
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -9864,28 +9606,7 @@ TypeError: Can't convert 'bytes' object to str implicitly
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">Can't convert 'bytes' object to str implicitly</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_term_strz.py", line 7, in test_term_strz
-    r = TermStrz.from_file("src/term_strz.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/term_strz.py", line 15, in __init__
-    self.s1 = self._io.read_strz("UTF-8", 124, False, True, True)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
-    r += c
-TypeError: Can't convert 'bytes' object to str implicitly
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
