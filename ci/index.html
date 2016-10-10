@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2016-10-08 14:48:11 UTC</title>
+    <title>Kaitai Struct: test results - 2016-10-10 18:12:16 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2016-10-08 14:48:11 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2016-10-10 18:12:16 UTC</h1>
 
     <table class="table">
     <tr>
@@ -102,7 +102,7 @@
 
         <td>78%</td>
 
-        <td>93%</td>
+        <td>89%</td>
 
         <td>0%</td>
 
@@ -848,7 +848,83 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">"([1 + 2) // (7 * 8])" was not equal to "([(1 + 2) / (7 * 8)])"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;([1 + 2) // (7 * 8])&quot; was not equal to &quot;([(1 + 2) / (7 * 8)])&quot;
+      at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:323)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:317)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:317)
+      at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+      at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+      at org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+      at org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+      at scala.collection.immutable.List.foreach(List.scala:381)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+      at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:396)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:483)
+      at org.scalatest.FunSuiteLike$class.runTests(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1555)
+      at org.scalatest.Suite$class.run(Suite.scala:1424)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:545)
+      at org.scalatest.FunSuiteLike$class.run(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1555)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:357)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:502)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:76)
+      at sbt.TestRunner.run(TestFramework.scala:85)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFunction.apply(TestFramework.scala:207)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$4.work(System.scala:63)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+      at sbt.Execute.work(Execute.scala:235)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+      at java.lang.Thread.run(Thread.java:745)
+</pre>
+
+          </div>
 
         </td>
 
@@ -1856,7 +1932,83 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">"[3 // 2]" was not equal to "[(3 / 2)]"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;[3 // 2]&quot; was not equal to &quot;[(3 / 2)]&quot;
+      at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:323)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:317)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:317)
+      at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+      at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+      at org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+      at org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+      at scala.collection.immutable.List.foreach(List.scala:381)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+      at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:396)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:483)
+      at org.scalatest.FunSuiteLike$class.runTests(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1555)
+      at org.scalatest.Suite$class.run(Suite.scala:1424)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:545)
+      at org.scalatest.FunSuiteLike$class.run(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1555)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:357)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:502)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:76)
+      at sbt.TestRunner.run(TestFramework.scala:85)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFunction.apply(TestFramework.scala:207)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$4.work(System.scala:63)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+      at sbt.Execute.work(Execute.scala:235)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+      at java.lang.Thread.run(Thread.java:745)
+</pre>
+
+          </div>
 
         </td>
 
@@ -6844,7 +6996,7 @@
 
         <td>98%</td>
 
-        <td>37%</td>
+        <td>66%</td>
 
         <td>100%</td>
 
@@ -7217,22 +7369,7 @@
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">48.5 != 48</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_expr_2.py", line 22, in test_expr_2
-    self.assertEquals(r.str1_tuple5.avg, 0x30)
-AssertionError: 48.5 != 48
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -7308,7 +7445,7 @@ AssertionError: 48.5 != 48
   But was:  4
 </div>
 
-              <pre class="trace">at Kaitai.SpecExprMod.TestExprMod () [0x00063] in <d15a3a62838b45e1b6582e616c376518>:0</pre>
+              <pre class="trace">at Kaitai.SpecExprMod.TestExprMod () [0x00063] in <e2077cf0d28d4cf7807b99f170811312>:0</pre>
 
           </div>
 
@@ -7422,7 +7559,7 @@ Traceback (most recent call last):
     self._m_hdr = self._root.Header(self._io, self, self._root)
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/fixed_struct.py", line 21, in __init__
     self.magic1 = self._io.ensure_fixed_contents(6, str(bytearray([80, 65, 67, 75, 45, 49])))
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 180, in ensure_fixed_contents
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 180, in ensure_fixed_contents
     (str(actual), str(expected))
 Exception: Unexpected fixed contents: got b'PACK-1', was waiting for bytearray(b'PACK-1')
 
@@ -7620,18 +7757,22 @@ Exception: Unexpected fixed contents: got b'PACK-1', was waiting for bytearray(b
 
           <div class="add-info">
 
-              <div class="message">name 'xrange' is not defined</div>
+              <div class="message">Can't convert 'bytes' object to str implicitly</div>
 
               <pre class="trace">
 
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_instance_io_user.py", line 7, in test_instance_io_user
     r = InstanceIoUser.from_file("src/instance_io.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
     return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/instance_io_user.py", line 17, in __init__
-    for i in xrange(self.qty_entries):
-NameError: name 'xrange' is not defined
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/instance_io_user.py", line 22, in __init__
+    self.strings = self._root.StringsObj(io, self, self._root)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/instance_io_user.py", line 52, in __init__
+    self.str.append(self._io.read_strz("UTF-8", 0, False, True, True))
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
+    r += c
+TypeError: Can't convert 'bytes' object to str implicitly
 
 		</pre>
 
@@ -7729,24 +7870,7 @@ NameError: name 'xrange' is not defined
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">name 'xrange' is not defined</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_instance_std_array.py", line 13, in test_instance_std_array
-    self.assertEquals(r.entries, [
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/instance_std_array.py", line 27, in entries
-    for i in xrange(self.qty_entries):
-NameError: name 'xrange' is not defined
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -7793,24 +7917,7 @@ NameError: name 'xrange' is not defined
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">name 'xrange' is not defined</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_instance_user_array.py", line 13, in test_instance_user_array
-    self.assertEquals(r.user_entries[0].word1, 0x1111)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/instance_user_array.py", line 38, in user_entries
-    for i in xrange(self.qty_entries):
-NameError: name 'xrange' is not defined
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -7904,28 +8011,7 @@ NameError: name 'xrange' is not defined
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">name 'xrange' is not defined</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_nav_parent.py", line 7, in test_nav_parent
-    r = NavParent.from_file("src/nav.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/nav_parent.py", line 16, in __init__
-    self.index = self._root.IndexObj(self._io, self, self._root)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/nav_parent.py", line 34, in __init__
-    for i in xrange(self._parent.header.qty_entries):
-NameError: name 'xrange' is not defined
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -7972,28 +8058,7 @@ NameError: name 'xrange' is not defined
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">name 'xrange' is not defined</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_nav_root.py", line 7, in test_nav_root
-    r = NavRoot.from_file("src/nav.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/nav_root.py", line 16, in __init__
-    self.index = self._root.IndexObj(self._io, self, self._root)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/nav_root.py", line 34, in __init__
-    for i in xrange(self._root.header.qty_entries):
-NameError: name 'xrange' is not defined
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -8038,22 +8103,7 @@ NameError: name 'xrange' is not defined
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">b'\x10\x00\x00\x00' != '\x10\x00\x00\x00'</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_nested_same_name.py", line 10, in test_nested_same_name
-    self.assertEquals(r.main_data.foo.data, "\x10\0\0\0")
-AssertionError: b'\x10\x00\x00\x00' != '\x10\x00\x00\x00'
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -8098,22 +8148,7 @@ AssertionError: b'\x10\x00\x00\x00' != '\x10\x00\x00\x00'
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">b'\x11\x11\x11\x11' != '\x11\x11\x11\x11'</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_nested_same_name2.py", line 11, in test_nested_same_name2
-    self.assertEquals(r.main_data.foo.data1, "\x11\x11\x11\x11")
-AssertionError: b'\x11\x11\x11\x11' != '\x11\x11\x11\x11'
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -8264,12 +8299,12 @@ AssertionError: b'\x11\x11\x11\x11' != '\x11\x11\x11\x11'
 
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_position_abs.py", line 10, in test_position_abs
-    self.assertEquals(r.index.entry, "foo")
+    self.assertEqual(r.index.entry, "foo")
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/position_abs.py", line 32, in index
     self._m_index = self._root.IndexObj(self._io, self, self._root)
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/position_abs.py", line 22, in __init__
     self.entry = self._io.read_strz("UTF-8", 0, False, True, True)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 213, in read_strz
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
     r += c
 TypeError: Can't convert 'bytes' object to str implicitly
 
@@ -8322,26 +8357,7 @@ TypeError: Can't convert 'bytes' object to str implicitly
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">name 'xrange' is not defined</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_position_in_seq.py", line 7, in test_position_in_seq
-    r = PositionInSeq.from_file("src/position_in_seq.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/position_in_seq.py", line 16, in __init__
-    for i in xrange(self.header.qty_numbers):
-NameError: name 'xrange' is not defined
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -8435,28 +8451,7 @@ NameError: name 'xrange' is not defined
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">name 'xrange' is not defined</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_process_rotate.py", line 7, in test_process_rotate
-    r = ProcessRotate.from_file("src/process_rotate.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/process_rotate.py", line 16, in __init__
-    self.buf1 = KaitaiStream.process_rotate_left(self._raw_buf1, 3, 1)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 250, in process_rotate_left
-    for i in xrange(len(r)):
-NameError: name 'xrange' is not defined
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -8503,28 +8498,7 @@ NameError: name 'xrange' is not defined
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">name 'xrange' is not defined</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_process_to_user.py", line 7, in test_process_to_user
-    r = ProcessToUser.from_file("src/process_rotate.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/process_to_user.py", line 16, in __init__
-    self._raw_buf1 = KaitaiStream.process_rotate_left(self._raw__raw_buf1, 3, 1)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 250, in process_rotate_left
-    for i in xrange(len(r)):
-NameError: name 'xrange' is not defined
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -8575,20 +8549,14 @@ NameError: name 'xrange' is not defined
 
           <div class="add-info">
 
-              <div class="message">name 'xrange' is not defined</div>
+              <div class="message">b'\xe8\xad\xb8Q\xef\xa8\xa3' != b'foo bar'</div>
 
               <pre class="trace">
 
 Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_process_xor4_const.py", line 7, in test_process_xor4_const
-    r = ProcessXor4Const.from_file("src/process_xor_4.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/process_xor4_const.py", line 17, in __init__
-    self.buf = KaitaiStream.process_xor_many(self._raw_buf, str(bytearray([236, 187, 163, 20])))
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 231, in process_xor_many
-    for i in xrange(len(r)):
-NameError: name 'xrange' is not defined
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_process_xor4_const.py", line 10, in test_process_xor4_const
+    self.assertEqual(r.buf, b"foo bar")
+AssertionError: b'\xe8\xad\xb8Q\xef\xa8\xa3' != b'foo bar'
 
 		</pre>
 
@@ -8643,20 +8611,20 @@ NameError: name 'xrange' is not defined
 
           <div class="add-info">
 
-              <div class="message">name 'xrange' is not defined</div>
+              <div class="message">ord() expected string of length 1, but int found</div>
 
               <pre class="trace">
 
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_process_xor4_value.py", line 7, in test_process_xor4_value
     r = ProcessXor4Value.from_file("src/process_xor_4.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
     return cls(KaitaiStream(open(filename, 'rb')))
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/process_xor4_value.py", line 17, in __init__
     self.buf = KaitaiStream.process_xor_many(self._raw_buf, self.key)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 231, in process_xor_many
-    for i in xrange(len(r)):
-NameError: name 'xrange' is not defined
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 232, in process_xor_many
+    r[i] ^= ord(key[ki])
+TypeError: ord() expected string of length 1, but int found
 
 		</pre>
 
@@ -8707,28 +8675,7 @@ NameError: name 'xrange' is not defined
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">name 'xrange' is not defined</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_process_xor_const.py", line 7, in test_process_xor_const
-    r = ProcessXorConst.from_file("src/process_xor_1.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/process_xor_const.py", line 17, in __init__
-    self.buf = KaitaiStream.process_xor_one(self._raw_buf, 255)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 222, in process_xor_one
-    for i in xrange(len(r)):
-NameError: name 'xrange' is not defined
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -8775,28 +8722,7 @@ NameError: name 'xrange' is not defined
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">name 'xrange' is not defined</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_process_xor_value.py", line 7, in test_process_xor_value
-    r = ProcessXorValue.from_file("src/process_xor_1.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/process_xor_value.py", line 17, in __init__
-    self.buf = KaitaiStream.process_xor_one(self._raw_buf, self.key)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 222, in process_xor_one
-    for i in xrange(len(r)):
-NameError: name 'xrange' is not defined
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -8854,13 +8780,13 @@ NameError: name 'xrange' is not defined
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_repeat_eos_struct.py", line 7, in test_repeat_eos_struct
     r = RepeatEosStruct.from_file("src/repeat_eos_struct.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
     return cls(KaitaiStream(open(filename, 'rb')))
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/repeat_eos_struct.py", line 17, in __init__
     self.chunks.append(self._root.Chunk(self._io, self, self._root))
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/repeat_eos_struct.py", line 25, in __init__
     self.offset = self._io.read_u4le()
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 131, in read_u4le
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 131, in read_u4le
     return unpack('<I', self._io.read(4))[0]
 struct.error: unpack requires a bytes object of length 4
 
@@ -8924,11 +8850,11 @@ struct.error: unpack requires a bytes object of length 4
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_repeat_eos_u4.py", line 7, in test_repeat_eos_u4
     r = RepeatEosU4.from_file('src/repeat_eos_struct.bin')
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
     return cls(KaitaiStream(open(filename, 'rb')))
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/repeat_eos_u4.py", line 17, in __init__
     self.numbers.append(self._io.read_u4le())
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 131, in read_u4le
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 131, in read_u4le
     return unpack('<I', self._io.read(4))[0]
 struct.error: unpack requires a bytes object of length 4
 
@@ -8981,26 +8907,7 @@ struct.error: unpack requires a bytes object of length 4
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">name 'xrange' is not defined</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_repeat_n_struct.py", line 7, in test_repeat_n_struct
-    r = RepeatNStruct.from_file("src/repeat_n_struct.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/repeat_n_struct.py", line 17, in __init__
-    for i in xrange(self.qty):
-NameError: name 'xrange' is not defined
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -9051,18 +8958,20 @@ NameError: name 'xrange' is not defined
 
           <div class="add-info">
 
-              <div class="message">name 'xrange' is not defined</div>
+              <div class="message">Can't convert 'bytes' object to str implicitly</div>
 
               <pre class="trace">
 
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_repeat_n_strz.py", line 7, in test_repeat_n_strz
     r = RepeatNStrz.from_file("src/repeat_n_strz.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
     return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/repeat_n_strz.py", line 17, in __init__
-    for i in xrange(self.qty):
-NameError: name 'xrange' is not defined
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/repeat_n_strz.py", line 18, in __init__
+    self.lines[i] = self._io.read_strz("UTF-8", 0, False, True, True)
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
+    r += c
+TypeError: Can't convert 'bytes' object to str implicitly
 
 		</pre>
 
@@ -9117,18 +9026,20 @@ NameError: name 'xrange' is not defined
 
           <div class="add-info">
 
-              <div class="message">can't multiply sequence by non-int of type 'float'</div>
+              <div class="message">Can't convert 'bytes' object to str implicitly</div>
 
               <pre class="trace">
 
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_repeat_n_strz_double.py", line 7, in test_repeat_n_strz_double
     r = RepeatNStrzDouble.from_file("src/repeat_n_strz.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
     return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/repeat_n_strz_double.py", line 16, in __init__
-    self.lines1 = [None] * (self.qty / 2)
-TypeError: can't multiply sequence by non-int of type 'float'
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/repeat_n_strz_double.py", line 18, in __init__
+    self.lines1[i] = self._io.read_strz("UTF-8", 0, False, True, True)
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
+    r += c
+TypeError: Can't convert 'bytes' object to str implicitly
 
 		</pre>
 
@@ -9179,28 +9090,7 @@ TypeError: can't multiply sequence by non-int of type 'float'
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">name 'xrange' is not defined</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_repeat_until_complex.py", line 7, in test_repeat_until_complex
-    r = RepeatUntilComplex.from_file("src/repeat_until_complex.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/repeat_until_complex.py", line 17, in __init__
-    _ = self._root.TypeU1(self._io, self, self._root)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/repeat_until_complex.py", line 41, in __init__
-    for i in xrange(self.count):
-NameError: name 'xrange' is not defined
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -9258,11 +9148,11 @@ NameError: name 'xrange' is not defined
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_repeat_until_s4.py", line 7, in test_repeat_until_s4
     r = RepeatUntilS4.from_file("src/repeat_until_s4.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
     return cls(KaitaiStream(open(filename, 'rb')))
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/repeat_until_s4.py", line 21, in __init__
     self.afterall = self._io.read_strz("ASCII", 0, False, True, True)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 213, in read_strz
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
     r += c
 TypeError: Can't convert 'bytes' object to str implicitly
 
@@ -9470,7 +9360,7 @@ attempt to autoload "Kaitai\Struct\Tests\SwitchManualEnum\CodeEnum" failed
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_enum.py", line 7, in test_switch_manual_enum
     r = SwitchManualEnum.from_file("src/switch_opcodes.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
     return cls(KaitaiStream(open(filename, 'rb')))
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_enum.py", line 17, in __init__
     self.opcodes.append(self._root.Opcode(self._io, self, self._root))
@@ -9495,7 +9385,7 @@ AttributeError: SwitchManualEnum instance has no attribute 'CodeEnum'
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_enum.py", line 7, in test_switch_manual_enum
     r = SwitchManualEnum.from_file("src/switch_opcodes.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
     return cls(KaitaiStream(open(filename, 'rb')))
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_enum.py", line 17, in __init__
     self.opcodes.append(self._root.Opcode(self._io, self, self._root))
@@ -9563,7 +9453,7 @@ AttributeError: 'SwitchManualEnum' object has no attribute 'CodeEnum'
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_int.py", line 7, in test_switch_manual_int
     r = SwitchManualInt.from_file("src/switch_opcodes.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
     return cls(KaitaiStream(open(filename, 'rb')))
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int.py", line 17, in __init__
     self.opcodes.append(self._root.Opcode(self._io, self, self._root))
@@ -9571,7 +9461,7 @@ Traceback (most recent call last):
     self.body = self._root.Opcode.Strval(self._io, self, self._root)
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int.py", line 45, in __init__
     self.value = self._io.read_strz("ASCII", 0, False, True, True)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 213, in read_strz
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
     r += c
 TypeError: Can't convert 'bytes' object to str implicitly
 
@@ -9635,7 +9525,7 @@ TypeError: Can't convert 'bytes' object to str implicitly
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_int_else.py", line 7, in test_switch_manual_int_else
     r = SwitchManualIntElse.from_file("src/switch_opcodes2.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
     return cls(KaitaiStream(open(filename, 'rb')))
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int_else.py", line 17, in __init__
     self.opcodes.append(self._root.Opcode(self._io, self, self._root))
@@ -9643,7 +9533,7 @@ Traceback (most recent call last):
     self.body = self._root.Opcode.Strval(self._io, self, self._root)
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int_else.py", line 47, in __init__
     self.value = self._io.read_strz("ASCII", 0, False, True, True)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 213, in read_strz
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
     r += c
 TypeError: Can't convert 'bytes' object to str implicitly
 
@@ -9703,7 +9593,7 @@ TypeError: Can't convert 'bytes' object to str implicitly
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_int_size.py", line 7, in test_switch_manual_int_size
     r = SwitchManualIntSize.from_file("src/switch_tlv.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
     return cls(KaitaiStream(open(filename, 'rb')))
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int_size.py", line 17, in __init__
     self.chunks.append(self._root.Chunk(self._io, self, self._root))
@@ -9711,7 +9601,7 @@ Traceback (most recent call last):
     self.body = self._root.Chunk.ChunkMeta(io, self, self._root)
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int_size.py", line 44, in __init__
     self.title = self._io.read_strz("UTF-8", 0, False, True, True)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 213, in read_strz
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
     r += c
 TypeError: Can't convert 'bytes' object to str implicitly
 
@@ -9771,7 +9661,7 @@ TypeError: Can't convert 'bytes' object to str implicitly
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_int_size_else.py", line 7, in test_switch_manual_int_size_else
     r = SwitchManualIntSizeElse.from_file("src/switch_tlv.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
     return cls(KaitaiStream(open(filename, 'rb')))
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int_size_else.py", line 17, in __init__
     self.chunks.append(self._root.Chunk(self._io, self, self._root))
@@ -9779,7 +9669,7 @@ Traceback (most recent call last):
     self.body = self._root.Chunk.ChunkMeta(io, self, self._root)
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int_size_else.py", line 46, in __init__
     self.title = self._io.read_strz("UTF-8", 0, False, True, True)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 213, in read_strz
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
     r += c
 TypeError: Can't convert 'bytes' object to str implicitly
 
@@ -9839,7 +9729,7 @@ TypeError: Can't convert 'bytes' object to str implicitly
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_int_size_eos.py", line 7, in test_switch_manual_int_size_eos
     r = SwitchManualIntSizeEos.from_file("src/switch_tlv.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
     return cls(KaitaiStream(open(filename, 'rb')))
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int_size_eos.py", line 17, in __init__
     self.chunks.append(self._root.Chunk(self._io, self, self._root))
@@ -9849,7 +9739,7 @@ Traceback (most recent call last):
     self.body = self._root.ChunkBody.ChunkMeta(io, self, self._root)
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_int_size_eos.py", line 54, in __init__
     self.title = self._io.read_strz("UTF-8", 0, False, True, True)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 213, in read_strz
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
     r += c
 TypeError: Can't convert 'bytes' object to str implicitly
 
@@ -9913,7 +9803,7 @@ TypeError: Can't convert 'bytes' object to str implicitly
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_str.py", line 7, in test_switch_manual_str
     r = SwitchManualStr.from_file("src/switch_opcodes.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
     return cls(KaitaiStream(open(filename, 'rb')))
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_str.py", line 17, in __init__
     self.opcodes.append(self._root.Opcode(self._io, self, self._root))
@@ -9921,7 +9811,7 @@ Traceback (most recent call last):
     self.body = self._root.Opcode.Strval(self._io, self, self._root)
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_str.py", line 45, in __init__
     self.value = self._io.read_strz("ASCII", 0, False, True, True)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 213, in read_strz
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
     r += c
 TypeError: Can't convert 'bytes' object to str implicitly
 
@@ -9985,11 +9875,11 @@ TypeError: Can't convert 'bytes' object to str implicitly
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_term_strz.py", line 7, in test_term_strz
     r = TermStrz.from_file("src/term_strz.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 17, in from_file
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
     return cls(KaitaiStream(open(filename, 'rb')))
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/term_strz.py", line 15, in __init__
     self.s1 = self._io.read_strz("UTF-8", 124, False, True, True)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct/kaitaistruct.py", line 213, in read_strz
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 213, in read_strz
     r += c
 TypeError: Can't convert 'bytes' object to str implicitly
 
@@ -10089,22 +9979,7 @@ TypeError: Can't convert 'bytes' object to str implicitly
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">b'a quick brown fox jumps over' != 'a quick brown fox jumps over'</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_zlib_with_header_78.py", line 9, in test_zlib_with_header_78
-    self.assertEquals(r.data, "a quick brown fox jumps over")
-AssertionError: b'a quick brown fox jumps over' != 'a quick brown fox jumps over'
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
