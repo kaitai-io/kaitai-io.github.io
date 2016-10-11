@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2016-10-10 22:49:31 UTC</title>
+    <title>Kaitai Struct: test results - 2016-10-11 10:19:49 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2016-10-10 22:49:31 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2016-10-11 10:19:49 UTC</h1>
 
     <table class="table">
     <tr>
@@ -4984,7 +4984,7 @@
 
         <td>98%</td>
 
-        <td>94%</td>
+        <td>96%</td>
 
         <td>100%</td>
 
@@ -5433,7 +5433,7 @@
   But was:  4
 </div>
 
-              <pre class="trace">at Kaitai.SpecExprMod.TestExprMod () [0x00063] in <0d31277dae0e457fa147bee99606bfd0>:0</pre>
+              <pre class="trace">at Kaitai.SpecExprMod.TestExprMod () [0x00063] in <974ccaca73724a8aa3f254dfa0c563ad>:0</pre>
 
           </div>
 
@@ -6468,28 +6468,7 @@ Failed asserting that -9 matches expected 4.
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">ord() expected string of length 1, but int found</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_process_xor4_const.py", line 7, in test_process_xor4_const
-    r = ProcessXor4Const.from_file("src/process_xor_4.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/process_xor4_const.py", line 18, in __init__
-    self.buf = KaitaiStream.process_xor_many(self._raw_buf, struct.pack('4b', -20, -69, -93, 20))
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 232, in process_xor_many
-    r[i] ^= ord(key[ki])
-TypeError: ord() expected string of length 1, but int found
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -6540,20 +6519,14 @@ TypeError: ord() expected string of length 1, but int found
 
           <div class="add-info">
 
-              <div class="message">ord() expected string of length 1, but int found</div>
+              <div class="message">b'foo bar' != 'foo bar'</div>
 
               <pre class="trace">
 
 Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_process_xor4_value.py", line 7, in test_process_xor4_value
-    r = ProcessXor4Value.from_file("src/process_xor_4.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
-    return cls(KaitaiStream(open(filename, 'rb')))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/process_xor4_value.py", line 18, in __init__
-    self.buf = KaitaiStream.process_xor_many(self._raw_buf, self.key)
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 232, in process_xor_many
-    r[i] ^= ord(key[ki])
-TypeError: ord() expected string of length 1, but int found
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_process_xor4_value.py", line 10, in test_process_xor4_value
+    self.assertEqual(r.buf, "foo bar")
+AssertionError: b'foo bar' != 'foo bar'
 
 		</pre>
 
@@ -7182,7 +7155,7 @@ attempt to autoload "Kaitai\Struct\Tests\SwitchManualEnum\CodeEnum" failed
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_enum.py", line 7, in test_switch_manual_enum
     r = SwitchManualEnum.from_file("src/switch_opcodes.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 16, in from_file
     return cls(KaitaiStream(open(filename, 'rb')))
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_enum.py", line 18, in __init__
     self.opcodes.append(self._root.Opcode(self._io, self, self._root))
@@ -7207,7 +7180,7 @@ AttributeError: SwitchManualEnum instance has no attribute 'CodeEnum'
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_enum.py", line 7, in test_switch_manual_enum
     r = SwitchManualEnum.from_file("src/switch_opcodes.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 17, in from_file
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 16, in from_file
     return cls(KaitaiStream(open(filename, 'rb')))
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_enum.py", line 18, in __init__
     self.opcodes.append(self._root.Opcode(self._io, self, self._root))
