@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2016-10-11 10:19:49 UTC</title>
+    <title>Kaitai Struct: test results - 2016-10-12 21:39:29 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2016-10-11 10:19:49 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2016-10-12 21:39:29 UTC</h1>
 
     <table class="table">
     <tr>
@@ -4984,7 +4984,7 @@
 
         <td>98%</td>
 
-        <td>96%</td>
+        <td>98%</td>
 
         <td>100%</td>
 
@@ -5433,7 +5433,7 @@
   But was:  4
 </div>
 
-              <pre class="trace">at Kaitai.SpecExprMod.TestExprMod () [0x00063] in <974ccaca73724a8aa3f254dfa0c563ad>:0</pre>
+              <pre class="trace">at Kaitai.SpecExprMod.TestExprMod () [0x00063] in <94885e1308744c748c83d8afd1fb884b>:0</pre>
 
           </div>
 
@@ -6515,22 +6515,7 @@ Failed asserting that -9 matches expected 4.
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">b'foo bar' != 'foo bar'</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_process_xor4_value.py", line 10, in test_process_xor4_value
-    self.assertEqual(r.buf, "foo bar")
-AssertionError: b'foo bar' != 'foo bar'
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -7154,8 +7139,8 @@ attempt to autoload "Kaitai\Struct\Tests\SwitchManualEnum\CodeEnum" failed
 
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_enum.py", line 7, in test_switch_manual_enum
-    r = SwitchManualEnum.from_file("src/switch_opcodes.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 16, in from_file
+    with SwitchManualEnum.from_file("src/switch_opcodes.bin") as r:
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 26, in from_file
     return cls(KaitaiStream(open(filename, 'rb')))
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_enum.py", line 18, in __init__
     self.opcodes.append(self._root.Opcode(self._io, self, self._root))
@@ -7179,8 +7164,8 @@ AttributeError: SwitchManualEnum instance has no attribute 'CodeEnum'
 
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_enum.py", line 7, in test_switch_manual_enum
-    r = SwitchManualEnum.from_file("src/switch_opcodes.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 16, in from_file
+    with SwitchManualEnum.from_file("src/switch_opcodes.bin") as r:
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 26, in from_file
     return cls(KaitaiStream(open(filename, 'rb')))
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_enum.py", line 18, in __init__
     self.opcodes.append(self._root.Opcode(self._io, self, self._root))
