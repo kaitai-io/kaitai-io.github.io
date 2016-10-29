@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2016-10-28 15:00:06 UTC</title>
+    <title>Kaitai Struct: test results - 2016-10-29 00:55:50 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2016-10-28 15:00:06 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2016-10-29 00:55:50 UTC</h1>
 
     <table class="table">
     <tr>
@@ -4968,7 +4968,7 @@
 
         <td>100%</td>
 
-        <td>98%</td>
+        <td>0%</td>
 
         <td>0%</td>
 
@@ -5000,7 +5000,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecBufferedStruct:TestBufferedStruct:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/buffered_struct.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.BufferedStruct.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecBufferedStruct.TestBufferedStruct () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -5047,7 +5065,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecDefaultBigEndian:TestDefaultBigEndian:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/enum_0.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.DefaultBigEndian.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecDefaultBigEndian.TestDefaultBigEndian () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -5094,7 +5130,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecEnum0:TestEnum0:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/enum_0.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.Enum0.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecEnum0.TestEnum0 () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -5141,7 +5195,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecEnumIf:TestEnumIf:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/if_struct.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.EnumIf.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecEnumIf.TestEnumIf () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -5188,7 +5260,28 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecEofExceptionBytes:TestEofExceptionBytes:</div>
+
+              <div class="message">  Expected: <System.IO.EndOfStreamException>
+  But was:  <System.IO.FileNotFoundException: Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/term_strz.bin".
+File name: '/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/term_strz.bin'
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.EofExceptionBytes.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecEofExceptionBytes.<TestEofExceptionBytes>m__0 () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at NUnit.Framework.Assert.Throws (NUnit.Framework.Constraints.IResolveConstraint expression, NUnit.Framework.TestDelegate code, System.String message, System.Object[] args) [0x0002f] in <a89738b841794cfab0d68931f55d3dbc>:0 >
+</div>
+
+              <pre class="trace">at Kaitai.SpecEofExceptionBytes.TestEofExceptionBytes () [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0</pre>
+
+          </div>
 
         </td>
 
@@ -5235,7 +5328,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecExpr0:TestExpr0:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/str_encodings.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.Expr0.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecExpr0.TestExpr0 () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -5282,7 +5393,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecExpr1:TestExpr1:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/str_encodings.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.Expr1.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecExpr1.TestExpr1 () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -5329,7 +5458,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecExpr2:TestExpr2:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/str_encodings.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.Expr2.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecExpr2.TestExpr2 () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -5376,7 +5523,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecExpr3:TestExpr3:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/fixed_struct.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.Expr3.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecExpr3.TestExpr3 () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -5423,7 +5588,27 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecExprIoEof:TestExprIoEof:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/fixed_struct.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.ExprIoEof.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecExprIoEof.TestExprIoEof () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -5466,7 +5651,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecExprMod:TestExprMod:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/fixed_struct.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.ExprMod.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecExprMod.TestExprMod () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -5513,7 +5716,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecFixedStruct:TestFixedStruct:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/fixed_struct.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.FixedStruct.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecFixedStruct.TestFixedStruct () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -5560,7 +5781,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecFloatingPoints:TestFloatingPoints:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/floating_points.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.FloatingPoints.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecFloatingPoints.TestFloatingPoints () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -5607,7 +5846,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecHelloWorld:TestHelloWorld:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/fixed_struct.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.HelloWorld.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecHelloWorld.TestHelloWorld () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -5654,7 +5911,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecIfStruct:TestIfStruct:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/if_struct.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.IfStruct.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecIfStruct.TestIfStruct () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -5701,7 +5976,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecInstanceIoUser:TestInstanceIoUser:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/instance_io.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.InstanceIoUser.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecInstanceIoUser.TestInstanceIoUser () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -5748,7 +6041,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecInstanceStd:TestInstanceStd:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/str_encodings.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.InstanceStd.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecInstanceStd.TestInstanceStd () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -5795,7 +6106,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecInstanceStdArray:TestInstanceStdArray:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/instance_std_array.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.InstanceStdArray.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecInstanceStdArray.TestInstanceStdArray () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -5842,7 +6171,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecInstanceUserArray:TestInstanceUserArray:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/instance_std_array.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.InstanceUserArray.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecInstanceUserArray.TestInstanceUserArray () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -5889,7 +6236,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecMultipleUse:TestMultipleUse:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/position_abs.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.MultipleUse.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecMultipleUse.TestMultipleUse () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -5936,7 +6301,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecNavParent:TestNavParent:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/nav.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.NavParent.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecNavParent.TestNavParent () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -5983,7 +6366,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecNavRoot:TestNavRoot:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/nav.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.NavRoot.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecNavRoot.TestNavRoot () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -6030,7 +6431,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecNestedSameName:TestNestedSameName:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/repeat_n_struct.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.NestedSameName.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecNestedSameName.TestNestedSameName () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -6075,7 +6494,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecNestedSameName2:TestNestedSameName2:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/nested_same_name2.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.NestedSameName2.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecNestedSameName2.TestNestedSameName2 () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -6120,7 +6557,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecNestedTypes:TestNestedTypes:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/fixed_struct.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.NestedTypes.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecNestedTypes.TestNestedTypes () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -6167,7 +6622,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecNestedTypes2:TestNestedTypes2:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/fixed_struct.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.NestedTypes2.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecNestedTypes2.TestNestedTypes2 () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -6214,7 +6687,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecPositionAbs:TestPositionAbs:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/position_abs.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.PositionAbs.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecPositionAbs.TestPositionAbs () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -6261,7 +6752,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecPositionInSeq:TestPositionInSeq:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/position_in_seq.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.PositionInSeq.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecPositionInSeq.TestPositionInSeq () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -6308,7 +6817,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecPositionToEnd:TestPositionToEnd:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/position_to_end.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.PositionToEnd.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecPositionToEnd.TestPositionToEnd () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -6355,7 +6882,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecProcessRotate:TestProcessRotate:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/process_rotate.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.ProcessRotate.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecProcessRotate.TestProcessRotate () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -6402,7 +6947,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecProcessToUser:TestProcessToUser:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/process_rotate.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.ProcessToUser.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecProcessToUser.TestProcessToUser () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -6449,7 +7012,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecProcessXor4Const:TestProcessXor4Const:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/process_xor_4.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.ProcessXor4Const.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecProcessXor4Const.TestProcessXor4Const () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -6496,7 +7077,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecProcessXor4Value:TestProcessXor4Value:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/process_xor_4.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.ProcessXor4Value.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecProcessXor4Value.TestProcessXor4Value () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -6543,7 +7142,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecProcessXorConst:TestProcessXorConst:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/process_xor_1.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.ProcessXorConst.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecProcessXorConst.TestProcessXorConst () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -6590,7 +7207,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecProcessXorValue:TestProcessXorValue:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/process_xor_1.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.ProcessXorValue.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecProcessXorValue.TestProcessXorValue () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -6637,7 +7272,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecRepeatEosStruct:TestRepeatEosStruct:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/repeat_eos_struct.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.RepeatEosStruct.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecRepeatEosStruct.TestRepeatEosStruct () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -6684,7 +7337,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecRepeatEosU4:TestRepeatEosU4:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/repeat_eos_struct.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.RepeatEosU4.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecRepeatEosU4.TestRepeatEosU4 () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -6731,7 +7402,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecRepeatNStruct:TestRepeatNStruct:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/repeat_n_struct.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.RepeatNStruct.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecRepeatNStruct.TestRepeatNStruct () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -6778,7 +7467,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecRepeatNStrz:TestRepeatNStrz:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/repeat_n_strz.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.RepeatNStrz.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecRepeatNStrz.TestRepeatNStrz () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -6825,7 +7532,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecRepeatNStrzDouble:TestRepeatNStrzDouble:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/repeat_n_strz.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.RepeatNStrzDouble.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecRepeatNStrzDouble.TestRepeatNStrzDouble () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -6872,7 +7597,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecRepeatUntilComplex:TestRepeatUntilComplex:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/repeat_until_complex.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.RepeatUntilComplex.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecRepeatUntilComplex.TestRepeatUntilComplex () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -6919,7 +7662,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecRepeatUntilS4:TestRepeatUntilS4:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/repeat_until_s4.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.RepeatUntilS4.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecRepeatUntilS4.TestRepeatUntilS4 () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -6966,7 +7727,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecStrEncodings:TestStrEncodings:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/str_encodings.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.StrEncodings.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecStrEncodings.TestStrEncodings () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -7028,7 +7807,25 @@ Error: Cannot find module 'iconv-lite'
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecStrEos:TestStrEos:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/term_strz.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.StrEos.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecStrEos.TestStrEos () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -7075,7 +7872,25 @@ Error: Cannot find module 'iconv-lite'
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecSwitchManualEnum:TestSwitchManualEnum:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/switch_opcodes.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.SwitchManualEnum.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecSwitchManualEnum.TestSwitchManualEnum () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -7203,7 +8018,25 @@ AttributeError: 'SwitchManualEnum' object has no attribute 'CodeEnum'
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecSwitchManualInt:TestSwitchManualInt:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/switch_opcodes.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.SwitchManualInt.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecSwitchManualInt.TestSwitchManualInt () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -7250,7 +8083,25 @@ AttributeError: 'SwitchManualEnum' object has no attribute 'CodeEnum'
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecSwitchManualIntElse:TestSwitchManualIntElse:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/switch_opcodes2.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.SwitchManualIntElse.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecSwitchManualIntElse.TestSwitchManualIntElse () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -7297,7 +8148,25 @@ AttributeError: 'SwitchManualEnum' object has no attribute 'CodeEnum'
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecSwitchManualIntSize:TestSwitchManualIntSize:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/switch_tlv.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.SwitchManualIntSize.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecSwitchManualIntSize.TestSwitchManualIntSize () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -7342,7 +8211,25 @@ AttributeError: 'SwitchManualEnum' object has no attribute 'CodeEnum'
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecSwitchManualIntSizeElse:TestSwitchManualIntSizeElse:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/switch_tlv.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.SwitchManualIntSizeElse.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecSwitchManualIntSizeElse.TestSwitchManualIntSizeElse () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -7387,7 +8274,25 @@ AttributeError: 'SwitchManualEnum' object has no attribute 'CodeEnum'
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecSwitchManualIntSizeEos:TestSwitchManualIntSizeEos:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/switch_tlv.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.SwitchManualIntSizeEos.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecSwitchManualIntSizeEos.TestSwitchManualIntSizeEos () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -7432,7 +8337,25 @@ AttributeError: 'SwitchManualEnum' object has no attribute 'CodeEnum'
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecSwitchManualStr:TestSwitchManualStr:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/switch_opcodes.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.SwitchManualStr.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecSwitchManualStr.TestSwitchManualStr () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -7479,7 +8402,25 @@ AttributeError: 'SwitchManualEnum' object has no attribute 'CodeEnum'
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecTermStrz:TestTermStrz:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/term_strz.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.TermStrz.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecTermStrz.TestTermStrz () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -7526,7 +8467,25 @@ AttributeError: 'SwitchManualEnum' object has no attribute 'CodeEnum'
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecTypeIntUnaryOp:TestTypeIntUnaryOp:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/fixed_struct.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.TypeIntUnaryOp.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecTypeIntUnaryOp.TestTypeIntUnaryOp () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
@@ -7573,7 +8532,25 @@ AttributeError: 'SwitchManualEnum' object has no attribute 'CodeEnum'
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">Kaitai.SpecZlibWithHeader78:TestZlibWithHeader78:</div>
+
+              <div class="message">System.IO.FileNotFoundException : Could not find file "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/csharp/kaitai_struct_csharp_tests/bin/Debug/src/zlib_with_header_78.bin".</div>
+
+              <pre class="trace">  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0021a] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.Open (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 
+  at Kaitai.KaitaiStream..ctor (System.String file) [0x00000] in <b23eb31598ae461f9a52db098c04b105>:0 
+  at Kaitai.ZlibWithHeader78.FromFile (System.String fileName) [0x00001] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at Kaitai.SpecZlibWithHeader78.TestZlibWithHeader78 () [0x0000c] in <d8d47fb9831347b193a71eea1695cce3>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <dca3b561b8ad4f9fb10141d81b39ff45>:0 </pre>
+
+          </div>
 
         </td>
 
