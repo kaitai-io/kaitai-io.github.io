@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2016-11-08 17:50:04 UTC</title>
+    <title>Kaitai Struct: test results - 2016-11-09 17:32:21 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2016-11-08 17:50:04 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2016-11-09 17:32:21 UTC</h1>
 
     <table class="table">
     <tr>
@@ -4982,9 +4982,9 @@
 
         <td>0%</td>
 
-        <td>96%</td>
+        <td>98%</td>
 
-        <td>96%</td>
+        <td>98%</td>
 
         <td>100%</td>
 
@@ -5267,53 +5267,11 @@
 
         <td class="no-run">didn't run</td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">unpack requires a string argument of length 4</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_eof_exception_u4.py", line 8, in test_eof_exception_u4
-    with EofExceptionU4.from_file("src/term_strz.bin"):
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 28, in from_file
-    return cls(KaitaiStream(f))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/eof_exception_u4.py", line 17, in __init__
-    self.fail_int = self._io.read_u4le()
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 155, in read_u4le
-    return unpack('<I', self._io.read(4))[0]
-error: unpack requires a string argument of length 4
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">unpack requires a bytes object of length 4</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_eof_exception_u4.py", line 8, in test_eof_exception_u4
-    with EofExceptionU4.from_file("src/term_strz.bin"):
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 28, in from_file
-    return cls(KaitaiStream(f))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/eof_exception_u4.py", line 17, in __init__
-    self.fail_int = self._io.read_u4le()
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 155, in read_u4le
-    return unpack('<I', self._io.read(4))[0]
-struct.error: unpack requires a bytes object of length 4
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
