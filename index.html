@@ -58,7 +58,7 @@
                 </div>
                 <div class="well" style="text-align: center; width: 100%; background: #CCCCCC; margin-top: 11px">
                     <p><small>
-                        0.4 released 2016-08-09
+                        0.5 released 2016-11-09
                     </small></p>
                     <a href="#download" class="btn btn-primary">Download <i class="fa fa-download"></i></a>
                 </div>
@@ -83,14 +83,16 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <ul>
-                                            <li>C++/STL <span class="small">(<abbr title="work in progress">wip</abbr>)</span></li>
+                                            <li>C++/STL</li>
                                             <li>C#</li>
                                             <li>Java</li>
+                                            <li>JavaScript</li>
                                         </ul>
                                     </div>
                                     <div class="col-sm-6">
                                         <ul>
-                                            <li>JavaScript</li>
+                                            <li>Perl</li>
+                                            <li>PHP</li>
                                             <li>Python</li>
                                             <li>Ruby</li>
                                         </ul>
@@ -189,7 +191,7 @@ seq:
                     <pre><code class="java">
 public class TcpSegment extends KaitaiStruct {
     // ...
-    private void _parse() throws IOException {
+    private void _read() throws IOException {
         this.srcPort = _io.readU2be();
         this.dstPort = _io.readU2be();
         this.seqNum = _io.readU4be();
@@ -212,7 +214,7 @@ public class TcpSegment extends KaitaiStruct {
                 <div class="col-sm-4">
 <pre><code class="yaml">meta:
   id: gif
-  file_extension: gif
+  file-extension: gif
   endian: le
 seq:
   - id: header
@@ -260,42 +262,70 @@ unsigned int each</li>
 
 <p>This <code>.ksy</code> file can be compiled it
 into <code>gif.cpp</code> / <code>Gif.cs</code>
-/ <code>Gif.java</code> / <code>Gif.js</code> /
-<code>gif.py</code> / <code>gif.rb</code> and then one can instantly
-load .gif file and access, for example, it’s width and height.</p>
+/ <code>Gif.java</code> / <code>Gif.js</code> / <code>Gif.pm</code>
+/ <code>Gif.php</code> / <code>gif.py</code> / <code>gif.rb</code> and
+then one can instantly load .gif file and access, for example, it’s
+width and height.</p>
 
 <ul class="nav nav-pills" role="tablist">
-<!--    <li role="presentation"><a href="#example-cpp-stl" role="tab" data-toggle="tab">C++/STL</a></li>-->
+    <li role="presentation"><a href="#example-cpp-stl" role="tab" data-toggle="tab">C++/STL</a></li>
     <li role="presentation"><a href="#example-csharp" role="tab" data-toggle="tab">C#</a></li>
     <li role="presentation" class="active"><a href="#example-java" role="tab" data-toggle="tab">Java</a></li>
     <li role="presentation"><a href="#example-javascript" role="tab" data-toggle="tab">JavaScript</a></li>
+    <li role="presentation"><a href="#example-perl" role="tab" data-toggle="tab">Perl</a></li>
+    <li role="presentation"><a href="#example-php" role="tab" data-toggle="tab">PHP</a></li>
     <li role="presentation"><a href="#example-python" role="tab" data-toggle="tab">Python</a></li>
     <li role="presentation"><a href="#example-ruby" role="tab" data-toggle="tab">Ruby</a></li>
 </ul>
 
 <div class="tab-content" style="margin-top: 6px">
+    <div role="tabpanel" class="tab-pane" id="example-cpp-stl">
+<pre><code class="cpp">std::ifstream ifs("path/to/some.gif", std::ifstream::binary);
+kaitai::kstream ks(&ifs);
+gif_t g = gif_t(&ks);
+
+std::cout &lt;&lt; "width = " &lt;&lt; g.logical_screen()-&gt;image_width() &lt;&lt; std::endl;
+std::cout &lt;&lt; "height = " &lt;&lt; g.logical_screen()-&gt;image_height() &lt;&lt; std::endl;</code></pre>
+    </div>
     <div role="tabpanel" class="tab-pane" id="example-csharp">
 <pre><code class="cs">Gif g = Gif.FromFile("path/to/some.gif");
+
 Console.WriteLine("width = " + g.LogicalScreen.ImageWidth);
 Console.WriteLine("height = " + g.LogicalScreen.ImageHeight);</code></pre>
     </div>
     <div role="tabpanel" class="tab-pane active" id="example-java">
 <pre><code class="java">Gif g = Gif.fromFile("path/to/some.gif");
+
 System.out.println("width = " + g.logicalScreen().imageWidth());
 System.out.println("height = " + g.logicalScreen().imageHeight());</code></pre>
     </div>
     <div role="tabpanel" class="tab-pane" id="example-javascript">
 <pre><code class="javascript">var g = new Gif(someArrayBuffer);
+
 console.log("width = " + g.logicalScreen().imageWidth());
 console.log("height = " + g.logicalScreen().imageHeight());</code></pre>
     </div>
+    <div role="tabpanel" class="tab-pane" id="example-perl">
+<pre><code class="perl">my $g = Gif-&gt;from_file("path/to/some.gif");
+
+print("width = ", $g-&gt;logical_screen()-&gt;image_width(), "\n");
+print("height = ", $g-&gt;logical_screen()-&gt;image_height(), "\n");</code></pre>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="example-php">
+        <pre><code class="php">$g = Gif::fromFile("path/to/some.gif");
+
+print("width = " . $g-&gt;logicalScreen()-&gt;imageWidth() . "\n");
+print("height = " . $g-&gt;logicalScreen()-&gt;imageHeight() . "\n");</code></pre>
+    </div>
     <div role="tabpanel" class="tab-pane" id="example-python">
 <pre><code class="python">g = Gif.from_file("path/to/some.gif")
+
 print "width = %d" % (g.logical_screen.image_width)
 print "height = %d" % (g.logical_screen.image_height)</code></pre>
     </div>
     <div role="tabpanel" class="tab-pane" id="example-ruby">
 <pre><code class="ruby">g = Gif.from_file("path/to/some.gif")
+
 puts "width = #{g.logical_screen.image_width}"
 puts "height = #{g.logical_screen.image_height}"</code></pre>
     </div>
@@ -319,7 +349,7 @@ Struct can do. Please refer to <a href="https://github.com/kaitai-io/kaitai_stru
                 <li role="presentation"><a href="#download-source" role="tab" data-toggle="tab">Source</a></li>
             </ul>
 
-            <div class="tab-content" style="margin-top: 20px; height: 420px">
+            <div class="tab-content" style="margin-top: 20px; min-height: 300px">
                 <div role="tabpanel" class="tab-pane active" id="download-linux-deb">
                     <div class="row">
                         <div class="col-sm-9">
@@ -347,12 +377,9 @@ sudo apt-get install kaitai-struct-compiler</pre>
                 <div role="tabpanel" class="tab-pane" id="download-windows">
                     <div class="row">
                         <div class="col-sm-9">
-                            <p>
-                                <a class="btn btn-success" href="https://bintray.com/artifact/download/kaitai-io/universal/0.4/kaitai-struct-compiler-0.4.msi"><i class="fa fa-download"></i> Download (v0.4, 7.8 MB)</a>
-                            </p>
-                            <p>
-                                (MSI format installer for Windows)
-                            </p>
+                            <p>Windows versions are avalable as MSI format installer. If you want a portable version that requires no installation, download our universal .zip build instead.</p>
+                            <p><a class="btn btn-success" href="https://bintray.com/artifact/download/kaitai-io/universal/0.5/kaitai-struct-compiler-0.5.msi"><i class="fa fa-download"></i> Download</a> — stable v0.5, 8.0 MiB</p>
+                            <p><a class="btn btn-default" href="https://ci.appveyor.com/project/GreyCat/kaitai-struct/build/artifacts"><i class="fa fa-download"></i> Download</a> — latest development (unstable) build</p>
                         </div>
                         <div class="col-sm-3">
                             <h4>Requirements</h4>
@@ -367,15 +394,13 @@ sudo apt-get install kaitai-struct-compiler</pre>
                 <div role="tabpanel" class="tab-pane" id="download-universal">
                     <div class="row">
                         <div class="col-sm-9">
-                            <p>
-                                <a class="btn btn-success" href="https://bintray.com/artifact/download/kaitai-io/universal/0.4/kaitai-struct-compiler-0.4.zip"><i class="fa fa-download"></i> Download (v0.4, 7.5 MB)</a>
-                            </p>
                             <p>"Universal" builds are downloadable as
                             a .zip file that includes all the required
                             .jar files bundled and launcher scripts
                             for Linux / Mac OS X / Windows systems. No
                             installation required, one can just unpack
                             and run it.</p>
+                            <p><a class="btn btn-success" href="https://bintray.com/artifact/download/kaitai-io/universal/0.5/kaitai-struct-compiler-0.5.zip"><i class="fa fa-download"></i> Download</a> — stable v0.5, 8.0 MiB</p>
                         </div>
 
                         <div class="col-sm-3">
@@ -391,36 +416,13 @@ sudo apt-get install kaitai-struct-compiler</pre>
                 <div role="tabpanel" class="tab-pane" id="download-source">
                     <div class="row">
                         <div class="col-sm-9">
-                            <p>The easiest way to check out whole
-                        Kaitai Struct project is to download main
-                        project repository that already imports all
-                        other parts as sub-modules. Use:</p>
+                            <p>If you prefer to build your tools from source, or just want to see how KS works, the easiest way to check out whole project is to download main (umbrella) project repository that already includes all other parts as sub-modules. Use:</p>
 
                             <pre>git clone --recursive https://github.com/kaitai-io/kaitai_struct.git</pre>
 
                             <p>Note the <code>--recursive</code> option.</p>
 
-                            <p>Alternatively, one can check out individual sub-projects that
-                                consitute Kaitai Struct suite. They are:</p>
-
-                            <ul>
-                                <li><a href="https://github.com/kaitai-io/kaitai_struct_compiler">kaitai_struct_compiler</a> — compiler that translates <code>.ksy</code> → <code>.java</code> / <code>.py</code> / <code>.rb</code></li>
-                                <li><a href="https://github.com/kaitai-io/kaitai_struct_tests">kaitai_struct_tests</a> — tests &amp; specs to ensure that compiler work as planned</li>
-                                <li><a href="https://github.com/kaitai-io/kaitai_struct_visualizer">kaitai_struct_visualizer</a> — visualizer to explore structures in a given file according to <code>.ksy</code> description</code></li>
-                                <li>Runtime libraries
-                                    <ul>
-                                        <li><a href="https://github.com/kaitai-io/kaitai_struct_cpp_stl_runtime">kaitai_struct_cpp_stl_runtime</a> — for C++/STL</li>
-                                        <li><a href="https://github.com/kaitai-io/kaitai_struct_csharp_runtime">kaitai_struct_csharp_runtime</a> — for C#</li>
-                                        <li><a href="https://github.com/kaitai-io/kaitai_struct_java_runtime">kaitai_struct_java_runtime</a> — for Java</li>
-                                        <li><a href="https://github.com/kaitai-io/kaitai_struct_javascript_runtime">kaitai_struct_javascript_runtime</a> — for JavaScript</li>
-                                        <li><a href="https://github.com/kaitai-io/kaitai_struct_python_runtime">kaitai_struct_python_runtime</a> — for Python</li>
-                                        <li><a href="https://github.com/kaitai-io/kaitai_struct_ruby_runtime">kaitai_struct_ruby_runtime</a> — for Ruby</li>
-                                    </ul>
-                                </li>
-                                <li><a href="https://github.com/kaitai-io/kaitai_struct_formats">kaitai_struct_formats</a>
-                                    — library of widely used formats and binary structures described as
-                                    <code>.ksy</code> files</li>
-                            </ul>
+                            <p>Alternatively, one can check out individual sub-projects that consitute Kaitai Struct suite. See <a href="https://github.com/kaitai-io/kaitai_struct">GitHub project page</a> for details.</p>
                         </div>
 
                         <div class="col-sm-3">
@@ -449,6 +451,7 @@ sudo apt-get install kaitai-struct-compiler</pre>
                         <li>C# — MIT</li>
                         <li>Java — MIT</li>
                         <li>JavaScript — Apache v2</li>
+                        <li>PHP — MIT</li>
                         <li>Python — MIT</li>
                         <li>Ruby — MIT</li>
                     </ul>
@@ -529,6 +532,9 @@ sudo apt-get install kaitai-struct-compiler</pre>
                 </div>
                 <div class="col-sm-4">
                     <i class="fa fa-fw fa-2x fa-twitter"></i> <a href="https://twitter.com/kaitai_io">@kaitai_io</a>
+                </div>
+                <div class="col-sm-4">
+                    Gitter: <a href="https://gitter.im/kaitai_struct/Lobby">kaitai_struct</a>
                 </div>
             </div>
         </div>
