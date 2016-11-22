@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2016-11-22 13:03:38 UTC</title>
+    <title>Kaitai Struct: test results - 2016-11-22 16:41:35 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2016-11-22 13:03:38 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2016-11-22 16:41:35 UTC</h1>
 
     <table class="table">
     <tr>
@@ -4966,7 +4966,7 @@
 
         <td></td>
 
-        <td>96%</td>
+        <td>98%</td>
 
         <td>96%</td>
 
@@ -6404,7 +6404,9 @@
 
         <td></td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="passed">passed
 
@@ -6430,35 +6432,18 @@
 
           <div class="add-info">
 
-              <div class="message">Failed to import test module: test_opaque_external_type
-Traceback (most recent call last):
-  File "/opt/python/2.7.10/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/opt/python/2.7.10/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_opaque_external_type.py", line 3, in <module>
-    from opaque_external_type import OpaqueExternalType
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/opaque_external_type.py", line 16
-    self.one = self._root.(self._io, self, self._root)
-                          ^
-SyntaxError: invalid syntax
-</div>
+              <div class="message">global name 'TermStrz' is not defined</div>
 
               <pre class="trace">
 
-ImportError: Failed to import test module: test_opaque_external_type
 Traceback (most recent call last):
-  File "/opt/python/2.7.10/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/opt/python/2.7.10/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_opaque_external_type.py", line 3, in <module>
-    from opaque_external_type import OpaqueExternalType
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/opaque_external_type.py", line 16
-    self.one = self._root.(self._io, self, self._root)
-                          ^
-SyntaxError: invalid syntax
-
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_opaque_external_type.py", line 7, in test_opaque_external_type
+    r = OpaqueExternalType.from_file("src/term_strz.bin")
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 28, in from_file
+    return cls(KaitaiStream(f))
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/opaque_external_type.py", line 16, in __init__
+    self.one = TermStrz(self._io)
+NameError: global name 'TermStrz' is not defined
 
 		</pre>
 
@@ -6470,35 +6455,18 @@ SyntaxError: invalid syntax
 
           <div class="add-info">
 
-              <div class="message">Failed to import test module: test_opaque_external_type
-Traceback (most recent call last):
-  File "/opt/python/3.5.0/lib/python3.5/unittest/loader.py", line 428, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "/opt/python/3.5.0/lib/python3.5/unittest/loader.py", line 369, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_opaque_external_type.py", line 3, in <module>
-    from opaque_external_type import OpaqueExternalType
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/opaque_external_type.py", line 16
-    self.one = self._root.(self._io, self, self._root)
-                          ^
-SyntaxError: invalid syntax
-</div>
+              <div class="message">name 'TermStrz' is not defined</div>
 
               <pre class="trace">
 
-ImportError: Failed to import test module: test_opaque_external_type
 Traceback (most recent call last):
-  File "/opt/python/3.5.0/lib/python3.5/unittest/loader.py", line 428, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "/opt/python/3.5.0/lib/python3.5/unittest/loader.py", line 369, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_opaque_external_type.py", line 3, in <module>
-    from opaque_external_type import OpaqueExternalType
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/opaque_external_type.py", line 16
-    self.one = self._root.(self._io, self, self._root)
-                          ^
-SyntaxError: invalid syntax
-
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_opaque_external_type.py", line 7, in test_opaque_external_type
+    r = OpaqueExternalType.from_file("src/term_strz.bin")
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 28, in from_file
+    return cls(KaitaiStream(f))
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/opaque_external_type.py", line 16, in __init__
+    self.one = TermStrz(self._io)
+NameError: name 'TermStrz' is not defined
 
 		</pre>
 
