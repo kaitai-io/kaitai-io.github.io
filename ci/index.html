@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2016-11-22 16:41:35 UTC</title>
+    <title>Kaitai Struct: test results - 2016-11-22 17:23:40 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2016-11-22 16:41:35 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2016-11-22 17:23:40 UTC</h1>
 
     <table class="table">
     <tr>
@@ -4976,15 +4976,15 @@
 
         <td>96%</td>
 
-        <td>95%</td>
+        <td>98%</td>
 
         <td>98%</td>
 
         <td>0%</td>
 
-        <td>96%</td>
+        <td>98%</td>
 
-        <td>96%</td>
+        <td>98%</td>
 
         <td>100%</td>
 
@@ -6420,7 +6420,9 @@
 
         <td class="no-run">didn't run</td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="passed">passed
 
@@ -6428,49 +6430,11 @@
 
         <td class="no-run">didn't run</td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">global name 'TermStrz' is not defined</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_opaque_external_type.py", line 7, in test_opaque_external_type
-    r = OpaqueExternalType.from_file("src/term_strz.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 28, in from_file
-    return cls(KaitaiStream(f))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/opaque_external_type.py", line 16, in __init__
-    self.one = TermStrz(self._io)
-NameError: global name 'TermStrz' is not defined
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">name 'TermStrz' is not defined</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_opaque_external_type.py", line 7, in test_opaque_external_type
-    r = OpaqueExternalType.from_file("src/term_strz.bin")
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 28, in from_file
-    return cls(KaitaiStream(f))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/opaque_external_type.py", line 16, in __init__
-    self.one = TermStrz(self._io)
-NameError: name 'TermStrz' is not defined
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -7387,7 +7351,9 @@ java.lang.AssertionError: expected [4919] but found [4919]
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="passed">passed
 
