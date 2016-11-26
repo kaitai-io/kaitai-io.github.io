@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2016-11-25 17:19:26 UTC</title>
+    <title>Kaitai Struct: test results - 2016-11-26 11:24:08 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2016-11-25 17:19:26 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2016-11-26 11:24:08 UTC</h1>
 
     <table class="table">
     <tr>
@@ -4974,7 +4974,7 @@
 
         <td>100%</td>
 
-        <td>95%</td>
+        <td>93%</td>
 
         <td>96%</td>
 
@@ -4982,9 +4982,9 @@
 
         <td>0%</td>
 
-        <td>96%</td>
+        <td>95%</td>
 
-        <td>96%</td>
+        <td>95%</td>
 
         <td>100%</td>
 
@@ -5170,6 +5170,97 @@
         </td>
 
         <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>Enum1</td>
+
+        <td></td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">Enum1 instance has no attribute 'Animal'</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_enum_1.py", line 7, in test_enum_1
+    r = Enum1.from_file("src/enum_0.bin")
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 28, in from_file
+    return cls(KaitaiStream(f))
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/enum_1.py", line 16, in __init__
+    self.main = self._root.MainObj(self._io, self, self._root)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/enum_1.py", line 28, in __init__
+    self.submain = self._root.MainObj.SubmainObj(self._io, self, self._root)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/enum_1.py", line 35, in __init__
+    self.pet_1 = self._root.Animal(self._io.read_u4le())
+AttributeError: Enum1 instance has no attribute 'Animal'
+
+		</pre>
+
+          </div>
+
+        </td>
+
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">'Enum1' object has no attribute 'Animal'</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_enum_1.py", line 7, in test_enum_1
+    r = Enum1.from_file("src/enum_0.bin")
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 28, in from_file
+    return cls(KaitaiStream(f))
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/enum_1.py", line 16, in __init__
+    self.main = self._root.MainObj(self._io, self, self._root)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/enum_1.py", line 28, in __init__
+    self.submain = self._root.MainObj.SubmainObj(self._io, self, self._root)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/enum_1.py", line 35, in __init__
+    self.pet_1 = self._root.Animal(self._io.read_u4le())
+AttributeError: 'Enum1' object has no attribute 'Animal'
+
+		</pre>
+
+          </div>
 
         </td>
 
