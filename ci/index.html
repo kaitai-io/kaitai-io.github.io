@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2016-11-26 18:25:25 UTC</title>
+    <title>Kaitai Struct: test results - 2016-11-26 19:51:21 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2016-11-26 18:25:25 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2016-11-26 19:51:21 UTC</h1>
 
     <table class="table">
     <tr>
@@ -4966,7 +4966,7 @@
 
         <td></td>
 
-        <td>98%</td>
+        <td>100%</td>
 
         <td>100%</td>
 
@@ -4976,15 +4976,15 @@
 
         <td>93%</td>
 
-        <td>98%</td>
+        <td>100%</td>
 
-        <td>96%</td>
+        <td>95%</td>
 
         <td>0%</td>
 
-        <td>96%</td>
+        <td>98%</td>
 
-        <td>96%</td>
+        <td>98%</td>
 
         <td>100%</td>
 
@@ -5198,7 +5198,21 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">Cannot read property 'Animal' of undefined
+TypeError: Cannot read property 'Animal' of undefined
+    at spec/javascript/test_enum_1.js:5:50
+    at helpers/javascript/testHelper.js:13:9
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:404:3)</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed">passed
 
@@ -5243,7 +5257,20 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">Cannot read property 'Opcodes' of undefined
+TypeError: Cannot read property 'Opcodes' of undefined
+    at new Operation (compiled/javascript/EnumIf.js:26:55)
+    at new EnumIf (compiled/javascript/EnumIf.js:14:16)
+    at helpers/javascript/testHelper.js:12:17
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:404:3)</pre>
+
+          </div>
 
         </td>
 
@@ -5251,7 +5278,25 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">Kaitai\Struct\Tests\EnumIfTest::testEnumIf
+attempt to autoload "Kaitai\Struct\Tests\EnumIf\EnumIf\Opcodes" failed
+
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/_bootstrap.php:16
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/EnumIf.php:35
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/EnumIf.php:31
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/EnumIf.php:13
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/EnumIf.php:10
+/home/travis/build/kaitai-io/kaitai_struct/runtime/php/lib/Kaitai/Struct/Struct.php:18
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/EnumIfTest.php:6
+</pre>
+
+          </div>
 
         </td>
 
@@ -5558,7 +5603,9 @@
 
         <td></td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="passed">passed
 
@@ -5570,7 +5617,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="passed">passed
 
@@ -5580,9 +5629,55 @@
 
         <td class="no-run">didn't run</td>
 
-        <td class="no-run">didn't run</td>
+        <td class="failed">failed
 
-        <td class="no-run">didn't run</td>
+          <div class="add-info">
+
+              <div class="message">8 is not a valid Animal</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_expr_enum.py", line 10, in test_expr_enum
+    self.assertEqual(r.const_nobody, None)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/expr_enum.py", line 37, in const_nobody
+    self._m_const_nobody = self._root.Animal(8)
+  File "/home/travis/.local/lib/python2.7/site-packages/enum/__init__.py", line 347, in __call__
+    return cls.__new__(cls, value)
+  File "/home/travis/.local/lib/python2.7/site-packages/enum/__init__.py", line 662, in __new__
+    raise ValueError("%s is not a valid %s" % (value, cls.__name__))
+ValueError: 8 is not a valid Animal
+
+		</pre>
+
+          </div>
+
+        </td>
+
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">8 is not a valid Animal</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_expr_enum.py", line 10, in test_expr_enum
+    self.assertEqual(r.const_nobody, None)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/expr_enum.py", line 37, in const_nobody
+    self._m_const_nobody = self._root.Animal(8)
+  File "/opt/python/3.5.0/lib/python3.5/enum.py", line 235, in __call__
+    return cls.__new__(cls, value)
+  File "/opt/python/3.5.0/lib/python3.5/enum.py", line 470, in __new__
+    raise ValueError("%r is not a valid %s" % (value, cls.__name__))
+ValueError: 8 is not a valid Animal
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed">passed
 
@@ -7601,9 +7696,9 @@ ReferenceError: TermStrz is not defined
 
               <div class="message"></div>
 
-              <pre class="trace">Cannot read property 'INTVAL' of undefined
-TypeError: Cannot read property 'INTVAL' of undefined
-    at new Opcode (compiled/javascript/SwitchManualEnum.js:28:43)
+              <pre class="trace">Cannot read property 'Opcode' of undefined
+TypeError: Cannot read property 'Opcode' of undefined
+    at new Opcode (compiled/javascript/SwitchManualEnum.js:28:51)
     at new SwitchManualEnum (compiled/javascript/SwitchManualEnum.js:11:25)
     at helpers/javascript/testHelper.js:12:17
     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:404:3)</pre>
@@ -7612,7 +7707,7 @@ TypeError: Cannot read property 'INTVAL' of undefined
 
         </td>
 
-        <td class="failed">failed
+        <td class="passed">passed
 
         </td>
 
@@ -7640,53 +7735,11 @@ attempt to autoload "Kaitai\Struct\Tests\SwitchManualEnum\CodeEnum" failed
 
         <td class="no-run">didn't run</td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">SwitchManualEnum instance has no attribute 'CodeEnum'</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_enum.py", line 7, in test_switch_manual_enum
-    with SwitchManualEnum.from_file("src/switch_opcodes.bin") as r:
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 28, in from_file
-    return cls(KaitaiStream(f))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_enum.py", line 18, in __init__
-    self.opcodes.append(self._root.Opcode(self._io, self, self._root))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_enum.py", line 32, in __init__
-    if _on == self._root.CodeEnum.intval:
-AttributeError: SwitchManualEnum instance has no attribute 'CodeEnum'
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">'SwitchManualEnum' object has no attribute 'CodeEnum'</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_manual_enum.py", line 7, in test_switch_manual_enum
-    with SwitchManualEnum.from_file("src/switch_opcodes.bin") as r:
-  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 28, in from_file
-    return cls(KaitaiStream(f))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_enum.py", line 18, in __init__
-    self.opcodes.append(self._root.Opcode(self._io, self, self._root))
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_manual_enum.py", line 32, in __init__
-    if _on == self._root.CodeEnum.intval:
-AttributeError: 'SwitchManualEnum' object has no attribute 'CodeEnum'
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
