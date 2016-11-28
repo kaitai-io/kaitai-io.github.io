@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2016-11-28 15:14:05 UTC</title>
+    <title>Kaitai Struct: test results - 2016-11-28 17:44:50 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2016-11-28 15:14:05 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2016-11-28 17:44:50 UTC</h1>
 
     <table class="table">
     <tr>
@@ -8035,11 +8035,11 @@
 
         <td>0%</td>
 
-        <td>98%</td>
+        <td>100%</td>
 
-        <td>98%</td>
+        <td>100%</td>
 
-        <td>97%</td>
+        <td>100%</td>
 
         <td>95%</td>
 
@@ -9074,15 +9074,71 @@ TypeError: Return value of Kaitai\Struct\Tests\ExprEnum::constDog() must be an i
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
+
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">Kaitai\Struct\Tests\IfInstancesTest::testIfInstances
+TypeError: Return value of Kaitai\Struct\Tests\IfInstances::neverHappens() must be of the type integer, null returned
+
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/IfInstances.php:24
+/home/travis/build/kaitai-io/kaitai_struct/runtime/php/lib/Kaitai/Struct/Struct.php:25
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/IfInstancesTest.php:8
+</pre>
+
+          </div>
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
-        <td class="no-run">didn't run</td>
+        <td class="failed">failed
 
-        <td class="no-run">didn't run</td>
+          <div class="add-info">
 
-        <td class="no-run">didn't run</td>
+              <div class="message">IfInstances instance has no attribute '_m_never_happens'</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_if_instances.py", line 9, in test_if_instances
+    self.assertIsNone(r.never_happens)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/if_instances.py", line 28, in never_happens
+    return self._m_never_happens
+AttributeError: IfInstances instance has no attribute '_m_never_happens'
+
+		</pre>
+
+          </div>
+
+        </td>
+
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">'IfInstances' object has no attribute '_m_never_happens'</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_if_instances.py", line 9, in test_if_instances
+    self.assertIsNone(r.never_happens)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/if_instances.py", line 28, in never_happens
+    return self._m_never_happens
+AttributeError: 'IfInstances' object has no attribute '_m_never_happens'
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed">passed
 
@@ -9148,19 +9204,79 @@ TypeError: Return value of Kaitai\Struct\Tests\ExprEnum::constDog() must be an i
 
         <td class="no-run">didn't run</td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">Kaitai\Struct\Tests\IfValuesTest::testIfValues
+TypeError: Return value of Kaitai\Struct\Tests\IfValues\Code::halfOpcode() must be of the type integer, null returned
+
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/IfValues.php:41
+/home/travis/build/kaitai-io/kaitai_struct/runtime/php/lib/Kaitai/Struct/Struct.php:25
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/IfValuesTest.php:11
+</pre>
+
+          </div>
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
-        <td class="no-run">didn't run</td>
+        <td class="failed">failed
 
-        <td class="no-run">didn't run</td>
+          <div class="add-info">
 
-        <td class="no-run">didn't run</td>
+              <div class="message">Code instance has no attribute '_m_half_opcode'</div>
 
-        <td class="no-run">didn't run</td>
+              <pre class="trace">
 
-        <td class="no-run">didn't run</td>
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_if_values.py", line 12, in test_if_values
+    self.assertIsNone(r.codes[1].half_opcode)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/if_values.py", line 36, in half_opcode
+    return self._m_half_opcode
+AttributeError: Code instance has no attribute '_m_half_opcode'
+
+		</pre>
+
+          </div>
+
+        </td>
+
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">'Code' object has no attribute '_m_half_opcode'</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_if_values.py", line 12, in test_if_values
+    self.assertIsNone(r.codes[1].half_opcode)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/if_values.py", line 36, in half_opcode
+    return self._m_half_opcode
+AttributeError: 'Code' object has no attribute '_m_half_opcode'
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed">passed
 
