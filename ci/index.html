@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2016-12-14 13:35:48 UTC</title>
+    <title>Kaitai Struct: test results - 2016-12-23 05:48:25 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2016-12-14 13:35:48 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2016-12-23 05:48:25 UTC</h1>
 
     <table class="table">
     <tr>
@@ -8029,27 +8029,27 @@
 
         <td></td>
 
-        <td>100%</td>
+        <td>96%</td>
 
-        <td>97%</td>
-
-        <td>0%</td>
-
-        <td>100%</td>
-
-        <td>100%</td>
-
-        <td>100%</td>
-
-        <td>100%</td>
+        <td>93%</td>
 
         <td>0%</td>
 
-        <td>100%</td>
+        <td>96%</td>
 
-        <td>100%</td>
+        <td>96%</td>
 
-        <td>100%</td>
+        <td>96%</td>
+
+        <td>96%</td>
+
+        <td>0%</td>
+
+        <td>96%</td>
+
+        <td>96%</td>
+
+        <td>98%</td>
 
     </tr>
 
@@ -8376,6 +8376,37 @@
         <td class="passed">passed
 
         </td>
+
+        <td class="passed">passed
+
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>EnumOfValueInst</td>
+
+        <td></td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
 
         <td class="passed">passed
 
@@ -9837,6 +9868,37 @@
     </tr>
 
     <tr>
+        <td>NonStandard</td>
+
+        <td></td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="passed">passed
+
+        </td>
+
+    </tr>
+
+    <tr>
         <td>OpaqueExternalType</td>
 
         <td></td>
@@ -11241,6 +11303,91 @@
         </td>
 
         <td class="passed">passed
+
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>SwitchMultiBoolOps</td>
+
+        <td></td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="format-build-failed">format build failed
+
+        </td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="no-run">didn't run</td>
+
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="filename">./spec/ruby/switch_multi_bool_ops_spec.rb:4</div>
+
+              <div class="message">
+expected: 4
+     got: 19
+
+(compared using ==)
+</div>
+
+              <pre class="trace">/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-support-3.5.0/lib/rspec/support.rb:87:in `block in <module:Support>'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-support-3.5.0/lib/rspec/support.rb:96:in `notify_failure'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-expectations-3.5.0/lib/rspec/expectations/fail_with.rb:27:in `fail_with'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-expectations-3.5.0/lib/rspec/expectations/handler.rb:38:in `handle_failure'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-expectations-3.5.0/lib/rspec/expectations/handler.rb:50:in `block in handle_matcher'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-expectations-3.5.0/lib/rspec/expectations/handler.rb:27:in `with_matcher'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-expectations-3.5.0/lib/rspec/expectations/handler.rb:48:in `handle_matcher'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-expectations-3.5.0/lib/rspec/expectations/expectation_target.rb:65:in `to'
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/ruby/switch_multi_bool_ops_spec.rb:7:in `block (2 levels) in <top (required)>'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example.rb:254:in `instance_exec'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example.rb:254:in `block in run'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example.rb:496:in `block in with_around_and_singleton_context_hooks'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example.rb:453:in `block in with_around_example_hooks'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/hooks.rb:464:in `block in run'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/hooks.rb:602:in `run_around_example_hooks_for'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/hooks.rb:464:in `run'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example.rb:453:in `with_around_example_hooks'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example.rb:496:in `with_around_and_singleton_context_hooks'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example.rb:251:in `run'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example_group.rb:627:in `block in run_examples'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example_group.rb:623:in `map'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example_group.rb:623:in `run_examples'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example_group.rb:589:in `run'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/runner.rb:113:in `block (3 levels) in run_specs'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/runner.rb:113:in `map'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/runner.rb:113:in `block (2 levels) in run_specs'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/configuration.rb:1835:in `with_suite_hooks'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/runner.rb:112:in `block in run_specs'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/reporter.rb:77:in `report'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/runner.rb:111:in `run_specs'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/runner.rb:87:in `run'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/runner.rb:71:in `run'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/runner.rb:45:in `invoke'
+/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/exe/rspec:4:in `<top (required)>'
+/home/travis/.rvm/gems/ruby-2.3.1/bin/rspec:23:in `load'
+/home/travis/.rvm/gems/ruby-2.3.1/bin/rspec:23:in `<main>'
+/home/travis/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `eval'
+/home/travis/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `<main>'</pre>
+
+          </div>
 
         </td>
 
