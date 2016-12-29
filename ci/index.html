@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2016-12-24 06:58:56 UTC</title>
+    <title>Kaitai Struct: test results - 2016-12-29 19:26:00 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2016-12-24 06:58:56 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2016-12-29 19:26:00 UTC</h1>
 
     <table class="table">
     <tr>
@@ -8029,7 +8029,7 @@
 
         <td></td>
 
-        <td>98%</td>
+        <td>100%</td>
 
         <td>96%</td>
 
@@ -8041,7 +8041,7 @@
 
         <td>98%</td>
 
-        <td>98%</td>
+        <td>100%</td>
 
         <td>0%</td>
 
@@ -11345,7 +11345,9 @@
 
         <td></td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -11355,17 +11357,119 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">19 == 4
+AssertionError: 19 == 4
+    at spec/javascript/test_switch_multi_bool_ops.js:5:10
+    at helpers/javascript/testHelper.js:13:9
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:404:3)</pre>
+
+          </div>
+
+        </td>
+
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">not ok 1 - Equals</div>
+
+              <pre class="trace"></pre>
+
+          </div>
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
-        <td class="no-run">didn't run</td>
+        <td class="failed">failed
 
-        <td class="no-run">didn't run</td>
+          <div class="add-info">
 
-        <td class="no-run">didn't run</td>
+              <div class="message">Failed to import test module: test_switch_multi_bool_ops
+Traceback (most recent call last):
+  File "/opt/python/2.7.12/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/opt/python/2.7.12/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_multi_bool_ops.py", line 3, in <module>
+    from switch_multi_bool_ops import SwitchMultiBoolOps
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_multi_bool_ops.py", line 27
+    _on = self.code if self.code > 0 and self.code <= 8 and True if self.code != 10 else False else 0
+                                                                  ^
+SyntaxError: invalid syntax
+</div>
 
-        <td class="no-run">didn't run</td>
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_switch_multi_bool_ops
+Traceback (most recent call last):
+  File "/opt/python/2.7.12/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/opt/python/2.7.12/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_multi_bool_ops.py", line 3, in <module>
+    from switch_multi_bool_ops import SwitchMultiBoolOps
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_multi_bool_ops.py", line 27
+    _on = self.code if self.code > 0 and self.code <= 8 and True if self.code != 10 else False else 0
+                                                                  ^
+SyntaxError: invalid syntax
+
+
+		</pre>
+
+          </div>
+
+        </td>
+
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_switch_multi_bool_ops
+Traceback (most recent call last):
+  File "/opt/python/3.5.2/lib/python3.5/unittest/loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/python/3.5.2/lib/python3.5/unittest/loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_multi_bool_ops.py", line 3, in <module>
+    from switch_multi_bool_ops import SwitchMultiBoolOps
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_multi_bool_ops.py", line 27
+    _on = self.code if self.code > 0 and self.code <= 8 and True if self.code != 10 else False else 0
+                                                                  ^
+SyntaxError: invalid syntax
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_switch_multi_bool_ops
+Traceback (most recent call last):
+  File "/opt/python/3.5.2/lib/python3.5/unittest/loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/python/3.5.2/lib/python3.5/unittest/loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_multi_bool_ops.py", line 3, in <module>
+    from switch_multi_bool_ops import SwitchMultiBoolOps
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_multi_bool_ops.py", line 27
+    _on = self.code if self.code > 0 and self.code <= 8 and True if self.code != 10 else False else 0
+                                                                  ^
+SyntaxError: invalid syntax
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="failed">failed
 
