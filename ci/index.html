@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2017-01-02 20:22:45 UTC</title>
+    <title>Kaitai Struct: test results - 2017-01-04 07:19:25 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2017-01-02 20:22:45 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2017-01-04 07:19:25 UTC</h1>
 
     <table class="table">
     <tr>
@@ -88,27 +88,27 @@
 
         <td>100%</td>
 
-        <td>97%</td>
-
-        <td>100%</td>
-
-        <td>57%</td>
+        <td>93%</td>
 
         <td>95%</td>
 
-        <td>100%</td>
+        <td>57%</td>
 
         <td>91%</td>
 
-        <td>0%</td>
+        <td>95%</td>
 
-        <td>100%</td>
-
-        <td>0%</td>
+        <td>87%</td>
 
         <td>0%</td>
 
-        <td>100%</td>
+        <td>95%</td>
+
+        <td>0%</td>
+
+        <td>0%</td>
+
+        <td>95%</td>
 
     </tr>
 
@@ -3528,11 +3528,163 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">"([(2 < 3) ? (std::string("foo")) : (std::string("bar")]))" was not equal to "([2 < 3) ? (std::string("foo")) : (std::string("bar"]))"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;([(2 &lt; 3) ? (std::string(&quot;foo&quot;)) : (std::string(&quot;bar&quot;)]))&quot; was not equal to &quot;([2 &lt; 3) ? (std::string(&quot;foo&quot;)) : (std::string(&quot;bar&quot;]))&quot;
+      at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:327)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+      at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+      at org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+      at org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+      at scala.collection.immutable.List.foreach(List.scala:381)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+      at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:396)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:483)
+      at org.scalatest.FunSuiteLike$class.runTests(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1555)
+      at org.scalatest.Suite$class.run(Suite.scala:1424)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:545)
+      at org.scalatest.FunSuiteLike$class.run(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1555)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:357)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:502)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:76)
+      at sbt.TestRunner.run(TestFramework.scala:85)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFunction.apply(TestFramework.scala:207)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$4.work(System.scala:63)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+      at sbt.Execute.work(Execute.scala:235)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+      at java.lang.Thread.run(Thread.java:745)
+</pre>
+
+          </div>
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">"[(2 < 3 ? "foo" : "bar")]" was not equal to "[2 < 3 ? "foo" : "bar"]"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;[(2 &lt; 3 ? &quot;foo&quot; : &quot;bar&quot;)]&quot; was not equal to &quot;[2 &lt; 3 ? &quot;foo&quot; : &quot;bar&quot;]&quot;
+      at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:327)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+      at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+      at org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+      at org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+      at scala.collection.immutable.List.foreach(List.scala:381)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+      at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:396)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:483)
+      at org.scalatest.FunSuiteLike$class.runTests(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1555)
+      at org.scalatest.Suite$class.run(Suite.scala:1424)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:545)
+      at org.scalatest.FunSuiteLike$class.run(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1555)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:357)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:502)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:76)
+      at sbt.TestRunner.run(TestFramework.scala:85)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFunction.apply(TestFramework.scala:207)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$4.work(System.scala:63)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+      at sbt.Execute.work(Execute.scala:235)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+      at java.lang.Thread.run(Thread.java:745)
+</pre>
+
+          </div>
 
         </td>
 
@@ -3617,15 +3769,243 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">"[(2 < 3 ? "foo" : "bar")]" was not equal to "[2 < 3 ? "foo" : "bar"]"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;[(2 &lt; 3 ? &quot;foo&quot; : &quot;bar&quot;)]&quot; was not equal to &quot;[2 &lt; 3 ? &quot;foo&quot; : &quot;bar&quot;]&quot;
+      at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:327)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+      at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+      at org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+      at org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+      at scala.collection.immutable.List.foreach(List.scala:381)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+      at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:396)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:483)
+      at org.scalatest.FunSuiteLike$class.runTests(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1555)
+      at org.scalatest.Suite$class.run(Suite.scala:1424)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:545)
+      at org.scalatest.FunSuiteLike$class.run(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1555)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:357)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:502)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:76)
+      at sbt.TestRunner.run(TestFramework.scala:85)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFunction.apply(TestFramework.scala:207)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$4.work(System.scala:63)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+      at sbt.Execute.work(Execute.scala:235)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+      at java.lang.Thread.run(Thread.java:745)
+</pre>
+
+          </div>
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">"[(2 < 3 ? "foo" : "bar")]" was not equal to "[2 < 3 ? "foo" : "bar"]"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;[(2 &lt; 3 ? &quot;foo&quot; : &quot;bar&quot;)]&quot; was not equal to &quot;[2 &lt; 3 ? &quot;foo&quot; : &quot;bar&quot;]&quot;
+      at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:327)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+      at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+      at org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+      at org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+      at scala.collection.immutable.List.foreach(List.scala:381)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+      at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:396)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:483)
+      at org.scalatest.FunSuiteLike$class.runTests(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1555)
+      at org.scalatest.Suite$class.run(Suite.scala:1424)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:545)
+      at org.scalatest.FunSuiteLike$class.run(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1555)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:357)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:502)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:76)
+      at sbt.TestRunner.run(TestFramework.scala:85)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFunction.apply(TestFramework.scala:207)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$4.work(System.scala:63)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+      at sbt.Execute.work(Execute.scala:235)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+      at java.lang.Thread.run(Thread.java:745)
+</pre>
+
+          </div>
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">"[(2 < 3 ? "foo" : "bar")]" was not equal to "[2 < 3 ? "foo" : "bar"]"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;[(2 &lt; 3 ? &quot;foo&quot; : &quot;bar&quot;)]&quot; was not equal to &quot;[2 &lt; 3 ? &quot;foo&quot; : &quot;bar&quot;]&quot;
+      at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:327)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+      at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+      at org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+      at org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+      at scala.collection.immutable.List.foreach(List.scala:381)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+      at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:396)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:483)
+      at org.scalatest.FunSuiteLike$class.runTests(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1555)
+      at org.scalatest.Suite$class.run(Suite.scala:1424)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:545)
+      at org.scalatest.FunSuiteLike$class.run(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1555)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:357)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:502)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:76)
+      at sbt.TestRunner.run(TestFramework.scala:85)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFunction.apply(TestFramework.scala:207)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$4.work(System.scala:63)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+      at sbt.Execute.work(Execute.scala:235)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+      at java.lang.Thread.run(Thread.java:745)
+</pre>
+
+          </div>
 
         </td>
 
@@ -3708,7 +4088,83 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">"[(u"foo" if 2 < 3 else u"bar")]" was not equal to "[u"foo" if 2 < 3 else u"bar"]"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;[(u&quot;foo&quot; if 2 &lt; 3 else u&quot;bar&quot;)]&quot; was not equal to &quot;[u&quot;foo&quot; if 2 &lt; 3 else u&quot;bar&quot;]&quot;
+      at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:327)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+      at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+      at org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+      at org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+      at scala.collection.immutable.List.foreach(List.scala:381)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+      at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:396)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:483)
+      at org.scalatest.FunSuiteLike$class.runTests(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1555)
+      at org.scalatest.Suite$class.run(Suite.scala:1424)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:545)
+      at org.scalatest.FunSuiteLike$class.run(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1555)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:357)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:502)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:76)
+      at sbt.TestRunner.run(TestFramework.scala:85)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFunction.apply(TestFramework.scala:207)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$4.work(System.scala:63)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+      at sbt.Execute.work(Execute.scala:235)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+      at java.lang.Thread.run(Thread.java:745)
+</pre>
+
+          </div>
 
         </td>
 
@@ -3716,7 +4172,83 @@
 
         <td class="no-run">didn't run</td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">"[(2 < 3 ? "foo" : "bar")]" was not equal to "[2 < 3 ? "foo" : "bar"]"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;[(2 &lt; 3 ? &quot;foo&quot; : &quot;bar&quot;)]&quot; was not equal to &quot;[2 &lt; 3 ? &quot;foo&quot; : &quot;bar&quot;]&quot;
+      at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:327)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+      at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+      at org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+      at org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+      at scala.collection.immutable.List.foreach(List.scala:381)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+      at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:396)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:483)
+      at org.scalatest.FunSuiteLike$class.runTests(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1555)
+      at org.scalatest.Suite$class.run(Suite.scala:1424)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:545)
+      at org.scalatest.FunSuiteLike$class.run(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1555)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:357)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:502)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:76)
+      at sbt.TestRunner.run(TestFramework.scala:85)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFunction.apply(TestFramework.scala:207)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$4.work(System.scala:63)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+      at sbt.Execute.work(Execute.scala:235)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+      at java.lang.Thread.run(Thread.java:745)
+</pre>
+
+          </div>
 
         </td>
 
@@ -5106,11 +5638,163 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">"[ ((a() != 2) && (a() != 5)) ]" was not equal to "[a() != 2 && a() != 5]"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;[ ((a() != 2) &amp;&amp; (a() != 5)) ]&quot; was not equal to &quot;[a() != 2 &amp;&amp; a() != 5]&quot;
+      at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:327)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+      at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+      at org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+      at org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+      at scala.collection.immutable.List.foreach(List.scala:381)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+      at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:396)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:483)
+      at org.scalatest.FunSuiteLike$class.runTests(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1555)
+      at org.scalatest.Suite$class.run(Suite.scala:1424)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:545)
+      at org.scalatest.FunSuiteLike$class.run(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1555)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:357)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:502)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:76)
+      at sbt.TestRunner.run(TestFramework.scala:85)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFunction.apply(TestFramework.scala:207)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$4.work(System.scala:63)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+      at sbt.Execute.work(Execute.scala:235)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+      at java.lang.Thread.run(Thread.java:745)
+</pre>
+
+          </div>
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">"[ ((A != 2) && (A != 5)) ]" was not equal to "[A != 2 && A != 5]"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;[ ((A != 2) &amp;&amp; (A != 5)) ]&quot; was not equal to &quot;[A != 2 &amp;&amp; A != 5]&quot;
+      at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:327)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+      at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+      at org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+      at org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+      at scala.collection.immutable.List.foreach(List.scala:381)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+      at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:396)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:483)
+      at org.scalatest.FunSuiteLike$class.runTests(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1555)
+      at org.scalatest.Suite$class.run(Suite.scala:1424)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:545)
+      at org.scalatest.FunSuiteLike$class.run(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1555)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:357)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:502)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:76)
+      at sbt.TestRunner.run(TestFramework.scala:85)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFunction.apply(TestFramework.scala:207)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$4.work(System.scala:63)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+      at sbt.Execute.work(Execute.scala:235)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+      at java.lang.Thread.run(Thread.java:745)
+</pre>
+
+          </div>
 
         </td>
 
@@ -5195,15 +5879,243 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">"[ ((a() != 2) && (a() != 5)) ]" was not equal to "[a() != 2 && a() != 5]"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;[ ((a() != 2) &amp;&amp; (a() != 5)) ]&quot; was not equal to &quot;[a() != 2 &amp;&amp; a() != 5]&quot;
+      at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:327)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+      at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+      at org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+      at org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+      at scala.collection.immutable.List.foreach(List.scala:381)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+      at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:396)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:483)
+      at org.scalatest.FunSuiteLike$class.runTests(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1555)
+      at org.scalatest.Suite$class.run(Suite.scala:1424)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:545)
+      at org.scalatest.FunSuiteLike$class.run(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1555)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:357)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:502)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:76)
+      at sbt.TestRunner.run(TestFramework.scala:85)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFunction.apply(TestFramework.scala:207)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$4.work(System.scala:63)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+      at sbt.Execute.work(Execute.scala:235)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+      at java.lang.Thread.run(Thread.java:745)
+</pre>
+
+          </div>
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">"[ ((this.a != 2) && (this.a != 5)) ]" was not equal to "[this.a != 2 && this.a != 5]"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;[ ((this.a != 2) &amp;&amp; (this.a != 5)) ]&quot; was not equal to &quot;[this.a != 2 &amp;&amp; this.a != 5]&quot;
+      at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:327)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+      at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+      at org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+      at org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+      at scala.collection.immutable.List.foreach(List.scala:381)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+      at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:396)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:483)
+      at org.scalatest.FunSuiteLike$class.runTests(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1555)
+      at org.scalatest.Suite$class.run(Suite.scala:1424)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:545)
+      at org.scalatest.FunSuiteLike$class.run(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1555)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:357)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:502)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:76)
+      at sbt.TestRunner.run(TestFramework.scala:85)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFunction.apply(TestFramework.scala:207)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$4.work(System.scala:63)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+      at sbt.Execute.work(Execute.scala:235)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+      at java.lang.Thread.run(Thread.java:745)
+</pre>
+
+          </div>
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">"[ (($self->a() != 2) && ($self->a() != 5)) ]" was not equal to "[$self->a() != 2 && $self->a() != 5]"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;[ (($self-&gt;a() != 2) &amp;&amp; ($self-&gt;a() != 5)) ]&quot; was not equal to &quot;[$self-&gt;a() != 2 &amp;&amp; $self-&gt;a() != 5]&quot;
+      at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:327)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+      at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+      at org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+      at org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+      at scala.collection.immutable.List.foreach(List.scala:381)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+      at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:396)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:483)
+      at org.scalatest.FunSuiteLike$class.runTests(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1555)
+      at org.scalatest.Suite$class.run(Suite.scala:1424)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:545)
+      at org.scalatest.FunSuiteLike$class.run(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1555)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:357)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:502)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:76)
+      at sbt.TestRunner.run(TestFramework.scala:85)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFunction.apply(TestFramework.scala:207)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$4.work(System.scala:63)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+      at sbt.Execute.work(Execute.scala:235)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+      at java.lang.Thread.run(Thread.java:745)
+</pre>
+
+          </div>
 
         </td>
 
@@ -5286,7 +6198,83 @@
 
         </td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">"[ ((self.a != 2) and (self.a != 5)) ]" was not equal to "[self.a != 2 and self.a != 5]"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;[ ((self.a != 2) and (self.a != 5)) ]&quot; was not equal to &quot;[self.a != 2 and self.a != 5]&quot;
+      at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:327)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+      at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+      at org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+      at org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+      at scala.collection.immutable.List.foreach(List.scala:381)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+      at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:396)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:483)
+      at org.scalatest.FunSuiteLike$class.runTests(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1555)
+      at org.scalatest.Suite$class.run(Suite.scala:1424)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:545)
+      at org.scalatest.FunSuiteLike$class.run(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1555)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:357)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:502)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:76)
+      at sbt.TestRunner.run(TestFramework.scala:85)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFunction.apply(TestFramework.scala:207)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$4.work(System.scala:63)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+      at sbt.Execute.work(Execute.scala:235)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+      at java.lang.Thread.run(Thread.java:745)
+</pre>
+
+          </div>
 
         </td>
 
@@ -5294,7 +6282,83 @@
 
         <td class="no-run">didn't run</td>
 
-        <td class="passed">passed
+        <td class="failed">failed
+
+          <div class="add-info">
+
+              <div class="message">"[ ((a != 2) && (a != 5)) ]" was not equal to "[a != 2 && a != 5]"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;[ ((a != 2) &amp;&amp; (a != 5)) ]&quot; was not equal to &quot;[a != 2 &amp;&amp; a != 5]&quot;
+      at org.scalatest.MatchersHelper$.newTestFailedException(MatchersHelper.scala:160)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6254)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6288)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply$mcV$sp(TranslatorSpec.scala:327)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$2$$anonfun$apply$3$$anonfun$apply$2.apply(TranslatorSpec.scala:321)
+      at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+      at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+      at org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+      at org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+      at scala.collection.immutable.List.foreach(List.scala:381)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+      at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:396)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:483)
+      at org.scalatest.FunSuiteLike$class.runTests(FunSuiteLike.scala:208)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1555)
+      at org.scalatest.Suite$class.run(Suite.scala:1424)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1555)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:212)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:545)
+      at org.scalatest.FunSuiteLike$class.run(FunSuiteLike.scala:212)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1555)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:357)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:502)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:76)
+      at sbt.TestRunner.run(TestFramework.scala:85)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFunction.apply(TestFramework.scala:207)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$4.work(System.scala:63)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+      at sbt.Execute.work(Execute.scala:235)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+      at java.lang.Thread.run(Thread.java:745)
+</pre>
+
+          </div>
 
         </td>
 
@@ -8029,27 +9093,27 @@
 
         <td></td>
 
-        <td>97%</td>
+        <td>100%</td>
+
+        <td>93%</td>
 
         <td>0%</td>
 
-        <td>0%</td>
+        <td>100%</td>
 
-        <td>96%</td>
+        <td>100%</td>
 
-        <td>97%</td>
+        <td>100%</td>
 
-        <td>94%</td>
-
-        <td>96%</td>
+        <td>100%</td>
 
         <td>0%</td>
 
-        <td>94%</td>
+        <td>100%</td>
 
-        <td>94%</td>
+        <td>100%</td>
 
-        <td>96%</td>
+        <td>100%</td>
 
     </tr>
 
@@ -8063,7 +9127,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -8104,7 +9170,9 @@
 
         <td></td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -8118,15 +9186,23 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
 
-        <td class="no-run">didn't run</td>
+        </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="passed">passed
 
@@ -8139,9 +9215,9 @@
 
         <td></td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
 
-        <td class="no-run">didn't run</td>
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -8151,17 +9227,31 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
 
-        <td class="no-run">didn't run</td>
+        </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
 
-        <td class="no-run">didn't run</td>
+        </td>
+
+        <td class="passed">passed
+
+        </td>
 
     </tr>
 
@@ -8174,7 +9264,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -8219,7 +9311,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -8264,7 +9358,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -8309,7 +9405,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -8354,7 +9452,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -8399,7 +9499,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -8444,7 +9546,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -8489,7 +9593,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -8534,7 +9640,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -8579,7 +9687,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -8624,7 +9734,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -8669,7 +9781,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -8714,7 +9828,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -8759,7 +9875,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -8804,7 +9922,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -8849,7 +9969,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -8894,7 +10016,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -8939,7 +10063,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -8984,7 +10110,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -9029,7 +10157,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -9074,7 +10204,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -9164,7 +10296,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -9254,7 +10388,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -9299,7 +10435,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -9344,7 +10482,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -9389,7 +10529,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -9434,7 +10576,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -9479,7 +10623,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -9524,7 +10670,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -9569,7 +10717,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -9614,7 +10764,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -9659,7 +10811,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -9704,7 +10858,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -9749,7 +10905,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -9794,7 +10952,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -9839,7 +10999,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -9884,7 +11046,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -9929,7 +11093,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -9974,7 +11140,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10019,7 +11187,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10064,7 +11234,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10109,7 +11281,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10154,7 +11328,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10199,7 +11375,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10244,7 +11422,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10289,7 +11469,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10334,7 +11516,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10379,7 +11563,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10424,7 +11610,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10469,7 +11657,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10514,7 +11704,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10559,7 +11751,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10604,7 +11798,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10649,7 +11845,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10694,7 +11892,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10739,7 +11939,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10784,7 +11986,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10829,7 +12033,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10874,7 +12080,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10919,7 +12127,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -10964,7 +12174,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -11009,7 +12221,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -11054,7 +12268,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -11099,7 +12315,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -11144,7 +12362,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -11189,7 +12409,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -11234,7 +12456,9 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -11283,21 +12507,35 @@
 
         <td class="no-run">didn't run</td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
+
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
 
-        <td class="no-run">didn't run</td>
+        </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
 
-        <td class="no-run">didn't run</td>
+        </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
 
-        <td class="no-run">didn't run</td>
+        </td>
 
     </tr>
 
@@ -11310,39 +12548,21 @@
 
         </td>
 
-        <td class="no-run">didn't run</td>
-
-        <td class="no-run">didn't run</td>
-
-        <td class="format-build-failed">format build failed
+        <td class="passed">passed
 
         </td>
 
-        <td class="failed">failed
+        <td class="no-run">didn't run</td>
 
-          <div class="add-info">
-
-              <div class="message"></div>
-
-              <pre class="trace">19 == 4
-AssertionError: 19 == 4
-    at spec/javascript/test_switch_multi_bool_ops.js:5:10
-    at helpers/javascript/testHelper.js:13:9
-    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:404:3)</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
-        <td class="failed">failed
+        <td class="passed">passed
 
-          <div class="add-info">
+        </td>
 
-              <div class="message">not ok 1 - Equals</div>
-
-              <pre class="trace"></pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -11352,139 +12572,15 @@ AssertionError: 19 == 4
 
         <td class="no-run">didn't run</td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">Failed to import test module: test_switch_multi_bool_ops
-Traceback (most recent call last):
-  File "/opt/python/2.7.12/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/opt/python/2.7.12/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_multi_bool_ops.py", line 3, in <module>
-    from switch_multi_bool_ops import SwitchMultiBoolOps
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_multi_bool_ops.py", line 27
-    _on = self.code if self.code > 0 and self.code <= 8 and True if self.code != 10 else False else 0
-                                                                  ^
-SyntaxError: invalid syntax
-</div>
-
-              <pre class="trace">
-
-ImportError: Failed to import test module: test_switch_multi_bool_ops
-Traceback (most recent call last):
-  File "/opt/python/2.7.12/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/opt/python/2.7.12/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_multi_bool_ops.py", line 3, in <module>
-    from switch_multi_bool_ops import SwitchMultiBoolOps
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_multi_bool_ops.py", line 27
-    _on = self.code if self.code > 0 and self.code <= 8 and True if self.code != 10 else False else 0
-                                                                  ^
-SyntaxError: invalid syntax
-
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="message">Failed to import test module: test_switch_multi_bool_ops
-Traceback (most recent call last):
-  File "/opt/python/3.5.2/lib/python3.5/unittest/loader.py", line 428, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "/opt/python/3.5.2/lib/python3.5/unittest/loader.py", line 369, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_multi_bool_ops.py", line 3, in <module>
-    from switch_multi_bool_ops import SwitchMultiBoolOps
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_multi_bool_ops.py", line 27
-    _on = self.code if self.code > 0 and self.code <= 8 and True if self.code != 10 else False else 0
-                                                                  ^
-SyntaxError: invalid syntax
-</div>
-
-              <pre class="trace">
-
-ImportError: Failed to import test module: test_switch_multi_bool_ops
-Traceback (most recent call last):
-  File "/opt/python/3.5.2/lib/python3.5/unittest/loader.py", line 428, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "/opt/python/3.5.2/lib/python3.5/unittest/loader.py", line 369, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_switch_multi_bool_ops.py", line 3, in <module>
-    from switch_multi_bool_ops import SwitchMultiBoolOps
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/switch_multi_bool_ops.py", line 27
-    _on = self.code if self.code > 0 and self.code <= 8 and True if self.code != 10 else False else 0
-                                                                  ^
-SyntaxError: invalid syntax
-
-
-		</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
-        <td class="failed">failed
-
-          <div class="add-info">
-
-              <div class="filename">./spec/ruby/switch_multi_bool_ops_spec.rb:4</div>
-
-              <div class="message">
-expected: 4
-     got: 19
-
-(compared using ==)
-</div>
-
-              <pre class="trace">/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-support-3.5.0/lib/rspec/support.rb:87:in `block in <module:Support>'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-support-3.5.0/lib/rspec/support.rb:96:in `notify_failure'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-expectations-3.5.0/lib/rspec/expectations/fail_with.rb:27:in `fail_with'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-expectations-3.5.0/lib/rspec/expectations/handler.rb:38:in `handle_failure'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-expectations-3.5.0/lib/rspec/expectations/handler.rb:50:in `block in handle_matcher'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-expectations-3.5.0/lib/rspec/expectations/handler.rb:27:in `with_matcher'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-expectations-3.5.0/lib/rspec/expectations/handler.rb:48:in `handle_matcher'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-expectations-3.5.0/lib/rspec/expectations/expectation_target.rb:65:in `to'
-/home/travis/build/kaitai-io/kaitai_struct/tests/spec/ruby/switch_multi_bool_ops_spec.rb:7:in `block (2 levels) in <top (required)>'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example.rb:254:in `instance_exec'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example.rb:254:in `block in run'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example.rb:496:in `block in with_around_and_singleton_context_hooks'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example.rb:453:in `block in with_around_example_hooks'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/hooks.rb:464:in `block in run'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/hooks.rb:602:in `run_around_example_hooks_for'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/hooks.rb:464:in `run'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example.rb:453:in `with_around_example_hooks'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example.rb:496:in `with_around_and_singleton_context_hooks'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example.rb:251:in `run'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example_group.rb:627:in `block in run_examples'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example_group.rb:623:in `map'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example_group.rb:623:in `run_examples'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/example_group.rb:589:in `run'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/runner.rb:113:in `block (3 levels) in run_specs'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/runner.rb:113:in `map'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/runner.rb:113:in `block (2 levels) in run_specs'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/configuration.rb:1835:in `with_suite_hooks'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/runner.rb:112:in `block in run_specs'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/reporter.rb:77:in `report'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/runner.rb:111:in `run_specs'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/runner.rb:87:in `run'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/runner.rb:71:in `run'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/lib/rspec/core/runner.rb:45:in `invoke'
-/home/travis/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.5.4/exe/rspec:4:in `<top (required)>'
-/home/travis/.rvm/gems/ruby-2.3.1/bin/rspec:23:in `load'
-/home/travis/.rvm/gems/ruby-2.3.1/bin/rspec:23:in `<main>'
-/home/travis/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `eval'
-/home/travis/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `<main>'</pre>
-
-          </div>
+        <td class="passed">passed
 
         </td>
 
@@ -11499,7 +12595,9 @@ expected: 4
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -11544,7 +12642,9 @@ expected: 4
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -11589,7 +12689,9 @@ expected: 4
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -11634,7 +12736,9 @@ expected: 4
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
@@ -11679,7 +12783,9 @@ expected: 4
 
         </td>
 
-        <td class="no-run">didn't run</td>
+        <td class="passed">passed
+
+        </td>
 
         <td class="no-run">didn't run</td>
 
