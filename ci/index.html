@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2017-02-27 08:13:24 UTC</title>
+    <title>Kaitai Struct: test results - 2017-02-28 15:17:41 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2017-02-27 08:13:24 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2017-02-28 15:17:41 UTC</h1>
 
     <table class="table">
     <tr>
@@ -6588,11 +6588,11 @@
 
         <td>98%</td>
 
-        <td>97%</td>
+        <td>96%</td>
 
         <td>97%</td>
 
-        <td>98%</td>
+        <td>0%</td>
 
         <td>0%</td>
 
@@ -6632,9 +6632,7 @@
 
         </td>
 
-        <td class="passed" title="php: BcdUserTypeBe">passed
-
-        </td>
+        <td class="no-run" title="php: BcdUserTypeBe">didn't run</td>
 
         <td class="no-run" title="python: BcdUserTypeBe">didn't run</td>
 
@@ -6679,9 +6677,7 @@
 
         </td>
 
-        <td class="passed" title="php: BcdUserTypeLe">passed
-
-        </td>
+        <td class="no-run" title="php: BcdUserTypeLe">didn't run</td>
 
         <td class="no-run" title="python: BcdUserTypeLe">didn't run</td>
 
@@ -6726,9 +6722,7 @@
 
         </td>
 
-        <td class="passed" title="php: BitsByteAligned">passed
-
-        </td>
+        <td class="no-run" title="php: BitsByteAligned">didn't run</td>
 
         <td class="no-run" title="python: BitsByteAligned">didn't run</td>
 
@@ -6773,9 +6767,7 @@
 
         </td>
 
-        <td class="passed" title="php: BitsEnum">passed
-
-        </td>
+        <td class="no-run" title="php: BitsEnum">didn't run</td>
 
         <td class="no-run" title="python: BitsEnum">didn't run</td>
 
@@ -6812,7 +6804,20 @@
 
         </td>
 
-        <td class="passed" title="javascript: BitsSimple">passed
+        <td class="failed" title="javascript: BitsSimple">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">readBitsInt: the maximum supported bit length is 32 (tried to read 40 bits)
+Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bits)
+    at Object.KaitaiStream.readBitsInt (/home/travis/build/kaitai-io/kaitai_struct/runtime/javascript/KaitaiStream.js:374:11)
+    at new BitsSimple (compiled/javascript/BitsSimple.js:21:32)
+    at helpers/javascript/testHelper.js:12:17
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:404:3)</pre>
+
+          </div>
 
         </td>
 
@@ -6820,9 +6825,7 @@
 
         </td>
 
-        <td class="passed" title="php: BitsSimple">passed
-
-        </td>
+        <td class="no-run" title="php: BitsSimple">didn't run</td>
 
         <td class="no-run" title="python: BitsSimple">didn't run</td>
 
@@ -6867,9 +6870,7 @@
 
         </td>
 
-        <td class="passed" title="php: BufferedStruct">passed
-
-        </td>
+        <td class="no-run" title="php: BufferedStruct">didn't run</td>
 
         <td class="no-run" title="python: BufferedStruct">didn't run</td>
 
@@ -6914,9 +6915,7 @@
 
         </td>
 
-        <td class="passed" title="php: Debug0">passed
-
-        </td>
+        <td class="no-run" title="php: Debug0">didn't run</td>
 
         <td class="no-run" title="python: Debug0">didn't run</td>
 
@@ -6961,9 +6960,7 @@
 
         </td>
 
-        <td class="passed" title="php: DebugEnumName">passed
-
-        </td>
+        <td class="no-run" title="php: DebugEnumName">didn't run</td>
 
         <td class="no-run" title="python: DebugEnumName">didn't run</td>
 
@@ -7008,9 +7005,7 @@
 
         </td>
 
-        <td class="passed" title="php: DefaultBigEndian">passed
-
-        </td>
+        <td class="no-run" title="php: DefaultBigEndian">didn't run</td>
 
         <td class="no-run" title="python: DefaultBigEndian">didn't run</td>
 
@@ -7055,9 +7050,7 @@
 
         </td>
 
-        <td class="passed" title="php: DefaultEndianMod">passed
-
-        </td>
+        <td class="no-run" title="php: DefaultEndianMod">didn't run</td>
 
         <td class="no-run" title="python: DefaultEndianMod">didn't run</td>
 
@@ -7102,9 +7095,7 @@
 
         </td>
 
-        <td class="passed" title="php: Docstrings">passed
-
-        </td>
+        <td class="no-run" title="php: Docstrings">didn't run</td>
 
         <td class="no-run" title="python: Docstrings">didn't run</td>
 
@@ -7149,9 +7140,7 @@
 
         </td>
 
-        <td class="passed" title="php: Enum0">passed
-
-        </td>
+        <td class="no-run" title="php: Enum0">didn't run</td>
 
         <td class="no-run" title="python: Enum0">didn't run</td>
 
@@ -7196,9 +7185,7 @@
 
         </td>
 
-        <td class="passed" title="php: Enum1">passed
-
-        </td>
+        <td class="no-run" title="php: Enum1">didn't run</td>
 
         <td class="no-run" title="python: Enum1">didn't run</td>
 
@@ -7243,9 +7230,7 @@
 
         </td>
 
-        <td class="passed" title="php: EnumForUnknownId">passed
-
-        </td>
+        <td class="no-run" title="php: EnumForUnknownId">didn't run</td>
 
         <td class="no-run" title="python: EnumForUnknownId">didn't run</td>
 
@@ -7290,9 +7275,7 @@
 
         </td>
 
-        <td class="passed" title="php: EnumIf">passed
-
-        </td>
+        <td class="no-run" title="php: EnumIf">didn't run</td>
 
         <td class="no-run" title="python: EnumIf">didn't run</td>
 
@@ -7337,9 +7320,7 @@
 
         </td>
 
-        <td class="passed" title="php: EnumOfValueInst">passed
-
-        </td>
+        <td class="no-run" title="php: EnumOfValueInst">didn't run</td>
 
         <td class="no-run" title="python: EnumOfValueInst">didn't run</td>
 
@@ -7384,9 +7365,7 @@
 
         </td>
 
-        <td class="passed" title="php: EnumToI">passed
-
-        </td>
+        <td class="no-run" title="php: EnumToI">didn't run</td>
 
         <td class="no-run" title="python: EnumToI">didn't run</td>
 
@@ -7431,9 +7410,7 @@
 
         </td>
 
-        <td class="passed" title="php: EofExceptionBytes">passed
-
-        </td>
+        <td class="no-run" title="php: EofExceptionBytes">didn't run</td>
 
         <td class="no-run" title="python: EofExceptionBytes">didn't run</td>
 
@@ -7478,9 +7455,7 @@
 
         </td>
 
-        <td class="passed" title="php: EofExceptionU4">passed
-
-        </td>
+        <td class="no-run" title="php: EofExceptionU4">didn't run</td>
 
         <td class="no-run" title="python: EofExceptionU4">didn't run</td>
 
@@ -7525,9 +7500,7 @@
 
         </td>
 
-        <td class="passed" title="php: Expr0">passed
-
-        </td>
+        <td class="no-run" title="php: Expr0">didn't run</td>
 
         <td class="no-run" title="python: Expr0">didn't run</td>
 
@@ -7572,9 +7545,7 @@
 
         </td>
 
-        <td class="passed" title="php: Expr1">passed
-
-        </td>
+        <td class="no-run" title="php: Expr1">didn't run</td>
 
         <td class="no-run" title="python: Expr1">didn't run</td>
 
@@ -7619,9 +7590,7 @@
 
         </td>
 
-        <td class="passed" title="php: Expr2">passed
-
-        </td>
+        <td class="no-run" title="php: Expr2">didn't run</td>
 
         <td class="no-run" title="python: Expr2">didn't run</td>
 
@@ -7666,9 +7635,7 @@
 
         </td>
 
-        <td class="passed" title="php: Expr3">passed
-
-        </td>
+        <td class="no-run" title="php: Expr3">didn't run</td>
 
         <td class="no-run" title="python: Expr3">didn't run</td>
 
@@ -7713,9 +7680,7 @@
 
         </td>
 
-        <td class="passed" title="php: ExprEnum">passed
-
-        </td>
+        <td class="no-run" title="php: ExprEnum">didn't run</td>
 
         <td class="no-run" title="python: ExprEnum">didn't run</td>
 
@@ -7760,9 +7725,7 @@
 
         </td>
 
-        <td class="passed" title="php: ExprIoEof">passed
-
-        </td>
+        <td class="no-run" title="php: ExprIoEof">didn't run</td>
 
         <td class="no-run" title="python: ExprIoEof">didn't run</td>
 
@@ -7807,9 +7770,7 @@
 
         </td>
 
-        <td class="passed" title="php: ExprIoPos">passed
-
-        </td>
+        <td class="no-run" title="php: ExprIoPos">didn't run</td>
 
         <td class="no-run" title="python: ExprIoPos">didn't run</td>
 
@@ -7854,9 +7815,7 @@
 
         </td>
 
-        <td class="passed" title="php: ExprMod">passed
-
-        </td>
+        <td class="no-run" title="php: ExprMod">didn't run</td>
 
         <td class="no-run" title="python: ExprMod">didn't run</td>
 
@@ -7901,9 +7860,7 @@
 
         </td>
 
-        <td class="passed" title="php: FixedContents">passed
-
-        </td>
+        <td class="no-run" title="php: FixedContents">didn't run</td>
 
         <td class="no-run" title="python: FixedContents">didn't run</td>
 
@@ -7948,9 +7905,7 @@
 
         </td>
 
-        <td class="passed" title="php: FixedStruct">passed
-
-        </td>
+        <td class="no-run" title="php: FixedStruct">didn't run</td>
 
         <td class="no-run" title="python: FixedStruct">didn't run</td>
 
@@ -7995,9 +7950,7 @@
 
         </td>
 
-        <td class="passed" title="php: FloatingPoints">passed
-
-        </td>
+        <td class="no-run" title="php: FloatingPoints">didn't run</td>
 
         <td class="no-run" title="python: FloatingPoints">didn't run</td>
 
@@ -8042,9 +7995,7 @@
 
         </td>
 
-        <td class="passed" title="php: HelloWorld">passed
-
-        </td>
+        <td class="no-run" title="php: HelloWorld">didn't run</td>
 
         <td class="no-run" title="python: HelloWorld">didn't run</td>
 
@@ -8087,9 +8038,7 @@
 
         </td>
 
-        <td class="passed" title="php: IfInstances">passed
-
-        </td>
+        <td class="no-run" title="php: IfInstances">didn't run</td>
 
         <td class="no-run" title="python: IfInstances">didn't run</td>
 
@@ -8134,9 +8083,7 @@
 
         </td>
 
-        <td class="passed" title="php: IfStruct">passed
-
-        </td>
+        <td class="no-run" title="php: IfStruct">didn't run</td>
 
         <td class="no-run" title="python: IfStruct">didn't run</td>
 
@@ -8179,9 +8126,7 @@
 
         </td>
 
-        <td class="passed" title="php: IfValues">passed
-
-        </td>
+        <td class="no-run" title="php: IfValues">didn't run</td>
 
         <td class="no-run" title="python: IfValues">didn't run</td>
 
@@ -8226,9 +8171,7 @@
 
         </td>
 
-        <td class="passed" title="php: InstanceIoUser">passed
-
-        </td>
+        <td class="no-run" title="php: InstanceIoUser">didn't run</td>
 
         <td class="no-run" title="python: InstanceIoUser">didn't run</td>
 
@@ -8273,9 +8216,7 @@
 
         </td>
 
-        <td class="passed" title="php: InstanceStd">passed
-
-        </td>
+        <td class="no-run" title="php: InstanceStd">didn't run</td>
 
         <td class="no-run" title="python: InstanceStd">didn't run</td>
 
@@ -8320,9 +8261,7 @@
 
         </td>
 
-        <td class="passed" title="php: InstanceStdArray">passed
-
-        </td>
+        <td class="no-run" title="php: InstanceStdArray">didn't run</td>
 
         <td class="no-run" title="python: InstanceStdArray">didn't run</td>
 
@@ -8367,9 +8306,7 @@
 
         </td>
 
-        <td class="passed" title="php: InstanceUserArray">passed
-
-        </td>
+        <td class="no-run" title="php: InstanceUserArray">didn't run</td>
 
         <td class="no-run" title="python: InstanceUserArray">didn't run</td>
 
@@ -8414,9 +8351,7 @@
 
         </td>
 
-        <td class="passed" title="php: MultipleUse">passed
-
-        </td>
+        <td class="no-run" title="php: MultipleUse">didn't run</td>
 
         <td class="no-run" title="python: MultipleUse">didn't run</td>
 
@@ -8461,9 +8396,7 @@
 
         </td>
 
-        <td class="passed" title="php: NavParent">passed
-
-        </td>
+        <td class="no-run" title="php: NavParent">didn't run</td>
 
         <td class="no-run" title="python: NavParent">didn't run</td>
 
@@ -8508,9 +8441,7 @@
 
         </td>
 
-        <td class="passed" title="php: NavParent2">passed
-
-        </td>
+        <td class="no-run" title="php: NavParent2">didn't run</td>
 
         <td class="no-run" title="python: NavParent2">didn't run</td>
 
@@ -8555,9 +8486,7 @@
 
         </td>
 
-        <td class="passed" title="php: NavParent3">passed
-
-        </td>
+        <td class="no-run" title="php: NavParent3">didn't run</td>
 
         <td class="no-run" title="python: NavParent3">didn't run</td>
 
@@ -8600,9 +8529,7 @@
 
         </td>
 
-        <td class="passed" title="php: NavParentOverride">passed
-
-        </td>
+        <td class="no-run" title="php: NavParentOverride">didn't run</td>
 
         <td class="no-run" title="python: NavParentOverride">didn't run</td>
 
@@ -8647,9 +8574,7 @@
 
         </td>
 
-        <td class="passed" title="php: NavParentSwitch">passed
-
-        </td>
+        <td class="no-run" title="php: NavParentSwitch">didn't run</td>
 
         <td class="no-run" title="python: NavParentSwitch">didn't run</td>
 
@@ -8694,9 +8619,7 @@
 
         </td>
 
-        <td class="passed" title="php: NavRoot">passed
-
-        </td>
+        <td class="no-run" title="php: NavRoot">didn't run</td>
 
         <td class="no-run" title="python: NavRoot">didn't run</td>
 
@@ -8741,9 +8664,7 @@
 
         </td>
 
-        <td class="passed" title="php: NestedSameName">passed
-
-        </td>
+        <td class="no-run" title="php: NestedSameName">didn't run</td>
 
         <td class="no-run" title="python: NestedSameName">didn't run</td>
 
@@ -8788,9 +8709,7 @@
 
         </td>
 
-        <td class="passed" title="php: NestedSameName2">passed
-
-        </td>
+        <td class="no-run" title="php: NestedSameName2">didn't run</td>
 
         <td class="no-run" title="python: NestedSameName2">didn't run</td>
 
@@ -8835,9 +8754,7 @@
 
         </td>
 
-        <td class="passed" title="php: NestedTypes">passed
-
-        </td>
+        <td class="no-run" title="php: NestedTypes">didn't run</td>
 
         <td class="no-run" title="python: NestedTypes">didn't run</td>
 
@@ -8882,9 +8799,7 @@
 
         </td>
 
-        <td class="passed" title="php: NestedTypes2">passed
-
-        </td>
+        <td class="no-run" title="php: NestedTypes2">didn't run</td>
 
         <td class="no-run" title="python: NestedTypes2">didn't run</td>
 
@@ -8929,9 +8844,7 @@
 
         </td>
 
-        <td class="passed" title="php: NonStandard">passed
-
-        </td>
+        <td class="no-run" title="php: NonStandard">didn't run</td>
 
         <td class="no-run" title="python: NonStandard">didn't run</td>
 
@@ -8976,9 +8889,7 @@
 
         </td>
 
-        <td class="passed" title="php: OpaqueExternalType">passed
-
-        </td>
+        <td class="no-run" title="php: OpaqueExternalType">didn't run</td>
 
         <td class="no-run" title="python: OpaqueExternalType">didn't run</td>
 
@@ -9023,9 +8934,7 @@
 
         </td>
 
-        <td class="passed" title="php: OpaqueExternalType02Parent">passed
-
-        </td>
+        <td class="no-run" title="php: OpaqueExternalType02Parent">didn't run</td>
 
         <td class="no-run" title="python: OpaqueExternalType02Parent">didn't run</td>
 
@@ -9070,9 +8979,7 @@
 
         </td>
 
-        <td class="passed" title="php: OptionalId">passed
-
-        </td>
+        <td class="no-run" title="php: OptionalId">didn't run</td>
 
         <td class="no-run" title="python: OptionalId">didn't run</td>
 
@@ -9148,9 +9055,7 @@
 
         </td>
 
-        <td class="passed" title="php: PositionAbs">passed
-
-        </td>
+        <td class="no-run" title="php: PositionAbs">didn't run</td>
 
         <td class="no-run" title="python: PositionAbs">didn't run</td>
 
@@ -9195,9 +9100,7 @@
 
         </td>
 
-        <td class="passed" title="php: PositionInSeq">passed
-
-        </td>
+        <td class="no-run" title="php: PositionInSeq">didn't run</td>
 
         <td class="no-run" title="python: PositionInSeq">didn't run</td>
 
@@ -9242,9 +9145,7 @@
 
         </td>
 
-        <td class="passed" title="php: PositionToEnd">passed
-
-        </td>
+        <td class="no-run" title="php: PositionToEnd">didn't run</td>
 
         <td class="no-run" title="python: PositionToEnd">didn't run</td>
 
@@ -9289,9 +9190,7 @@
 
         </td>
 
-        <td class="passed" title="php: ProcessRotate">passed
-
-        </td>
+        <td class="no-run" title="php: ProcessRotate">didn't run</td>
 
         <td class="no-run" title="python: ProcessRotate">didn't run</td>
 
@@ -9336,9 +9235,7 @@
 
         </td>
 
-        <td class="passed" title="php: ProcessToUser">passed
-
-        </td>
+        <td class="no-run" title="php: ProcessToUser">didn't run</td>
 
         <td class="no-run" title="python: ProcessToUser">didn't run</td>
 
@@ -9383,9 +9280,7 @@
 
         </td>
 
-        <td class="passed" title="php: ProcessXor4Const">passed
-
-        </td>
+        <td class="no-run" title="php: ProcessXor4Const">didn't run</td>
 
         <td class="no-run" title="python: ProcessXor4Const">didn't run</td>
 
@@ -9430,9 +9325,7 @@
 
         </td>
 
-        <td class="passed" title="php: ProcessXor4Value">passed
-
-        </td>
+        <td class="no-run" title="php: ProcessXor4Value">didn't run</td>
 
         <td class="no-run" title="python: ProcessXor4Value">didn't run</td>
 
@@ -9477,9 +9370,7 @@
 
         </td>
 
-        <td class="passed" title="php: ProcessXorConst">passed
-
-        </td>
+        <td class="no-run" title="php: ProcessXorConst">didn't run</td>
 
         <td class="no-run" title="python: ProcessXorConst">didn't run</td>
 
@@ -9524,9 +9415,7 @@
 
         </td>
 
-        <td class="passed" title="php: ProcessXorValue">passed
-
-        </td>
+        <td class="no-run" title="php: ProcessXorValue">didn't run</td>
 
         <td class="no-run" title="python: ProcessXorValue">didn't run</td>
 
@@ -9571,9 +9460,7 @@
 
         </td>
 
-        <td class="passed" title="php: RecursiveOne">passed
-
-        </td>
+        <td class="no-run" title="php: RecursiveOne">didn't run</td>
 
         <td class="no-run" title="python: RecursiveOne">didn't run</td>
 
@@ -9618,9 +9505,7 @@
 
         </td>
 
-        <td class="passed" title="php: RepeatEosStruct">passed
-
-        </td>
+        <td class="no-run" title="php: RepeatEosStruct">didn't run</td>
 
         <td class="no-run" title="python: RepeatEosStruct">didn't run</td>
 
@@ -9665,9 +9550,7 @@
 
         </td>
 
-        <td class="passed" title="php: RepeatEosU4">passed
-
-        </td>
+        <td class="no-run" title="php: RepeatEosU4">didn't run</td>
 
         <td class="no-run" title="python: RepeatEosU4">didn't run</td>
 
@@ -9712,9 +9595,7 @@
 
         </td>
 
-        <td class="passed" title="php: RepeatNStruct">passed
-
-        </td>
+        <td class="no-run" title="php: RepeatNStruct">didn't run</td>
 
         <td class="no-run" title="python: RepeatNStruct">didn't run</td>
 
@@ -9759,9 +9640,7 @@
 
         </td>
 
-        <td class="passed" title="php: RepeatNStrz">passed
-
-        </td>
+        <td class="no-run" title="php: RepeatNStrz">didn't run</td>
 
         <td class="no-run" title="python: RepeatNStrz">didn't run</td>
 
@@ -9806,9 +9685,7 @@
 
         </td>
 
-        <td class="passed" title="php: RepeatNStrzDouble">passed
-
-        </td>
+        <td class="no-run" title="php: RepeatNStrzDouble">didn't run</td>
 
         <td class="no-run" title="python: RepeatNStrzDouble">didn't run</td>
 
@@ -9853,9 +9730,7 @@
 
         </td>
 
-        <td class="passed" title="php: RepeatUntilComplex">passed
-
-        </td>
+        <td class="no-run" title="php: RepeatUntilComplex">didn't run</td>
 
         <td class="no-run" title="python: RepeatUntilComplex">didn't run</td>
 
@@ -9900,9 +9775,7 @@
 
         </td>
 
-        <td class="passed" title="php: RepeatUntilS4">passed
-
-        </td>
+        <td class="no-run" title="php: RepeatUntilS4">didn't run</td>
 
         <td class="no-run" title="python: RepeatUntilS4">didn't run</td>
 
@@ -9947,9 +9820,7 @@
 
         </td>
 
-        <td class="passed" title="php: StrEncodings">passed
-
-        </td>
+        <td class="no-run" title="php: StrEncodings">didn't run</td>
 
         <td class="no-run" title="python: StrEncodings">didn't run</td>
 
@@ -9994,9 +9865,7 @@
 
         </td>
 
-        <td class="passed" title="php: StrEncodingsDefault">passed
-
-        </td>
+        <td class="no-run" title="php: StrEncodingsDefault">didn't run</td>
 
         <td class="no-run" title="python: StrEncodingsDefault">didn't run</td>
 
@@ -10041,9 +9910,7 @@
 
         </td>
 
-        <td class="passed" title="php: StrEos">passed
-
-        </td>
+        <td class="no-run" title="php: StrEos">didn't run</td>
 
         <td class="no-run" title="python: StrEos">didn't run</td>
 
@@ -10088,9 +9955,7 @@
 
         </td>
 
-        <td class="passed" title="php: StrPadTerm">passed
-
-        </td>
+        <td class="no-run" title="php: StrPadTerm">didn't run</td>
 
         <td class="no-run" title="python: StrPadTerm">didn't run</td>
 
@@ -10143,9 +10008,7 @@
 
         </td>
 
-        <td class="passed" title="php: SwitchCast">passed
-
-        </td>
+        <td class="no-run" title="php: SwitchCast">didn't run</td>
 
         <td class="no-run" title="python: SwitchCast">didn't run</td>
 
@@ -10190,9 +10053,7 @@
 
         </td>
 
-        <td class="passed" title="php: SwitchIntegers">passed
-
-        </td>
+        <td class="no-run" title="php: SwitchIntegers">didn't run</td>
 
         <td class="no-run" title="python: SwitchIntegers">didn't run</td>
 
@@ -10237,9 +10098,7 @@
 
         </td>
 
-        <td class="passed" title="php: SwitchManualEnum">passed
-
-        </td>
+        <td class="no-run" title="php: SwitchManualEnum">didn't run</td>
 
         <td class="no-run" title="python: SwitchManualEnum">didn't run</td>
 
@@ -10284,9 +10143,7 @@
 
         </td>
 
-        <td class="passed" title="php: SwitchManualInt">passed
-
-        </td>
+        <td class="no-run" title="php: SwitchManualInt">didn't run</td>
 
         <td class="no-run" title="python: SwitchManualInt">didn't run</td>
 
@@ -10331,9 +10188,7 @@
 
         </td>
 
-        <td class="passed" title="php: SwitchManualIntElse">passed
-
-        </td>
+        <td class="no-run" title="php: SwitchManualIntElse">didn't run</td>
 
         <td class="no-run" title="python: SwitchManualIntElse">didn't run</td>
 
@@ -10378,9 +10233,7 @@
 
         </td>
 
-        <td class="passed" title="php: SwitchManualIntSize">passed
-
-        </td>
+        <td class="no-run" title="php: SwitchManualIntSize">didn't run</td>
 
         <td class="no-run" title="python: SwitchManualIntSize">didn't run</td>
 
@@ -10425,9 +10278,7 @@
 
         </td>
 
-        <td class="passed" title="php: SwitchManualIntSizeElse">passed
-
-        </td>
+        <td class="no-run" title="php: SwitchManualIntSizeElse">didn't run</td>
 
         <td class="no-run" title="python: SwitchManualIntSizeElse">didn't run</td>
 
@@ -10472,9 +10323,7 @@
 
         </td>
 
-        <td class="passed" title="php: SwitchManualIntSizeEos">passed
-
-        </td>
+        <td class="no-run" title="php: SwitchManualIntSizeEos">didn't run</td>
 
         <td class="no-run" title="python: SwitchManualIntSizeEos">didn't run</td>
 
@@ -10519,9 +10368,7 @@
 
         </td>
 
-        <td class="passed" title="php: SwitchManualStr">passed
-
-        </td>
+        <td class="no-run" title="php: SwitchManualStr">didn't run</td>
 
         <td class="no-run" title="python: SwitchManualStr">didn't run</td>
 
@@ -10556,7 +10403,7 @@
 
               <div class="message">System.InvalidCastException : Specified cast is not valid.</div>
 
-              <pre class="trace">  at Kaitai.SpecSwitchManualStrElse.TestSwitchManualStrElse () [0x0012a] in <700e301490a74fa39dbfbc204af250d5>:0 
+              <pre class="trace">  at Kaitai.SpecSwitchManualStrElse.TestSwitchManualStrElse () [0x0012a] in <63d7ee31390249f8838e39bccba65655>:0 
   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <f712f98eb8e445c8918edaf595bbe465>:0 </pre>
 
@@ -10578,9 +10425,7 @@
 
         </td>
 
-        <td class="passed" title="php: SwitchManualStrElse">passed
-
-        </td>
+        <td class="no-run" title="php: SwitchManualStrElse">didn't run</td>
 
         <td class="no-run" title="python: SwitchManualStrElse">didn't run</td>
 
@@ -10625,9 +10470,7 @@
 
         </td>
 
-        <td class="passed" title="php: SwitchMultiBoolOps">passed
-
-        </td>
+        <td class="no-run" title="php: SwitchMultiBoolOps">didn't run</td>
 
         <td class="no-run" title="python: SwitchMultiBoolOps">didn't run</td>
 
@@ -10672,9 +10515,7 @@
 
         </td>
 
-        <td class="passed" title="php: TermBytes">passed
-
-        </td>
+        <td class="no-run" title="php: TermBytes">didn't run</td>
 
         <td class="no-run" title="python: TermBytes">didn't run</td>
 
@@ -10719,9 +10560,7 @@
 
         </td>
 
-        <td class="passed" title="php: TermStrz">passed
-
-        </td>
+        <td class="no-run" title="php: TermStrz">didn't run</td>
 
         <td class="no-run" title="python: TermStrz">didn't run</td>
 
@@ -10766,9 +10605,7 @@
 
         </td>
 
-        <td class="passed" title="php: TsPacketHeader">passed
-
-        </td>
+        <td class="no-run" title="php: TsPacketHeader">didn't run</td>
 
         <td class="no-run" title="python: TsPacketHeader">didn't run</td>
 
@@ -10813,9 +10650,7 @@
 
         </td>
 
-        <td class="passed" title="php: TypeIntUnaryOp">passed
-
-        </td>
+        <td class="no-run" title="php: TypeIntUnaryOp">didn't run</td>
 
         <td class="no-run" title="python: TypeIntUnaryOp">didn't run</td>
 
@@ -10860,9 +10695,7 @@
 
         </td>
 
-        <td class="passed" title="php: TypeTernary">passed
-
-        </td>
+        <td class="no-run" title="php: TypeTernary">didn't run</td>
 
         <td class="no-run" title="python: TypeTernary">didn't run</td>
 
@@ -10907,9 +10740,7 @@
 
         </td>
 
-        <td class="passed" title="php: TypeTernaryOpaque">passed
-
-        </td>
+        <td class="no-run" title="php: TypeTernaryOpaque">didn't run</td>
 
         <td class="no-run" title="python: TypeTernaryOpaque">didn't run</td>
 
@@ -10954,9 +10785,7 @@
 
         </td>
 
-        <td class="passed" title="php: ZlibWithHeader78">passed
-
-        </td>
+        <td class="no-run" title="php: ZlibWithHeader78">didn't run</td>
 
         <td class="no-run" title="python: ZlibWithHeader78">didn't run</td>
 
