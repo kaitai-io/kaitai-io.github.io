@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2017-03-03 15:51:29 UTC</title>
+    <title>Kaitai Struct: test results - 2017-03-06 16:29:48 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2017-03-03 15:51:29 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2017-03-06 16:29:48 UTC</h1>
 
     <table class="table">
     <tr>
@@ -4746,9 +4746,9 @@
 
         <td>0%</td>
 
-        <td>100%</td>
+        <td>98%</td>
 
-        <td>100%</td>
+        <td>98%</td>
 
         <td>100%</td>
 
@@ -6295,6 +6295,51 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
     </tr>
 
     <tr>
+        <td>Imports0</td>
+
+        <td></td>
+
+        <td class="passed" title="cpp_stl: Imports0">passed
+
+        </td>
+
+        <td class="passed" title="csharp: Imports0">passed
+
+        </td>
+
+        <td class="passed" title="java: Imports0">passed
+
+        </td>
+
+        <td class="passed" title="javascript: Imports0">passed
+
+        </td>
+
+        <td class="passed" title="perl: Imports0">passed
+
+        </td>
+
+        <td class="passed" title="php: Imports0">passed
+
+        </td>
+
+        <td class="no-run" title="python: Imports0">didn't run</td>
+
+        <td class="passed" title="python2: Imports0">passed
+
+        </td>
+
+        <td class="passed" title="python3: Imports0">passed
+
+        </td>
+
+        <td class="passed" title="ruby: Imports0">passed
+
+        </td>
+
+    </tr>
+
+    <tr>
         <td>InstanceIoUser</td>
 
         <td></td>
@@ -7628,11 +7673,79 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td class="no-run" title="python: RecursiveOne">didn't run</td>
 
-        <td class="passed" title="python2: RecursiveOne">passed
+        <td class="failed" title="python2: RecursiveOne">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_recursive_one
+Traceback (most recent call last):
+  File "/opt/python/2.7.12/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/opt/python/2.7.12/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_recursive_one.py", line 3, in <module>
+    from recursive_one import RecursiveOne
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/recursive_one.py", line 15, in <module>
+    from recursive_one import RecursiveOne
+ImportError: cannot import name RecursiveOne
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_recursive_one
+Traceback (most recent call last):
+  File "/opt/python/2.7.12/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/opt/python/2.7.12/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_recursive_one.py", line 3, in <module>
+    from recursive_one import RecursiveOne
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/recursive_one.py", line 15, in <module>
+    from recursive_one import RecursiveOne
+ImportError: cannot import name RecursiveOne
+
+
+		</pre>
+
+          </div>
 
         </td>
 
-        <td class="passed" title="python3: RecursiveOne">passed
+        <td class="failed" title="python3: RecursiveOne">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_recursive_one
+Traceback (most recent call last):
+  File "/opt/python/3.5.2/lib/python3.5/unittest/loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/python/3.5.2/lib/python3.5/unittest/loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_recursive_one.py", line 3, in <module>
+    from recursive_one import RecursiveOne
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/recursive_one.py", line 15, in <module>
+    from recursive_one import RecursiveOne
+ImportError: cannot import name 'RecursiveOne'
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_recursive_one
+Traceback (most recent call last):
+  File "/opt/python/3.5.2/lib/python3.5/unittest/loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/python/3.5.2/lib/python3.5/unittest/loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_recursive_one.py", line 3, in <module>
+    from recursive_one import RecursiveOne
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/recursive_one.py", line 15, in <module>
+    from recursive_one import RecursiveOne
+ImportError: cannot import name 'RecursiveOne'
+
+
+		</pre>
+
+          </div>
 
         </td>
 
@@ -8702,7 +8815,7 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
               <div class="message">System.InvalidCastException : Specified cast is not valid.</div>
 
-              <pre class="trace">  at Kaitai.SpecSwitchManualStrElse.TestSwitchManualStrElse () [0x0012a] in <61d0fe5c93b74537b099b2c6b1f0e0e3>:0 
+              <pre class="trace">  at Kaitai.SpecSwitchManualStrElse.TestSwitchManualStrElse () [0x0012a] in <4377addd497b4a5cb018ab666bdc5ad5>:0 
   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <f712f98eb8e445c8918edaf595bbe465>:0 </pre>
 
