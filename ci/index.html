@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2017-03-07 10:05:59 UTC</title>
+    <title>Kaitai Struct: test results - 2017-03-07 14:30:01 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2017-03-07 10:05:59 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2017-03-07 14:30:01 UTC</h1>
 
     <table class="table">
     <tr>
@@ -4746,9 +4746,9 @@
 
         <td>0%</td>
 
-        <td>97%</td>
+        <td>98%</td>
 
-        <td>97%</td>
+        <td>98%</td>
 
         <td>100%</td>
 
@@ -7727,79 +7727,11 @@ TypeError: ImportsCircularA is not a function
 
         <td class="no-run" title="python: RecursiveOne">didn't run</td>
 
-        <td class="failed" title="python2: RecursiveOne">failed
-
-          <div class="add-info">
-
-              <div class="message">Failed to import test module: test_recursive_one
-Traceback (most recent call last):
-  File "/opt/python/2.7.12/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/opt/python/2.7.12/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_recursive_one.py", line 3, in <module>
-    from recursive_one import RecursiveOne
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/recursive_one.py", line 15, in <module>
-    from recursive_one import RecursiveOne
-ImportError: cannot import name RecursiveOne
-</div>
-
-              <pre class="trace">
-
-ImportError: Failed to import test module: test_recursive_one
-Traceback (most recent call last):
-  File "/opt/python/2.7.12/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/opt/python/2.7.12/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_recursive_one.py", line 3, in <module>
-    from recursive_one import RecursiveOne
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/recursive_one.py", line 15, in <module>
-    from recursive_one import RecursiveOne
-ImportError: cannot import name RecursiveOne
-
-
-		</pre>
-
-          </div>
+        <td class="passed" title="python2: RecursiveOne">passed
 
         </td>
 
-        <td class="failed" title="python3: RecursiveOne">failed
-
-          <div class="add-info">
-
-              <div class="message">Failed to import test module: test_recursive_one
-Traceback (most recent call last):
-  File "/opt/python/3.5.2/lib/python3.5/unittest/loader.py", line 428, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "/opt/python/3.5.2/lib/python3.5/unittest/loader.py", line 369, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_recursive_one.py", line 3, in <module>
-    from recursive_one import RecursiveOne
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/recursive_one.py", line 15, in <module>
-    from recursive_one import RecursiveOne
-ImportError: cannot import name 'RecursiveOne'
-</div>
-
-              <pre class="trace">
-
-ImportError: Failed to import test module: test_recursive_one
-Traceback (most recent call last):
-  File "/opt/python/3.5.2/lib/python3.5/unittest/loader.py", line 428, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "/opt/python/3.5.2/lib/python3.5/unittest/loader.py", line 369, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_recursive_one.py", line 3, in <module>
-    from recursive_one import RecursiveOne
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/recursive_one.py", line 15, in <module>
-    from recursive_one import RecursiveOne
-ImportError: cannot import name 'RecursiveOne'
-
-
-		</pre>
-
-          </div>
+        <td class="passed" title="python3: RecursiveOne">passed
 
         </td>
 
@@ -8869,7 +8801,7 @@ ImportError: cannot import name 'RecursiveOne'
 
               <div class="message">System.InvalidCastException : Specified cast is not valid.</div>
 
-              <pre class="trace">  at Kaitai.SpecSwitchManualStrElse.TestSwitchManualStrElse () [0x0012a] in <01ef586da415453aa551cad2cebab9e9>:0 
+              <pre class="trace">  at Kaitai.SpecSwitchManualStrElse.TestSwitchManualStrElse () [0x0012a] in <6b9348c7ec2c4d0992216508c48c5dee>:0 
   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <f712f98eb8e445c8918edaf595bbe465>:0 </pre>
 
