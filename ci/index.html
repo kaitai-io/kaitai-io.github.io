@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2017-03-06 16:29:48 UTC</title>
+    <title>Kaitai Struct: test results - 2017-03-07 10:05:59 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2017-03-06 16:29:48 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2017-03-07 10:05:59 UTC</h1>
 
     <table class="table">
     <tr>
@@ -4738,7 +4738,7 @@
 
         <td>100%</td>
 
-        <td>97%</td>
+        <td>96%</td>
 
         <td>98%</td>
 
@@ -4746,9 +4746,9 @@
 
         <td>0%</td>
 
-        <td>98%</td>
+        <td>97%</td>
 
-        <td>98%</td>
+        <td>97%</td>
 
         <td>100%</td>
 
@@ -6334,6 +6334,60 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         </td>
 
         <td class="passed" title="ruby: Imports0">passed
+
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>ImportsCircularA</td>
+
+        <td></td>
+
+        <td class="passed" title="cpp_stl: ImportsCircularA">passed
+
+        </td>
+
+        <td class="passed" title="csharp: ImportsCircularA">passed
+
+        </td>
+
+        <td class="passed" title="java: ImportsCircularA">passed
+
+        </td>
+
+        <td class="failed" title="javascript: ImportsCircularA">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">ImportsCircularA is not a function
+TypeError: ImportsCircularA is not a function
+    at new ImportsCircularB (compiled/javascript/ImportsCircularB.js:14:22)
+    at new ImportsCircularA (compiled/javascript/ImportsCircularA.js:13:16)
+    at helpers/javascript/testHelper.js:12:17
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:404:3)</pre>
+
+          </div>
+
+        </td>
+
+        <td class="passed" title="perl: ImportsCircularA">passed
+
+        </td>
+
+        <td class="passed" title="php: ImportsCircularA">passed
+
+        </td>
+
+        <td class="no-run" title="python: ImportsCircularA">didn't run</td>
+
+        <td class="no-run" title="python2: ImportsCircularA">didn't run</td>
+
+        <td class="no-run" title="python3: ImportsCircularA">didn't run</td>
+
+        <td class="passed" title="ruby: ImportsCircularA">passed
 
         </td>
 
@@ -8815,7 +8869,7 @@ ImportError: cannot import name 'RecursiveOne'
 
               <div class="message">System.InvalidCastException : Specified cast is not valid.</div>
 
-              <pre class="trace">  at Kaitai.SpecSwitchManualStrElse.TestSwitchManualStrElse () [0x0012a] in <4377addd497b4a5cb018ab666bdc5ad5>:0 
+              <pre class="trace">  at Kaitai.SpecSwitchManualStrElse.TestSwitchManualStrElse () [0x0012a] in <01ef586da415453aa551cad2cebab9e9>:0 
   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in <f712f98eb8e445c8918edaf595bbe465>:0 </pre>
 
