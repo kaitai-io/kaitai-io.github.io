@@ -48,7 +48,7 @@ function ksInit() {
 
     ksLoad("DOS MZ", false);
 
-    ksDoAnalytics = true;
+    ksDoAnalytics = false;
 }
 
 function ksLoad(name) {
@@ -56,6 +56,22 @@ function ksLoad(name) {
     ksGaEvent('compiler-load', name, null);
     ksCompile();
 }
+
+var JavaScriptImporter = (function() {
+    function JavaScriptImporter() {}
+
+    JavaScriptImporter.prototype.importYaml = function(name) {
+        return new Promise(function(resolve, reject) {
+            console.log("loadImportAsync: starting promise");
+            setTimeout(function() {
+                console.log("loadImportAsync: there we go");
+                resolve({"meta":{"id":"second_one"},"seq":[{"id":"foo","type":"u1"}]});
+            }, 500);
+        });
+    };
+
+    return JavaScriptImporter;
+})();
 
 function ksCompile() {
     var ks = io.kaitai.struct.MainJs();
@@ -73,31 +89,42 @@ function ksCompile() {
         return;
     }
 
-    try {
-        var r = ks.compile(targetLang, src);
-    } catch (err) {
+    var compilerPromise = ks.compile(targetLang, src, new JavaScriptImporter());
+
+    compilerPromise.catch(function(err) {
         console.log("KS compilation error: ", err);
         errMsgEl.text(err);
         ksGaEvent('compiler-err-scala', targetLang, err);
-        return;
-    }
+    });
 
-    var dest = $('#compiled');
-    for (var i = 0; i < ks.languages.length; i++) {
-        dest.removeClass(ks.languages[i]);
-    }
-    dest.addClass(targetLang);
+    compilerPromise.then(function(r) {
+        var dest = $('#compiled');
 
-    if (r.length == 2) {
-        dest.text("// ================ HEADER\n\n" + r[1] + "\n// ================ SOURCE\n\n" + r[0]);
-    } else {
-        dest.text(r[0]);
-    }
-    hljs.highlightBlock(dest[0]);
+        // Clean up highlighting CSS classes + set up proper one
+        for (var i = 0; i < ks.languages.length; i++) {
+            dest.removeClass(ks.languages[i]);
+        }
+        dest.addClass(targetLang);
 
-    errMsgEl.html("");
+        // Prepare and dump compiler output into the window
+        var out = '';
+        var first = true;
+        for (var fn in r) {
+            if (!first)
+                out += "\n";
+            out += "================ " + fn + "\n\n";
+            out += r[fn];
+            first = false;
+        }
+        dest.text(out);
 
-    ksGaEvent('compiler-ok', targetLang, null);
+        // Do the highlighting
+        hljs.highlightBlock(dest[0]);
+
+        errMsgEl.html("");
+
+        ksGaEvent('compiler-ok', targetLang, null);
+    });
 }
 
 ksInit();
