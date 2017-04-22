@@ -79,7 +79,7 @@ title: Try it
     </div>
   </div>
 </div>
-<section id="what-is-it">
+<div class="section" id="what-is-it">
   <div class="container">
     <div class="row">
       <div class="col-sm-8">
@@ -155,8 +155,8 @@ private void _read() throws IOException {
       </div>
     </div>
   </div>
-</section>
-<section id="quick-start">
+</div>
+<div class="section" id="quick-start">
   <div class="container">
   <h1>Quick start</h1>
   <p>Consider this simple <code>.ksy</code> format description file that
@@ -287,8 +287,8 @@ puts "height = #{g.logical_screen.image_height}"</code></pre>
       </div>
     </div>
   </div>
-</section>
-<section id="download">
+</div>
+<div class="section" id="download">
   <div class="container">
     <h1>Downloading and installing</h1>
     <ul class="nav nav-pills" role="tablist">
@@ -400,8 +400,8 @@ sudo apt-get install kaitai-struct-compiler</pre>
       </li>
     </ul>
   </div>
-</section>
-<section id="format-gallery">
+</div>
+<div class="section" id="format-gallery">
   <div class="container">
     <h1>Format Gallery</h1>
     <p>
@@ -457,4 +457,4 @@ sudo apt-get install kaitai-struct-compiler</pre>
       </div>
     </div>
   </div>
-</section>
+</div>
