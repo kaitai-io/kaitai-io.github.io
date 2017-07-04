@@ -1,58 +1,15 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+layout: default
+title: Try it
+permalink: /repl/
+---
+<link rel="stylesheet" href="{{ site.baseurl }}/styles/ks.css" type="text/css">
+<link rel="stylesheet" href="{{ site.baseurl }}/styles/highlight/railscasts.css" type="text/css">
 
-  <title>Kaitai Struct: try it online!</title>
-  <meta name="keywords" content="kaitai,struct,binary,format,parsing,decoding,java,javascript,python,ruby,library,metadata,repl">
-  <meta name="description" content="Try online Kaitai Struct REPL, a formal language for binary format specification that can be compiled into parser code">
+<script type="text/javascript" src="{{ site.baseurl }}/js/yaml.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/kaitai-struct-compiler-fastopt.js"></script>
 
-  <link rel="stylesheet" href="../styles/bootstrap.min.css">
-  <link rel="stylesheet" href="../styles/bootstrap-theme.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Exo:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-  <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="../styles/ks.css">
-  <link rel="stylesheet" href="../styles/highlight/railscasts.css">
-  <script src="../js/highlight.pack.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-
-  <script type="text/javascript" src="../js/yaml.js"></script>
-  <script type="text/javascript" src="../js/kaitai-struct-compiler-fastopt.js"></script>
-</head>
-<body>
-
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="main-navbar">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <span class="navbar-brand">Kaitai Struct</span>
-            </div>
-            <div class="collapse navbar-collapse" id="main-navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="../index.html#what-is-it">What is it?</a></li>
-                    <li><a href="../index.html#quick-start">Quick Start</a></li>
-                    <li><a href="../index.html#download">Download</a></li>
-                    <li><a href="../index.html#format-gallery">Format Gallery</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Try it</a></li>
-                    <li><a href="http://doc.kaitai.io/">Documentation</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container">
+<div class="container">
         <div class="row">
             <div class="col-md-5"><h2>Kaitai Struct YAML</h2></div>
             <div class="col-md-7"><h2><select id="target_lang"></select></h2></div>
@@ -644,38 +601,7 @@ enums:
 </div>
 </div>
 
-    </div>
+</div>
 
-    <footer id="main-footer">
-        <div class="container">
-            &copy; 2015-2016 Kaitai Project
+<script type="text/javascript" src="{{ site.baseurl }}/js/repl.js"></script>
 
-            <h3>Contacts</h3>
-
-            <div class="row">
-                <div class="col-sm-4">
-                    <i class="fa fa-fw fa-2x fa-github"></i> <a href="https://github.com/kaitai-io/kaitai_struct">GitHub</a>
-                </div>
-                <div class="col-sm-4">
-                    <i class="fa fa-fw fa-2x fa-twitter"></i> <a href="https://twitter.com/kaitai_io">@kaitai_io</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-
-    <script type="text/javascript" src="../js/repl.js"></script>
-
-  <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-76299550-1', 'auto');
-      ga('send', 'pageview');
-  </script>
-</body>
-</html>
