@@ -2,12 +2,13 @@
 layout: default
 title: Try it
 permalink: /repl/
+extra_footer: |
+  <script type="text/javascript" src="/js/yaml.js"></script>
+  <script type="text/javascript" src="/js/kaitai-struct-compiler-fastopt.js"></script>
+  <script type="text/javascript" src="/js/repl.js"></script>
 ---
 <link rel="stylesheet" href="{{ site.baseurl }}/styles/ks.css" type="text/css">
 <link rel="stylesheet" href="{{ site.baseurl }}/styles/highlight/railscasts.css" type="text/css">
-
-<script type="text/javascript" src="{{ site.baseurl }}/js/yaml.js"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/js/kaitai-struct-compiler-fastopt.js"></script>
 
 <div class="container">
         <div class="row">
@@ -602,6 +603,3 @@ enums:
 </div>
 
 </div>
-
-<script type="text/javascript" src="{{ site.baseurl }}/js/repl.js"></script>
-
