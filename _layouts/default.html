@@ -10,7 +10,7 @@
   <meta name="description" content="Kaitai Struct is a formal language for binary format specification that can be compiled into parser code">
 
   <link rel="stylesheet" href="{{ site.baseurl }}/styles/bootstrap.min.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/styles/bootstrap-theme.min.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ site.baseurl }}/styles/bootstrap-theme.min.css">
   <link href='https://fonts.googleapis.com/css?family=Exo:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -18,13 +18,8 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/styles/main.css" type="text/css">
   <link rel="stylesheet" href="{{ site.baseurl }}/styles/highlight/default.css">
 
-
   <script src="{{ site.baseurl }}/js/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
-
-  <script src="{{ site.baseurl }}/js/jquery-1.12.3.min.js"></script>
-  <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
-
 </head>
 <body data-spy="scroll" data-target="#main-navbar" data-offset="100">
 
@@ -36,12 +31,17 @@
                 </button>
                 <span class="navbar-brand">Kaitai Struct</span>
             </div>
+            {% if page.url == '/' %}
+            {% assign root_path = '' %}
+            {% else %}
+            {% assign root_path = '/' | relative_url %}
+            {% endif %}
             <div class="collapse navbar-collapse" id="main-navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="{{ site.baseurl }}/#what-is-it">What is it?</a></li>
-                    <li><a href="{{ site.baseurl }}/index.html#quick-start">Quick Start</a></li>
-                    <li><a href="{{ site.baseurl }}/index.html#download">Download</a></li>
-                    <li><a href="{{ site.baseurl }}/index.html#format-gallery">Format Gallery</a></li>
+                    <li{% if page.url == '/' %} class="active"{% endif %}><a href="{{ root_path }}#what-is-it">What is it?</a></li>
+                    <li><a href="{{ root_path }}#quick-start">Quick Start</a></li>
+                    <li><a href="{{ root_path }}#download">Download</a></li>
+                    <li><a href="http://formats.kaitai.io/">Format Gallery</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="{{ site.baseurl }}/repl">Try it</a></li>
@@ -73,6 +73,10 @@
             </div>
         </div>
     </footer>
+
+  <script src="{{ site.baseurl }}/js/jquery-1.12.3.min.js"></script>
+  <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+  {{ page.extra_footer }}
 
   <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

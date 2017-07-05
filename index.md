@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Try it
+extra_footer: |
+  <script src="/js/scroller.js"></script>
 ---
-<script src="{{ site.baseurl }}/js/scroller.js"></script>
 <div class="jumbotron">
   <div class="container">
     <div class="col-sm-3" style="height: 434px">
@@ -402,60 +403,38 @@ sudo apt-get install kaitai-struct-compiler</pre>
     </ul>
   </div>
 </section>
+
 <section id="format-gallery">
-  <div class="container">
-    <h1>Format Gallery</h1>
-    <p>
-      More sample formats are available
-      in <a href="https://github.com/kaitai-io/kaitai_struct_formats">our format gallery repo</a>, for example:
-    </p>
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="media">
-          <div class="media-left"><i class="fa fa-fw fa-3x fa-cogs"></i></div>
-          <div class="media-body">
-            <h4>Executables</h4>
-            <p>
-              <a href="https://github.com/kaitai-io/kaitai_struct_formats/blob/master/executable/dos_mz.ksy">dos_mz</a>,
-              <a href="https://github.com/kaitai-io/kaitai_struct_formats/blob/master/executable/java_class.ksy">java_class</a>
-            </p>
-          </div>
+    <div class="container">
+        <h1>Built with Kaitai Struct</h1>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <p>
+                    We maintain a
+                    growing <a href="https://github.com/kaitai-io/kaitai_struct_formats">free
+                    / open source repository</a> of file formats
+                    and protocols specifications. Visit our format
+                    gallery to view the showcase of that
+                    repository with documentation, block diagrams
+                    and ready-made parser libraries in all
+                    supported target languages.
+                </p>
+                <p>
+                    <a href="http://formats.kaitai.io/" class="btn btn-success">Format Gallery &gt;&gt;</a>
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <p>Kaitai Struct is used in the following open source projects:</p>
+                <ul>
+                    <li><a href="https://codisec.com/veles/">Veles</a> — binary data visualization and analysis tool</li>
+                    <li><a href="https://mitmproxy.org/">mitmproxy</a> — an interactive man-in-the-middle traffic inspection and modification tool</li>
+                    <li><a href="https://www.kismetwireless.net/">Kismet</a> — wireless network detector, sniffer, and intrusion detection system</li>
+                </ul>
+                <p>
+                    If your project also uses Kaitai Struct, please drop us a line :)
+                </p>
+            </div>
         </div>
-        <div class="media">
-          <div class="media-left"><i class="fa fa-fw fa-3x fa-gamepad"></i></div>
-          <div class="media-body">
-            <h4>Game data files</h4>
-            <p>
-              <a href="https://github.com/kaitai-io/kaitai_struct_formats/blob/master/game/doom_wad.ksy">doom_wad</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="media">
-          <div class="media-left"><i class="fa fa-fw fa-3x fa-file-image-o"></i></div>
-          <div class="media-body">
-            <h4>Image files</h4>
-            <p>
-              <a href="https://github.com/kaitai-io/kaitai_struct_formats/blob/master/image/bmp.ksy">bmp</a>,
-              <a href="https://github.com/kaitai-io/kaitai_struct_formats/blob/master/image/gif.ksy">gif</a>,
-              <a href="https://github.com/kaitai-io/kaitai_struct_formats/blob/master/image/pcx.ksy">pcx</a>
-            </p>
-          </div>
-        </div>
-        <div class="media">
-          <div class="media-left"><i class="fa fa-fw fa-3x fa-sitemap"></i></div>
-          <div class="media-body">
-            <h4>Network packets</h4>
-            <p>
-              <a href="https://github.com/kaitai-io/kaitai_struct_formats/blob/master/network/ethernet_frame.ksy">ethernet_frame</a>,
-              <a href="https://github.com/kaitai-io/kaitai_struct_formats/blob/master/network/ipv4_packet.ksy">ipv4_packet</a>,
-              <a href="https://github.com/kaitai-io/kaitai_struct_formats/blob/master/network/pcap.ksy">pcap</a>,
-              <a href="https://github.com/kaitai-io/kaitai_struct_formats/blob/master/network/tcp_segment.ksy">tcp_segment</a>
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </section>
