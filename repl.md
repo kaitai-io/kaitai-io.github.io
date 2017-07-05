@@ -27,11 +27,11 @@ extra_footer: |
     <p>or try loading some examples: <span id="examples"></span></p>
 
     <div style="display: none">
-        <div class="example" data-name="DOS MZ">{% include dos_mz.ksy %}</div>
-        <div class="example" data-name="Doom .wad (simple)">{% include doom_wad_simple.ksy %}</div>
-        <div class="example" data-name="Doom .wad">{% include doom_wad.ksy %}</div>
-        <div class="example" data-name="IPv4 packet">{% include ipv4_packet.ksy %}</div>
-        <div class="example" data-name="GIF image">{% include gif.ksy %}</div>
-        <div class="example" data-name="ZIP archive">{% include zip.ksy %}</div>
+        <div class="example" data-name="DOS MZ">{% capture my_include %}{% include dos_mz.ksy %}{% endcapture %}{{ my_include | xml_escape }}</div>
+        <div class="example" data-name="Doom .wad (simple)">{% capture my_include %}{% include doom_wad_simple.ksy %}{% endcapture %}{{ my_include | xml_escape }}</div>
+        <div class="example" data-name="Doom .wad">{% capture my_include %}{% include doom_wad.ksy %}{% endcapture %}{{ my_include | xml_escape }}</div>
+        <div class="example" data-name="IPv4 packet">{% capture my_include %}{% include ipv4_packet.ksy %}{% endcapture %}{{ my_include | xml_escape }}</div>
+        <div class="example" data-name="GIF image">{% capture my_include %}{% include gif.ksy %}{% endcapture %}{{ my_include | xml_escape }}</div>
+        <div class="example" data-name="ZIP archive">{% capture my_include %}{% include zip.ksy %}{% endcapture %}{{ my_include | xml_escape }}</div>
     </div>
 </div>
