@@ -131,28 +131,27 @@ extra_footer: |
       </div>
       <div class="col-sm-4">
         <pre><code class="yaml">meta:
-id: tcp_segment
-endian: be
+  id: tcp_segment
+  endian: be
 seq:
-- id: src_port
-type: u2
-- id: dst_port
-type: u2
-- id: seq_num
-type: u4
-- id: ack_num
-type: u4</code></pre>
+  - id: src_port
+    type: u2
+  - id: dst_port
+    type: u2
+  - id: seq_num
+    type: u4
+  - id: ack_num
+    type: u4</code></pre>
         <p style="text-align: center"><i class="fa fa-3x fa-arrow-down"></i></p>
-        <pre><code class="java">
-public class TcpSegment extends KaitaiStruct {
-// ...
-private void _read() throws IOException {
-    this.srcPort = _io.readU2be();
-    this.dstPort = _io.readU2be();
-    this.seqNum = _io.readU4be();
-    this.ackNum = _io.readU4be();
-}
-// ...</code></pre>
+        <pre><code class="java">public class TcpSegment extends KaitaiStruct {
+    // ...
+    private void _read() throws IOException {
+        this.srcPort = _io.readU2be();
+        this.dstPort = _io.readU2be();
+        this.seqNum = _io.readU4be();
+        this.ackNum = _io.readU4be();
+    }
+    // ...</code></pre>
       </div>
     </div>
   </div>
@@ -166,33 +165,33 @@ private void _read() throws IOException {
   <div class="row">
     <div class="col-sm-4">
       <pre><code class="yaml">meta:
-id: gif
-file-extension: gif
-endian: le
+  id: gif
+  file-extension: gif
+  endian: le
 seq:
-- id: header
-type: header
-- id: logical_screen
-type: logical_screen
+  - id: header
+    type: header
+  - id: logical_screen
+    type: logical_screen
 types:
-header:
-seq:
-  - id: magic
-    contents: 'GIF'
-  - id: version
-    size: 3
-logical_screen:
-seq:
-  - id: image_width
-    type: u2
-  - id: image_height
-    type: u2
-  - id: flags
-    type: u1
-  - id: bg_color_index
-    type: u1
-  - id: pixel_aspect_ratio
-    type: u1</code></pre>
+  header:
+    seq:
+      - id: magic
+        contents: 'GIF'
+      - id: version
+        size: 3
+  logical_screen:
+    seq:
+      - id: image_width
+        type: u2
+      - id: image_height
+        type: u2
+      - id: flags
+        type: u1
+      - id: bg_color_index
+        type: u1
+      - id: pixel_aspect_ratio
+        type: u1</code></pre>
     </div>
     <div class="col-sm-8">
       <p>It declares that GIF file usually has <code>.gif</code> extension and uses
