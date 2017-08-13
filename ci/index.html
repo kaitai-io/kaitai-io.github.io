@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2017-08-13 14:24:42 UTC</title>
+    <title>Kaitai Struct: test results - 2017-08-13 16:14:00 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -49,7 +49,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2017-08-13 14:24:42 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2017-08-13 16:14:00 UTC</h1>
 
     <table class="table">
     <tr>
@@ -4546,7 +4546,7 @@
 
         <td>99%</td>
 
-        <td>0%</td>
+        <td>10%</td>
 
         <td>100%</td>
 
@@ -4896,7 +4896,17 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="go: BytesPadTerm">didn't run</td>
+        <td class="failed" title="go: BytesPadTerm">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed</div>
+
+              <pre class="trace">assertions.go:239: &#xD;                          &#xD;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:26&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: string(&#34;str1&#34;)&#xA;&#x9;&#xD;&#x9;            &#x9;actual: []uint8([]byte{0x73, 0x74, 0x72, 0x31, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40})&#xA;assertions.go:239: &#xD;                          &#xD;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:27&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: string(&#34;str2foo&#34;)&#xA;&#x9;&#xD;&#x9;            &#x9;actual: []uint8([]byte{0x73, 0x74, 0x72, 0x32, 0x66, 0x6f, 0x6f, 0x40, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b})&#xA;assertions.go:239: &#xD;                          &#xD;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:28&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: string(&#34;str+++3bar+++&#34;)&#xA;&#x9;&#xD;&#x9;            &#x9;actual: []uint8([]byte{0x73, 0x74, 0x72, 0x2b, 0x2b, 0x2b, 0x33, 0x62, 0x61, 0x72, 0x2b, 0x2b, 0x2b, 0x40, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b})&#xA;assertions.go:239: &#xD;                          &#xD;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:29&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: string(&#34;str4baz@&#34;)&#xA;&#x9;&#xD;&#x9;            &#x9;actual: []uint8([]byte{0x73, 0x74, 0x72, 0x34, 0x62, 0x61, 0x7a, 0x40, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e})</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="java: BytesPadTerm">passed
 
@@ -5047,7 +5057,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="go: DefaultBigEndian">didn't run</td>
+        <td class="passed" title="go: DefaultBigEndian">passed
+
+        </td>
 
         <td class="passed" title="java: DefaultBigEndian">passed
 
@@ -5328,7 +5340,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="go: DefaultEndianMod">didn't run</td>
+        <td class="passed" title="go: DefaultEndianMod">passed
+
+        </td>
 
         <td class="passed" title="java: DefaultEndianMod">passed
 
@@ -5375,7 +5389,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="go: Docstrings">didn't run</td>
+        <td class="passed" title="go: Docstrings">passed
+
+        </td>
 
         <td class="passed" title="java: Docstrings">passed
 
@@ -5422,7 +5438,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="go: DocstringsDocref">didn't run</td>
+        <td class="passed" title="go: DocstringsDocref">passed
+
+        </td>
 
         <td class="passed" title="java: DocstringsDocref">passed
 
@@ -6550,7 +6568,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="go: FloatingPoints">didn't run</td>
+        <td class="passed" title="go: FloatingPoints">passed
+
+        </td>
 
         <td class="passed" title="java: FloatingPoints">passed
 
@@ -6597,7 +6617,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="go: HelloWorld">didn't run</td>
+        <td class="passed" title="go: HelloWorld">passed
+
+        </td>
 
         <td class="passed" title="java: HelloWorld">passed
 
@@ -7609,7 +7631,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="go: NavParentFalse2">didn't run</td>
+        <td class="passed" title="go: NavParentFalse2">passed
+
+        </td>
 
         <td class="passed" title="java: NavParentFalse2">passed
 
@@ -7936,7 +7960,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="go: NestedTypes">didn't run</td>
+        <td class="passed" title="go: NestedTypes">passed
+
+        </td>
 
         <td class="passed" title="java: NestedTypes">passed
 
@@ -7983,7 +8009,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="go: NestedTypes2">didn't run</td>
+        <td class="passed" title="go: NestedTypes2">passed
+
+        </td>
 
         <td class="passed" title="java: NestedTypes2">passed
 
@@ -8348,7 +8376,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="go: PositionAbs">didn't run</td>
+        <td class="passed" title="go: PositionAbs">passed
+
+        </td>
 
         <td class="passed" title="java: PositionAbs">passed
 
@@ -8710,7 +8740,17 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="go: ProcessRotate">didn't run</td>
+        <td class="failed" title="go: ProcessRotate">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed</div>
+
+              <pre class="trace">assertions.go:239: &#xD;                          &#xD;&#x9;Error Trace:&#x9;process_rotate_test.go:26&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: string(&#34;Hello&#34;)&#xA;&#x9;&#xD;&#x9;            &#x9;actual: []uint8([]byte{0x9, 0xac, 0x8d, 0x8d, 0xed})&#xA;assertions.go:239: &#xD;                          &#xD;&#x9;Error Trace:&#x9;process_rotate_test.go:27&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: string(&#34;World&#34;)&#xA;&#x9;&#xD;&#x9;            &#x9;actual: []uint8([]byte{0xba, 0x7b, 0x93, 0x63, 0x23})&#xA;assertions.go:239: &#xD;                          &#xD;&#x9;Error Trace:&#x9;process_rotate_test.go:28&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: string(&#34;There&#34;)&#xA;&#x9;&#xD;&#x9;            &#x9;actual: []uint8([]byte{0x2a, 0x34, 0xb2, 0x39, 0xb2})</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="java: ProcessRotate">passed
 
@@ -8908,7 +8948,17 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="go: ProcessXorConst">didn't run</td>
+        <td class="failed" title="go: ProcessXorConst">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed</div>
+
+              <pre class="trace">assertions.go:239: &#xD;                          &#xD;&#x9;Error Trace:&#x9;process_xor_const_test.go:27&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: string(&#34;foo bar&#34;)&#xA;&#x9;&#xD;&#x9;            &#x9;actual: []uint8([]byte{0x99, 0x90, 0x90, 0xdf, 0x9d, 0x9e, 0x8d})</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="java: ProcessXorConst">passed
 
@@ -8955,7 +9005,17 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="go: ProcessXorValue">didn't run</td>
+        <td class="failed" title="go: ProcessXorValue">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed</div>
+
+              <pre class="trace">assertions.go:239: &#xD;                          &#xD;&#x9;Error Trace:&#x9;process_xor_value_test.go:27&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: string(&#34;foo bar&#34;)&#xA;&#x9;&#xD;&#x9;            &#x9;actual: []uint8([]byte{0x99, 0x90, 0x90, 0xdf, 0x9d, 0x9e, 0x8d})</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="java: ProcessXorValue">passed
 
@@ -9049,7 +9109,17 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="go: RepeatEosStruct">didn't run</td>
+        <td class="failed" title="go: RepeatEosStruct">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed</div>
+
+              <pre class="trace">repeat_eos_struct_test.go:23: EOF</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="java: RepeatEosStruct">passed
 
@@ -9455,7 +9525,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="go: StrEncodings">didn't run</td>
+        <td class="passed" title="go: StrEncodings">passed
+
+        </td>
 
         <td class="passed" title="java: StrEncodings">passed
 
@@ -9502,7 +9574,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="go: StrEncodingsDefault">didn't run</td>
+        <td class="passed" title="go: StrEncodingsDefault">passed
+
+        </td>
 
         <td class="passed" title="java: StrEncodingsDefault">passed
 
@@ -9549,7 +9623,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="go: StrEos">didn't run</td>
+        <td class="passed" title="go: StrEos">passed
+
+        </td>
 
         <td class="passed" title="java: StrEos">passed
 
@@ -9690,7 +9766,17 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="go: StrPadTerm">didn't run</td>
+        <td class="failed" title="go: StrPadTerm">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed</div>
+
+              <pre class="trace">assertions.go:239: &#xD;                          &#xD;&#x9;Error Trace:&#x9;str_pad_term_test.go:26&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: &#34;str1&#34;&#xA;&#x9;&#xD;&#x9;            &#x9;actual: &#34;str1@@@@@@@@@@@@@@@@&#34;&#xA;assertions.go:239: &#xD;                          &#xD;&#x9;Error Trace:&#x9;str_pad_term_test.go:27&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: &#34;str2foo&#34;&#xA;&#x9;&#xD;&#x9;            &#x9;actual: &#34;str2foo@++++++++++++&#34;&#xA;assertions.go:239: &#xD;                          &#xD;&#x9;Error Trace:&#x9;str_pad_term_test.go:28&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: &#34;str+++3bar+++&#34;&#xA;&#x9;&#xD;&#x9;            &#x9;actual: &#34;str+++3bar+++@++++++&#34;&#xA;assertions.go:239: &#xD;                          &#xD;&#x9;Error Trace:&#x9;str_pad_term_test.go:29&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: &#34;str4baz@&#34;&#xA;&#x9;&#xD;&#x9;            &#x9;actual: &#34;str4baz@............&#34;</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="java: StrPadTerm">passed
 
@@ -9737,7 +9823,17 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="go: StrPadTermEmpty">didn't run</td>
+        <td class="failed" title="go: StrPadTermEmpty">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed</div>
+
+              <pre class="trace">assertions.go:239: &#xD;                          &#xD;&#x9;Error Trace:&#x9;str_pad_term_empty_test.go:26&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: &#34;&#34;&#xA;&#x9;&#xD;&#x9;            &#x9;actual: &#34;@@@@@@@@@@@@@@@@@@@@&#34;&#xA;assertions.go:239: &#xD;                          &#xD;&#x9;Error Trace:&#x9;str_pad_term_empty_test.go:27&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: &#34;&#34;&#xA;&#x9;&#xD;&#x9;            &#x9;actual: &#34;@@@@@@@@++++++++++++&#34;&#xA;assertions.go:239: &#xD;                          &#xD;&#x9;Error Trace:&#x9;str_pad_term_empty_test.go:28&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: &#34;&#34;&#xA;&#x9;&#xD;&#x9;            &#x9;actual: &#34;@tr+++3bar+++@++++++&#34;&#xA;assertions.go:239: &#xD;                          &#xD;&#x9;Error Trace:&#x9;str_pad_term_empty_test.go:29&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: &#34;@&#34;&#xA;&#x9;&#xD;&#x9;            &#x9;actual: &#34;@@@@@@@@............&#34;</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="java: StrPadTermEmpty">passed
 
@@ -10442,7 +10538,17 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="go: TermBytes">didn't run</td>
+        <td class="failed" title="go: TermBytes">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed</div>
+
+              <pre class="trace">term_bytes_test.go:23: EOF</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="java: TermBytes">passed
 
@@ -10489,7 +10595,17 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="go: TermStrz">didn't run</td>
+        <td class="failed" title="go: TermStrz">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed</div>
+
+              <pre class="trace">term_strz_test.go:23: EOF</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="java: TermStrz">passed
 
@@ -10724,7 +10840,17 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="go: ZlibWithHeader78">didn't run</td>
+        <td class="failed" title="go: ZlibWithHeader78">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed</div>
+
+              <pre class="trace">assertions.go:239: &#xD;                          &#xD;&#x9;Error Trace:&#x9;zlib_with_header_78_test.go:26&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: string(&#34;a quick brown fox jumps over&#34;)&#xA;&#x9;&#xD;&#x9;            &#x9;actual: []uint8([]byte{0x78, 0x9c, 0x4b, 0x54, 0x28, 0x2c, 0xcd, 0x4c, 0xce, 0x56, 0x48, 0x2a, 0xca, 0x2f, 0xcf, 0x53, 0x48, 0xcb, 0xaf, 0x50, 0xc8, 0x2a, 0xcd, 0x2d, 0x28, 0x56, 0xc8, 0x2f, 0x4b, 0x2d, 0x2, 0x0, 0x94, 0xbd, 0xa, 0x7f})</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="java: ZlibWithHeader78">passed
 
