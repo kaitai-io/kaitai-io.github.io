@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2017-08-25 14:57:58 UTC</title>
+    <title>Kaitai Struct: test results - 2017-08-28 13:09:00 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -49,7 +49,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2017-08-25 14:57:58 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2017-08-28 13:09:00 UTC</h1>
 
     <table class="table">
     <tr>
@@ -103,7 +103,7 @@
 
         <td>94%</td>
 
-        <td>90%</td>
+        <td>89%</td>
 
         <td>87%</td>
 
@@ -4312,7 +4312,80 @@
 
         </td>
 
-        <td class="passed" title="lua: a[42 - 2]">passed
+        <td class="failed" title="lua: a[42 - 2]">failed
+
+          <div class="add-info">
+
+              <div class="message">"self.a[(4[2] - 2)]" was not equal to "self.a[(4[3] - 2)]"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;self.a[(4[2] - 2)]&quot; was not equal to &quot;self.a[(4[3] - 2)]&quot;
+      at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$runTest$2$$anonfun$apply$1.apply(TranslatorSpec.scala:455)
+      at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+      at org.scalatest.TestSuite$class.withFixture(TestSuite.scala:196)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:183)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:196)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:196)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:289)
+      at org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:196)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:229)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:229)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:396)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:384)
+      at scala.collection.immutable.List.foreach(List.scala:392)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:384)
+      at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:379)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:461)
+      at org.scalatest.FunSuiteLike$class.runTests(FunSuiteLike.scala:229)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1560)
+      at org.scalatest.Suite$class.run(Suite.scala:1147)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:233)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:233)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:521)
+      at org.scalatest.FunSuiteLike$class.run(FunSuiteLike.scala:233)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1560)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:314)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:480)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:76)
+      at sbt.TestRunner.run(TestFramework.scala:85)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFunction.apply(TestFramework.scala:207)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$4.work(System.scala:63)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+      at sbt.Execute.work(Execute.scala:235)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+      at java.lang.Thread.run(Thread.java:748)
+</pre>
+
+          </div>
 
         </td>
 
@@ -5212,7 +5285,7 @@
 
         <td>100%</td>
 
-        <td>96%</td>
+        <td>97%</td>
 
         <td>96%</td>
 
@@ -8735,7 +8808,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="javascript: NavParentOverride">didn't run</td>
+        <td class="passed" title="javascript: NavParentOverride">passed
+
+        </td>
 
         <td class="passed" title="lua: NavParentOverride">passed
 
