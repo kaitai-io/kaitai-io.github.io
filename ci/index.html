@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2017-08-30 00:03:40 UTC</title>
+    <title>Kaitai Struct: test results - 2017-08-30 15:18:33 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -49,7 +49,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2017-08-30 00:03:40 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2017-08-30 15:18:33 UTC</h1>
 
     <table class="table">
     <tr>
@@ -9992,7 +9992,25 @@ TypeError: ImportsCircularA is not a function
 
         <td class="no-run" title="perl: ProcessCustom">didn't run</td>
 
-        <td class="no-run" title="php: ProcessCustom">didn't run</td>
+        <td class="failed" title="php: ProcessCustom">failed
+
+          <div class="add-info">
+
+              <div class="message"></div>
+
+              <pre class="trace">Kaitai\Struct\Tests\ProcessCustomTest::testProcessCustom
+attempt to autoload "Kaitai\Struct\Tests\MyCustomFx" failed
+
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/_bootstrap.php:16
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/ProcessCustom.php:14
+/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/ProcessCustom.php:9
+/home/travis/build/kaitai-io/kaitai_struct/runtime/php/lib/Kaitai/Struct/Struct.php:18
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/ProcessCustomTest.php:6
+</pre>
+
+          </div>
+
+        </td>
 
         <td></td>
 
