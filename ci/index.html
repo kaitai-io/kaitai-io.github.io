@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2017-08-30 15:18:33 UTC</title>
+    <title>Kaitai Struct: test results - 2017-09-01 08:55:19 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -49,7 +49,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2017-08-30 15:18:33 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2017-09-01 08:55:19 UTC</h1>
 
     <table class="table">
     <tr>
@@ -5281,7 +5281,7 @@
 
         <td>99%</td>
 
-        <td>11%</td>
+        <td>14%</td>
 
         <td>100%</td>
 
@@ -5291,7 +5291,7 @@
 
         <td>93%</td>
 
-        <td>99%</td>
+        <td>100%</td>
 
         <td></td>
 
@@ -5596,15 +5596,7 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="format-build-failed" title="go: BufferedStruct">format build failed
-
-          <div class="add-info">
-
-              <div class="filename">../../compiled/go/src/test_formats/buffered_struct:49</div>
-
-              <div class="message">undefined: _raw_Block2</div>
-
-          </div>
+        <td class="passed" title="go: BufferedStruct">passed
 
         </td>
 
@@ -6048,7 +6040,7 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
               <div class="filename">../../compiled/go/src/test_formats/default_endian_expr_inherited:143</div>
 
-              <div class="message">too many errors</div>
+              <div class="message">this._io.ReadU4 undefined (type *kaitai.Stream has no field or method ReadU4)</div>
 
           </div>
 
@@ -6170,7 +6162,7 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
               <div class="filename">../../compiled/go/src/test_formats/default_endian_expr_is_le:68</div>
 
-              <div class="message">this._io.ReadU4 undefined (type *kaitai.Stream has no field or method ReadU4)</div>
+              <div class="message">too many errors</div>
 
           </div>
 
@@ -6894,7 +6886,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="go: Expr0">didn't run</td>
+        <td class="passed" title="go: Expr0">passed
+
+        </td>
 
         <td class="passed" title="java: Expr0">passed
 
@@ -6945,7 +6939,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="go: Expr1">didn't run</td>
+        <td class="passed" title="go: Expr1">passed
+
+        </td>
 
         <td class="passed" title="java: Expr1">passed
 
@@ -6996,7 +6992,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="go: Expr2">didn't run</td>
+        <td class="passed" title="go: Expr2">passed
+
+        </td>
 
         <td class="passed" title="java: Expr2">passed
 
@@ -7816,7 +7814,17 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="go: Imports0">didn't run</td>
+        <td class="format-build-failed" title="go: Imports0">format build failed
+
+          <div class="add-info">
+
+              <div class="filename">../../compiled/go/src/test_formats/imports0:27</div>
+
+              <div class="message">cannot use this._root (type *Imports0) as type *HelloWorld in argument to tmp2.Read</div>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="java: Imports0">passed
 
@@ -7867,7 +7875,17 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="go: ImportsAbs">didn't run</td>
+        <td class="format-build-failed" title="go: ImportsAbs">format build failed
+
+          <div class="add-info">
+
+              <div class="filename">../../compiled/go/src/test_formats/imports_abs:7</div>
+
+              <div class="message">undefined: VlqBase128Le</div>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="java: ImportsAbs">passed
 
@@ -8186,7 +8204,17 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="go: InstanceIoUser">didn't run</td>
+        <td class="format-build-failed" title="go: InstanceIoUser">format build failed
+
+          <div class="add-info">
+
+              <div class="filename">../../compiled/go/src/test_formats/instance_io_user:85</div>
+
+              <div class="message">syntax error: unexpected io at end of statement</div>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="java: InstanceIoUser">passed
 
@@ -8802,7 +8830,17 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="go: NavParentOverride">didn't run</td>
+        <td class="format-build-failed" title="go: NavParentOverride">format build failed
+
+          <div class="add-info">
+
+              <div class="filename">../../compiled/go/src/test_formats/nav_parent_override:52</div>
+
+              <div class="message">cannot use this (type *NavParentOverride_Mediator) as type *NavParentOverride in argument to tmp4.Read</div>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="java: NavParentOverride">passed
 
@@ -9330,9 +9368,9 @@ TypeError: ImportsCircularA is not a function
 
           <div class="add-info">
 
-              <div class="filename">../../compiled/go/src/test_formats/opaque_external_type_02_parent:27</div>
+              <div class="filename">../../compiled/go/src/test_formats/opaque_external_type_02_parent:39</div>
 
-              <div class="message">undefined: OpaqueExternalType02Child</div>
+              <div class="message">cannot use this._root (type *OpaqueExternalType02Parent) as type *OpaqueExternalType02Child in argument to tmp2.Read</div>
 
           </div>
 
@@ -9560,7 +9598,7 @@ TypeError: ImportsCircularA is not a function
 
           <div class="add-info">
 
-              <div class="filename">../../compiled/go/src/test_formats/params_def:19</div>
+              <div class="filename">../../compiled/go/src/test_formats/params_def:24</div>
 
               <div class="message">too many errors</div>
 
@@ -9992,23 +10030,7 @@ TypeError: ImportsCircularA is not a function
 
         <td class="no-run" title="perl: ProcessCustom">didn't run</td>
 
-        <td class="failed" title="php: ProcessCustom">failed
-
-          <div class="add-info">
-
-              <div class="message"></div>
-
-              <pre class="trace">Kaitai\Struct\Tests\ProcessCustomTest::testProcessCustom
-attempt to autoload "Kaitai\Struct\Tests\MyCustomFx" failed
-
-/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/_bootstrap.php:16
-/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/ProcessCustom.php:14
-/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/php/ProcessCustom.php:9
-/home/travis/build/kaitai-io/kaitai_struct/runtime/php/lib/Kaitai/Struct/Struct.php:18
-/home/travis/build/kaitai-io/kaitai_struct/tests/spec/php/ProcessCustomTest.php:6
-</pre>
-
-          </div>
+        <td class="passed" title="php: ProcessCustom">passed
 
         </td>
 
@@ -10102,17 +10124,7 @@ attempt to autoload "Kaitai\Struct\Tests\MyCustomFx" failed
 
         </td>
 
-        <td class="format-build-failed" title="go: ProcessToUser">format build failed
-
-          <div class="add-info">
-
-              <div class="filename">../../compiled/go/src/test_formats/process_to_user:23</div>
-
-              <div class="message">undefined: _raw_Buf1</div>
-
-          </div>
-
-        </td>
+        <td class="no-run" title="go: ProcessToUser">didn't run</td>
 
         <td class="passed" title="java: ProcessToUser">passed
 
