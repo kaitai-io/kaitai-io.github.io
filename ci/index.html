@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2017-09-01 15:37:59 UTC</title>
+    <title>Kaitai Struct: test results - 2017-09-02 21:11:42 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -49,7 +49,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2017-09-01 15:37:59 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2017-09-02 21:11:42 UTC</h1>
 
     <table class="table">
     <tr>
@@ -93,7 +93,7 @@
 
         <td>100%</td>
 
-        <td>94%</td>
+        <td>92%</td>
 
         <td>94%</td>
 
@@ -4996,7 +4996,80 @@
 
         </td>
 
-        <td class="passed" title="cpp_stl: some_bool.to_i">passed
+        <td class="failed" title="cpp_stl: some_bool.to_i">failed
+
+          <div class="add-info">
+
+              <div class="message">"[((some_bool()) ? 1 : 0])" was not equal to "[some_bool(])"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;[((some_bool()) ? 1 : 0])&quot; was not equal to &quot;[some_bool(])&quot;
+      at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
+      at io.kaitai.struct.translators.TranslatorSpec$$anonfun$runTest$2$$anonfun$apply$1.apply(TranslatorSpec.scala:455)
+      at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+      at org.scalatest.TestSuite$class.withFixture(TestSuite.scala:196)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:183)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:196)
+      at org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:196)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:289)
+      at org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:196)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:229)
+      at org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:229)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:396)
+      at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:384)
+      at scala.collection.immutable.List.foreach(List.scala:392)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:384)
+      at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:379)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:461)
+      at org.scalatest.FunSuiteLike$class.runTests(FunSuiteLike.scala:229)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1560)
+      at org.scalatest.Suite$class.run(Suite.scala:1147)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:233)
+      at org.scalatest.FunSuiteLike$$anonfun$run$1.apply(FunSuiteLike.scala:233)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:521)
+      at org.scalatest.FunSuiteLike$class.run(FunSuiteLike.scala:233)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1560)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:314)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:480)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:76)
+      at sbt.TestRunner.run(TestFramework.scala:85)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202)
+      at sbt.TestFunction.apply(TestFramework.scala:207)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.Tests$$anonfun$9.apply(Tests.scala:216)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+      at sbt.std.Transform$$anon$4.work(System.scala:63)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+      at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+      at sbt.Execute.work(Execute.scala:235)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+      at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+      at java.lang.Thread.run(Thread.java:748)
+</pre>
+
+          </div>
 
         </td>
 
@@ -5279,7 +5352,7 @@
 
         <td>98%</td>
 
-        <td>0%</td>
+        <td>99%</td>
 
         <td>15%</td>
 
@@ -5313,7 +5386,9 @@
 
         </td>
 
-        <td class="no-run" title="csharp: BcdUserTypeBe">didn't run</td>
+        <td class="passed" title="csharp: BcdUserTypeBe">passed
+
+        </td>
 
         <td class="no-run" title="go: BcdUserTypeBe">didn't run</td>
 
@@ -5362,7 +5437,9 @@
 
         </td>
 
-        <td class="no-run" title="csharp: BcdUserTypeLe">didn't run</td>
+        <td class="passed" title="csharp: BcdUserTypeLe">passed
+
+        </td>
 
         <td class="no-run" title="go: BcdUserTypeLe">didn't run</td>
 
@@ -5411,7 +5488,9 @@
 
         </td>
 
-        <td class="no-run" title="csharp: BitsByteAligned">didn't run</td>
+        <td class="passed" title="csharp: BitsByteAligned">passed
+
+        </td>
 
         <td class="format-build-failed" title="go: BitsByteAligned">format build failed
 
@@ -5470,7 +5549,9 @@
 
         </td>
 
-        <td class="no-run" title="csharp: BitsEnum">didn't run</td>
+        <td class="passed" title="csharp: BitsEnum">passed
+
+        </td>
 
         <td class="no-run" title="go: BitsEnum">didn't run</td>
 
@@ -5519,7 +5600,9 @@
 
         </td>
 
-        <td class="no-run" title="csharp: BitsSimple">didn't run</td>
+        <td class="passed" title="csharp: BitsSimple">passed
+
+        </td>
 
         <td class="no-run" title="go: BitsSimple">didn't run</td>
 
@@ -5582,7 +5665,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: BufferedStruct">didn't run</td>
+        <td class="passed" title="csharp: BufferedStruct">passed
+
+        </td>
 
         <td class="passed" title="go: BufferedStruct">passed
 
@@ -5633,7 +5718,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: BytesPadTerm">didn't run</td>
+        <td class="passed" title="csharp: BytesPadTerm">passed
+
+        </td>
 
         <td class="failed" title="go: BytesPadTerm">failed
 
@@ -5692,7 +5779,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: CastToImported">didn't run</td>
+        <td class="passed" title="csharp: CastToImported">passed
+
+        </td>
 
         <td class="no-run" title="go: CastToImported">didn't run</td>
 
@@ -5741,7 +5830,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: CastToTop">didn't run</td>
+        <td class="passed" title="csharp: CastToTop">passed
+
+        </td>
 
         <td class="no-run" title="go: CastToTop">didn't run</td>
 
@@ -5790,7 +5881,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: Debug0">didn't run</td>
+        <td class="passed" title="csharp: Debug0">passed
+
+        </td>
 
         <td class="no-run" title="go: Debug0">didn't run</td>
 
@@ -5839,7 +5932,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: DebugEnumName">didn't run</td>
+        <td class="passed" title="csharp: DebugEnumName">passed
+
+        </td>
 
         <td class="no-run" title="go: DebugEnumName">didn't run</td>
 
@@ -5888,7 +5983,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: DefaultBigEndian">didn't run</td>
+        <td class="passed" title="csharp: DefaultBigEndian">passed
+
+        </td>
 
         <td class="passed" title="go: DefaultBigEndian">passed
 
@@ -5945,7 +6042,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: DefaultEndianExprException">didn't run</td>
+        <td class="passed" title="csharp: DefaultEndianExprException">passed
+
+        </td>
 
         <td class="format-build-failed" title="go: DefaultEndianExprException">format build failed
 
@@ -6004,7 +6103,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: DefaultEndianExprInherited">didn't run</td>
+        <td class="passed" title="csharp: DefaultEndianExprInherited">passed
+
+        </td>
 
         <td class="format-build-failed" title="go: DefaultEndianExprInherited">format build failed
 
@@ -6063,7 +6164,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: DefaultEndianExprIsBe">didn't run</td>
+        <td class="passed" title="csharp: DefaultEndianExprIsBe">passed
+
+        </td>
 
         <td class="format-build-failed" title="go: DefaultEndianExprIsBe">format build failed
 
@@ -6122,7 +6225,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: DefaultEndianExprIsLe">didn't run</td>
+        <td class="passed" title="csharp: DefaultEndianExprIsLe">passed
+
+        </td>
 
         <td class="format-build-failed" title="go: DefaultEndianExprIsLe">format build failed
 
@@ -6181,7 +6286,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: DefaultEndianMod">didn't run</td>
+        <td class="passed" title="csharp: DefaultEndianMod">passed
+
+        </td>
 
         <td class="passed" title="go: DefaultEndianMod">passed
 
@@ -6232,7 +6339,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: Docstrings">didn't run</td>
+        <td class="passed" title="csharp: Docstrings">passed
+
+        </td>
 
         <td class="passed" title="go: Docstrings">passed
 
@@ -6283,7 +6392,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: DocstringsDocref">didn't run</td>
+        <td class="passed" title="csharp: DocstringsDocref">passed
+
+        </td>
 
         <td class="passed" title="go: DocstringsDocref">passed
 
@@ -6334,7 +6445,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: Enum0">didn't run</td>
+        <td class="passed" title="csharp: Enum0">passed
+
+        </td>
 
         <td class="no-run" title="go: Enum0">didn't run</td>
 
@@ -6383,7 +6496,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: Enum1">didn't run</td>
+        <td class="passed" title="csharp: Enum1">passed
+
+        </td>
 
         <td class="no-run" title="go: Enum1">didn't run</td>
 
@@ -6432,7 +6547,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: EnumFancy">didn't run</td>
+        <td class="passed" title="csharp: EnumFancy">passed
+
+        </td>
 
         <td class="no-run" title="go: EnumFancy">didn't run</td>
 
@@ -6481,7 +6598,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: EnumForUnknownId">didn't run</td>
+        <td class="passed" title="csharp: EnumForUnknownId">passed
+
+        </td>
 
         <td class="no-run" title="go: EnumForUnknownId">didn't run</td>
 
@@ -6530,7 +6649,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: EnumIf">didn't run</td>
+        <td class="passed" title="csharp: EnumIf">passed
+
+        </td>
 
         <td class="no-run" title="go: EnumIf">didn't run</td>
 
@@ -6579,7 +6700,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: EnumNegative">didn't run</td>
+        <td class="passed" title="csharp: EnumNegative">passed
+
+        </td>
 
         <td class="no-run" title="go: EnumNegative">didn't run</td>
 
@@ -6628,7 +6751,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: EnumOfValueInst">didn't run</td>
+        <td class="passed" title="csharp: EnumOfValueInst">passed
+
+        </td>
 
         <td class="no-run" title="go: EnumOfValueInst">didn't run</td>
 
@@ -6677,7 +6802,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: EnumToI">didn't run</td>
+        <td class="passed" title="csharp: EnumToI">passed
+
+        </td>
 
         <td class="no-run" title="go: EnumToI">didn't run</td>
 
@@ -6726,7 +6853,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: EofExceptionBytes">didn't run</td>
+        <td class="passed" title="csharp: EofExceptionBytes">passed
+
+        </td>
 
         <td class="no-run" title="go: EofExceptionBytes">didn't run</td>
 
@@ -6775,7 +6904,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: EofExceptionU4">didn't run</td>
+        <td class="passed" title="csharp: EofExceptionU4">passed
+
+        </td>
 
         <td class="no-run" title="go: EofExceptionU4">didn't run</td>
 
@@ -6824,7 +6955,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: Expr0">didn't run</td>
+        <td class="passed" title="csharp: Expr0">passed
+
+        </td>
 
         <td class="passed" title="go: Expr0">passed
 
@@ -6875,7 +7008,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: Expr1">didn't run</td>
+        <td class="passed" title="csharp: Expr1">passed
+
+        </td>
 
         <td class="passed" title="go: Expr1">passed
 
@@ -6926,7 +7061,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: Expr2">didn't run</td>
+        <td class="passed" title="csharp: Expr2">passed
+
+        </td>
 
         <td class="passed" title="go: Expr2">passed
 
@@ -6977,7 +7114,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: Expr3">didn't run</td>
+        <td class="passed" title="csharp: Expr3">passed
+
+        </td>
 
         <td class="no-run" title="go: Expr3">didn't run</td>
 
@@ -7026,7 +7165,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: ExprArray">didn't run</td>
+        <td class="passed" title="csharp: ExprArray">passed
+
+        </td>
 
         <td class="no-run" title="go: ExprArray">didn't run</td>
 
@@ -7075,7 +7216,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: ExprBytesCmp">didn't run</td>
+        <td class="passed" title="csharp: ExprBytesCmp">passed
+
+        </td>
 
         <td class="no-run" title="go: ExprBytesCmp">didn't run</td>
 
@@ -7124,7 +7267,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: ExprEnum">didn't run</td>
+        <td class="passed" title="csharp: ExprEnum">passed
+
+        </td>
 
         <td class="no-run" title="go: ExprEnum">didn't run</td>
 
@@ -7173,7 +7318,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: ExprIoEof">didn't run</td>
+        <td class="passed" title="csharp: ExprIoEof">passed
+
+        </td>
 
         <td class="no-run" title="go: ExprIoEof">didn't run</td>
 
@@ -7222,7 +7369,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: ExprIoPos">didn't run</td>
+        <td class="passed" title="csharp: ExprIoPos">passed
+
+        </td>
 
         <td class="no-run" title="go: ExprIoPos">didn't run</td>
 
@@ -7271,7 +7420,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: ExprMod">didn't run</td>
+        <td class="passed" title="csharp: ExprMod">passed
+
+        </td>
 
         <td class="no-run" title="go: ExprMod">didn't run</td>
 
@@ -7320,7 +7471,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: FixedContents">didn't run</td>
+        <td class="passed" title="csharp: FixedContents">passed
+
+        </td>
 
         <td class="no-run" title="go: FixedContents">didn't run</td>
 
@@ -7369,7 +7522,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: FixedStruct">didn't run</td>
+        <td class="passed" title="csharp: FixedStruct">passed
+
+        </td>
 
         <td class="no-run" title="go: FixedStruct">didn't run</td>
 
@@ -7418,7 +7573,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: FloatToI">didn't run</td>
+        <td class="passed" title="csharp: FloatToI">passed
+
+        </td>
 
         <td class="no-run" title="go: FloatToI">didn't run</td>
 
@@ -7467,7 +7624,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: FloatingPoints">didn't run</td>
+        <td class="passed" title="csharp: FloatingPoints">passed
+
+        </td>
 
         <td class="passed" title="go: FloatingPoints">passed
 
@@ -7518,7 +7677,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: HelloWorld">didn't run</td>
+        <td class="passed" title="csharp: HelloWorld">passed
+
+        </td>
 
         <td class="passed" title="go: HelloWorld">passed
 
@@ -7569,7 +7730,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: IfInstances">didn't run</td>
+        <td class="passed" title="csharp: IfInstances">passed
+
+        </td>
 
         <td class="no-run" title="go: IfInstances">didn't run</td>
 
@@ -7618,7 +7781,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: IfStruct">didn't run</td>
+        <td class="passed" title="csharp: IfStruct">passed
+
+        </td>
 
         <td class="no-run" title="go: IfStruct">didn't run</td>
 
@@ -7667,7 +7832,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: IfValues">didn't run</td>
+        <td class="passed" title="csharp: IfValues">passed
+
+        </td>
 
         <td class="no-run" title="go: IfValues">didn't run</td>
 
@@ -7716,7 +7883,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: Imports0">didn't run</td>
+        <td class="passed" title="csharp: Imports0">passed
+
+        </td>
 
         <td class="format-build-failed" title="go: Imports0">format build failed
 
@@ -7775,7 +7944,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: ImportsAbs">didn't run</td>
+        <td class="passed" title="csharp: ImportsAbs">passed
+
+        </td>
 
         <td class="format-build-failed" title="go: ImportsAbs">format build failed
 
@@ -7834,7 +8005,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="csharp: ImportsCircularA">didn't run</td>
+        <td class="passed" title="csharp: ImportsCircularA">passed
+
+        </td>
 
         <td class="format-build-failed" title="go: ImportsCircularA">format build failed
 
@@ -7902,7 +8075,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: IndexSizes">didn't run</td>
+        <td class="passed" title="csharp: IndexSizes">passed
+
+        </td>
 
         <td class="no-run" title="go: IndexSizes">didn't run</td>
 
@@ -7951,7 +8126,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: IndexToParamEos">didn't run</td>
+        <td class="passed" title="csharp: IndexToParamEos">passed
+
+        </td>
 
         <td class="no-run" title="go: IndexToParamEos">didn't run</td>
 
@@ -7998,7 +8175,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: IndexToParamExpr">didn't run</td>
+        <td class="passed" title="csharp: IndexToParamExpr">passed
+
+        </td>
 
         <td class="no-run" title="go: IndexToParamExpr">didn't run</td>
 
@@ -8045,7 +8224,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: IndexToParamUntil">didn't run</td>
+        <td class="passed" title="csharp: IndexToParamUntil">passed
+
+        </td>
 
         <td class="no-run" title="go: IndexToParamUntil">didn't run</td>
 
@@ -8092,7 +8273,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: InstanceIoUser">didn't run</td>
+        <td class="passed" title="csharp: InstanceIoUser">passed
+
+        </td>
 
         <td class="format-build-failed" title="go: InstanceIoUser">format build failed
 
@@ -8151,7 +8334,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: InstanceStd">didn't run</td>
+        <td class="passed" title="csharp: InstanceStd">passed
+
+        </td>
 
         <td class="no-run" title="go: InstanceStd">didn't run</td>
 
@@ -8200,7 +8385,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: InstanceStdArray">didn't run</td>
+        <td class="passed" title="csharp: InstanceStdArray">passed
+
+        </td>
 
         <td class="no-run" title="go: InstanceStdArray">didn't run</td>
 
@@ -8249,7 +8436,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: InstanceUserArray">didn't run</td>
+        <td class="passed" title="csharp: InstanceUserArray">passed
+
+        </td>
 
         <td class="no-run" title="go: InstanceUserArray">didn't run</td>
 
@@ -8298,7 +8487,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: JsSignedRightShift">didn't run</td>
+        <td class="passed" title="csharp: JsSignedRightShift">passed
+
+        </td>
 
         <td class="no-run" title="go: JsSignedRightShift">didn't run</td>
 
@@ -8347,7 +8538,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: MetaXref">didn't run</td>
+        <td class="passed" title="csharp: MetaXref">passed
+
+        </td>
 
         <td class="passed" title="go: MetaXref">passed
 
@@ -8398,7 +8591,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: MultipleUse">didn't run</td>
+        <td class="passed" title="csharp: MultipleUse">passed
+
+        </td>
 
         <td class="no-run" title="go: MultipleUse">didn't run</td>
 
@@ -8447,7 +8642,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: NavParent">didn't run</td>
+        <td class="passed" title="csharp: NavParent">passed
+
+        </td>
 
         <td class="no-run" title="go: NavParent">didn't run</td>
 
@@ -8496,7 +8693,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: NavParent2">didn't run</td>
+        <td class="passed" title="csharp: NavParent2">passed
+
+        </td>
 
         <td class="no-run" title="go: NavParent2">didn't run</td>
 
@@ -8545,7 +8744,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: NavParent3">didn't run</td>
+        <td class="passed" title="csharp: NavParent3">passed
+
+        </td>
 
         <td class="no-run" title="go: NavParent3">didn't run</td>
 
@@ -8594,7 +8795,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: NavParentFalse">didn't run</td>
+        <td class="passed" title="csharp: NavParentFalse">passed
+
+        </td>
 
         <td class="no-run" title="go: NavParentFalse">didn't run</td>
 
@@ -8643,7 +8846,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: NavParentFalse2">didn't run</td>
+        <td class="passed" title="csharp: NavParentFalse2">passed
+
+        </td>
 
         <td class="passed" title="go: NavParentFalse2">passed
 
@@ -8694,7 +8899,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: NavParentOverride">didn't run</td>
+        <td class="passed" title="csharp: NavParentOverride">passed
+
+        </td>
 
         <td class="format-build-failed" title="go: NavParentOverride">format build failed
 
@@ -8753,7 +8960,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: NavParentSwitch">didn't run</td>
+        <td class="passed" title="csharp: NavParentSwitch">passed
+
+        </td>
 
         <td class="no-run" title="go: NavParentSwitch">didn't run</td>
 
@@ -8802,7 +9011,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: NavParentVsValueInst">didn't run</td>
+        <td class="passed" title="csharp: NavParentVsValueInst">passed
+
+        </td>
 
         <td class="no-run" title="go: NavParentVsValueInst">didn't run</td>
 
@@ -8851,7 +9062,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: NavRoot">didn't run</td>
+        <td class="passed" title="csharp: NavRoot">passed
+
+        </td>
 
         <td class="no-run" title="go: NavRoot">didn't run</td>
 
@@ -8900,7 +9113,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: NestedSameName">didn't run</td>
+        <td class="passed" title="csharp: NestedSameName">passed
+
+        </td>
 
         <td class="no-run" title="go: NestedSameName">didn't run</td>
 
@@ -8949,7 +9164,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: NestedSameName2">didn't run</td>
+        <td class="passed" title="csharp: NestedSameName2">passed
+
+        </td>
 
         <td class="no-run" title="go: NestedSameName2">didn't run</td>
 
@@ -8998,7 +9215,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: NestedTypes">didn't run</td>
+        <td class="passed" title="csharp: NestedTypes">passed
+
+        </td>
 
         <td class="passed" title="go: NestedTypes">passed
 
@@ -9049,7 +9268,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: NestedTypes2">didn't run</td>
+        <td class="passed" title="csharp: NestedTypes2">passed
+
+        </td>
 
         <td class="passed" title="go: NestedTypes2">passed
 
@@ -9100,7 +9321,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: NonStandard">didn't run</td>
+        <td class="passed" title="csharp: NonStandard">passed
+
+        </td>
 
         <td class="no-run" title="go: NonStandard">didn't run</td>
 
@@ -9149,7 +9372,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: OpaqueExternalType">didn't run</td>
+        <td class="passed" title="csharp: OpaqueExternalType">passed
+
+        </td>
 
         <td class="format-build-failed" title="go: OpaqueExternalType">format build failed
 
@@ -9208,7 +9433,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: OpaqueExternalType02Parent">didn't run</td>
+        <td class="passed" title="csharp: OpaqueExternalType02Parent">passed
+
+        </td>
 
         <td class="format-build-failed" title="go: OpaqueExternalType02Parent">format build failed
 
@@ -9267,7 +9494,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: OpaqueWithParam">didn't run</td>
+        <td class="passed" title="csharp: OpaqueWithParam">passed
+
+        </td>
 
         <td class="format-build-failed" title="go: OpaqueWithParam">format build failed
 
@@ -9324,7 +9553,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: OptionalId">didn't run</td>
+        <td class="passed" title="csharp: OptionalId">passed
+
+        </td>
 
         <td class="no-run" title="go: OptionalId">didn't run</td>
 
@@ -9373,7 +9604,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: ParamsCallShort">didn't run</td>
+        <td class="passed" title="csharp: ParamsCallShort">passed
+
+        </td>
 
         <td class="format-build-failed" title="go: ParamsCallShort">format build failed
 
@@ -9430,7 +9663,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: ParamsDef">didn't run</td>
+        <td class="passed" title="csharp: ParamsDef">passed
+
+        </td>
 
         <td class="format-build-failed" title="go: ParamsDef">format build failed
 
@@ -9487,7 +9722,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: PositionAbs">didn't run</td>
+        <td class="passed" title="csharp: PositionAbs">passed
+
+        </td>
 
         <td class="passed" title="go: PositionAbs">passed
 
@@ -9538,7 +9775,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: PositionInSeq">didn't run</td>
+        <td class="passed" title="csharp: PositionInSeq">passed
+
+        </td>
 
         <td class="no-run" title="go: PositionInSeq">didn't run</td>
 
@@ -9587,7 +9826,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: PositionToEnd">didn't run</td>
+        <td class="passed" title="csharp: PositionToEnd">passed
+
+        </td>
 
         <td class="no-run" title="go: PositionToEnd">didn't run</td>
 
@@ -9636,7 +9877,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: ProcessCoerceBytes">didn't run</td>
+        <td class="passed" title="csharp: ProcessCoerceBytes">passed
+
+        </td>
 
         <td class="no-run" title="go: ProcessCoerceBytes">didn't run</td>
 
@@ -9683,7 +9926,9 @@ TypeError: ImportsCircularA is not a function
 
         <td class="no-run" title="cpp_stl: ProcessCoerceSwitch">didn't run</td>
 
-        <td class="no-run" title="csharp: ProcessCoerceSwitch">didn't run</td>
+        <td class="passed" title="csharp: ProcessCoerceSwitch">passed
+
+        </td>
 
         <td class="no-run" title="go: ProcessCoerceSwitch">didn't run</td>
 
@@ -9732,7 +9977,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: ProcessCoerceUsertype1">didn't run</td>
+        <td class="passed" title="csharp: ProcessCoerceUsertype1">passed
+
+        </td>
 
         <td class="no-run" title="go: ProcessCoerceUsertype1">didn't run</td>
 
@@ -9781,7 +10028,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: ProcessCoerceUsertype2">didn't run</td>
+        <td class="passed" title="csharp: ProcessCoerceUsertype2">passed
+
+        </td>
 
         <td class="no-run" title="go: ProcessCoerceUsertype2">didn't run</td>
 
@@ -9883,7 +10132,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: ProcessRotate">didn't run</td>
+        <td class="passed" title="csharp: ProcessRotate">passed
+
+        </td>
 
         <td class="failed" title="go: ProcessRotate">failed
 
@@ -9942,7 +10193,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: ProcessToUser">didn't run</td>
+        <td class="passed" title="csharp: ProcessToUser">passed
+
+        </td>
 
         <td class="no-run" title="go: ProcessToUser">didn't run</td>
 
@@ -9991,7 +10244,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: ProcessXor4Const">didn't run</td>
+        <td class="passed" title="csharp: ProcessXor4Const">passed
+
+        </td>
 
         <td class="failed" title="go: ProcessXor4Const">failed
 
@@ -10050,7 +10305,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: ProcessXor4Value">didn't run</td>
+        <td class="passed" title="csharp: ProcessXor4Value">passed
+
+        </td>
 
         <td class="failed" title="go: ProcessXor4Value">failed
 
@@ -10109,7 +10366,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: ProcessXorConst">didn't run</td>
+        <td class="passed" title="csharp: ProcessXorConst">passed
+
+        </td>
 
         <td class="failed" title="go: ProcessXorConst">failed
 
@@ -10168,7 +10427,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: ProcessXorValue">didn't run</td>
+        <td class="passed" title="csharp: ProcessXorValue">passed
+
+        </td>
 
         <td class="failed" title="go: ProcessXorValue">failed
 
@@ -10227,7 +10488,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: RecursiveOne">didn't run</td>
+        <td class="passed" title="csharp: RecursiveOne">passed
+
+        </td>
 
         <td class="no-run" title="go: RecursiveOne">didn't run</td>
 
@@ -10276,7 +10539,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: RepeatEosStruct">didn't run</td>
+        <td class="passed" title="csharp: RepeatEosStruct">passed
+
+        </td>
 
         <td class="failed" title="go: RepeatEosStruct">failed
 
@@ -10335,7 +10600,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: RepeatEosU4">didn't run</td>
+        <td class="passed" title="csharp: RepeatEosU4">passed
+
+        </td>
 
         <td class="failed" title="go: RepeatEosU4">failed
 
@@ -10394,7 +10661,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: RepeatNStruct">didn't run</td>
+        <td class="passed" title="csharp: RepeatNStruct">passed
+
+        </td>
 
         <td class="passed" title="go: RepeatNStruct">passed
 
@@ -10445,7 +10714,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: RepeatNStrz">didn't run</td>
+        <td class="passed" title="csharp: RepeatNStrz">passed
+
+        </td>
 
         <td class="failed" title="go: RepeatNStrz">failed
 
@@ -10504,7 +10775,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: RepeatNStrzDouble">didn't run</td>
+        <td class="passed" title="csharp: RepeatNStrzDouble">passed
+
+        </td>
 
         <td class="failed" title="go: RepeatNStrzDouble">failed
 
@@ -10563,7 +10836,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: RepeatUntilComplex">didn't run</td>
+        <td class="passed" title="csharp: RepeatUntilComplex">passed
+
+        </td>
 
         <td class="no-run" title="go: RepeatUntilComplex">didn't run</td>
 
@@ -10612,7 +10887,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: RepeatUntilS4">didn't run</td>
+        <td class="passed" title="csharp: RepeatUntilS4">passed
+
+        </td>
 
         <td class="no-run" title="go: RepeatUntilS4">didn't run</td>
 
@@ -10661,7 +10938,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: RepeatUntilSized">didn't run</td>
+        <td class="passed" title="csharp: RepeatUntilSized">passed
+
+        </td>
 
         <td class="no-run" title="go: RepeatUntilSized">didn't run</td>
 
@@ -10710,7 +10989,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: StrEncodings">didn't run</td>
+        <td class="passed" title="csharp: StrEncodings">passed
+
+        </td>
 
         <td class="passed" title="go: StrEncodings">passed
 
@@ -10759,7 +11040,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: StrEncodingsDefault">didn't run</td>
+        <td class="passed" title="csharp: StrEncodingsDefault">passed
+
+        </td>
 
         <td class="passed" title="go: StrEncodingsDefault">passed
 
@@ -10808,7 +11091,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: StrEos">didn't run</td>
+        <td class="passed" title="csharp: StrEos">passed
+
+        </td>
 
         <td class="passed" title="go: StrEos">passed
 
@@ -10859,7 +11144,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: StrLiterals">didn't run</td>
+        <td class="passed" title="csharp: StrLiterals">passed
+
+        </td>
 
         <td class="no-run" title="go: StrLiterals">didn't run</td>
 
@@ -10908,7 +11195,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: StrLiterals2">didn't run</td>
+        <td class="passed" title="csharp: StrLiterals2">passed
+
+        </td>
 
         <td class="no-run" title="go: StrLiterals2">didn't run</td>
 
@@ -10957,7 +11246,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: StrPadTerm">didn't run</td>
+        <td class="passed" title="csharp: StrPadTerm">passed
+
+        </td>
 
         <td class="failed" title="go: StrPadTerm">failed
 
@@ -11016,7 +11307,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: StrPadTermEmpty">didn't run</td>
+        <td class="passed" title="csharp: StrPadTermEmpty">passed
+
+        </td>
 
         <td class="failed" title="go: StrPadTermEmpty">failed
 
@@ -11075,7 +11368,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: SwitchBytearray">didn't run</td>
+        <td class="passed" title="csharp: SwitchBytearray">passed
+
+        </td>
 
         <td class="no-run" title="go: SwitchBytearray">didn't run</td>
 
@@ -11124,7 +11419,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: SwitchCast">didn't run</td>
+        <td class="passed" title="csharp: SwitchCast">passed
+
+        </td>
 
         <td class="no-run" title="go: SwitchCast">didn't run</td>
 
@@ -11173,7 +11470,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: SwitchIntegers">didn't run</td>
+        <td class="passed" title="csharp: SwitchIntegers">passed
+
+        </td>
 
         <td class="no-run" title="go: SwitchIntegers">didn't run</td>
 
@@ -11222,7 +11521,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: SwitchIntegers2">didn't run</td>
+        <td class="passed" title="csharp: SwitchIntegers2">passed
+
+        </td>
 
         <td class="no-run" title="go: SwitchIntegers2">didn't run</td>
 
@@ -11271,7 +11572,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: SwitchManualEnum">didn't run</td>
+        <td class="passed" title="csharp: SwitchManualEnum">passed
+
+        </td>
 
         <td class="no-run" title="go: SwitchManualEnum">didn't run</td>
 
@@ -11320,7 +11623,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: SwitchManualInt">didn't run</td>
+        <td class="passed" title="csharp: SwitchManualInt">passed
+
+        </td>
 
         <td class="no-run" title="go: SwitchManualInt">didn't run</td>
 
@@ -11369,7 +11674,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: SwitchManualIntElse">didn't run</td>
+        <td class="passed" title="csharp: SwitchManualIntElse">passed
+
+        </td>
 
         <td class="no-run" title="go: SwitchManualIntElse">didn't run</td>
 
@@ -11418,7 +11725,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: SwitchManualIntSize">didn't run</td>
+        <td class="passed" title="csharp: SwitchManualIntSize">passed
+
+        </td>
 
         <td class="no-run" title="go: SwitchManualIntSize">didn't run</td>
 
@@ -11467,7 +11776,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: SwitchManualIntSizeElse">didn't run</td>
+        <td class="passed" title="csharp: SwitchManualIntSizeElse">passed
+
+        </td>
 
         <td class="no-run" title="go: SwitchManualIntSizeElse">didn't run</td>
 
@@ -11516,7 +11827,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: SwitchManualIntSizeEos">didn't run</td>
+        <td class="passed" title="csharp: SwitchManualIntSizeEos">passed
+
+        </td>
 
         <td class="no-run" title="go: SwitchManualIntSizeEos">didn't run</td>
 
@@ -11565,7 +11878,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: SwitchManualStr">didn't run</td>
+        <td class="passed" title="csharp: SwitchManualStr">passed
+
+        </td>
 
         <td class="no-run" title="go: SwitchManualStr">didn't run</td>
 
@@ -11614,7 +11929,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: SwitchManualStrElse">didn't run</td>
+        <td class="passed" title="csharp: SwitchManualStrElse">passed
+
+        </td>
 
         <td class="no-run" title="go: SwitchManualStrElse">didn't run</td>
 
@@ -11663,7 +11980,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: SwitchMultiBoolOps">didn't run</td>
+        <td class="passed" title="csharp: SwitchMultiBoolOps">passed
+
+        </td>
 
         <td class="no-run" title="go: SwitchMultiBoolOps">didn't run</td>
 
@@ -11712,7 +12031,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: SwitchRepeatExpr">didn't run</td>
+        <td class="passed" title="csharp: SwitchRepeatExpr">passed
+
+        </td>
 
         <td class="no-run" title="go: SwitchRepeatExpr">didn't run</td>
 
@@ -11761,7 +12082,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: TermBytes">didn't run</td>
+        <td class="passed" title="csharp: TermBytes">passed
+
+        </td>
 
         <td class="failed" title="go: TermBytes">failed
 
@@ -11820,7 +12143,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: TermStrz">didn't run</td>
+        <td class="passed" title="csharp: TermStrz">passed
+
+        </td>
 
         <td class="failed" title="go: TermStrz">failed
 
@@ -11879,7 +12204,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: TsPacketHeader">didn't run</td>
+        <td class="passed" title="csharp: TsPacketHeader">passed
+
+        </td>
 
         <td class="no-run" title="go: TsPacketHeader">didn't run</td>
 
@@ -11928,7 +12255,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: TypeIntUnaryOp">didn't run</td>
+        <td class="passed" title="csharp: TypeIntUnaryOp">passed
+
+        </td>
 
         <td class="no-run" title="go: TypeIntUnaryOp">didn't run</td>
 
@@ -11977,7 +12306,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: TypeTernary">didn't run</td>
+        <td class="passed" title="csharp: TypeTernary">passed
+
+        </td>
 
         <td class="no-run" title="go: TypeTernary">didn't run</td>
 
@@ -12026,7 +12357,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: TypeTernaryOpaque">didn't run</td>
+        <td class="passed" title="csharp: TypeTernaryOpaque">passed
+
+        </td>
 
         <td class="no-run" title="go: TypeTernaryOpaque">didn't run</td>
 
@@ -12075,7 +12408,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: UserType">didn't run</td>
+        <td class="passed" title="csharp: UserType">passed
+
+        </td>
 
         <td class="passed" title="go: UserType">passed
 
@@ -12126,7 +12461,9 @@ TypeError: ImportsCircularA is not a function
 
         </td>
 
-        <td class="no-run" title="csharp: ZlibWithHeader78">didn't run</td>
+        <td class="passed" title="csharp: ZlibWithHeader78">passed
+
+        </td>
 
         <td class="failed" title="go: ZlibWithHeader78">failed
 
