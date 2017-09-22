@@ -311,7 +311,7 @@ puts "height = #{g.logical_screen.image_height}"</code></pre>
               any BinTray repositories beforehand:
             </p>
             <pre>echo "deb https://dl.bintray.com/kaitai-io/debian jessie main" | sudo tee /etc/apt/sources.list.d/kaitai.list
-sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net --recv 379CE192D401AB61
+sudo apt-key adv --keyserver hkp://sks-keyservers.net --recv 379CE192D401AB61
 sudo apt-get update
 sudo apt-get install kaitai-struct-compiler</pre>
           </div>
