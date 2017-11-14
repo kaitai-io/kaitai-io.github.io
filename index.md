@@ -294,6 +294,7 @@ puts "height = #{g.logical_screen.image_height}"</code></pre>
     <h1>Downloading and installing</h1>
     <ul class="nav nav-pills" role="tablist">
       <li role="presentation" class="active"><a href="#download-linux-deb" role="tab" data-toggle="tab">Linux .deb</a></li>
+      <li role="presentation"><a href="#download-mac-homebrew" role="tab" data-toggle="tab">Mac OS X - Homebrew</a></li>
       <li role="presentation"><a href="#download-windows" role="tab" data-toggle="tab">Windows</a></li>
       <li role="presentation"><a href="#download-universal" role="tab" data-toggle="tab">Universal .zip</a></li>
       <li role="presentation"><a href="#download-source" role="tab" data-toggle="tab">Source</a></li>
@@ -319,6 +320,21 @@ sudo apt-get install kaitai-struct-compiler</pre>
             <h4>Requirements</h4>
             <ul>
               <li>.deb-based Linux distribution (Debian, Ubuntu, etc)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="download-mac-homebrew">
+        <div class="row">
+          <div class="col-sm-9">
+            <p>There is a formula now available within Homebrew that you can use to install kaitai-struct-compiler:</p>
+            <pre>brew install kaitai-struct-compiler</pre>
+          </div>
+          <div class="col-sm-3">
+            <h4>Requirements</h4>
+            <ul>
+              <li>Mac OS X</li>
+              <li><a href="https://brew.sh">Homebrew</a></li>
             </ul>
           </div>
         </div>
