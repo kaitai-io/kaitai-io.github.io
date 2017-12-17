@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Kaitai Struct v0.4 released
+redirect_from: "/news/2016-08-09.html"
 extra_footer: |
   <script src="/js/scroller.js"></script>
 ---
