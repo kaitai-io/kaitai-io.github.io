@@ -7,13 +7,10 @@ extra_footer: |
 <div class="jumbotron">
   <div class="container">
     <div class="col-sm-3" style="height: 434px">
-      <div id="scroller" style="width: 100%; height: 284px">
-        <div id="pane1"></div>
-        <div id="pane2"></div>
-      </div>
-      <div class="well" style="text-align: center; width: 100%; background: #CCCCCC; margin-top: 11px">
+      <center><img src="/img/kaitai_16x_dark.png" width="256" height="256" alt="[Kaitai logo]" /></center>
+      <div class="well" style="text-align: center; width: 100%; margin-top: 72px">
         <p><small>
-          0.7 <a href="news/2017-03-22.html">released 2017-03-22</a>
+          0.8 <a href="news/2018/02/05/kaitai-struct-v0.8-released.html">released 2018-02-05</a>
           </small>
         </p>
         <a href="#download" class="btn btn-primary">Download <i class="fa fa-download"></i></a>
@@ -41,12 +38,14 @@ extra_footer: |
                   <ul>
                     <li>C++/STL</li>
                     <li>C#</li>
+                    <li>Go (*)</li>
                     <li>Java</li>
                     <li>JavaScript</li>
                   </ul>
                 </div>
                 <div class="col-sm-6">
                   <ul>
+                    <li>Lua</li>
                     <li>Perl</li>
                     <li>PHP</li>
                     <li>Python</li>
@@ -54,7 +53,6 @@ extra_footer: |
                   </ul>
                 </div>
               </div>
-              <p style="font-size: 14px; font-style: italic; margin-left: 40px">... more to come</p>
             </div>
           </div>
         </div>
@@ -73,6 +71,7 @@ extra_footer: |
             <div class="media-left"><i class="fa fa-fw fa-3x fa-code-fork"></i></div>
             <div class="media-body">
               <p><strong>Free & open source:</strong> feel free to use, modify and join the project</p>
+<p style="font-size: 14px; font-style: italic; margin-left: 35px">(*) entry-level support</p>
             </div>
           </div>
         </div>
@@ -344,7 +343,7 @@ sudo apt-get install kaitai-struct-compiler</pre>
         <div class="row">
           <div class="col-sm-9">
             <p>Windows versions are avalable as MSI format installer. If you want a portable version that requires no installation, download our universal .zip build instead.</p>
-            <p><a class="btn btn-success" href="https://bintray.com/artifact/download/kaitai-io/universal/0.7/kaitai-struct-compiler-0.7.msi"><i class="fa fa-download"></i> Download</a> — stable v0.7, 7.0 MiB</p>
+            <p><a class="btn btn-success" href="https://dl.bintray.com/kaitai-io/universal/kaitai-struct-compiler-0.8.msi"><i class="fa fa-download"></i> Download</a> — stable v0.8, 7.0 MiB</p>
             <p><a class="btn btn-default" href="https://ci.appveyor.com/project/GreyCat/kaitai-struct/build/artifacts"><i class="fa fa-download"></i> Download</a> — latest development (unstable) build</p>
           </div>
           <div class="col-sm-3">
@@ -366,7 +365,7 @@ sudo apt-get install kaitai-struct-compiler</pre>
               installation required, one can just unpack
               and run it.
             </p>
-            <p><a class="btn btn-success" href="https://bintray.com/artifact/download/kaitai-io/universal/0.7/kaitai-struct-compiler-0.7.zip"><i class="fa fa-download"></i> Download</a> — stable v0.7, 6.7 MiB</p>
+            <p><a class="btn btn-success" href="https://dl.bintray.com/kaitai-io/universal/kaitai-struct-compiler-0.8.zip"><i class="fa fa-download"></i> Download</a> — stable v0.8, 6.8 MiB</p>
           </div>
           <div class="col-sm-3">
             <h4>Requirements</h4>
@@ -410,6 +409,7 @@ sudo apt-get install kaitai-struct-compiler</pre>
           <li>C# — MIT</li>
           <li>Java — MIT</li>
           <li>JavaScript — Apache v2</li>
+          <li>Lua — MIT</li>
           <li>Perl — MIT</li>
           <li>PHP — MIT</li>
           <li>Python — MIT</li>

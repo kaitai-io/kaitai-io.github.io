@@ -7,6 +7,24 @@ pre, code, #source, #compiled {
     font-family: 'Share Tech Mono';
 }
 
+.jumbotron {
+    background: #773b37;
+    color: #e9d9cf;
+}
+
+.jumbotron h1, .jumbotron i, .jumbotron strong {
+    color: #ffffff;
+}
+
+.jumbotron a {
+    color: #8cc0ed;
+}
+
+.jumbotron .well {
+    background: #311210;
+    border-color: #000000;
+}
+
 section {
     padding-top: 70px;
     padding-bottom: 70px;
