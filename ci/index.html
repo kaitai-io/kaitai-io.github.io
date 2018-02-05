@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2018-01-19 00:07:20 UTC</title>
+    <title>Kaitai Struct: test results - 2018-02-05 00:40:51 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -49,7 +49,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2018-01-19 00:07:20 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2018-02-05 00:40:51 UTC</h1>
 
     <table class="table">
     <tr>
@@ -107,7 +107,7 @@
 
         <td>96%</td>
 
-        <td>96%</td>
+        <td>92%</td>
 
         <td>0%</td>
 
@@ -2900,7 +2900,77 @@
 
         </td>
 
-        <td class="passed" title="python: [255, 0, 255]">passed
+        <td class="failed" title="python: [255, 0, 255]">failed
+
+          <div class="add-info">
+
+              <div class="message">"[b"\xFF\x00\xFF"]" was not equal to "[struct.pack('3b', -1, 0, -1)]"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;[b&quot;\xFF\x00\xFF&quot;]&quot; was not equal to &quot;[struct.pack('3b', -1, 0, -1)]&quot;
+      at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:455)
+      at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+      at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+      at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.invokeWithFixture$1(FunSuiteLike.scala:184)
+      at org.scalatest.FunSuiteLike.$anonfun$runTest$1(FunSuiteLike.scala:196)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:289)
+      at org.scalatest.FunSuiteLike.runTest(FunSuiteLike.scala:196)
+      at org.scalatest.FunSuiteLike.runTest$(FunSuiteLike.scala:178)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.$anonfun$runTests$1(FunSuiteLike.scala:229)
+      at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:396)
+      at scala.collection.immutable.List.foreach(List.scala:389)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:384)
+      at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:379)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:461)
+      at org.scalatest.FunSuiteLike.runTests(FunSuiteLike.scala:229)
+      at org.scalatest.FunSuiteLike.runTests$(FunSuiteLike.scala:228)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1560)
+      at org.scalatest.Suite.run(Suite.scala:1147)
+      at org.scalatest.Suite.run$(Suite.scala:1129)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.$anonfun$run$1(FunSuiteLike.scala:233)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:521)
+      at org.scalatest.FunSuiteLike.run(FunSuiteLike.scala:233)
+      at org.scalatest.FunSuiteLike.run$(FunSuiteLike.scala:232)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1560)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:314)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:507)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:106)
+      at sbt.TestRunner.run(TestFramework.scala:117)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:262)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:233)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+      at sbt.TestFunction.apply(TestFramework.scala:271)
+      at sbt.Tests$.$anonfun$toTask$1(Tests.scala:281)
+      at sbt.std.Transform$$anon$3.$anonfun$apply$2(System.scala:46)
+      at sbt.std.Transform$$anon$4.work(System.scala:66)
+      at sbt.Execute.$anonfun$submit$2(Execute.scala:262)
+      at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)
+      at sbt.Execute.work(Execute.scala:271)
+      at sbt.Execute.$anonfun$submit$1(Execute.scala:262)
+      at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:174)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:36)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+      at java.lang.Thread.run(Thread.java:748)
+</pre>
+
+          </div>
 
         </td>
 
@@ -2949,7 +3019,77 @@
 
         </td>
 
-        <td class="passed" title="python: [34, 0, 10, 64, 65, 66, 92]">passed
+        <td class="failed" title="python: [34, 0, 10, 64, 65, 66, 92]">failed
+
+          <div class="add-info">
+
+              <div class="message">"[b"\x22\x00\x0A\x40\x41\x42\x5C"]" was not equal to "[struct.pack('7b', 34, 0, 10, 64, 65, 66, 92)]"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;[b&quot;\x22\x00\x0A\x40\x41\x42\x5C&quot;]&quot; was not equal to &quot;[struct.pack('7b', 34, 0, 10, 64, 65, 66, 92)]&quot;
+      at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:455)
+      at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+      at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+      at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.invokeWithFixture$1(FunSuiteLike.scala:184)
+      at org.scalatest.FunSuiteLike.$anonfun$runTest$1(FunSuiteLike.scala:196)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:289)
+      at org.scalatest.FunSuiteLike.runTest(FunSuiteLike.scala:196)
+      at org.scalatest.FunSuiteLike.runTest$(FunSuiteLike.scala:178)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.$anonfun$runTests$1(FunSuiteLike.scala:229)
+      at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:396)
+      at scala.collection.immutable.List.foreach(List.scala:389)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:384)
+      at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:379)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:461)
+      at org.scalatest.FunSuiteLike.runTests(FunSuiteLike.scala:229)
+      at org.scalatest.FunSuiteLike.runTests$(FunSuiteLike.scala:228)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1560)
+      at org.scalatest.Suite.run(Suite.scala:1147)
+      at org.scalatest.Suite.run$(Suite.scala:1129)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.$anonfun$run$1(FunSuiteLike.scala:233)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:521)
+      at org.scalatest.FunSuiteLike.run(FunSuiteLike.scala:233)
+      at org.scalatest.FunSuiteLike.run$(FunSuiteLike.scala:232)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1560)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:314)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:507)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:106)
+      at sbt.TestRunner.run(TestFramework.scala:117)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:262)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:233)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+      at sbt.TestFunction.apply(TestFramework.scala:271)
+      at sbt.Tests$.$anonfun$toTask$1(Tests.scala:281)
+      at sbt.std.Transform$$anon$3.$anonfun$apply$2(System.scala:46)
+      at sbt.std.Transform$$anon$4.work(System.scala:66)
+      at sbt.Execute.$anonfun$submit$2(Execute.scala:262)
+      at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)
+      at sbt.Execute.work(Execute.scala:271)
+      at sbt.Execute.$anonfun$submit$1(Execute.scala:262)
+      at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:174)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:36)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+      at java.lang.Thread.run(Thread.java:748)
+</pre>
+
+          </div>
 
         </td>
 
@@ -5467,7 +5607,7 @@
 
               <pre class="trace">readBitsInt: the maximum supported bit length is 32 (tried to read 40 bits)
 Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bits)
-    at Object.KaitaiStream.readBitsInt (/home/travis/build/kaitai-io/kaitai_struct/runtime/javascript/KaitaiStream.js:385:11)
+    at Object.KaitaiStream.readBitsInt (/home/travis/build/kaitai-io/kaitai_struct/runtime/javascript/KaitaiStream.js:403:11)
     at BitsSimple._read (compiled/javascript/BitsSimple.js:33:32)
     at new BitsSimple (compiled/javascript/BitsSimple.js:18:10)
     at helpers/javascript/testHelper.js:12:17
@@ -5569,7 +5709,7 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
               <div class="message">Failed</div>
 
-              <pre class="trace">assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:26&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: string(&#34;str1&#34;)&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : []uint8([]byte{0x73, 0x74, 0x72, 0x31, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40})&#xA;assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:27&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: string(&#34;str2foo&#34;)&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : []uint8([]byte{0x73, 0x74, 0x72, 0x32, 0x66, 0x6f, 0x6f, 0x40, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b})&#xA;assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:28&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: string(&#34;str+++3bar+++&#34;)&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : []uint8([]byte{0x73, 0x74, 0x72, 0x2b, 0x2b, 0x2b, 0x33, 0x62, 0x61, 0x72, 0x2b, 0x2b, 0x2b, 0x40, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b})&#xA;assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:29&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: string(&#34;str4baz@&#34;)&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : []uint8([]byte{0x73, 0x74, 0x72, 0x34, 0x62, 0x61, 0x7a, 0x40, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e})</pre>
+              <pre class="trace">assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:26&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: string(&#34;str1&#34;)&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0x73, 0x74, 0x72, 0x31, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40})&#xA;assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:27&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: string(&#34;str2foo&#34;)&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0x73, 0x74, 0x72, 0x32, 0x66, 0x6f, 0x6f, 0x40, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b})&#xA;assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:28&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: string(&#34;str+++3bar+++&#34;)&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0x73, 0x74, 0x72, 0x2b, 0x2b, 0x2b, 0x33, 0x62, 0x61, 0x72, 0x2b, 0x2b, 0x2b, 0x40, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b})&#xA;assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:29&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: string(&#34;str4baz@&#34;)&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0x73, 0x74, 0x72, 0x34, 0x62, 0x61, 0x7a, 0x40, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e})</pre>
 
           </div>
 
@@ -9755,7 +9895,7 @@ TypeError: ImportsCircularA is not a function
 
               <div class="message">Failed</div>
 
-              <pre class="trace">assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;process_custom_test.go:26&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: []byte{0x10, 0xb3, 0x94, 0x94, 0xf4}&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : []byte{0x9, 0xac, 0x8d, 0x8d, 0xed}&#xA;&#x9;&#xD;&#x9;            &#x9;&#xA;&#x9;&#xD;&#x9;            &#x9;Diff:&#xA;&#x9;&#xD;&#x9;            &#x9;--- Expected&#xA;&#x9;&#xD;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#xD;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#xD;&#x9;            &#x9; ([]uint8) (len=5) {&#xA;&#x9;&#xD;&#x9;            &#x9;- 00000000  10 b3 94 94 f4                                    |.....|&#xA;&#x9;&#xD;&#x9;            &#x9;+ 00000000  09 ac 8d 8d ed                                    |.....|&#xA;&#x9;&#xD;&#x9;            &#x9; }&#xA;assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;process_custom_test.go:27&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: []byte{0x5f, 0xba, 0x7b, 0x93, 0x63, 0x23, 0x5f}&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : []byte{0xba, 0x7b, 0x93, 0x63, 0x23}&#xA;&#x9;&#xD;&#x9;            &#x9;&#xA;&#x9;&#xD;&#x9;            &#x9;Diff:&#xA;&#x9;&#xD;&#x9;            &#x9;--- Expected&#xA;&#x9;&#xD;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#xD;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#xD;&#x9;            &#x9;-([]uint8) (len=7) {&#xA;&#x9;&#xD;&#x9;            &#x9;- 00000000  5f ba 7b 93 63 23 5f                              |_.{.c#_|&#xA;&#x9;&#xD;&#x9;            &#x9;+([]uint8) (len=5) {&#xA;&#x9;&#xD;&#x9;            &#x9;+ 00000000  ba 7b 93 63 23                                    |.{.c#|&#xA;&#x9;&#xD;&#x9;            &#x9; }&#xA;assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;process_custom_test.go:28&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: []byte{0x29, 0x33, 0xb1, 0x38, 0xb1}&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : []byte{0x2a, 0x34, 0xb2, 0x39, 0xb2}&#xA;&#x9;&#xD;&#x9;            &#x9;&#xA;&#x9;&#xD;&#x9;            &#x9;Diff:&#xA;&#x9;&#xD;&#x9;            &#x9;--- Expected&#xA;&#x9;&#xD;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#xD;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#xD;&#x9;            &#x9; ([]uint8) (len=5) {&#xA;&#x9;&#xD;&#x9;            &#x9;- 00000000  29 33 b1 38 b1                                    |)3.8.|&#xA;&#x9;&#xD;&#x9;            &#x9;+ 00000000  2a 34 b2 39 b2                                    |*4.9.|&#xA;&#x9;&#xD;&#x9;            &#x9; }</pre>
+              <pre class="trace">assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;process_custom_test.go:26&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x10, 0xb3, 0x94, 0x94, 0xf4}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x9, 0xac, 0x8d, 0x8d, 0xed}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=5) {&#xA;&#x9;&#x9;            &#x9;- 00000000  10 b3 94 94 f4                                    |.....|&#xA;&#x9;&#x9;            &#x9;+ 00000000  09 ac 8d 8d ed                                    |.....|&#xA;&#x9;&#x9;            &#x9; }&#xA;assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;process_custom_test.go:27&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x5f, 0xba, 0x7b, 0x93, 0x63, 0x23, 0x5f}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0xba, 0x7b, 0x93, 0x63, 0x23}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9;-([]uint8) (len=7) {&#xA;&#x9;&#x9;            &#x9;- 00000000  5f ba 7b 93 63 23 5f                              |_.{.c#_|&#xA;&#x9;&#x9;            &#x9;+([]uint8) (len=5) {&#xA;&#x9;&#x9;            &#x9;+ 00000000  ba 7b 93 63 23                                    |.{.c#|&#xA;&#x9;&#x9;            &#x9; }&#xA;assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;process_custom_test.go:28&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x29, 0x33, 0xb1, 0x38, 0xb1}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x2a, 0x34, 0xb2, 0x39, 0xb2}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=5) {&#xA;&#x9;&#x9;            &#x9;- 00000000  29 33 b1 38 b1                                    |)3.8.|&#xA;&#x9;&#x9;            &#x9;+ 00000000  2a 34 b2 39 b2                                    |*4.9.|&#xA;&#x9;&#x9;            &#x9; }</pre>
 
           </div>
 
@@ -9810,7 +9950,7 @@ TypeError: ImportsCircularA is not a function
 
               <div class="message">Failed</div>
 
-              <pre class="trace">assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;process_rotate_test.go:26&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: string(&#34;Hello&#34;)&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : []uint8([]byte{0x9, 0xac, 0x8d, 0x8d, 0xed})&#xA;assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;process_rotate_test.go:27&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: string(&#34;World&#34;)&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : []uint8([]byte{0xba, 0x7b, 0x93, 0x63, 0x23})&#xA;assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;process_rotate_test.go:28&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: string(&#34;There&#34;)&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : []uint8([]byte{0x2a, 0x34, 0xb2, 0x39, 0xb2})</pre>
+              <pre class="trace">assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;process_rotate_test.go:26&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: string(&#34;Hello&#34;)&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0x9, 0xac, 0x8d, 0x8d, 0xed})&#xA;assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;process_rotate_test.go:27&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: string(&#34;World&#34;)&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0xba, 0x7b, 0x93, 0x63, 0x23})&#xA;assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;process_rotate_test.go:28&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: string(&#34;There&#34;)&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0x2a, 0x34, 0xb2, 0x39, 0xb2})</pre>
 
           </div>
 
@@ -9914,7 +10054,7 @@ TypeError: ImportsCircularA is not a function
 
               <div class="message">Failed</div>
 
-              <pre class="trace">assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;process_xor4_const_test.go:27&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: string(&#34;foo bar&#34;)&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : []uint8([]byte{0x8a, 0xd4, 0xcc, 0x34, 0x8e, 0xda, 0xd1})</pre>
+              <pre class="trace">assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;process_xor4_const_test.go:27&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: string(&#34;foo bar&#34;)&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0x8a, 0xd4, 0xcc, 0x34, 0x8e, 0xda, 0xd1})</pre>
 
           </div>
 
@@ -9971,7 +10111,7 @@ TypeError: ImportsCircularA is not a function
 
               <div class="message">Failed</div>
 
-              <pre class="trace">assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;process_xor4_value_test.go:27&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: string(&#34;foo bar&#34;)&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : []uint8([]byte{0x8a, 0xd4, 0xcc, 0x34, 0x8e, 0xda, 0xd1})</pre>
+              <pre class="trace">assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;process_xor4_value_test.go:27&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: string(&#34;foo bar&#34;)&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0x8a, 0xd4, 0xcc, 0x34, 0x8e, 0xda, 0xd1})</pre>
 
           </div>
 
@@ -10028,7 +10168,7 @@ TypeError: ImportsCircularA is not a function
 
               <div class="message">Failed</div>
 
-              <pre class="trace">assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;process_xor_const_test.go:27&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: string(&#34;foo bar&#34;)&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : []uint8([]byte{0x99, 0x90, 0x90, 0xdf, 0x9d, 0x9e, 0x8d})</pre>
+              <pre class="trace">assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;process_xor_const_test.go:27&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: string(&#34;foo bar&#34;)&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0x99, 0x90, 0x90, 0xdf, 0x9d, 0x9e, 0x8d})</pre>
 
           </div>
 
@@ -10085,7 +10225,7 @@ TypeError: ImportsCircularA is not a function
 
               <div class="message">Failed</div>
 
-              <pre class="trace">assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;process_xor_value_test.go:27&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: string(&#34;foo bar&#34;)&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : []uint8([]byte{0x99, 0x90, 0x90, 0xdf, 0x9d, 0x9e, 0x8d})</pre>
+              <pre class="trace">assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;process_xor_value_test.go:27&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: string(&#34;foo bar&#34;)&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0x99, 0x90, 0x90, 0xdf, 0x9d, 0x9e, 0x8d})</pre>
 
           </div>
 
@@ -10844,7 +10984,7 @@ TypeError: ImportsCircularA is not a function
 
               <div class="message">Failed</div>
 
-              <pre class="trace">assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;str_pad_term_test.go:26&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: &#34;str1&#34;&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : &#34;str1@@@@@@@@@@@@@@@@&#34;&#xA;assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;str_pad_term_test.go:27&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: &#34;str2foo&#34;&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : &#34;str2foo@++++++++++++&#34;&#xA;assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;str_pad_term_test.go:28&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: &#34;str+++3bar+++&#34;&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : &#34;str+++3bar+++@++++++&#34;&#xA;assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;str_pad_term_test.go:29&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: &#34;str4baz@&#34;&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : &#34;str4baz@............&#34;</pre>
+              <pre class="trace">assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_test.go:26&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;str1&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;str1@@@@@@@@@@@@@@@@&#34;&#xA;assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_test.go:27&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;str2foo&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;str2foo@++++++++++++&#34;&#xA;assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_test.go:28&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;str+++3bar+++&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;str+++3bar+++@++++++&#34;&#xA;assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_test.go:29&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;str4baz@&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;str4baz@............&#34;</pre>
 
           </div>
 
@@ -10901,7 +11041,7 @@ TypeError: ImportsCircularA is not a function
 
               <div class="message">Failed</div>
 
-              <pre class="trace">assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;str_pad_term_empty_test.go:26&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: &#34;&#34;&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : &#34;@@@@@@@@@@@@@@@@@@@@&#34;&#xA;assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;str_pad_term_empty_test.go:27&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: &#34;&#34;&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : &#34;@@@@@@@@++++++++++++&#34;&#xA;assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;str_pad_term_empty_test.go:28&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: &#34;&#34;&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : &#34;@tr+++3bar+++@++++++&#34;&#xA;assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;str_pad_term_empty_test.go:29&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: &#34;@&#34;&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : &#34;@@@@@@@@............&#34;</pre>
+              <pre class="trace">assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_empty_test.go:26&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;@@@@@@@@@@@@@@@@@@@@&#34;&#xA;assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_empty_test.go:27&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;@@@@@@@@++++++++++++&#34;&#xA;assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_empty_test.go:28&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;@tr+++3bar+++@++++++&#34;&#xA;assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_empty_test.go:29&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;@&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;@@@@@@@@............&#34;</pre>
 
           </div>
 
@@ -12020,7 +12160,7 @@ TypeError: ImportsCircularA is not a function
 
               <div class="message">Failed</div>
 
-              <pre class="trace">assertions.go:247: &#xD;                          &#xD;&#x9;Error Trace:&#x9;zlib_with_header_78_test.go:26&#xA;&#x9;&#xD;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#xD;&#x9;            &#x9;expected: &#34;a quick brown fox jumps over&#34;&#xA;&#x9;&#xD;&#x9;            &#x9;actual  : &#34;x\x9cKT(,\xcdL\xceVH*\xca/\xcfSH˯P\xc8*\xcd-(V\xc8/K-\x02\x00\x94\xbd\n\u007f&#34;</pre>
+              <pre class="trace">assertions.go:238: &#xA;&#x9;&#x9;Error Trace:&#x9;zlib_with_header_78_test.go:26&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;a quick brown fox jumps over&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;x\x9cKT(,\xcdL\xceVH*\xca/\xcfSH˯P\xc8*\xcd-(V\xc8/K-\x02\x00\x94\xbd\n\u007f&#34;</pre>
 
           </div>
 
