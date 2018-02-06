@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2018-02-05 01:43:47 UTC</title>
+    <title>Kaitai Struct: test results - 2018-02-06 01:05:57 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -49,7 +49,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2018-02-05 01:43:47 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2018-02-06 01:05:57 UTC</h1>
 
     <table class="table">
     <tr>
@@ -5375,7 +5375,7 @@
 
         <td></td>
 
-        <td>99%</td>
+        <td>89%</td>
 
         <td>100%</td>
 
@@ -5831,7 +5831,26 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="passed" title="python2: CastToTop">passed
+        <td class="failed" title="python2: CastToTop">failed
+
+          <div class="add-info">
+
+              <div class="message">I/O operation on closed file</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_cast_to_top.py", line 10, in test_cast_to_top
+    self.assertEqual(r.header.code, 0x41)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/cast_to_top.py", line 25, in header
+    _pos = self._io.pos()
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 76, in pos
+    return self._io.tell()
+ValueError: I/O operation on closed file
+
+		</pre>
+
+          </div>
 
         </td>
 
@@ -6094,7 +6113,26 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="passed" title="python2: DefaultEndianExprInherited">passed
+        <td class="failed" title="python2: DefaultEndianExprInherited">failed
+
+          <div class="add-info">
+
+              <div class="message">I/O operation on closed file</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_default_endian_expr_inherited.py", line 13, in test_default_endian_expr_inherited
+    self.assertEqual(r.docs[0].main.insides.more.some_inst, 0x42)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/default_endian_expr_inherited.py", line 118, in some_inst
+    _pos = self._io.pos()
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 76, in pos
+    return self._io.tell()
+ValueError: I/O operation on closed file
+
+		</pre>
+
+          </div>
 
         </td>
 
@@ -6151,7 +6189,26 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="passed" title="python2: DefaultEndianExprIsBe">passed
+        <td class="failed" title="python2: DefaultEndianExprIsBe">failed
+
+          <div class="add-info">
+
+              <div class="message">I/O operation on closed file</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_default_endian_expr_is_be.py", line 15, in test_default_endian_expr_is_be
+    self.assertEqual(r.docs[0].main.inst_int, 0x42)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/default_endian_expr_is_be.py", line 96, in inst_int
+    _pos = self._io.pos()
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 76, in pos
+    return self._io.tell()
+ValueError: I/O operation on closed file
+
+		</pre>
+
+          </div>
 
         </td>
 
@@ -6972,7 +7029,28 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="passed" title="python2: Expr2">passed
+        <td class="failed" title="python2: Expr2">failed
+
+          <div class="add-info">
+
+              <div class="message">I/O operation on closed file</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_expr_2.py", line 17, in test_expr_2
+    self.assertEqual(r.str1_char5, "e")
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/expr_2.py", line 140, in str1_char5
+    self._m_str1_char5 = self.str1.char5
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/expr_2.py", line 48, in char5
+    _pos = self._io.pos()
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 76, in pos
+    return self._io.tell()
+ValueError: I/O operation on closed file
+
+		</pre>
+
+          </div>
 
         </td>
 
@@ -7395,7 +7473,26 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="passed" title="python2: FixedStruct">passed
+        <td class="failed" title="python2: FixedStruct">failed
+
+          <div class="add-info">
+
+              <div class="message">I/O operation on closed file</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_fixed_struct.py", line 9, in test_fixed_struct
+    self.assertEqual(r.hdr.uint8, 255)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/fixed_struct.py", line 62, in hdr
+    _pos = self._io.pos()
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 76, in pos
+    return self._io.tell()
+ValueError: I/O operation on closed file
+
+		</pre>
+
+          </div>
 
         </td>
 
@@ -8302,7 +8399,26 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="passed" title="python2: InstanceStd">passed
+        <td class="failed" title="python2: InstanceStd">failed
+
+          <div class="add-info">
+
+              <div class="message">I/O operation on closed file</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_instance_std.py", line 10, in test_instance_std
+    self.assertEqual(r.header, "Some ")
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/instance_std.py", line 25, in header
+    _pos = self._io.pos()
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 76, in pos
+    return self._io.tell()
+ValueError: I/O operation on closed file
+
+		</pre>
+
+          </div>
 
         </td>
 
@@ -8349,7 +8465,26 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="passed" title="python2: InstanceStdArray">passed
+        <td class="failed" title="python2: InstanceStdArray">failed
+
+          <div class="add-info">
+
+              <div class="message">I/O operation on closed file</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_instance_std_array.py", line 13, in test_instance_std_array
+    self.assertEqual(r.entries, [
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/instance_std_array.py", line 27, in entries
+    _pos = self._io.pos()
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 76, in pos
+    return self._io.tell()
+ValueError: I/O operation on closed file
+
+		</pre>
+
+          </div>
 
         </td>
 
@@ -8396,7 +8531,26 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="passed" title="python2: InstanceUserArray">passed
+        <td class="failed" title="python2: InstanceUserArray">failed
+
+          <div class="add-info">
+
+              <div class="message">I/O operation on closed file</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_instance_user_array.py", line 13, in test_instance_user_array
+    self.assertEqual(r.user_entries[0].word1, 0x1111)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/instance_user_array.py", line 40, in user_entries
+    _pos = self._io.pos()
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 76, in pos
+    return self._io.tell()
+ValueError: I/O operation on closed file
+
+		</pre>
+
+          </div>
 
         </td>
 
@@ -8539,7 +8693,26 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="passed" title="python2: MultipleUse">passed
+        <td class="failed" title="python2: MultipleUse">failed
+
+          <div class="add-info">
+
+              <div class="message">I/O operation on closed file</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_multiple_use.py", line 10, in test_multiple_use
+    self.assertEqual(r.t2.second_use.value, 0x20)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/multiple_use.py", line 58, in second_use
+    _pos = self._io.pos()
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 76, in pos
+    return self._io.tell()
+ValueError: I/O operation on closed file
+
+		</pre>
+
+          </div>
 
         </td>
 
@@ -8633,7 +8806,26 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="passed" title="python2: NavParent2">passed
+        <td class="failed" title="python2: NavParent2">failed
+
+          <div class="add-info">
+
+              <div class="message">I/O operation on closed file</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_nav_parent2.py", line 15, in test_nav_parent2
+    self.assertEqual(r.tags[0].tag_content.content, "foo")
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/nav_parent2.py", line 54, in tag_content
+    _pos = io.pos()
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 76, in pos
+    return self._io.tell()
+ValueError: I/O operation on closed file
+
+		</pre>
+
+          </div>
 
         </td>
 
@@ -8680,7 +8872,26 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="passed" title="python2: NavParent3">passed
+        <td class="failed" title="python2: NavParent3">failed
+
+          <div class="add-info">
+
+              <div class="message">I/O operation on closed file</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_nav_parent3.py", line 12, in test_nav_parent3
+    self.assertEqual(r.tags[0].name, "RAHC")
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/nav_parent3.py", line 64, in tags
+    _pos = self._io.pos()
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 76, in pos
+    return self._io.tell()
+ValueError: I/O operation on closed file
+
+		</pre>
+
+          </div>
 
         </td>
 
@@ -9588,7 +9799,26 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="passed" title="python2: PositionAbs">passed
+        <td class="failed" title="python2: PositionAbs">failed
+
+          <div class="add-info">
+
+              <div class="message">I/O operation on closed file</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_position_abs.py", line 10, in test_position_abs
+    self.assertEqual(r.index.entry, "foo")
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/position_abs.py", line 36, in index
+    _pos = self._io.pos()
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 76, in pos
+    return self._io.tell()
+ValueError: I/O operation on closed file
+
+		</pre>
+
+          </div>
 
         </td>
 
@@ -9682,7 +9912,26 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="passed" title="python2: PositionToEnd">passed
+        <td class="failed" title="python2: PositionToEnd">failed
+
+          <div class="add-info">
+
+              <div class="message">I/O operation on closed file</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_position_to_end.py", line 9, in test_position_to_end
+    self.assertEqual(r.index.foo, 0x42)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/python/position_to_end.py", line 37, in index
+    _pos = self._io.pos()
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 76, in pos
+    return self._io.tell()
+ValueError: I/O operation on closed file
+
+		</pre>
+
+          </div>
 
         </td>
 
