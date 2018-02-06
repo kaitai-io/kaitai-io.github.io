@@ -81,11 +81,11 @@ Python declarative parser/builder.
 * Packaging / infrastructure improvements:
   * ksc is now available as
     [npm package](https://www.npmjs.com/package/kaitai-struct-compiler/),
-    which now a build dependency of a
+    which became a build dependency of a
     [web IDE](https://ide.kaitai.io/)
 * Runtime API changes:
   * C++: now requires `KS_STR_ENCODING_ICONV` or
-    `KS_STR_ENCODING_NONE` to be defined to how to handle string
+    `KS_STR_ENCODING_NONE` to be defined to know how to handle string
     encodings
   * Java: `KaitaiStream` is now an interface, and there are two
     distinct classes which implement it:
@@ -94,9 +94,9 @@ Python declarative parser/builder.
     * `RandomAccessFileKaitaiStream` provides KaitaiStream backed by
       `RandomAccessFile` (and thus uses normal OS read calls, as it
       was done in older KaitaiStruct circa v0.5)
-  * JavaScript: Error classes are now subclasses of `KaitaiStream` and
+  * JavaScript: Error classes became subclasses of `KaitaiStream` and
     were renamed in the following way: `KaitaiUnexpectedDataError` ->
-    `KaitaiStream`.`UnexpectedDataError`
+    `KaitaiStream`.`UnexpectedDataError`.
 * Major bugfixes:
   * C++: adjusted to made compatible with OS X and Windows MSVC builds
   * Fixed broken generation of byte array literals with high 8-bit set
