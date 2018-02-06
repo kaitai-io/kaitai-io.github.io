@@ -24,7 +24,7 @@ a generated code for a parser that can read described data structure
 from a file / stream and provide access to its contents in a nice,
 easy-to-comprehend API.
 
-This release celebrates 1000 stars achieves by [Kaitai Struct at
+This release celebrates 1000 stars achieved by [Kaitai Struct at
 GitHub](https://github.com/kaitai-io/kaitai_struct/), and sports a
 brand new logo designed by [Verneri
 Kontto](https://twitter.com/vervalkon). Thanks for all our users, and
