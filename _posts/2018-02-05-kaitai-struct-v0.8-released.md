@@ -2,8 +2,6 @@
 layout: default
 title: Kaitai Struct v0.8 released
 categories: news
-extra_footer: |
-  <script src="/js/scroller.js"></script>
 ---
 <section class="news">
     <div class="container">
