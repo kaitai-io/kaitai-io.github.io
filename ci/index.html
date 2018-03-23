@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2018-03-23 15:13:05 UTC</title>
+    <title>Kaitai Struct: test results - 2018-03-23 15:33:53 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -49,7 +49,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2018-03-23 15:13:05 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2018-03-23 15:33:53 UTC</h1>
 
     <table class="table">
     <tr>
@@ -5522,7 +5522,7 @@
 
         <td></td>
 
-        <td>0%</td>
+        <td>1%</td>
 
         <td>98%</td>
 
@@ -7751,7 +7751,43 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: FloatingPoints">didn't run</td>
+        <td class="failed" title="construct2: FloatingPoints">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_floating_points
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_floating_points.py", line 3, in <module>
+    from floating_points import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/floating_points.py", line 10, in <module>
+    'single_value_plus_int' / Computed((self.single_value + 1)),
+NameError: name 'self' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_floating_points
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_floating_points.py", line 3, in <module>
+    from floating_points import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/floating_points.py", line 10, in <module>
+    'single_value_plus_int' / Computed((self.single_value + 1)),
+NameError: name 'self' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: FloatingPoints">passed
 
@@ -12290,7 +12326,43 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: TermBytes">didn't run</td>
+        <td class="failed" title="construct2: TermBytes">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_term_bytes
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_term_bytes.py", line 3, in <module>
+    from term_bytes import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/term_bytes.py", line 5, in <module>
+    's1' / NullTerminated(GreedyBytes, term=b'\x7C', include=False, consume=True),
+NameError: name 'NullTerminated' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_term_bytes
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_term_bytes.py", line 3, in <module>
+    from term_bytes import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/term_bytes.py", line 5, in <module>
+    's1' / NullTerminated(GreedyBytes, term=b'\x7C', include=False, consume=True),
+NameError: name 'NullTerminated' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: TermBytes">passed
 
@@ -12341,7 +12413,43 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: TermStrz">didn't run</td>
+        <td class="failed" title="construct2: TermStrz">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_term_strz
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_term_strz.py", line 5, in <module>
+    from term_strz import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/term_strz.py", line 5, in <module>
+    's1' / NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x7C', include=False, consume=True),
+NameError: name 'NullTerminated' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_term_strz
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_term_strz.py", line 5, in <module>
+    from term_strz import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/term_strz.py", line 5, in <module>
+    's1' / NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x7C', include=False, consume=True),
+NameError: name 'NullTerminated' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: TermStrz">passed
 
@@ -12588,7 +12696,9 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: UserType">didn't run</td>
+        <td class="passed" title="construct2: UserType">passed
+
+        </td>
 
         <td class="passed" title="cpp_stl: UserType">passed
 
