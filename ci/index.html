@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2018-03-23 12:47:34 UTC</title>
+    <title>Kaitai Struct: test results - 2018-03-23 15:13:05 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -49,13 +49,15 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2018-03-23 12:47:34 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2018-03-23 15:13:05 UTC</h1>
 
     <table class="table">
     <tr>
         <th>Test</th>
 
         <th>_expr</th>
+
+        <th>construct2</th>
 
         <th>cpp_stl</th>
 
@@ -81,7 +83,7 @@
 
     </tr>
     <tr>
-        <th colspan="13" class="section">
+        <th colspan="14" class="section">
             Expressions
         </th>
     </tr>
@@ -90,6 +92,8 @@
         <th>% passed</th>
 
         <td>100%</td>
+
+        <td>0%</td>
 
         <td>92%</td>
 
@@ -122,6 +126,8 @@
         <td class="passed" title="_expr: &quot;12345&quot;.to_i">passed
 
         </td>
+
+        <td class="no-run" title="construct2: &quot;12345&quot;.to_i">didn't run</td>
 
         <td class="passed" title="cpp_stl: &quot;12345&quot;.to_i">passed
 
@@ -172,6 +178,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: &quot;1234fe&quot;.to_i(16)">didn't run</td>
+
         <td class="passed" title="cpp_stl: &quot;1234fe&quot;.to_i(16)">passed
 
         </td>
@@ -221,6 +229,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: &quot;str&quot;">didn't run</td>
+
         <td class="passed" title="cpp_stl: &quot;str&quot;">passed
 
         </td>
@@ -269,6 +279,8 @@
         <td class="passed" title="_expr: &quot;str&quot;.length">passed
 
         </td>
+
+        <td class="no-run" title="construct2: &quot;str&quot;.length">didn't run</td>
 
         <td class="passed" title="cpp_stl: &quot;str&quot;.length">passed
 
@@ -389,6 +401,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: &quot;str&quot;.reverse">didn't run</td>
+
         <td class="passed" title="cpp_stl: &quot;str&quot;.reverse">passed
 
         </td>
@@ -437,6 +451,8 @@
         <td class="passed" title="_expr: &quot;str1&quot; != &quot;str2&quot;">passed
 
         </td>
+
+        <td class="no-run" title="construct2: &quot;str1&quot; != &quot;str2&quot;">didn't run</td>
 
         <td class="passed" title="cpp_stl: &quot;str1&quot; != &quot;str2&quot;">passed
 
@@ -487,6 +503,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: &quot;str1&quot; + &quot;str2&quot;">didn't run</td>
+
         <td class="passed" title="cpp_stl: &quot;str1&quot; + &quot;str2&quot;">passed
 
         </td>
@@ -535,6 +553,8 @@
         <td class="passed" title="_expr: &quot;str1&quot; &lt; &quot;str2&quot;">passed
 
         </td>
+
+        <td class="no-run" title="construct2: &quot;str1&quot; &lt; &quot;str2&quot;">didn't run</td>
 
         <td class="passed" title="cpp_stl: &quot;str1&quot; &lt; &quot;str2&quot;">passed
 
@@ -585,6 +605,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: &quot;str1&quot; == &quot;str2&quot;">didn't run</td>
+
         <td class="passed" title="cpp_stl: &quot;str1&quot; == &quot;str2&quot;">passed
 
         </td>
@@ -633,6 +655,8 @@
         <td class="passed" title="_expr: &quot;str\0next&quot;">passed
 
         </td>
+
+        <td class="no-run" title="construct2: &quot;str\0next&quot;">didn't run</td>
 
         <td class="passed" title="cpp_stl: &quot;str\0next&quot;">passed
 
@@ -753,6 +777,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: &quot;str\nnext&quot;">didn't run</td>
+
         <td class="passed" title="cpp_stl: &quot;str\nnext&quot;">passed
 
         </td>
@@ -802,6 +828,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: &quot;str\u000anext&quot;">didn't run</td>
+
         <td class="passed" title="cpp_stl: &quot;str\u000anext&quot;">passed
 
         </td>
@@ -850,6 +878,8 @@
         <td class="passed" title="_expr: (1 + 2) / (7 * 8)">passed
 
         </td>
+
+        <td class="no-run" title="construct2: (1 + 2) / (7 * 8)">didn't run</td>
 
         <td class="passed" title="cpp_stl: (1 + 2) / (7 * 8)">passed
 
@@ -970,6 +1000,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: (1 + 2) / (7 * 8.1)">didn't run</td>
+
         <td class="passed" title="cpp_stl: (1 + 2) / (7 * 8.1)">passed
 
         </td>
@@ -1018,6 +1050,8 @@
         <td class="passed" title="_expr: -123.456">passed
 
         </td>
+
+        <td class="no-run" title="construct2: -123.456">didn't run</td>
 
         <td class="passed" title="cpp_stl: -123.456">passed
 
@@ -1068,6 +1102,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: -456">didn't run</td>
+
         <td class="passed" title="cpp_stl: -456">passed
 
         </td>
@@ -1116,6 +1152,8 @@
         <td class="passed" title="_expr: 0x1234">passed
 
         </td>
+
+        <td class="no-run" title="construct2: 0x1234">didn't run</td>
 
         <td class="passed" title="cpp_stl: 0x1234">passed
 
@@ -1166,6 +1204,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: 1 + 2">didn't run</td>
+
         <td class="passed" title="cpp_stl: 1 + 2">passed
 
         </td>
@@ -1214,6 +1254,8 @@
         <td class="passed" title="_expr: 1 + 2 + 5">passed
 
         </td>
+
+        <td class="no-run" title="construct2: 1 + 2 + 5">didn't run</td>
 
         <td class="passed" title="cpp_stl: 1 + 2 + 5">passed
 
@@ -1264,6 +1306,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: 1 + 3.4">didn't run</td>
+
         <td class="passed" title="cpp_stl: 1 + 3.4">passed
 
         </td>
@@ -1312,6 +1356,8 @@
         <td class="passed" title="_expr: 1 &lt; 2">passed
 
         </td>
+
+        <td class="no-run" title="construct2: 1 &lt; 2">didn't run</td>
 
         <td class="passed" title="cpp_stl: 1 &lt; 2">passed
 
@@ -1362,6 +1408,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: 1 == 2">didn't run</td>
+
         <td class="passed" title="cpp_stl: 1 == 2">passed
 
         </td>
@@ -1410,6 +1458,8 @@
         <td class="passed" title="_expr: 1.0">passed
 
         </td>
+
+        <td class="no-run" title="construct2: 1.0">didn't run</td>
 
         <td class="passed" title="cpp_stl: 1.0">passed
 
@@ -1460,6 +1510,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: 1.0 &lt; 2">didn't run</td>
+
         <td class="passed" title="cpp_stl: 1.0 &lt; 2">passed
 
         </td>
@@ -1508,6 +1560,8 @@
         <td class="passed" title="_expr: 1.2 + 3">passed
 
         </td>
+
+        <td class="no-run" title="construct2: 1.2 + 3">didn't run</td>
 
         <td class="passed" title="cpp_stl: 1.2 + 3">passed
 
@@ -1558,6 +1612,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: 1.2 + 3.4">didn't run</td>
+
         <td class="passed" title="cpp_stl: 1.2 + 3.4">passed
 
         </td>
@@ -1606,6 +1662,8 @@
         <td class="passed" title="_expr: 1000000000">passed
 
         </td>
+
+        <td class="no-run" title="construct2: 1000000000">didn't run</td>
 
         <td class="passed" title="cpp_stl: 1000000000">passed
 
@@ -1656,6 +1714,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: 100000000000">didn't run</td>
+
         <td class="passed" title="cpp_stl: 100000000000">passed
 
         </td>
@@ -1704,6 +1764,8 @@
         <td class="passed" title="_expr: 123">passed
 
         </td>
+
+        <td class="no-run" title="construct2: 123">didn't run</td>
 
         <td class="passed" title="cpp_stl: 123">passed
 
@@ -1754,6 +1816,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: 123.456">didn't run</td>
+
         <td class="passed" title="cpp_stl: 123.456">passed
 
         </td>
@@ -1803,6 +1867,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: 1234">didn't run</td>
+
         <td class="passed" title="cpp_stl: 1234">passed
 
         </td>
@@ -1851,6 +1917,8 @@
         <td class="passed" title="_expr: 2 &lt; 3 ? &quot;foo&quot; : &quot;bar&quot;">passed
 
         </td>
+
+        <td class="no-run" title="construct2: 2 &lt; 3 ? &quot;foo&quot; : &quot;bar&quot;">didn't run</td>
 
         <td class="failed" title="cpp_stl: 2 &lt; 3 ? &quot;foo&quot; : &quot;bar&quot;">failed
 
@@ -2531,6 +2599,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: 223">didn't run</td>
+
         <td class="passed" title="cpp_stl: 223">passed
 
         </td>
@@ -2579,6 +2649,8 @@
         <td class="passed" title="_expr: 3 / 2">passed
 
         </td>
+
+        <td class="no-run" title="construct2: 3 / 2">didn't run</td>
 
         <td class="passed" title="cpp_stl: 3 / 2">passed
 
@@ -2699,6 +2771,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: 3 / 2.0">didn't run</td>
+
         <td class="passed" title="cpp_stl: 3 / 2.0">passed
 
         </td>
@@ -2747,6 +2821,8 @@
         <td class="passed" title="_expr: [0, 1, 100500]">passed
 
         </td>
+
+        <td class="no-run" title="construct2: [0, 1, 100500]">didn't run</td>
 
         <td class="no-spec" title="cpp_stl: [0, 1, 100500]">no spec
 
@@ -2870,6 +2946,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: [255, 0, 255]">didn't run</td>
+
         <td class="passed" title="cpp_stl: [255, 0, 255]">passed
 
         </td>
@@ -2988,6 +3066,8 @@
         <td class="passed" title="_expr: [34, 0, 10, 64, 65, 66, 92]">passed
 
         </td>
+
+        <td class="no-run" title="construct2: [34, 0, 10, 64, 65, 66, 92]">didn't run</td>
 
         <td class="passed" title="cpp_stl: [34, 0, 10, 64, 65, 66, 92]">passed
 
@@ -3108,6 +3188,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: _root.foo">didn't run</td>
+
         <td class="passed" title="cpp_stl: _root.foo">passed
 
         </td>
@@ -3156,6 +3238,8 @@
         <td class="passed" title="_expr: a != 2 and a != 5">passed
 
         </td>
+
+        <td class="no-run" title="construct2: a != 2 and a != 5">didn't run</td>
 
         <td class="failed" title="cpp_stl: a != 2 and a != 5">failed
 
@@ -3836,6 +3920,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: a.first">didn't run</td>
+
         <td class="passed" title="cpp_stl: a.first">passed
 
         </td>
@@ -3957,6 +4043,8 @@
         <td class="passed" title="_expr: a.last">passed
 
         </td>
+
+        <td class="no-run" title="construct2: a.last">didn't run</td>
 
         <td class="passed" title="cpp_stl: a.last">passed
 
@@ -4150,6 +4238,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: a.size">didn't run</td>
+
         <td class="passed" title="cpp_stl: a.size">passed
 
         </td>
@@ -4268,6 +4358,8 @@
         <td class="passed" title="_expr: a[42 - 2]">passed
 
         </td>
+
+        <td class="no-run" title="construct2: a[42 - 2]">didn't run</td>
 
         <td class="passed" title="cpp_stl: a[42 - 2]">passed
 
@@ -4531,6 +4623,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: a[42]">didn't run</td>
+
         <td class="passed" title="cpp_stl: a[42]">passed
 
         </td>
@@ -4723,6 +4817,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: false">didn't run</td>
+
         <td class="passed" title="cpp_stl: false">passed
 
         </td>
@@ -4771,6 +4867,8 @@
         <td class="passed" title="_expr: foo.bar">passed
 
         </td>
+
+        <td class="no-run" title="construct2: foo.bar">didn't run</td>
 
         <td class="passed" title="cpp_stl: foo.bar">passed
 
@@ -4821,6 +4919,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: foo.inner.baz">didn't run</td>
+
         <td class="passed" title="cpp_stl: foo.inner.baz">passed
 
         </td>
@@ -4869,6 +4969,8 @@
         <td class="passed" title="_expr: foo_block">passed
 
         </td>
+
+        <td class="no-run" title="construct2: foo_block">didn't run</td>
 
         <td class="passed" title="cpp_stl: foo_block">passed
 
@@ -4919,6 +5021,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: foo_str">didn't run</td>
+
         <td class="passed" title="cpp_stl: foo_str">passed
 
         </td>
@@ -4967,6 +5071,8 @@
         <td class="passed" title="_expr: other.as&lt;block::innerblock&gt;.baz">passed
 
         </td>
+
+        <td class="no-run" title="construct2: other.as&lt;block::innerblock&gt;.baz">didn't run</td>
 
         <td class="passed" title="cpp_stl: other.as&lt;block::innerblock&gt;.baz">passed
 
@@ -5017,6 +5123,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: other.as&lt;block&gt;.bar">didn't run</td>
+
         <td class="passed" title="cpp_stl: other.as&lt;block&gt;.bar">passed
 
         </td>
@@ -5065,6 +5173,8 @@
         <td class="passed" title="_expr: some_bool.to_i">passed
 
         </td>
+
+        <td class="no-run" title="construct2: some_bool.to_i">didn't run</td>
 
         <td class="failed" title="cpp_stl: some_bool.to_i">failed
 
@@ -5255,6 +5365,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: true">didn't run</td>
+
         <td class="passed" title="cpp_stl: true">passed
 
         </td>
@@ -5303,6 +5415,8 @@
         <td class="passed" title="_expr: ~(7+3)">passed
 
         </td>
+
+        <td class="no-run" title="construct2: ~(7+3)">didn't run</td>
 
         <td class="passed" title="cpp_stl: ~(7+3)">passed
 
@@ -5353,6 +5467,8 @@
 
         </td>
 
+        <td class="no-run" title="construct2: ~777">didn't run</td>
+
         <td class="passed" title="cpp_stl: ~777">passed
 
         </td>
@@ -5396,7 +5512,7 @@
     </tr>
 
     <tr>
-        <th colspan="13" class="section">
+        <th colspan="14" class="section">
             KSY compilation
         </th>
     </tr>
@@ -5405,6 +5521,8 @@
         <th>% passed</th>
 
         <td></td>
+
+        <td>0%</td>
 
         <td>98%</td>
 
@@ -5435,6 +5553,8 @@
         <td>BcdUserTypeBe</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: BcdUserTypeBe">didn't run</td>
 
         <td class="passed" title="cpp_stl: BcdUserTypeBe">passed
 
@@ -5483,6 +5603,8 @@
 
         <td></td>
 
+        <td class="no-run" title="construct2: BcdUserTypeLe">didn't run</td>
+
         <td class="passed" title="cpp_stl: BcdUserTypeLe">passed
 
         </td>
@@ -5529,6 +5651,8 @@
         <td>BitsByteAligned</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: BitsByteAligned">didn't run</td>
 
         <td class="passed" title="cpp_stl: BitsByteAligned">passed
 
@@ -5587,6 +5711,8 @@
 
         <td></td>
 
+        <td class="no-run" title="construct2: BitsEnum">didn't run</td>
+
         <td class="passed" title="cpp_stl: BitsEnum">passed
 
         </td>
@@ -5633,6 +5759,8 @@
         <td>BitsSimple</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: BitsSimple">didn't run</td>
 
         <td class="passed" title="cpp_stl: BitsSimple">passed
 
@@ -5695,6 +5823,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: BufferedStruct">didn't run</td>
+
         <td class="passed" title="cpp_stl: BufferedStruct">passed
 
         </td>
@@ -5743,6 +5873,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         <td>BytesPadTerm</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: BytesPadTerm">didn't run</td>
 
         <td class="passed" title="cpp_stl: BytesPadTerm">passed
 
@@ -5801,6 +5933,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: CastNested">didn't run</td>
+
         <td class="passed" title="cpp_stl: CastNested">passed
 
         </td>
@@ -5841,6 +5975,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         <td>CastToImported</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: CastToImported">didn't run</td>
 
         <td class="passed" title="cpp_stl: CastToImported">passed
 
@@ -5889,6 +6025,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: CastToTop">didn't run</td>
+
         <td class="passed" title="cpp_stl: CastToTop">passed
 
         </td>
@@ -5935,6 +6073,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         <td>Debug0</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: Debug0">didn't run</td>
 
         <td class="passed" title="cpp_stl: Debug0">passed
 
@@ -5983,6 +6123,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: DebugEnumName">didn't run</td>
+
         <td class="passed" title="cpp_stl: DebugEnumName">passed
 
         </td>
@@ -6029,6 +6171,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         <td>DefaultBigEndian</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: DefaultBigEndian">didn't run</td>
 
         <td class="passed" title="cpp_stl: DefaultBigEndian">passed
 
@@ -6078,6 +6222,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         <td>DefaultEndianExprException</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: DefaultEndianExprException">didn't run</td>
 
         <td class="leak" title="cpp_stl: DefaultEndianExprException">leak
 
@@ -6142,6 +6288,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: DefaultEndianExprInherited">didn't run</td>
+
         <td class="passed" title="cpp_stl: DefaultEndianExprInherited">passed
 
         </td>
@@ -6198,6 +6346,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         <td>DefaultEndianExprIsBe</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: DefaultEndianExprIsBe">didn't run</td>
 
         <td class="passed" title="cpp_stl: DefaultEndianExprIsBe">passed
 
@@ -6256,6 +6406,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: DefaultEndianExprIsLe">didn't run</td>
+
         <td class="passed" title="cpp_stl: DefaultEndianExprIsLe">passed
 
         </td>
@@ -6313,6 +6465,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: DefaultEndianMod">didn't run</td>
+
         <td class="passed" title="cpp_stl: DefaultEndianMod">passed
 
         </td>
@@ -6361,6 +6515,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         <td>Docstrings</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: Docstrings">didn't run</td>
 
         <td class="passed" title="cpp_stl: Docstrings">passed
 
@@ -6411,6 +6567,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: DocstringsDocref">didn't run</td>
+
         <td class="passed" title="cpp_stl: DocstringsDocref">passed
 
         </td>
@@ -6460,6 +6618,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: Enum0">didn't run</td>
+
         <td class="passed" title="cpp_stl: Enum0">passed
 
         </td>
@@ -6506,6 +6666,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         <td>Enum1</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: Enum1">didn't run</td>
 
         <td class="passed" title="cpp_stl: Enum1">passed
 
@@ -6554,6 +6716,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: EnumFancy">didn't run</td>
+
         <td class="passed" title="cpp_stl: EnumFancy">passed
 
         </td>
@@ -6600,6 +6764,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         <td>EnumForUnknownId</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: EnumForUnknownId">didn't run</td>
 
         <td class="passed" title="cpp_stl: EnumForUnknownId">passed
 
@@ -6648,6 +6814,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: EnumIf">didn't run</td>
+
         <td class="passed" title="cpp_stl: EnumIf">passed
 
         </td>
@@ -6694,6 +6862,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         <td>EnumNegative</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: EnumNegative">didn't run</td>
 
         <td class="passed" title="cpp_stl: EnumNegative">passed
 
@@ -6742,6 +6912,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: EnumOfValueInst">didn't run</td>
+
         <td class="passed" title="cpp_stl: EnumOfValueInst">passed
 
         </td>
@@ -6788,6 +6960,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         <td>EnumToI</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: EnumToI">didn't run</td>
 
         <td class="passed" title="cpp_stl: EnumToI">passed
 
@@ -6836,6 +7010,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: EofExceptionBytes">didn't run</td>
+
         <td class="passed" title="cpp_stl: EofExceptionBytes">passed
 
         </td>
@@ -6883,6 +7059,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: EofExceptionU4">didn't run</td>
+
         <td class="passed" title="cpp_stl: EofExceptionU4">passed
 
         </td>
@@ -6929,6 +7107,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         <td>Expr0</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: Expr0">didn't run</td>
 
         <td class="passed" title="cpp_stl: Expr0">passed
 
@@ -6979,6 +7159,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: Expr1">didn't run</td>
+
         <td class="passed" title="cpp_stl: Expr1">passed
 
         </td>
@@ -7027,6 +7209,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         <td>Expr2</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: Expr2">didn't run</td>
 
         <td class="passed" title="cpp_stl: Expr2">passed
 
@@ -7077,6 +7261,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: Expr3">didn't run</td>
+
         <td class="passed" title="cpp_stl: Expr3">passed
 
         </td>
@@ -7123,6 +7309,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         <td>ExprArray</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: ExprArray">didn't run</td>
 
         <td class="passed" title="cpp_stl: ExprArray">passed
 
@@ -7171,6 +7359,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: ExprBytesCmp">didn't run</td>
+
         <td class="passed" title="cpp_stl: ExprBytesCmp">passed
 
         </td>
@@ -7217,6 +7407,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         <td>ExprEnum</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: ExprEnum">didn't run</td>
 
         <td class="passed" title="cpp_stl: ExprEnum">passed
 
@@ -7265,6 +7457,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: ExprIoEof">didn't run</td>
+
         <td class="passed" title="cpp_stl: ExprIoEof">passed
 
         </td>
@@ -7311,6 +7505,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         <td>ExprIoPos</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: ExprIoPos">didn't run</td>
 
         <td class="passed" title="cpp_stl: ExprIoPos">passed
 
@@ -7359,6 +7555,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: ExprMod">didn't run</td>
+
         <td class="passed" title="cpp_stl: ExprMod">passed
 
         </td>
@@ -7405,6 +7603,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         <td>FixedContents</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: FixedContents">didn't run</td>
 
         <td class="passed" title="cpp_stl: FixedContents">passed
 
@@ -7453,6 +7653,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: FixedStruct">didn't run</td>
+
         <td class="passed" title="cpp_stl: FixedStruct">passed
 
         </td>
@@ -7500,6 +7702,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: FloatToI">didn't run</td>
+
         <td class="passed" title="cpp_stl: FloatToI">passed
 
         </td>
@@ -7546,6 +7750,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         <td>FloatingPoints</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: FloatingPoints">didn't run</td>
 
         <td class="passed" title="cpp_stl: FloatingPoints">passed
 
@@ -7596,6 +7802,10 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="passed" title="construct2: HelloWorld">passed
+
+        </td>
+
         <td class="passed" title="cpp_stl: HelloWorld">passed
 
         </td>
@@ -7645,6 +7855,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: IfInstances">didn't run</td>
+
         <td class="passed" title="cpp_stl: IfInstances">passed
 
         </td>
@@ -7691,6 +7903,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         <td>IfStruct</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: IfStruct">didn't run</td>
 
         <td class="passed" title="cpp_stl: IfStruct">passed
 
@@ -7739,6 +7953,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: IfValues">didn't run</td>
+
         <td class="passed" title="cpp_stl: IfValues">passed
 
         </td>
@@ -7785,6 +8001,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         <td>Imports0</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: Imports0">didn't run</td>
 
         <td class="passed" title="cpp_stl: Imports0">passed
 
@@ -7843,6 +8061,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: ImportsAbs">didn't run</td>
+
         <td class="passed" title="cpp_stl: ImportsAbs">passed
 
         </td>
@@ -7900,6 +8120,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: ImportsAbsAbs">didn't run</td>
+
         <td class="passed" title="cpp_stl: ImportsAbsAbs">passed
 
         </td>
@@ -7951,6 +8173,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
+        <td class="no-run" title="construct2: ImportsAbsRel">didn't run</td>
+
         <td class="passed" title="cpp_stl: ImportsAbsRel">passed
 
         </td>
@@ -8001,6 +8225,8 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
         <td>ImportsCircularA</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: ImportsCircularA">didn't run</td>
 
         <td class="passed" title="cpp_stl: ImportsCircularA">passed
 
@@ -8070,6 +8296,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: ImportsRel1">didn't run</td>
+
         <td class="passed" title="cpp_stl: ImportsRel1">passed
 
         </td>
@@ -8121,6 +8349,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: IndexSizes">didn't run</td>
+
         <td class="passed" title="cpp_stl: IndexSizes">passed
 
         </td>
@@ -8168,6 +8398,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: IndexToParamEos">didn't run</td>
+
         <td class="passed" title="cpp_stl: IndexToParamEos">passed
 
         </td>
@@ -8212,6 +8444,8 @@ TypeError: ImportsCircularA is not a function
         <td>IndexToParamExpr</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: IndexToParamExpr">didn't run</td>
 
         <td class="passed" title="cpp_stl: IndexToParamExpr">passed
 
@@ -8258,6 +8492,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: IndexToParamUntil">didn't run</td>
+
         <td class="passed" title="cpp_stl: IndexToParamUntil">passed
 
         </td>
@@ -8302,6 +8538,8 @@ TypeError: ImportsCircularA is not a function
         <td>InstanceIoUser</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: InstanceIoUser">didn't run</td>
 
         <td class="passed" title="cpp_stl: InstanceIoUser">passed
 
@@ -8360,6 +8598,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: InstanceStd">didn't run</td>
+
         <td class="passed" title="cpp_stl: InstanceStd">passed
 
         </td>
@@ -8406,6 +8646,8 @@ TypeError: ImportsCircularA is not a function
         <td>InstanceStdArray</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: InstanceStdArray">didn't run</td>
 
         <td class="passed" title="cpp_stl: InstanceStdArray">passed
 
@@ -8454,6 +8696,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: InstanceUserArray">didn't run</td>
+
         <td class="passed" title="cpp_stl: InstanceUserArray">passed
 
         </td>
@@ -8501,6 +8745,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: JsSignedRightShift">didn't run</td>
+
         <td class="passed" title="cpp_stl: JsSignedRightShift">passed
 
         </td>
@@ -8547,6 +8793,8 @@ TypeError: ImportsCircularA is not a function
         <td>MetaXref</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: MetaXref">didn't run</td>
 
         <td class="passed" title="cpp_stl: MetaXref">passed
 
@@ -8597,6 +8845,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: MultipleUse">didn't run</td>
+
         <td class="passed" title="cpp_stl: MultipleUse">passed
 
         </td>
@@ -8643,6 +8893,8 @@ TypeError: ImportsCircularA is not a function
         <td>NavParent</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: NavParent">didn't run</td>
 
         <td class="passed" title="cpp_stl: NavParent">passed
 
@@ -8691,6 +8943,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: NavParent2">didn't run</td>
+
         <td class="passed" title="cpp_stl: NavParent2">passed
 
         </td>
@@ -8737,6 +8991,8 @@ TypeError: ImportsCircularA is not a function
         <td>NavParent3</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: NavParent3">didn't run</td>
 
         <td class="passed" title="cpp_stl: NavParent3">passed
 
@@ -8785,6 +9041,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: NavParentFalse">didn't run</td>
+
         <td class="passed" title="cpp_stl: NavParentFalse">passed
 
         </td>
@@ -8831,6 +9089,8 @@ TypeError: ImportsCircularA is not a function
         <td>NavParentFalse2</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: NavParentFalse2">didn't run</td>
 
         <td class="passed" title="cpp_stl: NavParentFalse2">passed
 
@@ -8880,6 +9140,8 @@ TypeError: ImportsCircularA is not a function
         <td>NavParentOverride</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: NavParentOverride">didn't run</td>
 
         <td class="passed" title="cpp_stl: NavParentOverride">passed
 
@@ -8938,6 +9200,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: NavParentSwitch">didn't run</td>
+
         <td class="passed" title="cpp_stl: NavParentSwitch">passed
 
         </td>
@@ -8984,6 +9248,8 @@ TypeError: ImportsCircularA is not a function
         <td>NavParentVsValueInst</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: NavParentVsValueInst">didn't run</td>
 
         <td class="passed" title="cpp_stl: NavParentVsValueInst">passed
 
@@ -9032,6 +9298,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: NavRoot">didn't run</td>
+
         <td class="passed" title="cpp_stl: NavRoot">passed
 
         </td>
@@ -9078,6 +9346,8 @@ TypeError: ImportsCircularA is not a function
         <td>NestedSameName</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: NestedSameName">didn't run</td>
 
         <td class="passed" title="cpp_stl: NestedSameName">passed
 
@@ -9126,6 +9396,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: NestedSameName2">didn't run</td>
+
         <td class="passed" title="cpp_stl: NestedSameName2">passed
 
         </td>
@@ -9172,6 +9444,8 @@ TypeError: ImportsCircularA is not a function
         <td>NestedTypes</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: NestedTypes">didn't run</td>
 
         <td class="passed" title="cpp_stl: NestedTypes">passed
 
@@ -9222,6 +9496,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: NestedTypes2">didn't run</td>
+
         <td class="passed" title="cpp_stl: NestedTypes2">passed
 
         </td>
@@ -9271,6 +9547,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: NestedTypes3">didn't run</td>
+
         <td class="passed" title="cpp_stl: NestedTypes3">passed
 
         </td>
@@ -9311,6 +9589,8 @@ TypeError: ImportsCircularA is not a function
         <td>NonStandard</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: NonStandard">didn't run</td>
 
         <td class="passed" title="cpp_stl: NonStandard">passed
 
@@ -9358,6 +9638,8 @@ TypeError: ImportsCircularA is not a function
         <td>OpaqueExternalType</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: OpaqueExternalType">didn't run</td>
 
         <td class="passed" title="cpp_stl: OpaqueExternalType">passed
 
@@ -9416,6 +9698,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: OpaqueExternalType02Parent">didn't run</td>
+
         <td class="passed" title="cpp_stl: OpaqueExternalType02Parent">passed
 
         </td>
@@ -9473,6 +9757,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: OpaqueWithParam">didn't run</td>
+
         <td class="passed" title="cpp_stl: OpaqueWithParam">passed
 
         </td>
@@ -9528,6 +9814,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: OptionalId">didn't run</td>
+
         <td class="passed" title="cpp_stl: OptionalId">passed
 
         </td>
@@ -9574,6 +9862,8 @@ TypeError: ImportsCircularA is not a function
         <td>ParamsCallShort</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: ParamsCallShort">didn't run</td>
 
         <td class="passed" title="cpp_stl: ParamsCallShort">passed
 
@@ -9630,6 +9920,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: ParamsDef">didn't run</td>
+
         <td class="passed" title="cpp_stl: ParamsDef">passed
 
         </td>
@@ -9685,6 +9977,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: ParamsPassUsertype">didn't run</td>
+
         <td class="passed" title="cpp_stl: ParamsPassUsertype">passed
 
         </td>
@@ -9736,6 +10030,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: PositionAbs">didn't run</td>
+
         <td class="passed" title="cpp_stl: PositionAbs">passed
 
         </td>
@@ -9785,6 +10081,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: PositionInSeq">didn't run</td>
+
         <td class="passed" title="cpp_stl: PositionInSeq">passed
 
         </td>
@@ -9831,6 +10129,8 @@ TypeError: ImportsCircularA is not a function
         <td>PositionToEnd</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: PositionToEnd">didn't run</td>
 
         <td class="passed" title="cpp_stl: PositionToEnd">passed
 
@@ -9879,6 +10179,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: ProcessCoerceBytes">didn't run</td>
+
         <td class="passed" title="cpp_stl: ProcessCoerceBytes">passed
 
         </td>
@@ -9926,6 +10228,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: ProcessCoerceSwitch">didn't run</td>
+
         <td class="no-run" title="cpp_stl: ProcessCoerceSwitch">didn't run</td>
 
         <td class="passed" title="csharp: ProcessCoerceSwitch">passed
@@ -9970,6 +10274,8 @@ TypeError: ImportsCircularA is not a function
         <td>ProcessCoerceUsertype1</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: ProcessCoerceUsertype1">didn't run</td>
 
         <td class="passed" title="cpp_stl: ProcessCoerceUsertype1">passed
 
@@ -10018,6 +10324,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: ProcessCoerceUsertype2">didn't run</td>
+
         <td class="passed" title="cpp_stl: ProcessCoerceUsertype2">passed
 
         </td>
@@ -10064,6 +10372,8 @@ TypeError: ImportsCircularA is not a function
         <td>ProcessCustom</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: ProcessCustom">didn't run</td>
 
         <td class="passed" title="cpp_stl: ProcessCustom">passed
 
@@ -10117,6 +10427,8 @@ TypeError: ImportsCircularA is not a function
         <td>ProcessRotate</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: ProcessRotate">didn't run</td>
 
         <td class="passed" title="cpp_stl: ProcessRotate">passed
 
@@ -10175,6 +10487,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: ProcessToUser">didn't run</td>
+
         <td class="passed" title="cpp_stl: ProcessToUser">passed
 
         </td>
@@ -10221,6 +10535,8 @@ TypeError: ImportsCircularA is not a function
         <td>ProcessXor4Const</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: ProcessXor4Const">didn't run</td>
 
         <td class="passed" title="cpp_stl: ProcessXor4Const">passed
 
@@ -10279,6 +10595,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: ProcessXor4Value">didn't run</td>
+
         <td class="passed" title="cpp_stl: ProcessXor4Value">passed
 
         </td>
@@ -10335,6 +10653,8 @@ TypeError: ImportsCircularA is not a function
         <td>ProcessXorConst</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: ProcessXorConst">didn't run</td>
 
         <td class="passed" title="cpp_stl: ProcessXorConst">passed
 
@@ -10393,6 +10713,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: ProcessXorValue">didn't run</td>
+
         <td class="passed" title="cpp_stl: ProcessXorValue">passed
 
         </td>
@@ -10450,6 +10772,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: RecursiveOne">didn't run</td>
+
         <td class="passed" title="cpp_stl: RecursiveOne">passed
 
         </td>
@@ -10496,6 +10820,8 @@ TypeError: ImportsCircularA is not a function
         <td>RepeatEosStruct</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: RepeatEosStruct">didn't run</td>
 
         <td class="passed" title="cpp_stl: RepeatEosStruct">passed
 
@@ -10554,6 +10880,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: RepeatEosU4">didn't run</td>
+
         <td class="passed" title="cpp_stl: RepeatEosU4">passed
 
         </td>
@@ -10611,6 +10939,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: RepeatNStruct">didn't run</td>
+
         <td class="passed" title="cpp_stl: RepeatNStruct">passed
 
         </td>
@@ -10659,6 +10989,8 @@ TypeError: ImportsCircularA is not a function
         <td>RepeatNStrz</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: RepeatNStrz">didn't run</td>
 
         <td class="passed" title="cpp_stl: RepeatNStrz">passed
 
@@ -10709,6 +11041,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: RepeatNStrzDouble">didn't run</td>
+
         <td class="passed" title="cpp_stl: RepeatNStrzDouble">passed
 
         </td>
@@ -10758,6 +11092,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: RepeatUntilComplex">didn't run</td>
+
         <td class="passed" title="cpp_stl: RepeatUntilComplex">passed
 
         </td>
@@ -10804,6 +11140,8 @@ TypeError: ImportsCircularA is not a function
         <td>RepeatUntilS4</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: RepeatUntilS4">didn't run</td>
 
         <td class="passed" title="cpp_stl: RepeatUntilS4">passed
 
@@ -10852,6 +11190,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: RepeatUntilSized">didn't run</td>
+
         <td class="passed" title="cpp_stl: RepeatUntilSized">passed
 
         </td>
@@ -10898,6 +11238,8 @@ TypeError: ImportsCircularA is not a function
         <td>StrEncodings</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: StrEncodings">didn't run</td>
 
         <td class="passed" title="cpp_stl: StrEncodings">passed
 
@@ -10946,6 +11288,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: StrEncodingsDefault">didn't run</td>
+
         <td class="passed" title="cpp_stl: StrEncodingsDefault">passed
 
         </td>
@@ -10992,6 +11336,8 @@ TypeError: ImportsCircularA is not a function
         <td>StrEos</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: StrEos">didn't run</td>
 
         <td class="passed" title="cpp_stl: StrEos">passed
 
@@ -11042,6 +11388,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: StrLiterals">didn't run</td>
+
         <td class="passed" title="cpp_stl: StrLiterals">passed
 
         </td>
@@ -11089,6 +11437,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: StrLiterals2">didn't run</td>
+
         <td class="passed" title="cpp_stl: StrLiterals2">passed
 
         </td>
@@ -11135,6 +11485,8 @@ TypeError: ImportsCircularA is not a function
         <td>StrPadTerm</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: StrPadTerm">didn't run</td>
 
         <td class="passed" title="cpp_stl: StrPadTerm">passed
 
@@ -11193,6 +11545,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: StrPadTermEmpty">didn't run</td>
+
         <td class="passed" title="cpp_stl: StrPadTermEmpty">passed
 
         </td>
@@ -11250,6 +11604,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: SwitchBytearray">didn't run</td>
+
         <td class="passed" title="cpp_stl: SwitchBytearray">passed
 
         </td>
@@ -11296,6 +11652,8 @@ TypeError: ImportsCircularA is not a function
         <td>SwitchCast</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: SwitchCast">didn't run</td>
 
         <td class="passed" title="cpp_stl: SwitchCast">passed
 
@@ -11344,6 +11702,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: SwitchIntegers">didn't run</td>
+
         <td class="passed" title="cpp_stl: SwitchIntegers">passed
 
         </td>
@@ -11390,6 +11750,8 @@ TypeError: ImportsCircularA is not a function
         <td>SwitchIntegers2</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: SwitchIntegers2">didn't run</td>
 
         <td class="passed" title="cpp_stl: SwitchIntegers2">passed
 
@@ -11438,6 +11800,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: SwitchManualEnum">didn't run</td>
+
         <td class="passed" title="cpp_stl: SwitchManualEnum">passed
 
         </td>
@@ -11484,6 +11848,8 @@ TypeError: ImportsCircularA is not a function
         <td>SwitchManualInt</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: SwitchManualInt">didn't run</td>
 
         <td class="passed" title="cpp_stl: SwitchManualInt">passed
 
@@ -11532,6 +11898,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: SwitchManualIntElse">didn't run</td>
+
         <td class="passed" title="cpp_stl: SwitchManualIntElse">passed
 
         </td>
@@ -11578,6 +11946,8 @@ TypeError: ImportsCircularA is not a function
         <td>SwitchManualIntSize</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: SwitchManualIntSize">didn't run</td>
 
         <td class="passed" title="cpp_stl: SwitchManualIntSize">passed
 
@@ -11626,6 +11996,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: SwitchManualIntSizeElse">didn't run</td>
+
         <td class="passed" title="cpp_stl: SwitchManualIntSizeElse">passed
 
         </td>
@@ -11672,6 +12044,8 @@ TypeError: ImportsCircularA is not a function
         <td>SwitchManualIntSizeEos</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: SwitchManualIntSizeEos">didn't run</td>
 
         <td class="passed" title="cpp_stl: SwitchManualIntSizeEos">passed
 
@@ -11720,6 +12094,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: SwitchManualStr">didn't run</td>
+
         <td class="passed" title="cpp_stl: SwitchManualStr">passed
 
         </td>
@@ -11766,6 +12142,8 @@ TypeError: ImportsCircularA is not a function
         <td>SwitchManualStrElse</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: SwitchManualStrElse">didn't run</td>
 
         <td class="passed" title="cpp_stl: SwitchManualStrElse">passed
 
@@ -11814,6 +12192,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: SwitchMultiBoolOps">didn't run</td>
+
         <td class="passed" title="cpp_stl: SwitchMultiBoolOps">passed
 
         </td>
@@ -11861,6 +12241,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: SwitchRepeatExpr">didn't run</td>
+
         <td class="passed" title="cpp_stl: SwitchRepeatExpr">passed
 
         </td>
@@ -11907,6 +12289,8 @@ TypeError: ImportsCircularA is not a function
         <td>TermBytes</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: TermBytes">didn't run</td>
 
         <td class="passed" title="cpp_stl: TermBytes">passed
 
@@ -11957,6 +12341,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: TermStrz">didn't run</td>
+
         <td class="passed" title="cpp_stl: TermStrz">passed
 
         </td>
@@ -12006,6 +12392,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: TsPacketHeader">didn't run</td>
+
         <td class="passed" title="cpp_stl: TsPacketHeader">passed
 
         </td>
@@ -12052,6 +12440,8 @@ TypeError: ImportsCircularA is not a function
         <td>TypeIntUnaryOp</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: TypeIntUnaryOp">didn't run</td>
 
         <td class="passed" title="cpp_stl: TypeIntUnaryOp">passed
 
@@ -12100,6 +12490,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: TypeTernary">didn't run</td>
+
         <td class="passed" title="cpp_stl: TypeTernary">passed
 
         </td>
@@ -12147,6 +12539,8 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
+        <td class="no-run" title="construct2: TypeTernaryOpaque">didn't run</td>
+
         <td class="passed" title="cpp_stl: TypeTernaryOpaque">passed
 
         </td>
@@ -12193,6 +12587,8 @@ TypeError: ImportsCircularA is not a function
         <td>UserType</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: UserType">didn't run</td>
 
         <td class="passed" title="cpp_stl: UserType">passed
 
@@ -12242,6 +12638,8 @@ TypeError: ImportsCircularA is not a function
         <td>YamlInts</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: YamlInts">didn't run</td>
 
         <td class="passed" title="cpp_stl: YamlInts">passed
 
@@ -12295,6 +12693,8 @@ TypeError: ImportsCircularA is not a function
         <td>ZlibWithHeader78</td>
 
         <td></td>
+
+        <td class="no-run" title="construct2: ZlibWithHeader78">didn't run</td>
 
         <td class="passed" title="cpp_stl: ZlibWithHeader78">passed
 
