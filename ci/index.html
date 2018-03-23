@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2018-03-23 15:33:53 UTC</title>
+    <title>Kaitai Struct: test results - 2018-03-23 20:25:32 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -49,7 +49,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2018-03-23 15:33:53 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2018-03-23 20:25:32 UTC</h1>
 
     <table class="table">
     <tr>
@@ -5522,7 +5522,7 @@
 
         <td></td>
 
-        <td>1%</td>
+        <td>15%</td>
 
         <td>98%</td>
 
@@ -5554,7 +5554,39 @@
 
         <td></td>
 
-        <td class="no-run" title="construct2: BcdUserTypeBe">didn't run</td>
+        <td class="failed" title="construct2: BcdUserTypeBe">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_bcd_user_type_be
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_bcd_user_type_be.py", line 5, in <module>
+    from bcd_user_type_be import _schema
+ImportError: No module named bcd_user_type_be
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_bcd_user_type_be
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_bcd_user_type_be.py", line 5, in <module>
+    from bcd_user_type_be import _schema
+ImportError: No module named bcd_user_type_be
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: BcdUserTypeBe">passed
 
@@ -5603,7 +5635,39 @@
 
         <td></td>
 
-        <td class="no-run" title="construct2: BcdUserTypeLe">didn't run</td>
+        <td class="failed" title="construct2: BcdUserTypeLe">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_bcd_user_type_le
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_bcd_user_type_le.py", line 5, in <module>
+    from bcd_user_type_le import _schema
+ImportError: No module named bcd_user_type_le
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_bcd_user_type_le
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_bcd_user_type_le.py", line 5, in <module>
+    from bcd_user_type_le import _schema
+ImportError: No module named bcd_user_type_le
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: BcdUserTypeLe">passed
 
@@ -5652,7 +5716,45 @@
 
         <td></td>
 
-        <td class="no-run" title="construct2: BitsByteAligned">didn't run</td>
+        <td class="failed" title="construct2: BitsByteAligned">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_bits_byte_aligned
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_bits_byte_aligned.py", line 5, in <module>
+    from bits_byte_aligned import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/bits_byte_aligned.py", line 5
+    'one' / ???,
+            ^
+SyntaxError: invalid syntax
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_bits_byte_aligned
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_bits_byte_aligned.py", line 5, in <module>
+    from bits_byte_aligned import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/bits_byte_aligned.py", line 5
+    'one' / ???,
+            ^
+SyntaxError: invalid syntax
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: BitsByteAligned">passed
 
@@ -5760,7 +5862,45 @@
 
         <td></td>
 
-        <td class="no-run" title="construct2: BitsSimple">didn't run</td>
+        <td class="failed" title="construct2: BitsSimple">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_bits_simple
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_bits_simple.py", line 5, in <module>
+    from bits_simple import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/bits_simple.py", line 5
+    'byte_1' / ???,
+               ^
+SyntaxError: invalid syntax
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_bits_simple
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_bits_simple.py", line 5, in <module>
+    from bits_simple import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/bits_simple.py", line 5
+    'byte_1' / ???,
+               ^
+SyntaxError: invalid syntax
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: BitsSimple">passed
 
@@ -5823,7 +5963,43 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: BufferedStruct">didn't run</td>
+        <td class="failed" title="construct2: BufferedStruct">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_buffered_struct
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_buffered_struct.py", line 5, in <module>
+    from buffered_struct import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/buffered_struct.py", line 11, in <module>
+    'block1' / FixedSized(this.len1, buffered_struct__block),
+NameError: name 'FixedSized' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_buffered_struct
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_buffered_struct.py", line 5, in <module>
+    from buffered_struct import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/buffered_struct.py", line 11, in <module>
+    'block1' / FixedSized(this.len1, buffered_struct__block),
+NameError: name 'FixedSized' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: BufferedStruct">passed
 
@@ -5874,7 +6050,24 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: BytesPadTerm">didn't run</td>
+        <td class="failed" title="construct2: BytesPadTerm">failed
+
+          <div class="add-info">
+
+              <div class="message">'str1@@@@@@@@@@@@@@@@' != 'str1'</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_bytes_pad_term.py", line 10, in test_bytes_pad_term
+    self.assertEqual(r.str_pad, b"\x73\x74\x72\x31")
+AssertionError: 'str1@@@@@@@@@@@@@@@@' != 'str1'
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: BytesPadTerm">passed
 
@@ -5933,7 +6126,45 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: CastNested">didn't run</td>
+        <td class="failed" title="construct2: CastNested">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_cast_nested
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_cast_nested.py", line 5, in <module>
+    from cast_nested import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/cast_nested.py", line 14
+    'body' / ???,
+             ^
+SyntaxError: invalid syntax
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_cast_nested
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_cast_nested.py", line 5, in <module>
+    from cast_nested import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/cast_nested.py", line 14
+    'body' / ???,
+             ^
+SyntaxError: invalid syntax
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: CastNested">passed
 
@@ -5976,7 +6207,43 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: CastToImported">didn't run</td>
+        <td class="failed" title="construct2: CastToImported">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_cast_to_imported
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_cast_to_imported.py", line 5, in <module>
+    from cast_to_imported import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/cast_to_imported.py", line 5, in <module>
+    'one' / hello_world,
+NameError: name 'hello_world' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_cast_to_imported
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_cast_to_imported.py", line 5, in <module>
+    from cast_to_imported import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/cast_to_imported.py", line 5, in <module>
+    'one' / hello_world,
+NameError: name 'hello_world' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: CastToImported">passed
 
@@ -6025,7 +6292,43 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: CastToTop">didn't run</td>
+        <td class="failed" title="construct2: CastToTop">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_cast_to_top
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_cast_to_top.py", line 5, in <module>
+    from cast_to_top import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/cast_to_top.py", line 6, in <module>
+    'header' / cast_to_top,
+NameError: name 'cast_to_top' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_cast_to_top
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_cast_to_top.py", line 5, in <module>
+    from cast_to_top import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/cast_to_top.py", line 6, in <module>
+    'header' / cast_to_top,
+NameError: name 'cast_to_top' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: CastToTop">passed
 
@@ -6172,7 +6475,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: DefaultBigEndian">didn't run</td>
+        <td class="passed" title="construct2: DefaultBigEndian">passed
+
+        </td>
 
         <td class="passed" title="cpp_stl: DefaultBigEndian">passed
 
@@ -6288,7 +6593,39 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: DefaultEndianExprInherited">didn't run</td>
+        <td class="failed" title="construct2: DefaultEndianExprInherited">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_default_endian_expr_inherited
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_default_endian_expr_inherited.py", line 5, in <module>
+    from default_endian_expr_inherited import _schema
+ImportError: No module named default_endian_expr_inherited
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_default_endian_expr_inherited
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_default_endian_expr_inherited.py", line 5, in <module>
+    from default_endian_expr_inherited import _schema
+ImportError: No module named default_endian_expr_inherited
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: DefaultEndianExprInherited">passed
 
@@ -6347,7 +6684,39 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: DefaultEndianExprIsBe">didn't run</td>
+        <td class="failed" title="construct2: DefaultEndianExprIsBe">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_default_endian_expr_is_be
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_default_endian_expr_is_be.py", line 5, in <module>
+    from default_endian_expr_is_be import _schema
+ImportError: No module named default_endian_expr_is_be
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_default_endian_expr_is_be
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_default_endian_expr_is_be.py", line 5, in <module>
+    from default_endian_expr_is_be import _schema
+ImportError: No module named default_endian_expr_is_be
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: DefaultEndianExprIsBe">passed
 
@@ -6406,7 +6775,39 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: DefaultEndianExprIsLe">didn't run</td>
+        <td class="failed" title="construct2: DefaultEndianExprIsLe">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_default_endian_expr_is_le
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_default_endian_expr_is_le.py", line 5, in <module>
+    from default_endian_expr_is_le import _schema
+ImportError: No module named default_endian_expr_is_le
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_default_endian_expr_is_le
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_default_endian_expr_is_le.py", line 5, in <module>
+    from default_endian_expr_is_le import _schema
+ImportError: No module named default_endian_expr_is_le
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: DefaultEndianExprIsLe">passed
 
@@ -6465,7 +6866,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: DefaultEndianMod">didn't run</td>
+        <td class="passed" title="construct2: DefaultEndianMod">passed
+
+        </td>
 
         <td class="passed" title="cpp_stl: DefaultEndianMod">passed
 
@@ -6516,7 +6919,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: Docstrings">didn't run</td>
+        <td class="passed" title="construct2: Docstrings">passed
+
+        </td>
 
         <td class="passed" title="cpp_stl: Docstrings">passed
 
@@ -6567,7 +6972,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: DocstringsDocref">didn't run</td>
+        <td class="passed" title="construct2: DocstringsDocref">passed
+
+        </td>
 
         <td class="passed" title="cpp_stl: DocstringsDocref">passed
 
@@ -7108,7 +7515,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: Expr0">didn't run</td>
+        <td class="passed" title="construct2: Expr0">passed
+
+        </td>
 
         <td class="passed" title="cpp_stl: Expr0">passed
 
@@ -7159,7 +7568,43 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: Expr1">didn't run</td>
+        <td class="failed" title="construct2: Expr1">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_expr_1
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_1.py", line 5, in <module>
+    from expr_1 import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_1.py", line 6, in <module>
+    'str1' / FixedSized(this.len_of_1_mod, GreedyString(encoding='ASCII')),
+NameError: name 'FixedSized' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_expr_1
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_1.py", line 5, in <module>
+    from expr_1 import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_1.py", line 6, in <module>
+    'str1' / FixedSized(this.len_of_1_mod, GreedyString(encoding='ASCII')),
+NameError: name 'FixedSized' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: Expr1">passed
 
@@ -7210,7 +7655,39 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: Expr2">didn't run</td>
+        <td class="failed" title="construct2: Expr2">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_expr_2
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_2.py", line 5, in <module>
+    from expr_2 import _schema
+ImportError: No module named expr_2
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_expr_2
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_2.py", line 5, in <module>
+    from expr_2 import _schema
+ImportError: No module named expr_2
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: Expr2">passed
 
@@ -7261,7 +7738,43 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: Expr3">didn't run</td>
+        <td class="failed" title="construct2: Expr3">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_expr_3
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_3.py", line 5, in <module>
+    from expr_3 import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_3.py", line 6, in <module>
+    'two' / FixedSized(3, GreedyString(encoding='ASCII')),
+NameError: name 'FixedSized' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_expr_3
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_3.py", line 5, in <module>
+    from expr_3 import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_3.py", line 6, in <module>
+    'two' / FixedSized(3, GreedyString(encoding='ASCII')),
+NameError: name 'FixedSized' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: Expr3">passed
 
@@ -7310,7 +7823,43 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: ExprArray">didn't run</td>
+        <td class="failed" title="construct2: ExprArray">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_expr_array
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_array.py", line 5, in <module>
+    from expr_array import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_array.py", line 7, in <module>
+    'astr' / Array(3, NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x00', include=False, consume=True)),
+NameError: name 'NullTerminated' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_expr_array
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_array.py", line 5, in <module>
+    from expr_array import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_array.py", line 7, in <module>
+    'astr' / Array(3, NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x00', include=False, consume=True)),
+NameError: name 'NullTerminated' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: ExprArray">passed
 
@@ -7359,7 +7908,44 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: ExprBytesCmp">didn't run</td>
+        <td class="failed" title="construct2: ExprBytesCmp">failed
+
+          <div class="add-info">
+
+              <div class="message">'ack2'</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_bytes_cmp.py", line 9, in test_expr_bytes_cmp
+    r = _schema.parse_file('src/fixed_struct.bin')
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 277, in parse_file
+    return self.parse_stream(f, **contextkw)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 268, in parse_stream
+    return self._parsereport(stream, context, "(parsing)")
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 280, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 1891, in _parse
+    subobj = sc._parsereport(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 280, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2376, in _parse
+    return self.subcon._parsereport(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 280, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2493, in _parse
+    return self.func(context) if callable(self.func) else self.func
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 161, in __call__
+    rhs = self.rhs(obj) if callable(self.rhs) else self.rhs
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
+    return self.__parent(obj)[self.__field]
+KeyError: 'ack2'
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: ExprBytesCmp">passed
 
@@ -7506,7 +8092,43 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: ExprIoPos">didn't run</td>
+        <td class="failed" title="construct2: ExprIoPos">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_expr_io_pos
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_io_pos.py", line 5, in <module>
+    from expr_io_pos import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_io_pos.py", line 5, in <module>
+    'my_str' / NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x00', include=False, consume=True),
+NameError: name 'NullTerminated' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_expr_io_pos
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_io_pos.py", line 5, in <module>
+    from expr_io_pos import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_io_pos.py", line 5, in <module>
+    'my_str' / NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x00', include=False, consume=True),
+NameError: name 'NullTerminated' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: ExprIoPos">passed
 
@@ -7555,7 +8177,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: ExprMod">didn't run</td>
+        <td class="passed" title="construct2: ExprMod">passed
+
+        </td>
 
         <td class="passed" title="cpp_stl: ExprMod">passed
 
@@ -7604,7 +8228,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: FixedContents">didn't run</td>
+        <td class="passed" title="construct2: FixedContents">passed
+
+        </td>
 
         <td class="passed" title="cpp_stl: FixedContents">passed
 
@@ -7653,7 +8279,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: FixedStruct">didn't run</td>
+        <td class="passed" title="construct2: FixedStruct">passed
+
+        </td>
 
         <td class="passed" title="cpp_stl: FixedStruct">passed
 
@@ -7702,7 +8330,43 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="no-run" title="construct2: FloatToI">didn't run</td>
+        <td class="failed" title="construct2: FloatToI">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_float_to_i
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_float_to_i.py", line 5, in <module>
+    from float_to_i import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/float_to_i.py", line 7, in <module>
+    'float2_i' / Computed(int(this.calc_float2)),
+TypeError: __call__() takes at least 2 arguments (1 given)
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_float_to_i
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_float_to_i.py", line 5, in <module>
+    from float_to_i import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/float_to_i.py", line 7, in <module>
+    'float2_i' / Computed(int(this.calc_float2)),
+TypeError: __call__() takes at least 2 arguments (1 given)
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: FloatToI">passed
 
@@ -7751,41 +8415,7 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="failed" title="construct2: FloatingPoints">failed
-
-          <div class="add-info">
-
-              <div class="message">Failed to import test module: test_floating_points
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_floating_points.py", line 3, in <module>
-    from floating_points import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/floating_points.py", line 10, in <module>
-    'single_value_plus_int' / Computed((self.single_value + 1)),
-NameError: name 'self' is not defined
-</div>
-
-              <pre class="trace">
-
-ImportError: Failed to import test module: test_floating_points
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_floating_points.py", line 3, in <module>
-    from floating_points import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/floating_points.py", line 10, in <module>
-    'single_value_plus_int' / Computed((self.single_value + 1)),
-NameError: name 'self' is not defined
-
-
-		</pre>
-
-          </div>
+        <td class="passed" title="construct2: FloatingPoints">passed
 
         </td>
 
@@ -7940,7 +8570,43 @@ NameError: name 'self' is not defined
 
         <td></td>
 
-        <td class="no-run" title="construct2: IfStruct">didn't run</td>
+        <td class="failed" title="construct2: IfStruct">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_if_struct
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_if_struct.py", line 5, in <module>
+    from if_struct import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/if_struct.py", line 6, in <module>
+    'arg_tuple' / if_struct__arg_tuple,
+NameError: name 'if_struct__arg_tuple' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_if_struct
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_if_struct.py", line 5, in <module>
+    from if_struct import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/if_struct.py", line 6, in <module>
+    'arg_tuple' / if_struct__arg_tuple,
+NameError: name 'if_struct__arg_tuple' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: IfStruct">passed
 
@@ -7989,7 +8655,39 @@ NameError: name 'self' is not defined
 
         <td></td>
 
-        <td class="no-run" title="construct2: IfValues">didn't run</td>
+        <td class="failed" title="construct2: IfValues">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_if_values
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_if_values.py", line 5, in <module>
+    from if_values import _schema
+ImportError: No module named if_values
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_if_values
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_if_values.py", line 5, in <module>
+    from if_values import _schema
+ImportError: No module named if_values
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: IfValues">passed
 
@@ -8385,7 +9083,43 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: IndexSizes">didn't run</td>
+        <td class="failed" title="construct2: IndexSizes">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_index_sizes
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_index_sizes.py", line 5, in <module>
+    from index_sizes import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/index_sizes.py", line 7, in <module>
+    'bufs' / Array(this.qty, FixedSized(this.sizes[i], GreedyString(encoding='ASCII'))),
+NameError: name 'FixedSized' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_index_sizes
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_index_sizes.py", line 5, in <module>
+    from index_sizes import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/index_sizes.py", line 7, in <module>
+    'bufs' / Array(this.qty, FixedSized(this.sizes[i], GreedyString(encoding='ASCII'))),
+NameError: name 'FixedSized' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: IndexSizes">passed
 
@@ -8434,7 +9168,39 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: IndexToParamEos">didn't run</td>
+        <td class="failed" title="construct2: IndexToParamEos">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_index_to_param_eos
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_index_to_param_eos.py", line 5, in <module>
+    from index_to_param_eos import _schema
+ImportError: No module named index_to_param_eos
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_index_to_param_eos
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_index_to_param_eos.py", line 5, in <module>
+    from index_to_param_eos import _schema
+ImportError: No module named index_to_param_eos
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: IndexToParamEos">passed
 
@@ -8481,7 +9247,39 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: IndexToParamExpr">didn't run</td>
+        <td class="failed" title="construct2: IndexToParamExpr">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_index_to_param_expr
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_index_to_param_expr.py", line 5, in <module>
+    from index_to_param_expr import _schema
+ImportError: No module named index_to_param_expr
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_index_to_param_expr
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_index_to_param_expr.py", line 5, in <module>
+    from index_to_param_expr import _schema
+ImportError: No module named index_to_param_expr
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: IndexToParamExpr">passed
 
@@ -8528,7 +9326,39 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: IndexToParamUntil">didn't run</td>
+        <td class="failed" title="construct2: IndexToParamUntil">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_index_to_param_until
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_index_to_param_until.py", line 5, in <module>
+    from index_to_param_until import _schema
+ImportError: No module named index_to_param_until
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_index_to_param_until
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_index_to_param_until.py", line 5, in <module>
+    from index_to_param_until import _schema
+ImportError: No module named index_to_param_until
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: IndexToParamUntil">passed
 
@@ -8575,7 +9405,45 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: InstanceIoUser">didn't run</td>
+        <td class="failed" title="construct2: InstanceIoUser">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_instance_io_user
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_instance_io_user.py", line 5, in <module>
+    from instance_io_user import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/instance_io_user.py", line 17
+    'strings' / ???,
+                ^
+SyntaxError: invalid syntax
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_instance_io_user
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_instance_io_user.py", line 5, in <module>
+    from instance_io_user import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/instance_io_user.py", line 17
+    'strings' / ???,
+                ^
+SyntaxError: invalid syntax
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: InstanceIoUser">passed
 
@@ -8634,7 +9502,43 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: InstanceStd">didn't run</td>
+        <td class="failed" title="construct2: InstanceStd">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_instance_std
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_instance_std.py", line 5, in <module>
+    from instance_std import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/instance_std.py", line 5, in <module>
+    'header' / FixedSized(5, GreedyString(encoding='ASCII')),
+NameError: name 'FixedSized' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_instance_std
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_instance_std.py", line 5, in <module>
+    from instance_std import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/instance_std.py", line 5, in <module>
+    'header' / FixedSized(5, GreedyString(encoding='ASCII')),
+NameError: name 'FixedSized' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: InstanceStd">passed
 
@@ -8683,7 +9587,24 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: InstanceStdArray">didn't run</td>
+        <td class="failed" title="construct2: InstanceStdArray">failed
+
+          <div class="add-info">
+
+              <div class="message">'\xff\xff\xff\xff' != '\x11\x11\x11\x11'</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_instance_std_array.py", line 14, in test_instance_std_array
+    self.assertEqual(r.entries[0], b"\x11\x11\x11\x11")
+AssertionError: '\xff\xff\xff\xff' != '\x11\x11\x11\x11'
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: InstanceStdArray">passed
 
@@ -8732,7 +9653,43 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: InstanceUserArray">didn't run</td>
+        <td class="failed" title="construct2: InstanceUserArray">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_instance_user_array
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_instance_user_array.py", line 5, in <module>
+    from instance_user_array import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/instance_user_array.py", line 13, in <module>
+    'user_entries' / Array(this.qty_entries, FixedSized(this.entry_size, instance_user_array__entry)),
+NameError: name 'FixedSized' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_instance_user_array
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_instance_user_array.py", line 5, in <module>
+    from instance_user_array import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/instance_user_array.py", line 13, in <module>
+    'user_entries' / Array(this.qty_entries, FixedSized(this.entry_size, instance_user_array__entry)),
+NameError: name 'FixedSized' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: InstanceUserArray">passed
 
@@ -8781,7 +9738,9 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: JsSignedRightShift">didn't run</td>
+        <td class="passed" title="construct2: JsSignedRightShift">passed
+
+        </td>
 
         <td class="passed" title="cpp_stl: JsSignedRightShift">passed
 
@@ -8830,7 +9789,9 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: MetaXref">didn't run</td>
+        <td class="passed" title="construct2: MetaXref">passed
+
+        </td>
 
         <td class="passed" title="cpp_stl: MetaXref">passed
 
@@ -8881,7 +9842,24 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: MultipleUse">didn't run</td>
+        <td class="failed" title="construct2: MultipleUse">failed
+
+          <div class="add-info">
+
+              <div class="message">-1 != 32</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_multiple_use.py", line 11, in test_multiple_use
+    self.assertEqual(r.t2.second_use.value, 32)
+AssertionError: -1 != 32
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: MultipleUse">passed
 
@@ -8930,7 +9908,39 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: NavParent">didn't run</td>
+        <td class="failed" title="construct2: NavParent">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_nav_parent
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nav_parent.py", line 5, in <module>
+    from nav_parent import _schema
+ImportError: No module named nav_parent
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_nav_parent
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nav_parent.py", line 5, in <module>
+    from nav_parent import _schema
+ImportError: No module named nav_parent
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: NavParent">passed
 
@@ -8979,7 +9989,39 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: NavParent2">didn't run</td>
+        <td class="failed" title="construct2: NavParent2">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_nav_parent2
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nav_parent2.py", line 5, in <module>
+    from nav_parent2 import _schema
+ImportError: No module named nav_parent2
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_nav_parent2
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nav_parent2.py", line 5, in <module>
+    from nav_parent2 import _schema
+ImportError: No module named nav_parent2
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: NavParent2">passed
 
@@ -9028,7 +10070,39 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: NavParent3">didn't run</td>
+        <td class="failed" title="construct2: NavParent3">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_nav_parent3
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nav_parent3.py", line 5, in <module>
+    from nav_parent3 import _schema
+ImportError: No module named nav_parent3
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_nav_parent3
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nav_parent3.py", line 5, in <module>
+    from nav_parent3 import _schema
+ImportError: No module named nav_parent3
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: NavParent3">passed
 
@@ -9077,7 +10151,39 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: NavParentFalse">didn't run</td>
+        <td class="failed" title="construct2: NavParentFalse">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_nav_parent_false
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nav_parent_false.py", line 5, in <module>
+    from nav_parent_false import _schema
+ImportError: No module named nav_parent_false
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_nav_parent_false
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nav_parent_false.py", line 5, in <module>
+    from nav_parent_false import _schema
+ImportError: No module named nav_parent_false
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: NavParentFalse">passed
 
@@ -9126,7 +10232,9 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: NavParentFalse2">didn't run</td>
+        <td class="passed" title="construct2: NavParentFalse2">passed
+
+        </td>
 
         <td class="passed" title="cpp_stl: NavParentFalse2">passed
 
@@ -9177,7 +10285,39 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: NavParentOverride">didn't run</td>
+        <td class="failed" title="construct2: NavParentOverride">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_nav_parent_override
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nav_parent_override.py", line 5, in <module>
+    from nav_parent_override import _schema
+ImportError: No module named nav_parent_override
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_nav_parent_override
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nav_parent_override.py", line 5, in <module>
+    from nav_parent_override import _schema
+ImportError: No module named nav_parent_override
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: NavParentOverride">passed
 
@@ -9236,7 +10376,45 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: NavParentSwitch">didn't run</td>
+        <td class="failed" title="construct2: NavParentSwitch">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_nav_parent_switch
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nav_parent_switch.py", line 5, in <module>
+    from nav_parent_switch import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/nav_parent_switch.py", line 15
+    'content' / ???,
+                ^
+SyntaxError: invalid syntax
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_nav_parent_switch
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nav_parent_switch.py", line 5, in <module>
+    from nav_parent_switch import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/nav_parent_switch.py", line 15
+    'content' / ???,
+                ^
+SyntaxError: invalid syntax
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: NavParentSwitch">passed
 
@@ -9285,7 +10463,39 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: NavParentVsValueInst">didn't run</td>
+        <td class="failed" title="construct2: NavParentVsValueInst">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_nav_parent_vs_value_inst
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nav_parent_vs_value_inst.py", line 5, in <module>
+    from nav_parent_vs_value_inst import _schema
+ImportError: No module named nav_parent_vs_value_inst
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_nav_parent_vs_value_inst
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nav_parent_vs_value_inst.py", line 5, in <module>
+    from nav_parent_vs_value_inst import _schema
+ImportError: No module named nav_parent_vs_value_inst
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: NavParentVsValueInst">passed
 
@@ -9334,7 +10544,43 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: NavRoot">didn't run</td>
+        <td class="failed" title="construct2: NavRoot">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_nav_root
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nav_root.py", line 5, in <module>
+    from nav_root import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/nav_root.py", line 11, in <module>
+    'entries' / Array(this._root.header.qty_entries, nav_root__entry),
+NameError: name 'nav_root__entry' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_nav_root
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nav_root.py", line 5, in <module>
+    from nav_root import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/nav_root.py", line 11, in <module>
+    'entries' / Array(this._root.header.qty_entries, nav_root__entry),
+NameError: name 'nav_root__entry' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: NavRoot">passed
 
@@ -9383,7 +10629,39 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: NestedSameName">didn't run</td>
+        <td class="failed" title="construct2: NestedSameName">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_nested_same_name
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nested_same_name.py", line 5, in <module>
+    from nested_same_name import _schema
+ImportError: No module named nested_same_name
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_nested_same_name
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nested_same_name.py", line 5, in <module>
+    from nested_same_name import _schema
+ImportError: No module named nested_same_name
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: NestedSameName">passed
 
@@ -9432,7 +10710,39 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: NestedSameName2">didn't run</td>
+        <td class="failed" title="construct2: NestedSameName2">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_nested_same_name2
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nested_same_name2.py", line 5, in <module>
+    from nested_same_name2 import _schema
+ImportError: No module named nested_same_name2
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_nested_same_name2
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nested_same_name2.py", line 5, in <module>
+    from nested_same_name2 import _schema
+ImportError: No module named nested_same_name2
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: NestedSameName2">passed
 
@@ -9481,7 +10791,43 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: NestedTypes">didn't run</td>
+        <td class="failed" title="construct2: NestedTypes">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_nested_types
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nested_types.py", line 5, in <module>
+    from nested_types import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/nested_types.py", line 9, in <module>
+    'typed_at_root' / nested_types__subtype_b,
+NameError: name 'nested_types__subtype_b' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_nested_types
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nested_types.py", line 5, in <module>
+    from nested_types import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/nested_types.py", line 9, in <module>
+    'typed_at_root' / nested_types__subtype_b,
+NameError: name 'nested_types__subtype_b' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: NestedTypes">passed
 
@@ -9532,7 +10878,43 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: NestedTypes2">didn't run</td>
+        <td class="failed" title="construct2: NestedTypes2">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_nested_types2
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nested_types2.py", line 5, in <module>
+    from nested_types2 import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/nested_types2.py", line 11, in <module>
+    'typed_parent' / nested_types2__subtype_a__subtype_cc,
+NameError: name 'nested_types2__subtype_a__subtype_cc' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_nested_types2
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nested_types2.py", line 5, in <module>
+    from nested_types2 import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/nested_types2.py", line 11, in <module>
+    'typed_parent' / nested_types2__subtype_a__subtype_cc,
+NameError: name 'nested_types2__subtype_a__subtype_cc' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: NestedTypes2">passed
 
@@ -9583,7 +10965,9 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: NestedTypes3">didn't run</td>
+        <td class="passed" title="construct2: NestedTypes3">passed
+
+        </td>
 
         <td class="passed" title="cpp_stl: NestedTypes3">passed
 
@@ -9626,7 +11010,45 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: NonStandard">didn't run</td>
+        <td class="failed" title="construct2: NonStandard">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_non_standard
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_non_standard.py", line 5, in <module>
+    from non_standard import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/non_standard.py", line 6
+    'bar' / ???,
+            ^
+SyntaxError: invalid syntax
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_non_standard
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_non_standard.py", line 5, in <module>
+    from non_standard import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/non_standard.py", line 6
+    'bar' / ???,
+            ^
+SyntaxError: invalid syntax
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: NonStandard">passed
 
@@ -9899,7 +11321,43 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: ParamsCallShort">didn't run</td>
+        <td class="failed" title="construct2: ParamsCallShort">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_params_call_short
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_params_call_short.py", line 5, in <module>
+    from params_call_short import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/params_call_short.py", line 5, in <module>
+    'body' / FixedSized(this.len, GreedyString(encoding='UTF-8')),
+NameError: name 'FixedSized' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_params_call_short
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_params_call_short.py", line 5, in <module>
+    from params_call_short import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/params_call_short.py", line 5, in <module>
+    'body' / FixedSized(this.len, GreedyString(encoding='UTF-8')),
+NameError: name 'FixedSized' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: ParamsCallShort">passed
 
@@ -10013,7 +11471,39 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: ParamsPassUsertype">didn't run</td>
+        <td class="failed" title="construct2: ParamsPassUsertype">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_params_pass_usertype
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_params_pass_usertype.py", line 5, in <module>
+    from params_pass_usertype import _schema
+ImportError: No module named params_pass_usertype
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_params_pass_usertype
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_params_pass_usertype.py", line 5, in <module>
+    from params_pass_usertype import _schema
+ImportError: No module named params_pass_usertype
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: ParamsPassUsertype">passed
 
@@ -10066,7 +11556,43 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: PositionAbs">didn't run</td>
+        <td class="failed" title="construct2: PositionAbs">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_position_abs
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_position_abs.py", line 5, in <module>
+    from position_abs import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/position_abs.py", line 5, in <module>
+    'entry' / NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x00', include=False, consume=True),
+NameError: name 'NullTerminated' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_position_abs
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_position_abs.py", line 5, in <module>
+    from position_abs import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/position_abs.py", line 5, in <module>
+    'entry' / NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x00', include=False, consume=True),
+NameError: name 'NullTerminated' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: PositionAbs">passed
 
@@ -10117,7 +11643,44 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: PositionInSeq">didn't run</td>
+        <td class="failed" title="construct2: PositionInSeq">failed
+
+          <div class="add-info">
+
+              <div class="message">'header'</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_position_in_seq.py", line 9, in test_position_in_seq
+    r = _schema.parse_file('src/position_in_seq.bin')
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 277, in parse_file
+    return self.parse_stream(f, **contextkw)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 268, in parse_stream
+    return self._parsereport(stream, context, "(parsing)")
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 280, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 1891, in _parse
+    subobj = sc._parsereport(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 280, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2376, in _parse
+    return self.subcon._parsereport(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 280, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2126, in _parse
+    count = count(context)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
+    return self.__parent(obj)[self.__field]
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
+    return self.__parent(obj)[self.__field]
+KeyError: 'header'
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: PositionInSeq">passed
 
@@ -10166,7 +11729,24 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: PositionToEnd">didn't run</td>
+        <td class="failed" title="construct2: PositionToEnd">failed
+
+          <div class="add-info">
+
+              <div class="message">67305985 != 66</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_position_to_end.py", line 10, in test_position_to_end
+    self.assertEqual(r.index.foo, 66)
+AssertionError: 67305985 != 66
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: PositionToEnd">passed
 
@@ -10215,7 +11795,39 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: ProcessCoerceBytes">didn't run</td>
+        <td class="failed" title="construct2: ProcessCoerceBytes">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_process_coerce_bytes
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_process_coerce_bytes.py", line 5, in <module>
+    from process_coerce_bytes import _schema
+ImportError: No module named process_coerce_bytes
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_process_coerce_bytes
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_process_coerce_bytes.py", line 5, in <module>
+    from process_coerce_bytes import _schema
+ImportError: No module named process_coerce_bytes
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: ProcessCoerceBytes">passed
 
@@ -10264,7 +11876,45 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: ProcessCoerceSwitch">didn't run</td>
+        <td class="failed" title="construct2: ProcessCoerceSwitch">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_process_coerce_switch
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_process_coerce_switch.py", line 5, in <module>
+    from process_coerce_switch import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/process_coerce_switch.py", line 11
+    'buf_unproc' / ???,
+                   ^
+SyntaxError: invalid syntax
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_process_coerce_switch
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_process_coerce_switch.py", line 5, in <module>
+    from process_coerce_switch import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/process_coerce_switch.py", line 11
+    'buf_unproc' / ???,
+                   ^
+SyntaxError: invalid syntax
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="no-run" title="cpp_stl: ProcessCoerceSwitch">didn't run</td>
 
@@ -10311,7 +11961,39 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: ProcessCoerceUsertype1">didn't run</td>
+        <td class="failed" title="construct2: ProcessCoerceUsertype1">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_process_coerce_usertype1
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_process_coerce_usertype1.py", line 5, in <module>
+    from process_coerce_usertype1 import _schema
+ImportError: No module named process_coerce_usertype1
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_process_coerce_usertype1
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_process_coerce_usertype1.py", line 5, in <module>
+    from process_coerce_usertype1 import _schema
+ImportError: No module named process_coerce_usertype1
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: ProcessCoerceUsertype1">passed
 
@@ -10360,7 +12042,39 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: ProcessCoerceUsertype2">didn't run</td>
+        <td class="failed" title="construct2: ProcessCoerceUsertype2">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_process_coerce_usertype2
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_process_coerce_usertype2.py", line 5, in <module>
+    from process_coerce_usertype2 import _schema
+ImportError: No module named process_coerce_usertype2
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_process_coerce_usertype2
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_process_coerce_usertype2.py", line 5, in <module>
+    from process_coerce_usertype2 import _schema
+ImportError: No module named process_coerce_usertype2
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: ProcessCoerceUsertype2">passed
 
@@ -10409,7 +12123,24 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: ProcessCustom">didn't run</td>
+        <td class="failed" title="construct2: ProcessCustom">failed
+
+          <div class="add-info">
+
+              <div class="message">'\t\xac\x8d\x8d\xed' != '\x10\xb3\x94\x94\xf4'</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_process_custom.py", line 10, in test_process_custom
+    self.assertEqual(r.buf1, b"\x10\xB3\x94\x94\xF4")
+AssertionError: '\t\xac\x8d\x8d\xed' != '\x10\xb3\x94\x94\xf4'
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: ProcessCustom">passed
 
@@ -10464,7 +12195,24 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: ProcessRotate">didn't run</td>
+        <td class="failed" title="construct2: ProcessRotate">failed
+
+          <div class="add-info">
+
+              <div class="message">'\t\xac\x8d\x8d\xed' != 'Hello'</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_process_rotate.py", line 10, in test_process_rotate
+    self.assertEqual(r.buf1, b"\x48\x65\x6C\x6C\x6F")
+AssertionError: '\t\xac\x8d\x8d\xed' != 'Hello'
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: ProcessRotate">passed
 
@@ -10523,7 +12271,43 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: ProcessToUser">didn't run</td>
+        <td class="failed" title="construct2: ProcessToUser">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_process_to_user
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_process_to_user.py", line 5, in <module>
+    from process_to_user import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/process_to_user.py", line 9, in <module>
+    'buf1' / FixedSized(5, process_to_user__just_str),
+NameError: name 'FixedSized' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_process_to_user
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_process_to_user.py", line 5, in <module>
+    from process_to_user import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/process_to_user.py", line 9, in <module>
+    'buf1' / FixedSized(5, process_to_user__just_str),
+NameError: name 'FixedSized' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: ProcessToUser">passed
 
@@ -10572,7 +12356,24 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: ProcessXor4Const">didn't run</td>
+        <td class="failed" title="construct2: ProcessXor4Const">failed
+
+          <div class="add-info">
+
+              <div class="message">'\x8a\xd4\xcc4\x8e\xda\xd1' != 'foo bar'</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_process_xor4_const.py", line 11, in test_process_xor4_const
+    self.assertEqual(r.buf, b"\x66\x6F\x6F\x20\x62\x61\x72")
+AssertionError: '\x8a\xd4\xcc4\x8e\xda\xd1' != 'foo bar'
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: ProcessXor4Const">passed
 
@@ -10631,7 +12432,24 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: ProcessXor4Value">didn't run</td>
+        <td class="failed" title="construct2: ProcessXor4Value">failed
+
+          <div class="add-info">
+
+              <div class="message">'\x8a\xd4\xcc4\x8e\xda\xd1' != 'foo bar'</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_process_xor4_value.py", line 11, in test_process_xor4_value
+    self.assertEqual(r.buf, b"\x66\x6F\x6F\x20\x62\x61\x72")
+AssertionError: '\x8a\xd4\xcc4\x8e\xda\xd1' != 'foo bar'
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: ProcessXor4Value">passed
 
@@ -10690,7 +12508,24 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: ProcessXorConst">didn't run</td>
+        <td class="failed" title="construct2: ProcessXorConst">failed
+
+          <div class="add-info">
+
+              <div class="message">'\x99\x90\x90\xdf\x9d\x9e\x8d' != 'foo bar'</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_process_xor_const.py", line 11, in test_process_xor_const
+    self.assertEqual(r.buf, b"\x66\x6F\x6F\x20\x62\x61\x72")
+AssertionError: '\x99\x90\x90\xdf\x9d\x9e\x8d' != 'foo bar'
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: ProcessXorConst">passed
 
@@ -10749,7 +12584,24 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: ProcessXorValue">didn't run</td>
+        <td class="failed" title="construct2: ProcessXorValue">failed
+
+          <div class="add-info">
+
+              <div class="message">'\x99\x90\x90\xdf\x9d\x9e\x8d' != 'foo bar'</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_process_xor_value.py", line 11, in test_process_xor_value
+    self.assertEqual(r.buf, b"\x66\x6F\x6F\x20\x62\x61\x72")
+AssertionError: '\x99\x90\x90\xdf\x9d\x9e\x8d' != 'foo bar'
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: ProcessXorValue">passed
 
@@ -10857,7 +12709,9 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: RepeatEosStruct">didn't run</td>
+        <td class="passed" title="construct2: RepeatEosStruct">passed
+
+        </td>
 
         <td class="passed" title="cpp_stl: RepeatEosStruct">passed
 
@@ -10916,7 +12770,9 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: RepeatEosU4">didn't run</td>
+        <td class="passed" title="construct2: RepeatEosU4">passed
+
+        </td>
 
         <td class="passed" title="cpp_stl: RepeatEosU4">passed
 
@@ -10975,7 +12831,9 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: RepeatNStruct">didn't run</td>
+        <td class="passed" title="construct2: RepeatNStruct">passed
+
+        </td>
 
         <td class="passed" title="cpp_stl: RepeatNStruct">passed
 
@@ -11026,7 +12884,43 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: RepeatNStrz">didn't run</td>
+        <td class="failed" title="construct2: RepeatNStrz">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_repeat_n_strz
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_n_strz.py", line 5, in <module>
+    from repeat_n_strz import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_n_strz.py", line 6, in <module>
+    'lines' / Array(this.qty, NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x00', include=False, consume=True)),
+NameError: name 'NullTerminated' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_repeat_n_strz
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_n_strz.py", line 5, in <module>
+    from repeat_n_strz import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_n_strz.py", line 6, in <module>
+    'lines' / Array(this.qty, NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x00', include=False, consume=True)),
+NameError: name 'NullTerminated' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: RepeatNStrz">passed
 
@@ -11077,7 +12971,43 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: RepeatNStrzDouble">didn't run</td>
+        <td class="failed" title="construct2: RepeatNStrzDouble">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_repeat_n_strz_double
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_n_strz_double.py", line 5, in <module>
+    from repeat_n_strz_double import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_n_strz_double.py", line 6, in <module>
+    'lines1' / Array(this.qty // 2, NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x00', include=False, consume=True)),
+NameError: name 'NullTerminated' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_repeat_n_strz_double
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_n_strz_double.py", line 5, in <module>
+    from repeat_n_strz_double import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_n_strz_double.py", line 6, in <module>
+    'lines1' / Array(this.qty // 2, NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x00', include=False, consume=True)),
+NameError: name 'NullTerminated' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: RepeatNStrzDouble">passed
 
@@ -11128,7 +13058,45 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: RepeatUntilComplex">didn't run</td>
+        <td class="failed" title="construct2: RepeatUntilComplex">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_repeat_until_complex
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_until_complex.py", line 5, in <module>
+    from repeat_until_complex import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_until_complex.py", line 15
+    'first' / ???,
+              ^
+SyntaxError: invalid syntax
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_repeat_until_complex
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_until_complex.py", line 5, in <module>
+    from repeat_until_complex import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_until_complex.py", line 15
+    'first' / ???,
+              ^
+SyntaxError: invalid syntax
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: RepeatUntilComplex">passed
 
@@ -11177,7 +13145,45 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: RepeatUntilS4">didn't run</td>
+        <td class="failed" title="construct2: RepeatUntilS4">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_repeat_until_s4
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_until_s4.py", line 5, in <module>
+    from repeat_until_s4 import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_until_s4.py", line 5
+    'entries' / ???,
+                ^
+SyntaxError: invalid syntax
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_repeat_until_s4
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_until_s4.py", line 5, in <module>
+    from repeat_until_s4 import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_until_s4.py", line 5
+    'entries' / ???,
+                ^
+SyntaxError: invalid syntax
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: RepeatUntilS4">passed
 
@@ -11226,7 +13232,45 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: RepeatUntilSized">didn't run</td>
+        <td class="failed" title="construct2: RepeatUntilSized">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_repeat_until_sized
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_until_sized.py", line 5, in <module>
+    from repeat_until_sized import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_until_sized.py", line 10
+    'records' / ???,
+                ^
+SyntaxError: invalid syntax
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_repeat_until_sized
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_until_sized.py", line 5, in <module>
+    from repeat_until_sized import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_until_sized.py", line 10
+    'records' / ???,
+                ^
+SyntaxError: invalid syntax
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: RepeatUntilSized">passed
 
@@ -11275,7 +13319,43 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: StrEncodings">didn't run</td>
+        <td class="failed" title="construct2: StrEncodings">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_str_encodings
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_str_encodings.py", line 5, in <module>
+    from str_encodings import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/str_encodings.py", line 6, in <module>
+    'str1' / FixedSized(this.len_of_1, GreedyString(encoding='ASCII')),
+NameError: name 'FixedSized' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_str_encodings
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_str_encodings.py", line 5, in <module>
+    from str_encodings import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/str_encodings.py", line 6, in <module>
+    'str1' / FixedSized(this.len_of_1, GreedyString(encoding='ASCII')),
+NameError: name 'FixedSized' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: StrEncodings">passed
 
@@ -11324,7 +13404,43 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: StrEncodingsDefault">didn't run</td>
+        <td class="failed" title="construct2: StrEncodingsDefault">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_str_encodings_default
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_str_encodings_default.py", line 5, in <module>
+    from str_encodings_default import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/str_encodings_default.py", line 6, in <module>
+    'str2' / FixedSized(this.len_of_2, GreedyString(encoding='UTF-8')),
+NameError: name 'FixedSized' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_str_encodings_default
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_str_encodings_default.py", line 5, in <module>
+    from str_encodings_default import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/str_encodings_default.py", line 6, in <module>
+    'str2' / FixedSized(this.len_of_2, GreedyString(encoding='UTF-8')),
+NameError: name 'FixedSized' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: StrEncodingsDefault">passed
 
@@ -11373,7 +13489,9 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: StrEos">didn't run</td>
+        <td class="passed" title="construct2: StrEos">passed
+
+        </td>
 
         <td class="passed" title="cpp_stl: StrEos">passed
 
@@ -11473,7 +13591,9 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: StrLiterals2">didn't run</td>
+        <td class="passed" title="construct2: StrLiterals2">passed
+
+        </td>
 
         <td class="passed" title="cpp_stl: StrLiterals2">passed
 
@@ -11522,7 +13642,43 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: StrPadTerm">didn't run</td>
+        <td class="failed" title="construct2: StrPadTerm">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_str_pad_term
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_str_pad_term.py", line 5, in <module>
+    from str_pad_term import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/str_pad_term.py", line 5, in <module>
+    'str_pad' / FixedSized(20, GreedyString(encoding='UTF-8')),
+NameError: name 'FixedSized' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_str_pad_term
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_str_pad_term.py", line 5, in <module>
+    from str_pad_term import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/str_pad_term.py", line 5, in <module>
+    'str_pad' / FixedSized(20, GreedyString(encoding='UTF-8')),
+NameError: name 'FixedSized' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: StrPadTerm">passed
 
@@ -11581,7 +13737,43 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: StrPadTermEmpty">didn't run</td>
+        <td class="failed" title="construct2: StrPadTermEmpty">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_str_pad_term_empty
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_str_pad_term_empty.py", line 5, in <module>
+    from str_pad_term_empty import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/str_pad_term_empty.py", line 5, in <module>
+    'str_pad' / FixedSized(20, GreedyString(encoding='UTF-8')),
+NameError: name 'FixedSized' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_str_pad_term_empty
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_str_pad_term_empty.py", line 5, in <module>
+    from str_pad_term_empty import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/str_pad_term_empty.py", line 5, in <module>
+    'str_pad' / FixedSized(20, GreedyString(encoding='UTF-8')),
+NameError: name 'FixedSized' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: StrPadTermEmpty">passed
 
@@ -11640,7 +13832,45 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: SwitchBytearray">didn't run</td>
+        <td class="failed" title="construct2: SwitchBytearray">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_switch_bytearray
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_switch_bytearray.py", line 5, in <module>
+    from switch_bytearray import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/switch_bytearray.py", line 14
+    'body' / ???,
+             ^
+SyntaxError: invalid syntax
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_switch_bytearray
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_switch_bytearray.py", line 5, in <module>
+    from switch_bytearray import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/switch_bytearray.py", line 14
+    'body' / ???,
+             ^
+SyntaxError: invalid syntax
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: SwitchBytearray">passed
 
@@ -11738,7 +13968,45 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: SwitchIntegers">didn't run</td>
+        <td class="failed" title="construct2: SwitchIntegers">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_switch_integers
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_switch_integers.py", line 5, in <module>
+    from switch_integers import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/switch_integers.py", line 6
+    'body' / ???,
+             ^
+SyntaxError: invalid syntax
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_switch_integers
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_switch_integers.py", line 5, in <module>
+    from switch_integers import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/switch_integers.py", line 6
+    'body' / ???,
+             ^
+SyntaxError: invalid syntax
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: SwitchIntegers">passed
 
@@ -11787,7 +14055,45 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: SwitchIntegers2">didn't run</td>
+        <td class="failed" title="construct2: SwitchIntegers2">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_switch_integers2
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_switch_integers2.py", line 5, in <module>
+    from switch_integers2 import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/switch_integers2.py", line 6
+    'len' / ???,
+            ^
+SyntaxError: invalid syntax
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_switch_integers2
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_switch_integers2.py", line 5, in <module>
+    from switch_integers2 import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/switch_integers2.py", line 6
+    'len' / ???,
+            ^
+SyntaxError: invalid syntax
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: SwitchIntegers2">passed
 
@@ -11885,7 +14191,45 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: SwitchManualInt">didn't run</td>
+        <td class="failed" title="construct2: SwitchManualInt">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_switch_manual_int
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_switch_manual_int.py", line 5, in <module>
+    from switch_manual_int import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/switch_manual_int.py", line 14
+    'body' / ???,
+             ^
+SyntaxError: invalid syntax
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_switch_manual_int
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_switch_manual_int.py", line 5, in <module>
+    from switch_manual_int import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/switch_manual_int.py", line 14
+    'body' / ???,
+             ^
+SyntaxError: invalid syntax
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: SwitchManualInt">passed
 
@@ -11934,7 +14278,45 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: SwitchManualIntElse">didn't run</td>
+        <td class="failed" title="construct2: SwitchManualIntElse">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_switch_manual_int_else
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_switch_manual_int_else.py", line 5, in <module>
+    from switch_manual_int_else import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/switch_manual_int_else.py", line 18
+    'body' / ???,
+             ^
+SyntaxError: invalid syntax
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_switch_manual_int_else
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_switch_manual_int_else.py", line 5, in <module>
+    from switch_manual_int_else import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/switch_manual_int_else.py", line 18
+    'body' / ???,
+             ^
+SyntaxError: invalid syntax
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: SwitchManualIntElse">passed
 
@@ -12130,7 +14512,45 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: SwitchManualStr">didn't run</td>
+        <td class="failed" title="construct2: SwitchManualStr">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_switch_manual_str
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_switch_manual_str.py", line 5, in <module>
+    from switch_manual_str import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/switch_manual_str.py", line 14
+    'body' / ???,
+             ^
+SyntaxError: invalid syntax
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_switch_manual_str
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_switch_manual_str.py", line 5, in <module>
+    from switch_manual_str import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/switch_manual_str.py", line 14
+    'body' / ???,
+             ^
+SyntaxError: invalid syntax
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: SwitchManualStr">passed
 
@@ -12179,7 +14599,45 @@ TypeError: ImportsCircularA is not a function
 
         <td></td>
 
-        <td class="no-run" title="construct2: SwitchManualStrElse">didn't run</td>
+        <td class="failed" title="construct2: SwitchManualStrElse">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_switch_manual_str_else
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_switch_manual_str_else.py", line 5, in <module>
+    from switch_manual_str_else import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/switch_manual_str_else.py", line 18
+    'body' / ???,
+             ^
+SyntaxError: invalid syntax
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_switch_manual_str_else
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_switch_manual_str_else.py", line 5, in <module>
+    from switch_manual_str_else import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/switch_manual_str_else.py", line 18
+    'body' / ???,
+             ^
+SyntaxError: invalid syntax
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: SwitchManualStrElse">passed
 
@@ -12336,7 +14794,7 @@ Traceback (most recent call last):
     module = self._get_module_from_name(name)
   File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
     __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_term_bytes.py", line 3, in <module>
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_term_bytes.py", line 5, in <module>
     from term_bytes import _schema
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/term_bytes.py", line 5, in <module>
     's1' / NullTerminated(GreedyBytes, term=b'\x7C', include=False, consume=True),
@@ -12351,7 +14809,7 @@ Traceback (most recent call last):
     module = self._get_module_from_name(name)
   File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
     __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_term_bytes.py", line 3, in <module>
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_term_bytes.py", line 5, in <module>
     from term_bytes import _schema
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/term_bytes.py", line 5, in <module>
     's1' / NullTerminated(GreedyBytes, term=b'\x7C', include=False, consume=True),
@@ -12549,7 +15007,9 @@ NameError: name 'NullTerminated' is not defined
 
         <td></td>
 
-        <td class="no-run" title="construct2: TypeIntUnaryOp">didn't run</td>
+        <td class="passed" title="construct2: TypeIntUnaryOp">passed
+
+        </td>
 
         <td class="passed" title="cpp_stl: TypeIntUnaryOp">passed
 
@@ -12598,7 +15058,43 @@ NameError: name 'NullTerminated' is not defined
 
         <td></td>
 
-        <td class="no-run" title="construct2: TypeTernary">didn't run</td>
+        <td class="failed" title="construct2: TypeTernary">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_type_ternary
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_type_ternary.py", line 5, in <module>
+    from type_ternary import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/type_ternary.py", line 9, in <module>
+    'dif_wo_hack' / FixedSized(1, type_ternary__dummy),
+NameError: name 'FixedSized' is not defined
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_type_ternary
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_type_ternary.py", line 5, in <module>
+    from type_ternary import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/type_ternary.py", line 9, in <module>
+    'dif_wo_hack' / FixedSized(1, type_ternary__dummy),
+NameError: name 'FixedSized' is not defined
+
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: TypeTernary">passed
 
@@ -12804,7 +15300,24 @@ NameError: name 'NullTerminated' is not defined
 
         <td></td>
 
-        <td class="no-run" title="construct2: ZlibWithHeader78">didn't run</td>
+        <td class="failed" title="construct2: ZlibWithHeader78">failed
+
+          <div class="add-info">
+
+              <div class="message">'x\x9cKT(,\xcdL\xceVH*\xca/\xcfSH\xcb\xafP\xc8*\xcd-(V\xc8/K-\x02\x00\x94\xbd\n\x7f' != 'a quick brown fox jumps over'</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_zlib_with_header_78.py", line 10, in test_zlib_with_header_78
+    self.assertEqual(r.data, b"\x61\x20\x71\x75\x69\x63\x6B\x20\x62\x72\x6F\x77\x6E\x20\x66\x6F\x78\x20\x6A\x75\x6D\x70\x73\x20\x6F\x76\x65\x72")
+AssertionError: 'x\x9cKT(,\xcdL\xceVH*\xca/\xcfSH\xcb\xafP\xc8*\xcd-(V\xc8/K-\x02\x00\x94\xbd\n\x7f' != 'a quick brown fox jumps over'
+
+		</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="cpp_stl: ZlibWithHeader78">passed
 
