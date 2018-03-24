@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2018-03-23 20:25:32 UTC</title>
+    <title>Kaitai Struct: test results - 2018-03-24 01:45:13 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -49,7 +49,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2018-03-23 20:25:32 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2018-03-24 01:45:13 UTC</h1>
 
     <table class="table">
     <tr>
@@ -5522,7 +5522,7 @@
 
         <td></td>
 
-        <td>15%</td>
+        <td>20%</td>
 
         <td>98%</td>
 
@@ -5963,41 +5963,7 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="failed" title="construct2: BufferedStruct">failed
-
-          <div class="add-info">
-
-              <div class="message">Failed to import test module: test_buffered_struct
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_buffered_struct.py", line 5, in <module>
-    from buffered_struct import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/buffered_struct.py", line 11, in <module>
-    'block1' / FixedSized(this.len1, buffered_struct__block),
-NameError: name 'FixedSized' is not defined
-</div>
-
-              <pre class="trace">
-
-ImportError: Failed to import test module: test_buffered_struct
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_buffered_struct.py", line 5, in <module>
-    from buffered_struct import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/buffered_struct.py", line 11, in <module>
-    'block1' / FixedSized(this.len1, buffered_struct__block),
-NameError: name 'FixedSized' is not defined
-
-
-		</pre>
-
-          </div>
+        <td class="passed" title="construct2: BufferedStruct">passed
 
         </td>
 
@@ -7580,9 +7546,9 @@ Traceback (most recent call last):
     __import__(name)
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_1.py", line 5, in <module>
     from expr_1 import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_1.py", line 6, in <module>
-    'str1' / FixedSized(this.len_of_1_mod, GreedyString(encoding='ASCII')),
-NameError: name 'FixedSized' is not defined
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_1.py", line 8, in <module>
+    'str1_len' / Computed(len(this.str1)),
+TypeError: object of type 'Path' has no len()
 </div>
 
               <pre class="trace">
@@ -7595,9 +7561,9 @@ Traceback (most recent call last):
     __import__(name)
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_1.py", line 5, in <module>
     from expr_1 import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_1.py", line 6, in <module>
-    'str1' / FixedSized(this.len_of_1_mod, GreedyString(encoding='ASCII')),
-NameError: name 'FixedSized' is not defined
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_1.py", line 8, in <module>
+    'str1_len' / Computed(len(this.str1)),
+TypeError: object of type 'Path' has no len()
 
 
 		</pre>
@@ -7738,41 +7704,7 @@ ImportError: No module named expr_2
 
         <td></td>
 
-        <td class="failed" title="construct2: Expr3">failed
-
-          <div class="add-info">
-
-              <div class="message">Failed to import test module: test_expr_3
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_3.py", line 5, in <module>
-    from expr_3 import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_3.py", line 6, in <module>
-    'two' / FixedSized(3, GreedyString(encoding='ASCII')),
-NameError: name 'FixedSized' is not defined
-</div>
-
-              <pre class="trace">
-
-ImportError: Failed to import test module: test_expr_3
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_3.py", line 5, in <module>
-    from expr_3 import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_3.py", line 6, in <module>
-    'two' / FixedSized(3, GreedyString(encoding='ASCII')),
-NameError: name 'FixedSized' is not defined
-
-
-		</pre>
-
-          </div>
+        <td class="passed" title="construct2: Expr3">passed
 
         </td>
 
@@ -7835,9 +7767,9 @@ Traceback (most recent call last):
     __import__(name)
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_array.py", line 5, in <module>
     from expr_array import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_array.py", line 7, in <module>
-    'astr' / Array(3, NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x00', include=False, consume=True)),
-NameError: name 'NullTerminated' is not defined
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_array.py", line 9, in <module>
+    'afloat_size' / Computed(len(this.afloat)),
+TypeError: object of type 'Path' has no len()
 </div>
 
               <pre class="trace">
@@ -7850,9 +7782,9 @@ Traceback (most recent call last):
     __import__(name)
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_array.py", line 5, in <module>
     from expr_array import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_array.py", line 7, in <module>
-    'astr' / Array(3, NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x00', include=False, consume=True)),
-NameError: name 'NullTerminated' is not defined
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_array.py", line 9, in <module>
+    'afloat_size' / Computed(len(this.afloat)),
+TypeError: object of type 'Path' has no len()
 
 
 		</pre>
@@ -7919,21 +7851,21 @@ NameError: name 'NullTerminated' is not defined
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_bytes_cmp.py", line 9, in test_expr_bytes_cmp
     r = _schema.parse_file('src/fixed_struct.bin')
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 277, in parse_file
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 305, in parse_file
     return self.parse_stream(f, **contextkw)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 268, in parse_stream
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 296, in parse_stream
     return self._parsereport(stream, context, "(parsing)")
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 280, in _parsereport
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
     obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 1891, in _parse
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
     subobj = sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 280, in _parsereport
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
     obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2376, in _parse
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
     return self.subcon._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 280, in _parsereport
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
     obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2493, in _parse
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2703, in _parse
     return self.func(context) if callable(self.func) else self.func
   File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 161, in __call__
     rhs = self.rhs(obj) if callable(self.rhs) else self.rhs
@@ -8104,9 +8036,9 @@ Traceback (most recent call last):
     __import__(name)
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_io_pos.py", line 5, in <module>
     from expr_io_pos import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_io_pos.py", line 5, in <module>
-    'my_str' / NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x00', include=False, consume=True),
-NameError: name 'NullTerminated' is not defined
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_io_pos.py", line 6, in <module>
+    'body' / Bytes(((this._io.size() - this._io.pos()) - 2)),
+TypeError: __call__() takes at least 2 arguments (1 given)
 </div>
 
               <pre class="trace">
@@ -8119,9 +8051,9 @@ Traceback (most recent call last):
     __import__(name)
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_io_pos.py", line 5, in <module>
     from expr_io_pos import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_io_pos.py", line 5, in <module>
-    'my_str' / NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x00', include=False, consume=True),
-NameError: name 'NullTerminated' is not defined
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_io_pos.py", line 6, in <module>
+    'body' / Bytes(((this._io.size() - this._io.pos()) - 2)),
+TypeError: __call__() takes at least 2 arguments (1 given)
 
 
 		</pre>
@@ -9097,7 +9029,7 @@ Traceback (most recent call last):
     from index_sizes import _schema
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/index_sizes.py", line 7, in <module>
     'bufs' / Array(this.qty, FixedSized(this.sizes[i], GreedyString(encoding='ASCII'))),
-NameError: name 'FixedSized' is not defined
+NameError: name 'i' is not defined
 </div>
 
               <pre class="trace">
@@ -9112,7 +9044,7 @@ Traceback (most recent call last):
     from index_sizes import _schema
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/index_sizes.py", line 7, in <module>
     'bufs' / Array(this.qty, FixedSized(this.sizes[i], GreedyString(encoding='ASCII'))),
-NameError: name 'FixedSized' is not defined
+NameError: name 'i' is not defined
 
 
 		</pre>
@@ -9506,33 +9438,18 @@ SyntaxError: invalid syntax
 
           <div class="add-info">
 
-              <div class="message">Failed to import test module: test_instance_std
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_instance_std.py", line 5, in <module>
-    from instance_std import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/instance_std.py", line 5, in <module>
-    'header' / FixedSized(5, GreedyString(encoding='ASCII')),
-NameError: name 'FixedSized' is not defined
-</div>
+              <div class="message">u'\n\x00Som' != u'Some '
++ Some - 
+- Som</div>
 
               <pre class="trace">
 
-ImportError: Failed to import test module: test_instance_std
 Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_instance_std.py", line 5, in <module>
-    from instance_std import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/instance_std.py", line 5, in <module>
-    'header' / FixedSized(5, GreedyString(encoding='ASCII')),
-NameError: name 'FixedSized' is not defined
-
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_instance_std.py", line 10, in test_instance_std
+    self.assertEqual(r.header, u"Some ")
+AssertionError: u'\n\x00Som' != u'Some '
++ Some - 
+- Som
 
 		</pre>
 
@@ -9657,33 +9574,14 @@ AssertionError: '\xff\xff\xff\xff' != '\x11\x11\x11\x11'
 
           <div class="add-info">
 
-              <div class="message">Failed to import test module: test_instance_user_array
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_instance_user_array.py", line 5, in <module>
-    from instance_user_array import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/instance_user_array.py", line 13, in <module>
-    'user_entries' / Array(this.qty_entries, FixedSized(this.entry_size, instance_user_array__entry)),
-NameError: name 'FixedSized' is not defined
-</div>
+              <div class="message">65535 != 4369</div>
 
               <pre class="trace">
 
-ImportError: Failed to import test module: test_instance_user_array
 Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_instance_user_array.py", line 5, in <module>
-    from instance_user_array import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/instance_user_array.py", line 13, in <module>
-    'user_entries' / Array(this.qty_entries, FixedSized(this.entry_size, instance_user_array__entry)),
-NameError: name 'FixedSized' is not defined
-
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_instance_user_array.py", line 14, in test_instance_user_array
+    self.assertEqual(r.user_entries[0].word1, 4369)
+AssertionError: 65535 != 4369
 
 		</pre>
 
@@ -11325,33 +11223,42 @@ SyntaxError: invalid syntax
 
           <div class="add-info">
 
-              <div class="message">Failed to import test module: test_params_call_short
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_params_call_short.py", line 5, in <module>
-    from params_call_short import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/params_call_short.py", line 5, in <module>
-    'body' / FixedSized(this.len, GreedyString(encoding='UTF-8')),
-NameError: name 'FixedSized' is not defined
-</div>
+              <div class="message">'len'</div>
 
               <pre class="trace">
 
-ImportError: Failed to import test module: test_params_call_short
 Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_params_call_short.py", line 5, in <module>
-    from params_call_short import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/params_call_short.py", line 5, in <module>
-    'body' / FixedSized(this.len, GreedyString(encoding='UTF-8')),
-NameError: name 'FixedSized' is not defined
-
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_params_call_short.py", line 9, in test_params_call_short
+    r = _schema.parse_file('src/term_strz.bin')
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 305, in parse_file
+    return self.parse_stream(f, **contextkw)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 296, in parse_stream
+    return self._parsereport(stream, context, "(parsing)")
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
+    subobj = sc._parsereport(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
+    return self.subcon._parsereport(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
+    subobj = sc._parsereport(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
+    return self.subcon._parsereport(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 4679, in _parse
+    length = evaluate(self.length, context)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 196, in evaluate
+    return param(context) if callable(param) else param
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
+    return self.__parent(obj)[self.__field]
+KeyError: 'len'
 
 		</pre>
 
@@ -11560,33 +11467,44 @@ ImportError: No module named params_pass_usertype
 
           <div class="add-info">
 
-              <div class="message">Failed to import test module: test_position_abs
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_position_abs.py", line 5, in <module>
-    from position_abs import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/position_abs.py", line 5, in <module>
-    'entry' / NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x00', include=False, consume=True),
-NameError: name 'NullTerminated' is not defined
-</div>
+              <div class="message">'utf8' codec can't decode byte 0xff in position 0: invalid start byte</div>
 
               <pre class="trace">
 
-ImportError: Failed to import test module: test_position_abs
 Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_position_abs.py", line 5, in <module>
-    from position_abs import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/position_abs.py", line 5, in <module>
-    'entry' / NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x00', include=False, consume=True),
-NameError: name 'NullTerminated' is not defined
-
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_position_abs.py", line 9, in test_position_abs
+    r = _schema.parse_file('src/position_abs.bin')
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 305, in parse_file
+    return self.parse_stream(f, **contextkw)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 296, in parse_stream
+    return self._parsereport(stream, context, "(parsing)")
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
+    subobj = sc._parsereport(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
+    return self.subcon._parsereport(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
+    subobj = sc._parsereport(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
+    return self.subcon._parsereport(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 4760, in _parse
+    return self.subcon._parse(io.BytesIO(data), context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 689, in _parse
+    return self._decode(obj, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 1468, in _decode
+    return obj.decode(self.encoding)
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xff in position 0: invalid start byte
 
 		</pre>
 
@@ -11654,21 +11572,21 @@ NameError: name 'NullTerminated' is not defined
 Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_position_in_seq.py", line 9, in test_position_in_seq
     r = _schema.parse_file('src/position_in_seq.bin')
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 277, in parse_file
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 305, in parse_file
     return self.parse_stream(f, **contextkw)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 268, in parse_stream
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 296, in parse_stream
     return self._parsereport(stream, context, "(parsing)")
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 280, in _parsereport
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
     obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 1891, in _parse
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
     subobj = sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 280, in _parsereport
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
     obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2376, in _parse
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
     return self.subcon._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 280, in _parsereport
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
     obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2126, in _parse
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2308, in _parse
     count = count(context)
   File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
     return self.__parent(obj)[self.__field]
@@ -12275,33 +12193,44 @@ AssertionError: '\t\xac\x8d\x8d\xed' != 'Hello'
 
           <div class="add-info">
 
-              <div class="message">Failed to import test module: test_process_to_user
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_process_to_user.py", line 5, in <module>
-    from process_to_user import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/process_to_user.py", line 9, in <module>
-    'buf1' / FixedSized(5, process_to_user__just_str),
-NameError: name 'FixedSized' is not defined
-</div>
+              <div class="message">'utf8' codec can't decode byte 0xac in position 1: invalid start byte</div>
 
               <pre class="trace">
 
-ImportError: Failed to import test module: test_process_to_user
 Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_process_to_user.py", line 5, in <module>
-    from process_to_user import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/process_to_user.py", line 9, in <module>
-    'buf1' / FixedSized(5, process_to_user__just_str),
-NameError: name 'FixedSized' is not defined
-
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_process_to_user.py", line 9, in test_process_to_user
+    r = _schema.parse_file('src/process_rotate.bin')
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 305, in parse_file
+    return self.parse_stream(f, **contextkw)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 296, in parse_stream
+    return self._parsereport(stream, context, "(parsing)")
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
+    subobj = sc._parsereport(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
+    return self.subcon._parsereport(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 4683, in _parse
+    return self.subcon._parse(io.BytesIO(data), context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
+    subobj = sc._parsereport(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
+    return self.subcon._parsereport(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 689, in _parse
+    return self._decode(obj, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 1468, in _decode
+    return obj.decode(self.encoding)
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xac in position 1: invalid start byte
 
 		</pre>
 
@@ -12884,41 +12813,7 @@ AssertionError: '\x99\x90\x90\xdf\x9d\x9e\x8d' != 'foo bar'
 
         <td></td>
 
-        <td class="failed" title="construct2: RepeatNStrz">failed
-
-          <div class="add-info">
-
-              <div class="message">Failed to import test module: test_repeat_n_strz
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_n_strz.py", line 5, in <module>
-    from repeat_n_strz import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_n_strz.py", line 6, in <module>
-    'lines' / Array(this.qty, NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x00', include=False, consume=True)),
-NameError: name 'NullTerminated' is not defined
-</div>
-
-              <pre class="trace">
-
-ImportError: Failed to import test module: test_repeat_n_strz
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_n_strz.py", line 5, in <module>
-    from repeat_n_strz import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_n_strz.py", line 6, in <module>
-    'lines' / Array(this.qty, NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x00', include=False, consume=True)),
-NameError: name 'NullTerminated' is not defined
-
-
-		</pre>
-
-          </div>
+        <td class="passed" title="construct2: RepeatNStrz">passed
 
         </td>
 
@@ -12971,41 +12866,7 @@ NameError: name 'NullTerminated' is not defined
 
         <td></td>
 
-        <td class="failed" title="construct2: RepeatNStrzDouble">failed
-
-          <div class="add-info">
-
-              <div class="message">Failed to import test module: test_repeat_n_strz_double
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_n_strz_double.py", line 5, in <module>
-    from repeat_n_strz_double import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_n_strz_double.py", line 6, in <module>
-    'lines1' / Array(this.qty // 2, NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x00', include=False, consume=True)),
-NameError: name 'NullTerminated' is not defined
-</div>
-
-              <pre class="trace">
-
-ImportError: Failed to import test module: test_repeat_n_strz_double
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_n_strz_double.py", line 5, in <module>
-    from repeat_n_strz_double import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_n_strz_double.py", line 6, in <module>
-    'lines1' / Array(this.qty // 2, NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x00', include=False, consume=True)),
-NameError: name 'NullTerminated' is not defined
-
-
-		</pre>
-
-          </div>
+        <td class="passed" title="construct2: RepeatNStrzDouble">passed
 
         </td>
 
@@ -13319,41 +13180,7 @@ SyntaxError: invalid syntax
 
         <td></td>
 
-        <td class="failed" title="construct2: StrEncodings">failed
-
-          <div class="add-info">
-
-              <div class="message">Failed to import test module: test_str_encodings
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_str_encodings.py", line 5, in <module>
-    from str_encodings import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/str_encodings.py", line 6, in <module>
-    'str1' / FixedSized(this.len_of_1, GreedyString(encoding='ASCII')),
-NameError: name 'FixedSized' is not defined
-</div>
-
-              <pre class="trace">
-
-ImportError: Failed to import test module: test_str_encodings
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_str_encodings.py", line 5, in <module>
-    from str_encodings import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/str_encodings.py", line 6, in <module>
-    'str1' / FixedSized(this.len_of_1, GreedyString(encoding='ASCII')),
-NameError: name 'FixedSized' is not defined
-
-
-		</pre>
-
-          </div>
+        <td class="passed" title="construct2: StrEncodings">passed
 
         </td>
 
@@ -13404,41 +13231,7 @@ NameError: name 'FixedSized' is not defined
 
         <td></td>
 
-        <td class="failed" title="construct2: StrEncodingsDefault">failed
-
-          <div class="add-info">
-
-              <div class="message">Failed to import test module: test_str_encodings_default
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_str_encodings_default.py", line 5, in <module>
-    from str_encodings_default import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/str_encodings_default.py", line 6, in <module>
-    'str2' / FixedSized(this.len_of_2, GreedyString(encoding='UTF-8')),
-NameError: name 'FixedSized' is not defined
-</div>
-
-              <pre class="trace">
-
-ImportError: Failed to import test module: test_str_encodings_default
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_str_encodings_default.py", line 5, in <module>
-    from str_encodings_default import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/str_encodings_default.py", line 6, in <module>
-    'str2' / FixedSized(this.len_of_2, GreedyString(encoding='UTF-8')),
-NameError: name 'FixedSized' is not defined
-
-
-		</pre>
-
-          </div>
+        <td class="passed" title="construct2: StrEncodingsDefault">passed
 
         </td>
 
@@ -13646,32 +13439,19 @@ NameError: name 'FixedSized' is not defined
 
           <div class="add-info">
 
-              <div class="message">Failed to import test module: test_str_pad_term
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_str_pad_term.py", line 5, in <module>
-    from str_pad_term import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/str_pad_term.py", line 5, in <module>
-    'str_pad' / FixedSized(20, GreedyString(encoding='UTF-8')),
-NameError: name 'FixedSized' is not defined
+              <div class="message">u'str1@@@@@@@@@@@@@@@@' != u'str1'
+- str1@@@@@@@@@@@@@@@@
++ str1
 </div>
 
               <pre class="trace">
 
-ImportError: Failed to import test module: test_str_pad_term
 Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_str_pad_term.py", line 5, in <module>
-    from str_pad_term import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/str_pad_term.py", line 5, in <module>
-    'str_pad' / FixedSized(20, GreedyString(encoding='UTF-8')),
-NameError: name 'FixedSized' is not defined
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_str_pad_term.py", line 10, in test_str_pad_term
+    self.assertEqual(r.str_pad, u"str1")
+AssertionError: u'str1@@@@@@@@@@@@@@@@' != u'str1'
+- str1@@@@@@@@@@@@@@@@
++ str1
 
 
 		</pre>
@@ -13741,32 +13521,19 @@ NameError: name 'FixedSized' is not defined
 
           <div class="add-info">
 
-              <div class="message">Failed to import test module: test_str_pad_term_empty
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_str_pad_term_empty.py", line 5, in <module>
-    from str_pad_term_empty import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/str_pad_term_empty.py", line 5, in <module>
-    'str_pad' / FixedSized(20, GreedyString(encoding='UTF-8')),
-NameError: name 'FixedSized' is not defined
+              <div class="message">u'@@@@@@@@@@@@@@@@@@@@' != u''
+- @@@@@@@@@@@@@@@@@@@@
++ 
 </div>
 
               <pre class="trace">
 
-ImportError: Failed to import test module: test_str_pad_term_empty
 Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_str_pad_term_empty.py", line 5, in <module>
-    from str_pad_term_empty import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/str_pad_term_empty.py", line 5, in <module>
-    'str_pad' / FixedSized(20, GreedyString(encoding='UTF-8')),
-NameError: name 'FixedSized' is not defined
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_str_pad_term_empty.py", line 10, in test_str_pad_term_empty
+    self.assertEqual(r.str_pad, u"")
+AssertionError: u'@@@@@@@@@@@@@@@@@@@@' != u''
+- @@@@@@@@@@@@@@@@@@@@
++ 
 
 
 		</pre>
@@ -14784,41 +14551,7 @@ SyntaxError: invalid syntax
 
         <td></td>
 
-        <td class="failed" title="construct2: TermBytes">failed
-
-          <div class="add-info">
-
-              <div class="message">Failed to import test module: test_term_bytes
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_term_bytes.py", line 5, in <module>
-    from term_bytes import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/term_bytes.py", line 5, in <module>
-    's1' / NullTerminated(GreedyBytes, term=b'\x7C', include=False, consume=True),
-NameError: name 'NullTerminated' is not defined
-</div>
-
-              <pre class="trace">
-
-ImportError: Failed to import test module: test_term_bytes
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_term_bytes.py", line 5, in <module>
-    from term_bytes import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/term_bytes.py", line 5, in <module>
-    's1' / NullTerminated(GreedyBytes, term=b'\x7C', include=False, consume=True),
-NameError: name 'NullTerminated' is not defined
-
-
-		</pre>
-
-          </div>
+        <td class="passed" title="construct2: TermBytes">passed
 
         </td>
 
@@ -14871,41 +14604,7 @@ NameError: name 'NullTerminated' is not defined
 
         <td></td>
 
-        <td class="failed" title="construct2: TermStrz">failed
-
-          <div class="add-info">
-
-              <div class="message">Failed to import test module: test_term_strz
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_term_strz.py", line 5, in <module>
-    from term_strz import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/term_strz.py", line 5, in <module>
-    's1' / NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x7C', include=False, consume=True),
-NameError: name 'NullTerminated' is not defined
-</div>
-
-              <pre class="trace">
-
-ImportError: Failed to import test module: test_term_strz
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_term_strz.py", line 5, in <module>
-    from term_strz import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/term_strz.py", line 5, in <module>
-    's1' / NullTerminated(GreedyString(encoding='UTF-8'), term=b'\x7C', include=False, consume=True),
-NameError: name 'NullTerminated' is not defined
-
-
-		</pre>
-
-          </div>
+        <td class="passed" title="construct2: TermStrz">passed
 
         </td>
 
@@ -15062,33 +14761,14 @@ NameError: name 'NullTerminated' is not defined
 
           <div class="add-info">
 
-              <div class="message">Failed to import test module: test_type_ternary
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_type_ternary.py", line 5, in <module>
-    from type_ternary import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/type_ternary.py", line 9, in <module>
-    'dif_wo_hack' / FixedSized(1, type_ternary__dummy),
-NameError: name 'FixedSized' is not defined
-</div>
+              <div class="message">111 != 101</div>
 
               <pre class="trace">
 
-ImportError: Failed to import test module: test_type_ternary
 Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_type_ternary.py", line 5, in <module>
-    from type_ternary import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/type_ternary.py", line 9, in <module>
-    'dif_wo_hack' / FixedSized(1, type_ternary__dummy),
-NameError: name 'FixedSized' is not defined
-
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_type_ternary.py", line 10, in test_type_ternary
+    self.assertEqual(r.dif.value, 101)
+AssertionError: 111 != 101
 
 		</pre>
 
