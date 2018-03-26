@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2018-03-24 23:42:00 UTC</title>
+    <title>Kaitai Struct: test results - 2018-03-26 00:48:31 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -49,7 +49,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2018-03-24 23:42:00 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2018-03-26 00:48:31 UTC</h1>
 
     <table class="table">
     <tr>
@@ -5522,7 +5522,7 @@
 
         <td></td>
 
-        <td>27%</td>
+        <td>32%</td>
 
         <td>98%</td>
 
@@ -6082,22 +6082,7 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         <td></td>
 
-        <td class="failed" title="construct2: BytesPadTerm">failed
-
-          <div class="add-info">
-
-              <div class="message">'str1@@@@@@@@@@@@@@@@' != 'str1'</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_bytes_pad_term.py", line 10, in test_bytes_pad_term
-    self.assertEqual(r.str_pad, b"\x73\x74\x72\x31")
-AssertionError: 'str1@@@@@@@@@@@@@@@@' != 'str1'
-
-		</pre>
-
-          </div>
+        <td class="passed" title="construct2: BytesPadTerm">passed
 
         </td>
 
@@ -10019,8 +10004,8 @@ Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_io_pos.py", line 5, in <module>
     from expr_io_pos import _schema
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_io_pos.py", line 6, in <module>
-    'body' / Bytes(((this._io.size() - this._io.pos()) - 2)),
-TypeError: __call__() takes at least 2 arguments (1 given)
+    'body' / FixedSized(((_stream.size() - _stream.pos()) - 2), GreedyBytes),
+NameError: name '_stream' is not defined
 </div>
 
               <pre class="trace">
@@ -10034,8 +10019,8 @@ Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_expr_io_pos.py", line 5, in <module>
     from expr_io_pos import _schema
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/expr_io_pos.py", line 6, in <module>
-    'body' / Bytes(((this._io.size() - this._io.pos()) - 2)),
-TypeError: __call__() takes at least 2 arguments (1 given)
+    'body' / FixedSized(((_stream.size() - _stream.pos()) - 2), GreedyBytes),
+NameError: name '_stream' is not defined
 
 
 		</pre>
@@ -11022,14 +11007,33 @@ NameError: name 'i' is not defined
 
           <div class="add-info">
 
-              <div class="message">list index out of range</div>
+              <div class="message">Failed to import test module: test_index_to_param_eos
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_index_to_param_eos.py", line 5, in <module>
+    from index_to_param_eos import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/index_to_param_eos.py", line 5, in <module>
+    'buf' / FixedSized(_root.sizes[this.idx], GreedyString(encoding='ASCII')),
+NameError: name '_root' is not defined
+</div>
 
               <pre class="trace">
 
+ImportError: Failed to import test module: test_index_to_param_eos
 Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_index_to_param_eos.py", line 14, in test_index_to_param_eos
-    self.assertEqual(r.blocks[0].buf, u"A")
-IndexError: list index out of range
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_index_to_param_eos.py", line 5, in <module>
+    from index_to_param_eos import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/index_to_param_eos.py", line 5, in <module>
+    'buf' / FixedSized(_root.sizes[this.idx], GreedyString(encoding='ASCII')),
+NameError: name '_root' is not defined
+
 
 		</pre>
 
@@ -11086,54 +11090,33 @@ IndexError: list index out of range
 
           <div class="add-info">
 
-              <div class="message">'_root'</div>
+              <div class="message">Failed to import test module: test_index_to_param_expr
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_index_to_param_expr.py", line 5, in <module>
+    from index_to_param_expr import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/index_to_param_expr.py", line 5, in <module>
+    'buf' / FixedSized(_root.sizes[this.idx], GreedyString(encoding='ASCII')),
+NameError: name '_root' is not defined
+</div>
 
               <pre class="trace">
 
+ImportError: Failed to import test module: test_index_to_param_expr
 Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_index_to_param_expr.py", line 9, in test_index_to_param_expr
-    r = _schema.parse_file('src/index_sizes.bin')
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 305, in parse_file
-    return self.parse_stream(f, **contextkw)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 296, in parse_stream
-    return self._parsereport(stream, context, "(parsing)")
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
-    subobj = sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
-    return self.subcon._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2314, in _parse
-    e = self.subcon._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 5439, in _parse
-    return sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
-    subobj = sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
-    return self.subcon._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 4679, in _parse
-    length = evaluate(self.length, context)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 196, in evaluate
-    return param(context) if callable(param) else param
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
-    return self.__parent(obj)[self.__field]
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
-    return self.__parent(obj)[self.__field]
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
-    return self.__parent(obj)[self.__field]
-KeyError: '_root'
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_index_to_param_expr.py", line 5, in <module>
+    from index_to_param_expr import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/index_to_param_expr.py", line 5, in <module>
+    'buf' / FixedSized(_root.sizes[this.idx], GreedyString(encoding='ASCII')),
+NameError: name '_root' is not defined
+
 
 		</pre>
 
@@ -11676,56 +11659,7 @@ SyntaxError: invalid syntax
 
         <td></td>
 
-        <td class="failed" title="construct2: NavParent">failed
-
-          <div class="add-info">
-
-              <div class="message">'_parent'</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nav_parent.py", line 9, in test_nav_parent
-    r = _schema.parse_file('src/nav.bin')
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 305, in parse_file
-    return self.parse_stream(f, **contextkw)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 296, in parse_stream
-    return self._parsereport(stream, context, "(parsing)")
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
-    subobj = sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
-    return self.subcon._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 5439, in _parse
-    return sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
-    subobj = sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
-    return self.subcon._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2308, in _parse
-    count = count(context)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
-    return self.__parent(obj)[self.__field]
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
-    return self.__parent(obj)[self.__field]
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
-    return self.__parent(obj)[self.__field]
-KeyError: '_parent'
-
-		</pre>
-
-          </div>
+        <td class="passed" title="construct2: NavParent">passed
 
         </td>
 
@@ -11950,72 +11884,7 @@ SyntaxError: invalid syntax
 
         <td></td>
 
-        <td class="failed" title="construct2: NavParentFalse">failed
-
-          <div class="add-info">
-
-              <div class="message">'_parent'</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nav_parent_false.py", line 9, in test_nav_parent_false
-    r = _schema.parse_file('src/nav_parent_codes.bin')
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 305, in parse_file
-    return self.parse_stream(f, **contextkw)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 296, in parse_stream
-    return self._parsereport(stream, context, "(parsing)")
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
-    subobj = sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
-    return self.subcon._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 5439, in _parse
-    return sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
-    subobj = sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
-    return self.subcon._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 5439, in _parse
-    return sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
-    subobj = sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
-    return self.subcon._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 3716, in _parse
-    return sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 827, in _parse
-    length = self.length(context) if callable(self.length) else self.length
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
-    return self.__parent(obj)[self.__field]
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
-    return self.__parent(obj)[self.__field]
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
-    return self.__parent(obj)[self.__field]
-KeyError: '_parent'
-
-		</pre>
-
-          </div>
+        <td class="passed" title="construct2: NavParentFalse">passed
 
         </td>
 
@@ -12123,7 +11992,7 @@ KeyError: '_parent'
 
           <div class="add-info">
 
-              <div class="message">'_parent'</div>
+              <div class="message">'child_size'</div>
 
               <pre class="trace">
 
@@ -12156,13 +12025,25 @@ Traceback (most recent call last):
     return self.subcon._parsereport(stream, context, path)
   File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
     obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 827, in _parse
-    length = self.length(context) if callable(self.length) else self.length
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 5439, in _parse
+    return sc._parsereport(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
+    subobj = sc._parsereport(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
+    return self.subcon._parsereport(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 4679, in _parse
+    length = evaluate(self.length, context)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 196, in evaluate
+    return param(context) if callable(param) else param
   File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
     return self.__parent(obj)[self.__field]
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
-    return self.__parent(obj)[self.__field]
-KeyError: '_parent'
+KeyError: 'child_size'
 
 		</pre>
 
@@ -12369,48 +12250,33 @@ SyntaxError: invalid syntax
 
           <div class="add-info">
 
-              <div class="message">'_root'</div>
+              <div class="message">Failed to import test module: test_nav_root
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nav_root.py", line 5, in <module>
+    from nav_root import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/nav_root.py", line 11, in <module>
+    'entries' / Array(_root.header.qty_entries, LazyBound(lambda: nav_root__entry)),
+NameError: name '_root' is not defined
+</div>
 
               <pre class="trace">
 
+ImportError: Failed to import test module: test_nav_root
 Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nav_root.py", line 9, in test_nav_root
-    r = _schema.parse_file('src/nav.bin')
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 305, in parse_file
-    return self.parse_stream(f, **contextkw)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 296, in parse_stream
-    return self._parsereport(stream, context, "(parsing)")
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
-    subobj = sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
-    return self.subcon._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 5439, in _parse
-    return sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
-    subobj = sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
-    return self.subcon._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2308, in _parse
-    count = count(context)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
-    return self.__parent(obj)[self.__field]
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
-    return self.__parent(obj)[self.__field]
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
-    return self.__parent(obj)[self.__field]
-KeyError: '_root'
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nav_root.py", line 5, in <module>
+    from nav_root import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/nav_root.py", line 11, in <module>
+    'entries' / Array(_root.header.qty_entries, LazyBound(lambda: nav_root__entry)),
+NameError: name '_root' is not defined
+
 
 		</pre>
 
@@ -12465,68 +12331,7 @@ KeyError: '_root'
 
         <td></td>
 
-        <td class="failed" title="construct2: NestedSameName">failed
-
-          <div class="add-info">
-
-              <div class="message">'_parent'</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nested_same_name.py", line 9, in test_nested_same_name
-    r = _schema.parse_file('src/repeat_n_struct.bin')
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 305, in parse_file
-    return self.parse_stream(f, **contextkw)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 296, in parse_stream
-    return self._parsereport(stream, context, "(parsing)")
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
-    subobj = sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
-    return self.subcon._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 5439, in _parse
-    return sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
-    subobj = sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
-    return self.subcon._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 5439, in _parse
-    return sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
-    subobj = sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
-    return self.subcon._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 827, in _parse
-    length = self.length(context) if callable(self.length) else self.length
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 160, in __call__
-    lhs = self.lhs(obj) if callable(self.lhs) else self.lhs
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
-    return self.__parent(obj)[self.__field]
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
-    return self.__parent(obj)[self.__field]
-KeyError: '_parent'
-
-		</pre>
-
-          </div>
+        <td class="passed" title="construct2: NestedSameName">passed
 
         </td>
 
@@ -12577,68 +12382,7 @@ KeyError: '_parent'
 
         <td></td>
 
-        <td class="failed" title="construct2: NestedSameName2">failed
-
-          <div class="add-info">
-
-              <div class="message">'_parent'</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_nested_same_name2.py", line 9, in test_nested_same_name2
-    r = _schema.parse_file('src/nested_same_name2.bin')
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 305, in parse_file
-    return self.parse_stream(f, **contextkw)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 296, in parse_stream
-    return self._parsereport(stream, context, "(parsing)")
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
-    subobj = sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
-    return self.subcon._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 5439, in _parse
-    return sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
-    subobj = sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
-    return self.subcon._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 5439, in _parse
-    return sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2067, in _parse
-    subobj = sc._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 2567, in _parse
-    return self.subcon._parsereport(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
-    obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 827, in _parse
-    length = self.length(context) if callable(self.length) else self.length
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 160, in __call__
-    lhs = self.lhs(obj) if callable(self.lhs) else self.lhs
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
-    return self.__parent(obj)[self.__field]
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
-    return self.__parent(obj)[self.__field]
-KeyError: '_parent'
-
-		</pre>
-
-          </div>
+        <td class="passed" title="construct2: NestedSameName2">passed
 
         </td>
 
@@ -13351,8 +13095,10 @@ Traceback (most recent call last):
     return self.subcon._parsereport(stream, context, path)
   File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 308, in _parsereport
     obj = self._parse(stream, context, path)
-  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 827, in _parse
-    length = self.length(context) if callable(self.length) else self.length
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 4679, in _parse
+    length = evaluate(self.length, context)
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 196, in evaluate
+    return param(context) if callable(param) else param
   File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
     return self.__parent(obj)[self.__field]
   File "/home/travis/.local/lib/python2.7/site-packages/construct/expr.py", line 188, in __call__
@@ -13568,8 +13314,8 @@ Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_position_to_end.py", line 5, in <module>
     from position_to_end import _schema
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/position_to_end.py", line 10, in <module>
-    'index' / Pointer((this._io.size() - 8), LazyBound(lambda: position_to_end__index_obj)),
-TypeError: __call__() takes at least 2 arguments (1 given)
+    'index' / Pointer((_stream.size() - 8), LazyBound(lambda: position_to_end__index_obj)),
+NameError: name '_stream' is not defined
 </div>
 
               <pre class="trace">
@@ -13583,8 +13329,8 @@ Traceback (most recent call last):
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_position_to_end.py", line 5, in <module>
     from position_to_end import _schema
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/position_to_end.py", line 10, in <module>
-    'index' / Pointer((this._io.size() - 8), LazyBound(lambda: position_to_end__index_obj)),
-TypeError: __call__() takes at least 2 arguments (1 given)
+    'index' / Pointer((_stream.size() - 8), LazyBound(lambda: position_to_end__index_obj)),
+NameError: name '_stream' is not defined
 
 
 		</pre>
@@ -15321,28 +15067,7 @@ SyntaxError: invalid syntax
 
         <td></td>
 
-        <td class="failed" title="construct2: StrPadTerm">failed
-
-          <div class="add-info">
-
-              <div class="message">u'str1@@@@@@@@@@@@@@@@' != u'str1'
-- str1@@@@@@@@@@@@@@@@
-+ str1
-</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_str_pad_term.py", line 10, in test_str_pad_term
-    self.assertEqual(r.str_pad, u"str1")
-AssertionError: u'str1@@@@@@@@@@@@@@@@' != u'str1'
-- str1@@@@@@@@@@@@@@@@
-+ str1
-
-
-		</pre>
-
-          </div>
+        <td class="passed" title="construct2: StrPadTerm">passed
 
         </td>
 
@@ -15403,28 +15128,7 @@ AssertionError: u'str1@@@@@@@@@@@@@@@@' != u'str1'
 
         <td></td>
 
-        <td class="failed" title="construct2: StrPadTermEmpty">failed
-
-          <div class="add-info">
-
-              <div class="message">u'@@@@@@@@@@@@@@@@@@@@' != u''
-- @@@@@@@@@@@@@@@@@@@@
-+ 
-</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_str_pad_term_empty.py", line 10, in test_str_pad_term_empty
-    self.assertEqual(r.str_pad, u"")
-AssertionError: u'@@@@@@@@@@@@@@@@@@@@' != u''
-- @@@@@@@@@@@@@@@@@@@@
-+ 
-
-
-		</pre>
-
-          </div>
+        <td class="passed" title="construct2: StrPadTermEmpty">passed
 
         </td>
 
