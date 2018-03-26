@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2018-03-26 00:48:31 UTC</title>
+    <title>Kaitai Struct: test results - 2018-03-26 17:51:08 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -49,7 +49,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2018-03-26 00:48:31 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2018-03-26 17:51:08 UTC</h1>
 
     <table class="table">
     <tr>
@@ -5522,7 +5522,7 @@
 
         <td></td>
 
-        <td>32%</td>
+        <td>34%</td>
 
         <td>98%</td>
 
@@ -11181,10 +11181,9 @@ Traceback (most recent call last):
     __import__(name)
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_index_to_param_until.py", line 5, in <module>
     from index_to_param_until import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/index_to_param_until.py", line 11
-    'blocks' / ???,
-               ^
-SyntaxError: invalid syntax
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/index_to_param_until.py", line 5, in <module>
+    'buf' / FixedSized(_root.sizes[this.idx], GreedyString(encoding='ASCII')),
+NameError: name '_root' is not defined
 </div>
 
               <pre class="trace">
@@ -11197,10 +11196,9 @@ Traceback (most recent call last):
     __import__(name)
   File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_index_to_param_until.py", line 5, in <module>
     from index_to_param_until import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/index_to_param_until.py", line 11
-    'blocks' / ???,
-               ^
-SyntaxError: invalid syntax
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/index_to_param_until.py", line 5, in <module>
+    'buf' / FixedSized(_root.sizes[this.idx], GreedyString(encoding='ASCII')),
+NameError: name '_root' is not defined
 
 
 		</pre>
@@ -14555,35 +14553,14 @@ AssertionError: '\x99\x90\x90\xdf\x9d\x9e\x8d' != 'foo bar'
 
           <div class="add-info">
 
-              <div class="message">Failed to import test module: test_repeat_until_complex
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_until_complex.py", line 5, in <module>
-    from repeat_until_complex import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_until_complex.py", line 15
-    'first' / ???,
-              ^
-SyntaxError: invalid syntax
-</div>
+              <div class="message"><bound method Container.values of Container(count=4)(values=ListContainer([1, 2, 3, 4]))> != [1, 2, 3, 4]</div>
 
               <pre class="trace">
 
-ImportError: Failed to import test module: test_repeat_until_complex
 Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_until_complex.py", line 5, in <module>
-    from repeat_until_complex import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_until_complex.py", line 15
-    'first' / ???,
-              ^
-SyntaxError: invalid syntax
-
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_until_complex.py", line 12, in test_repeat_until_complex
+    self.assertEqual(r.first[0].values, [(0 + 1), 2, 3, 4])
+AssertionError: <bound method Container.values of Container(count=4)(values=ListContainer([1, 2, 3, 4]))> != [1, 2, 3, 4]
 
 		</pre>
 
@@ -14638,43 +14615,7 @@ SyntaxError: invalid syntax
 
         <td></td>
 
-        <td class="failed" title="construct2: RepeatUntilS4">failed
-
-          <div class="add-info">
-
-              <div class="message">Failed to import test module: test_repeat_until_s4
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_until_s4.py", line 5, in <module>
-    from repeat_until_s4 import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_until_s4.py", line 5
-    'entries' / ???,
-                ^
-SyntaxError: invalid syntax
-</div>
-
-              <pre class="trace">
-
-ImportError: Failed to import test module: test_repeat_until_s4
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_until_s4.py", line 5, in <module>
-    from repeat_until_s4 import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_until_s4.py", line 5
-    'entries' / ???,
-                ^
-SyntaxError: invalid syntax
-
-
-		</pre>
-
-          </div>
+        <td class="passed" title="construct2: RepeatUntilS4">passed
 
         </td>
 
@@ -14725,43 +14666,7 @@ SyntaxError: invalid syntax
 
         <td></td>
 
-        <td class="failed" title="construct2: RepeatUntilSized">failed
-
-          <div class="add-info">
-
-              <div class="message">Failed to import test module: test_repeat_until_sized
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_until_sized.py", line 5, in <module>
-    from repeat_until_sized import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_until_sized.py", line 10
-    'records' / ???,
-                ^
-SyntaxError: invalid syntax
-</div>
-
-              <pre class="trace">
-
-ImportError: Failed to import test module: test_repeat_until_sized
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
-    module = self._get_module_from_name(name)
-  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
-    __import__(name)
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_until_sized.py", line 5, in <module>
-    from repeat_until_sized import _schema
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_until_sized.py", line 10
-    'records' / ???,
-                ^
-SyntaxError: invalid syntax
-
-
-		</pre>
-
-          </div>
+        <td class="passed" title="construct2: RepeatUntilSized">passed
 
         </td>
 
