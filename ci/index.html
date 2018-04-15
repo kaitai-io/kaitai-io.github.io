@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2018-04-14 15:27:57 UTC</title>
+    <title>Kaitai Struct: test results - 2018-04-15 20:29:38 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -49,7 +49,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2018-04-14 15:27:57 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2018-04-15 20:29:38 UTC</h1>
 
     <table class="table">
     <tr>
@@ -99,7 +99,7 @@
 
         <td>95%</td>
 
-        <td>80%</td>
+        <td>79%</td>
 
         <td>95%</td>
 
@@ -1918,7 +1918,77 @@
 
         </td>
 
-        <td class="passed" title="go: 100000000000">passed
+        <td class="failed" title="go: 100000000000">failed
+
+          <div class="add-info">
+
+              <div class="message">"[int64(100000000000)]" was not equal to "[100000000000]"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;[int64(100000000000)]&quot; was not equal to &quot;[100000000000]&quot;
+      at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+      at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+      at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.invokeWithFixture$1(FunSuiteLike.scala:184)
+      at org.scalatest.FunSuiteLike.$anonfun$runTest$1(FunSuiteLike.scala:196)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:289)
+      at org.scalatest.FunSuiteLike.runTest(FunSuiteLike.scala:196)
+      at org.scalatest.FunSuiteLike.runTest$(FunSuiteLike.scala:178)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.$anonfun$runTests$1(FunSuiteLike.scala:229)
+      at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:396)
+      at scala.collection.immutable.List.foreach(List.scala:389)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:384)
+      at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:379)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:461)
+      at org.scalatest.FunSuiteLike.runTests(FunSuiteLike.scala:229)
+      at org.scalatest.FunSuiteLike.runTests$(FunSuiteLike.scala:228)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1560)
+      at org.scalatest.Suite.run(Suite.scala:1147)
+      at org.scalatest.Suite.run$(Suite.scala:1129)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.$anonfun$run$1(FunSuiteLike.scala:233)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:521)
+      at org.scalatest.FunSuiteLike.run(FunSuiteLike.scala:233)
+      at org.scalatest.FunSuiteLike.run$(FunSuiteLike.scala:232)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1560)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:314)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:507)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:106)
+      at sbt.TestRunner.run(TestFramework.scala:117)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:262)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:233)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+      at sbt.TestFunction.apply(TestFramework.scala:271)
+      at sbt.Tests$.$anonfun$toTask$1(Tests.scala:281)
+      at sbt.std.Transform$$anon$3.$anonfun$apply$2(System.scala:46)
+      at sbt.std.Transform$$anon$4.work(System.scala:66)
+      at sbt.Execute.$anonfun$submit$2(Execute.scala:262)
+      at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)
+      at sbt.Execute.work(Execute.scala:271)
+      at sbt.Execute.$anonfun$submit$1(Execute.scala:262)
+      at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:174)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:36)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+      at java.lang.Thread.run(Thread.java:748)
+</pre>
+
+          </div>
 
         </td>
 
@@ -4361,7 +4431,7 @@
 
               <pre class="trace">
       java.lang.RuntimeException: C++ literal arrays are not implemented yet
-      at io.kaitai.struct.translators.CppTranslator.doArrayLiteral(CppTranslator.scala:107)
+      at io.kaitai.struct.translators.CppTranslator.doArrayLiteral(CppTranslator.scala:105)
       at io.kaitai.struct.translators.CppTranslator.doArrayLiteral(CppTranslator.scala:13)
       at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray(CommonArraysAndCast.scala:62)
       at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray$(CommonArraysAndCast.scala:53)
@@ -4487,7 +4557,7 @@
 
               <pre class="trace">
       java.lang.RuntimeException: C++ literal arrays are not implemented yet
-      at io.kaitai.struct.translators.CppTranslator.doArrayLiteral(CppTranslator.scala:107)
+      at io.kaitai.struct.translators.CppTranslator.doArrayLiteral(CppTranslator.scala:105)
       at io.kaitai.struct.translators.CppTranslator.doArrayLiteral(CppTranslator.scala:13)
       at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray(CommonArraysAndCast.scala:62)
       at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray$(CommonArraysAndCast.scala:53)
@@ -6531,14 +6601,14 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
               <pre class="trace">
       scala.NotImplementedError: an implementation is missing
       at scala.Predef$.$qmark$qmark$qmark(Predef.scala:284)
-      at io.kaitai.struct.translators.GoTranslator.doCast(GoTranslator.scala:193)
+      at io.kaitai.struct.translators.GoTranslator.doCast(GoTranslator.scala:215)
       at io.kaitai.struct.translators.GoTranslator.doCast(GoTranslator.scala:15)
       at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray(CommonArraysAndCast.scala:69)
       at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray$(CommonArraysAndCast.scala:53)
       at io.kaitai.struct.translators.GoTranslator.doCastOrArray(GoTranslator.scala:15)
       at io.kaitai.struct.translators.GoTranslator.translateExpr(GoTranslator.scala:74)
       at io.kaitai.struct.translators.GoTranslator.translate(GoTranslator.scala:25)
-      at io.kaitai.struct.translators.GoTranslator.userTypeField(GoTranslator.scala:263)
+      at io.kaitai.struct.translators.GoTranslator.userTypeField(GoTranslator.scala:285)
       at io.kaitai.struct.translators.GoTranslator.userTypeField(GoTranslator.scala:15)
       at io.kaitai.struct.translators.CommonMethods.translateAttribute(CommonMethods.scala:21)
       at io.kaitai.struct.translators.CommonMethods.translateAttribute$(CommonMethods.scala:15)
@@ -6666,14 +6736,14 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
               <pre class="trace">
       scala.NotImplementedError: an implementation is missing
       at scala.Predef$.$qmark$qmark$qmark(Predef.scala:284)
-      at io.kaitai.struct.translators.GoTranslator.doCast(GoTranslator.scala:193)
+      at io.kaitai.struct.translators.GoTranslator.doCast(GoTranslator.scala:215)
       at io.kaitai.struct.translators.GoTranslator.doCast(GoTranslator.scala:15)
       at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray(CommonArraysAndCast.scala:69)
       at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray$(CommonArraysAndCast.scala:53)
       at io.kaitai.struct.translators.GoTranslator.doCastOrArray(GoTranslator.scala:15)
       at io.kaitai.struct.translators.GoTranslator.translateExpr(GoTranslator.scala:74)
       at io.kaitai.struct.translators.GoTranslator.translate(GoTranslator.scala:25)
-      at io.kaitai.struct.translators.GoTranslator.userTypeField(GoTranslator.scala:263)
+      at io.kaitai.struct.translators.GoTranslator.userTypeField(GoTranslator.scala:285)
       at io.kaitai.struct.translators.GoTranslator.userTypeField(GoTranslator.scala:15)
       at io.kaitai.struct.translators.CommonMethods.translateAttribute(CommonMethods.scala:21)
       at io.kaitai.struct.translators.CommonMethods.translateAttribute$(CommonMethods.scala:15)
@@ -7144,7 +7214,7 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
 
         <td>93%</td>
 
-        <td>25%</td>
+        <td>29%</td>
 
         <td>100%</td>
 
@@ -11576,7 +11646,9 @@ NameError: name '_io' is not defined
 
         </td>
 
-        <td class="no-run" title="go: ExprMod">didn't run</td>
+        <td class="passed" title="go: ExprMod">passed
+
+        </td>
 
         <td class="passed" title="java: ExprMod">passed
 
@@ -11627,7 +11699,9 @@ NameError: name '_io' is not defined
 
         </td>
 
-        <td class="no-run" title="go: FixedContents">didn't run</td>
+        <td class="passed" title="go: FixedContents">passed
+
+        </td>
 
         <td class="passed" title="java: FixedContents">passed
 
@@ -11678,7 +11752,9 @@ NameError: name '_io' is not defined
 
         </td>
 
-        <td class="no-run" title="go: FixedStruct">didn't run</td>
+        <td class="passed" title="go: FixedStruct">passed
+
+        </td>
 
         <td class="passed" title="java: FixedStruct">passed
 
@@ -12954,7 +13030,9 @@ SyntaxError: invalid syntax
 
         <td class="no-run" title="csharp: Integers">didn't run</td>
 
-        <td class="no-run" title="go: Integers">didn't run</td>
+        <td class="passed" title="go: Integers">passed
+
+        </td>
 
         <td class="passed" title="java: Integers">passed
 
@@ -14509,15 +14587,7 @@ KeyError: 'header'
 
         </td>
 
-        <td class="failed" title="go: PositionInSeq">failed
-
-          <div class="add-info">
-
-              <div class="message">Failed</div>
-
-              <pre class="trace">position_in_seq_test.go:25: &#xA;&#x9;&#x9;Error Trace:&#x9;position_in_seq_test.go:25&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []int([]int{1, 2, 3})&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0x1, 0x2, 0x3})&#xA;&#x9;&#x9;Test:       &#x9;TestPositionInSeq</pre>
-
-          </div>
+        <td class="passed" title="go: PositionInSeq">passed
 
         </td>
 
@@ -15862,7 +15932,9 @@ AssertionError: <bound method Container.values of Container(count=4, values=List
 
         </td>
 
-        <td class="no-run" title="go: RepeatUntilS4">didn't run</td>
+        <td class="passed" title="go: RepeatUntilS4">passed
+
+        </td>
 
         <td class="passed" title="java: RepeatUntilS4">passed
 
