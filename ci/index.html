@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2018-04-23 08:32:48 UTC</title>
+    <title>Kaitai Struct: test results - 2018-04-24 21:07:57 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -49,7 +49,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2018-04-23 08:32:48 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2018-04-24 21:07:57 UTC</h1>
 
     <table class="table">
     <tr>
@@ -7214,7 +7214,7 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
 
         <td>92%</td>
 
-        <td>0%</td>
+        <td>9%</td>
 
         <td>100%</td>
 
@@ -7303,7 +7303,9 @@ AttributeError: digit8
 
         </td>
 
-        <td class="no-run" title="go: BcdUserTypeBe">didn't run</td>
+        <td class="passed" title="go: BcdUserTypeBe">passed
+
+        </td>
 
         <td class="passed" title="java: BcdUserTypeBe">passed
 
@@ -7405,7 +7407,9 @@ AttributeError: digit8
 
         </td>
 
-        <td class="no-run" title="go: BcdUserTypeLe">didn't run</td>
+        <td class="passed" title="go: BcdUserTypeLe">passed
+
+        </td>
 
         <td class="passed" title="java: BcdUserTypeLe">passed
 
@@ -7693,7 +7697,9 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="go: BufferedStruct">didn't run</td>
+        <td class="passed" title="go: BufferedStruct">passed
+
+        </td>
 
         <td class="passed" title="java: BufferedStruct">passed
 
@@ -7744,7 +7750,17 @@ Error: readBitsInt: the maximum supported bit length is 32 (tried to read 40 bit
 
         </td>
 
-        <td class="no-run" title="go: BytesPadTerm">didn't run</td>
+        <td class="failed" title="go: BytesPadTerm">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed</div>
+
+              <pre class="trace">bytes_pad_term_test.go:26: &#xA;&#x9;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:26&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: string(&#34;str1&#34;)&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0x73, 0x74, 0x72, 0x31, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40})&#xA;&#x9;&#x9;Test:       &#x9;TestBytesPadTerm&#xA;bytes_pad_term_test.go:27: &#xA;&#x9;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:27&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: string(&#34;str2foo&#34;)&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0x73, 0x74, 0x72, 0x32, 0x66, 0x6f, 0x6f, 0x40, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b})&#xA;&#x9;&#x9;Test:       &#x9;TestBytesPadTerm&#xA;bytes_pad_term_test.go:28: &#xA;&#x9;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:28&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: string(&#34;str+++3bar+++&#34;)&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0x73, 0x74, 0x72, 0x2b, 0x2b, 0x2b, 0x33, 0x62, 0x61, 0x72, 0x2b, 0x2b, 0x2b, 0x40, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b})&#xA;&#x9;&#x9;Test:       &#x9;TestBytesPadTerm&#xA;bytes_pad_term_test.go:29: &#xA;&#x9;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:29&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: string(&#34;str4baz@&#34;)&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0x73, 0x74, 0x72, 0x34, 0x62, 0x61, 0x7a, 0x40, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e})&#xA;&#x9;&#x9;Test:       &#x9;TestBytesPadTerm</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="java: BytesPadTerm">passed
 
@@ -10020,7 +10036,9 @@ RuntimeError: maximum recursion depth exceeded while calling a Python object
 
         </td>
 
-        <td class="no-run" title="go: DefaultBigEndian">didn't run</td>
+        <td class="passed" title="go: DefaultBigEndian">passed
+
+        </td>
 
         <td class="passed" title="java: DefaultBigEndian">passed
 
@@ -10369,7 +10387,9 @@ ImportError: No module named default_endian_expr_is_le
 
         </td>
 
-        <td class="no-run" title="go: DefaultEndianMod">didn't run</td>
+        <td class="passed" title="go: DefaultEndianMod">passed
+
+        </td>
 
         <td class="passed" title="java: DefaultEndianMod">passed
 
@@ -10420,7 +10440,9 @@ ImportError: No module named default_endian_expr_is_le
 
         </td>
 
-        <td class="no-run" title="go: Docstrings">didn't run</td>
+        <td class="passed" title="go: Docstrings">passed
+
+        </td>
 
         <td class="passed" title="java: Docstrings">passed
 
@@ -10471,7 +10493,9 @@ ImportError: No module named default_endian_expr_is_le
 
         </td>
 
-        <td class="no-run" title="go: DocstringsDocref">didn't run</td>
+        <td class="passed" title="go: DocstringsDocref">passed
+
+        </td>
 
         <td class="passed" title="java: DocstringsDocref">passed
 
@@ -10520,7 +10544,9 @@ ImportError: No module named default_endian_expr_is_le
 
         </td>
 
-        <td class="no-run" title="go: Enum0">didn't run</td>
+        <td class="passed" title="go: Enum0">passed
+
+        </td>
 
         <td class="passed" title="java: Enum0">passed
 
@@ -10667,7 +10693,9 @@ Error: Class 'EnumDeep\Container1\Animal' not found
 
         </td>
 
-        <td class="no-run" title="go: EnumFancy">didn't run</td>
+        <td class="passed" title="go: EnumFancy">passed
+
+        </td>
 
         <td class="passed" title="java: EnumFancy">passed
 
@@ -11061,7 +11089,9 @@ Error: Class 'EnumDeep\Container1\Animal' not found
 
         </td>
 
-        <td class="no-run" title="go: Expr0">didn't run</td>
+        <td class="passed" title="go: Expr0">passed
+
+        </td>
 
         <td class="passed" title="java: Expr0">passed
 
@@ -11147,7 +11177,9 @@ KeyError: 'len_of_1_mod'
 
         </td>
 
-        <td class="no-run" title="go: Expr1">didn't run</td>
+        <td class="passed" title="go: Expr1">passed
+
+        </td>
 
         <td class="passed" title="java: Expr1">passed
 
@@ -11245,7 +11277,9 @@ KeyError: 'len_mod'
 
         </td>
 
-        <td class="no-run" title="go: Expr2">didn't run</td>
+        <td class="passed" title="go: Expr2">passed
+
+        </td>
 
         <td class="passed" title="java: Expr2">passed
 
@@ -11296,7 +11330,9 @@ KeyError: 'len_mod'
 
         </td>
 
-        <td class="no-run" title="go: Expr3">didn't run</td>
+        <td class="passed" title="go: Expr3">passed
+
+        </td>
 
         <td class="passed" title="java: Expr3">passed
 
@@ -11347,7 +11383,17 @@ KeyError: 'len_mod'
 
         </td>
 
-        <td class="no-run" title="go: ExprArray">didn't run</td>
+        <td class="failed" title="go: ExprArray">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed</div>
+
+              <pre class="trace">expr_array_test.go:22: EOF</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="java: ExprArray">passed
 
@@ -11433,7 +11479,9 @@ AttributeError: ack2
 
         </td>
 
-        <td class="no-run" title="go: ExprBytesCmp">didn't run</td>
+        <td class="passed" title="go: ExprBytesCmp">passed
+
+        </td>
 
         <td class="passed" title="java: ExprBytesCmp">passed
 
@@ -11616,7 +11664,17 @@ NameError: name '_io' is not defined
 
         </td>
 
-        <td class="no-run" title="go: ExprIoPos">didn't run</td>
+        <td class="failed" title="go: ExprIoPos">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed</div>
+
+              <pre class="trace">panic: runtime error: makeslice: len out of range&#xA;/home/travis/.gimme/versions/go1.10.linux.amd64/src/testing/testing.go:742 +0x29d&#xA;/home/travis/.gimme/versions/go1.10.linux.amd64/src/runtime/panic.go:505 +0x229&#xA;/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/go/src/github.com/kaitai-io/kaitai_struct_go_runtime/kaitai/stream.go:205 +0x40&#xA;/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/go/src/test_formats/expr_io_pos.go:78 +0x14b&#xA;/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/go/src/test_formats/expr_io_pos.go:32 +0x1e6&#xA;/home/travis/build/kaitai-io/kaitai_struct/tests/spec/go/expr_io_pos_test.go:20 +0x136&#xA;/home/travis/.gimme/versions/go1.10.linux.amd64/src/testing/testing.go:777 +0xd0&#xA;/home/travis/.gimme/versions/go1.10.linux.amd64/src/testing/testing.go:824 +0x2e0</pre>
+
+          </div>
+
+        </td>
 
         <td class="passed" title="java: ExprIoPos">passed
 
