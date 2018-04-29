@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2018-04-29 11:07:06 UTC</title>
+    <title>Kaitai Struct: test results - 2018-04-29 13:23:16 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -49,7 +49,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2018-04-29 11:07:06 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2018-04-29 13:23:16 UTC</h1>
 
     <table class="table">
     <tr>
@@ -7100,7 +7100,7 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
 
         <td>98%</td>
 
-        <td>98%</td>
+        <td>100%</td>
 
     </tr>
 
@@ -8222,7 +8222,9 @@ Error: Class 'EnumDeep\Container1\Animal' not found
 
         <td class="no-run" title="python2: EnumDeep">didn't run</td>
 
-        <td class="no-run" title="ruby: EnumDeep">didn't run</td>
+        <td class="passed" title="ruby: EnumDeep">passed
+
+        </td>
 
     </tr>
 
@@ -8259,50 +8261,7 @@ Error: Class 'EnumDeep\Container1\Animal' not found
 
         </td>
 
-        <td class="failed" title="ruby: EnumDeepLiterals">failed
-
-          <div class="add-info">
-
-              <div class="filename">./spec/ruby/enum_deep_literals_spec.rb:6</div>
-
-              <div class="message">uninitialized constant EnumDeepLiterals::ANIMAL</div>
-
-              <pre class="trace">/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/ruby/enum_deep_literals.rb:16:in `_read'
-/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/ruby/enum_deep_literals.rb:12:in `initialize'
-/home/travis/build/kaitai-io/kaitai_struct/runtime/ruby/lib/kaitai/struct/struct.rb:26:in `new'
-/home/travis/build/kaitai-io/kaitai_struct/runtime/ruby/lib/kaitai/struct/struct.rb:26:in `from_file'
-/home/travis/build/kaitai-io/kaitai_struct/tests/spec/ruby/enum_deep_literals_spec.rb:7:in `block (2 levels) in <top (required)>'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:254:in `instance_exec'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:254:in `block in run'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:500:in `block in with_around_and_singleton_context_hooks'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:457:in `block in with_around_example_hooks'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/hooks.rb:466:in `block in run'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/hooks.rb:604:in `run_around_example_hooks_for'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/hooks.rb:466:in `run'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:457:in `with_around_example_hooks'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:500:in `with_around_and_singleton_context_hooks'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:251:in `run'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:628:in `block in run_examples'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:624:in `map'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:624:in `run_examples'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:590:in `run'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:118:in `block (3 levels) in run_specs'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:118:in `map'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:118:in `block (2 levels) in run_specs'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/configuration.rb:1926:in `with_suite_hooks'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:113:in `block in run_specs'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/reporter.rb:79:in `report'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:112:in `run_specs'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:87:in `run'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:71:in `run'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:45:in `invoke'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.7.1/exe/rspec:4:in `<top (required)>'
-/home/travis/.rvm/gems/ruby-2.4.1/bin/rspec:23:in `load'
-/home/travis/.rvm/gems/ruby-2.4.1/bin/rspec:23:in `<main>'
-/home/travis/.rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `eval'
-/home/travis/.rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `<main>'</pre>
-
-          </div>
+        <td class="passed" title="ruby: EnumDeepLiterals">passed
 
         </td>
 
