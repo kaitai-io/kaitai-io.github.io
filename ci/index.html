@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2018-08-03 09:47:52 UTC</title>
+    <title>Kaitai Struct: test results - 2018-08-04 15:40:47 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -49,7 +49,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2018-08-03 09:47:52 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2018-08-04 15:40:47 UTC</h1>
 
     <table class="table">
     <tr>
@@ -95,13 +95,13 @@
 
         <td>0%</td>
 
-        <td>85%</td>
+        <td>82%</td>
 
-        <td>95%</td>
+        <td>92%</td>
 
-        <td>79%</td>
+        <td>77%</td>
 
-        <td>95%</td>
+        <td>92%</td>
 
         <td>93%</td>
 
@@ -148,7 +148,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -271,7 +271,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -773,7 +773,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -941,7 +941,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -1137,6 +1137,134 @@
         <td class="no-run" title="python2: (1 + 2) / (7 * 8.1)">didn't run</td>
 
         <td class="passed" title="ruby: (1 + 2) / (7 * 8.1)">passed
+
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>(1 + 2).as&lt;s2&gt;</td>
+
+        <td class="passed" title="_expr: (1 + 2).as&lt;s2&gt;">passed
+
+        </td>
+
+        <td class="no-run" title="construct2: (1 + 2).as&lt;s2&gt;">didn't run</td>
+
+        <td class="passed" title="cpp_stl: (1 + 2).as&lt;s2&gt;">passed
+
+        </td>
+
+        <td class="passed" title="csharp: (1 + 2).as&lt;s2&gt;">passed
+
+        </td>
+
+        <td class="failed" title="go: (1 + 2).as&lt;s2&gt;">failed
+
+          <div class="add-info">
+
+              <div class="message">an implementation is missing</div>
+
+              <pre class="trace">
+      scala.NotImplementedError: an implementation is missing
+      at scala.Predef$.$qmark$qmark$qmark(Predef.scala:284)
+      at io.kaitai.struct.translators.GoTranslator.doCast(GoTranslator.scala:232)
+      at io.kaitai.struct.translators.GoTranslator.doCast(GoTranslator.scala:15)
+      at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray(CommonArraysAndCast.scala:71)
+      at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray$(CommonArraysAndCast.scala:53)
+      at io.kaitai.struct.translators.GoTranslator.doCastOrArray(GoTranslator.scala:15)
+      at io.kaitai.struct.translators.GoTranslator.translateExpr(GoTranslator.scala:86)
+      at io.kaitai.struct.translators.GoTranslator.translate(GoTranslator.scala:27)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:602)
+      at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+      at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+      at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.invokeWithFixture$1(FunSuiteLike.scala:184)
+      at org.scalatest.FunSuiteLike.$anonfun$runTest$1(FunSuiteLike.scala:196)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:289)
+      at org.scalatest.FunSuiteLike.runTest(FunSuiteLike.scala:196)
+      at org.scalatest.FunSuiteLike.runTest$(FunSuiteLike.scala:178)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.$anonfun$runTests$1(FunSuiteLike.scala:229)
+      at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:396)
+      at scala.collection.immutable.List.foreach(List.scala:389)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:384)
+      at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:379)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:461)
+      at org.scalatest.FunSuiteLike.runTests(FunSuiteLike.scala:229)
+      at org.scalatest.FunSuiteLike.runTests$(FunSuiteLike.scala:228)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1560)
+      at org.scalatest.Suite.run(Suite.scala:1147)
+      at org.scalatest.Suite.run$(Suite.scala:1129)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.$anonfun$run$1(FunSuiteLike.scala:233)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:521)
+      at org.scalatest.FunSuiteLike.run(FunSuiteLike.scala:233)
+      at org.scalatest.FunSuiteLike.run$(FunSuiteLike.scala:232)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1560)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:314)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:507)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:106)
+      at sbt.TestRunner.run(TestFramework.scala:117)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:262)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:233)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+      at sbt.TestFunction.apply(TestFramework.scala:271)
+      at sbt.Tests$.$anonfun$toTask$1(Tests.scala:281)
+      at sbt.std.Transform$$anon$3.$anonfun$apply$2(System.scala:46)
+      at sbt.std.Transform$$anon$4.work(System.scala:66)
+      at sbt.Execute.$anonfun$submit$2(Execute.scala:262)
+      at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)
+      at sbt.Execute.work(Execute.scala:271)
+      at sbt.Execute.$anonfun$submit$1(Execute.scala:262)
+      at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:174)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:36)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+      at java.lang.Thread.run(Thread.java:748)
+</pre>
+
+          </div>
+
+        </td>
+
+        <td class="passed" title="java: (1 + 2).as&lt;s2&gt;">passed
+
+        </td>
+
+        <td class="passed" title="javascript: (1 + 2).as&lt;s2&gt;">passed
+
+        </td>
+
+        <td class="passed" title="lua: (1 + 2).as&lt;s2&gt;">passed
+
+        </td>
+
+        <td class="passed" title="perl: (1 + 2).as&lt;s2&gt;">passed
+
+        </td>
+
+        <td class="passed" title="php: (1 + 2).as&lt;s2&gt;">passed
+
+        </td>
+
+        <td class="passed" title="python: (1 + 2).as&lt;s2&gt;">passed
+
+        </td>
+
+        <td class="no-run" title="python2: (1 + 2).as&lt;s2&gt;">didn't run</td>
+
+        <td class="passed" title="ruby: (1 + 2).as&lt;s2&gt;">passed
 
         </td>
 
@@ -1851,7 +1979,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -1929,7 +2057,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -2203,7 +2331,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -2277,7 +2405,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -2355,7 +2483,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -2429,7 +2557,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -2503,7 +2631,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -2577,7 +2705,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -2651,7 +2779,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -2725,7 +2853,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -2801,7 +2929,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -3045,12 +3173,12 @@
       at scala.Predef$.$qmark$qmark$qmark(Predef.scala:284)
       at io.kaitai.struct.translators.BaseTranslator.doByteArrayNonLiteral(BaseTranslator.scala:136)
       at io.kaitai.struct.translators.BaseTranslator.doByteArrayNonLiteral(BaseTranslator.scala:27)
-      at io.kaitai.struct.translators.CommonArraysAndCast.doByteArray(CommonArraysAndCast.scala:83)
-      at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray(CommonArraysAndCast.scala:60)
+      at io.kaitai.struct.translators.CommonArraysAndCast.doByteArray(CommonArraysAndCast.scala:85)
+      at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray(CommonArraysAndCast.scala:62)
       at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray$(CommonArraysAndCast.scala:53)
       at io.kaitai.struct.translators.BaseTranslator.doCastOrArray(BaseTranslator.scala:27)
       at io.kaitai.struct.translators.BaseTranslator.translate(BaseTranslator.scala:126)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:588)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:602)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -3128,7 +3256,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -3210,12 +3338,12 @@
       at scala.Predef$.$qmark$qmark$qmark(Predef.scala:284)
       at io.kaitai.struct.translators.BaseTranslator.doByteArrayNonLiteral(BaseTranslator.scala:136)
       at io.kaitai.struct.translators.BaseTranslator.doByteArrayNonLiteral(BaseTranslator.scala:27)
-      at io.kaitai.struct.translators.CommonArraysAndCast.doByteArray(CommonArraysAndCast.scala:83)
-      at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray(CommonArraysAndCast.scala:60)
+      at io.kaitai.struct.translators.CommonArraysAndCast.doByteArray(CommonArraysAndCast.scala:85)
+      at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray(CommonArraysAndCast.scala:62)
       at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray$(CommonArraysAndCast.scala:53)
       at io.kaitai.struct.translators.BaseTranslator.doCastOrArray(BaseTranslator.scala:27)
       at io.kaitai.struct.translators.BaseTranslator.translate(BaseTranslator.scala:126)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:588)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:602)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -3321,7 +3449,7 @@
       at org.scalatest.Assertions.fail(Assertions.scala:1089)
       at org.scalatest.Assertions.fail$(Assertions.scala:1085)
       at org.scalatest.FunSuite.fail(FunSuite.scala:1560)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:595)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:609)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -3447,7 +3575,7 @@
       at org.scalatest.Assertions.fail(Assertions.scala:1089)
       at org.scalatest.Assertions.fail$(Assertions.scala:1085)
       at org.scalatest.FunSuite.fail(FunSuite.scala:1560)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:595)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:609)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -3577,7 +3705,7 @@
       at org.scalatest.Assertions.fail(Assertions.scala:1089)
       at org.scalatest.Assertions.fail$(Assertions.scala:1085)
       at org.scalatest.FunSuite.fail(FunSuite.scala:1560)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:595)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:609)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -3657,7 +3785,7 @@
       at io.kaitai.struct.translators.GoTranslator.translateAttribute(GoTranslator.scala:15)
       at io.kaitai.struct.translators.GoTranslator.translateExpr(GoTranslator.scala:94)
       at io.kaitai.struct.translators.GoTranslator.translate(GoTranslator.scala:27)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:588)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:602)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -3738,7 +3866,7 @@
       at org.scalatest.Assertions.fail(Assertions.scala:1089)
       at org.scalatest.Assertions.fail$(Assertions.scala:1085)
       at org.scalatest.FunSuite.fail(FunSuite.scala:1560)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:595)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:609)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -3817,7 +3945,7 @@
       at io.kaitai.struct.translators.CommonMethods.translateAttribute$(CommonMethods.scala:15)
       at io.kaitai.struct.translators.BaseTranslator.translateAttribute(BaseTranslator.scala:27)
       at io.kaitai.struct.translators.BaseTranslator.translate(BaseTranslator.scala:120)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:588)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:602)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -3896,7 +4024,7 @@
       at io.kaitai.struct.translators.CommonMethods.translateAttribute$(CommonMethods.scala:15)
       at io.kaitai.struct.translators.BaseTranslator.translateAttribute(BaseTranslator.scala:27)
       at io.kaitai.struct.translators.BaseTranslator.translate(BaseTranslator.scala:120)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:588)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:602)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -4003,7 +4131,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -4097,7 +4225,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -4196,7 +4324,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -4319,7 +4447,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -4433,11 +4561,11 @@
       java.lang.RuntimeException: C++ literal arrays are not implemented yet
       at io.kaitai.struct.translators.CppTranslator.doArrayLiteral(CppTranslator.scala:105)
       at io.kaitai.struct.translators.CppTranslator.doArrayLiteral(CppTranslator.scala:13)
-      at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray(CommonArraysAndCast.scala:62)
+      at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray(CommonArraysAndCast.scala:64)
       at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray$(CommonArraysAndCast.scala:53)
       at io.kaitai.struct.translators.BaseTranslator.doCastOrArray(BaseTranslator.scala:27)
       at io.kaitai.struct.translators.BaseTranslator.translate(BaseTranslator.scala:126)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:588)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:602)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -4559,11 +4687,11 @@
       java.lang.RuntimeException: C++ literal arrays are not implemented yet
       at io.kaitai.struct.translators.CppTranslator.doArrayLiteral(CppTranslator.scala:105)
       at io.kaitai.struct.translators.CppTranslator.doArrayLiteral(CppTranslator.scala:13)
-      at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray(CommonArraysAndCast.scala:62)
+      at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray(CommonArraysAndCast.scala:64)
       at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray$(CommonArraysAndCast.scala:53)
       at io.kaitai.struct.translators.BaseTranslator.doCastOrArray(BaseTranslator.scala:27)
       at io.kaitai.struct.translators.BaseTranslator.translate(BaseTranslator.scala:126)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:588)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:602)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -4739,7 +4867,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -4813,7 +4941,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -4887,7 +5015,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -4961,7 +5089,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -5035,7 +5163,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -5109,7 +5237,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -5183,7 +5311,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -5257,7 +5385,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -5331,7 +5459,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -5407,7 +5535,7 @@
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -5519,7 +5647,7 @@
       at org.scalatest.Assertions.fail(Assertions.scala:1089)
       at org.scalatest.Assertions.fail$(Assertions.scala:1085)
       at org.scalatest.FunSuite.fail(FunSuite.scala:1560)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:595)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:609)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -5627,7 +5755,7 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -5716,7 +5844,7 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
       at org.scalatest.Assertions.fail(Assertions.scala:1089)
       at org.scalatest.Assertions.fail$(Assertions.scala:1085)
       at org.scalatest.FunSuite.fail(FunSuite.scala:1560)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:595)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:609)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -5839,7 +5967,7 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -5950,7 +6078,7 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -6028,7 +6156,7 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -6105,7 +6233,7 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
       at org.scalatest.Assertions.fail(Assertions.scala:1089)
       at org.scalatest.Assertions.fail$(Assertions.scala:1085)
       at org.scalatest.FunSuite.fail(FunSuite.scala:1560)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:595)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:609)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -6231,7 +6359,7 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
       at org.scalatest.Assertions.fail(Assertions.scala:1089)
       at org.scalatest.Assertions.fail$(Assertions.scala:1085)
       at org.scalatest.FunSuite.fail(FunSuite.scala:1560)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:595)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:609)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -6584,38 +6712,18 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
 
         <td class="no-run" title="construct2: other.as&lt;block::innerblock&gt;.baz">didn't run</td>
 
-        <td class="passed" title="cpp_stl: other.as&lt;block::innerblock&gt;.baz">passed
-
-        </td>
-
-        <td class="passed" title="csharp: other.as&lt;block::innerblock&gt;.baz">passed
-
-        </td>
-
-        <td class="failed" title="go: other.as&lt;block::innerblock&gt;.baz">failed
+        <td class="failed" title="cpp_stl: other.as&lt;block::innerblock&gt;.baz">failed
 
           <div class="add-info">
 
-              <div class="message">an implementation is missing</div>
+              <div class="message">"static_cast<[top_class_t::]block_t::innerblock_..." was not equal to "static_cast<[]block_t::innerblock_..."</div>
 
               <pre class="trace">
-      scala.NotImplementedError: an implementation is missing
-      at scala.Predef$.$qmark$qmark$qmark(Predef.scala:284)
-      at io.kaitai.struct.translators.GoTranslator.doCast(GoTranslator.scala:232)
-      at io.kaitai.struct.translators.GoTranslator.doCast(GoTranslator.scala:15)
-      at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray(CommonArraysAndCast.scala:69)
-      at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray$(CommonArraysAndCast.scala:53)
-      at io.kaitai.struct.translators.GoTranslator.doCastOrArray(GoTranslator.scala:15)
-      at io.kaitai.struct.translators.GoTranslator.translateExpr(GoTranslator.scala:86)
-      at io.kaitai.struct.translators.GoTranslator.translate(GoTranslator.scala:27)
-      at io.kaitai.struct.translators.GoTranslator.userTypeField(GoTranslator.scala:302)
-      at io.kaitai.struct.translators.GoTranslator.userTypeField(GoTranslator.scala:15)
-      at io.kaitai.struct.translators.CommonMethods.translateAttribute(CommonMethods.scala:21)
-      at io.kaitai.struct.translators.CommonMethods.translateAttribute$(CommonMethods.scala:15)
-      at io.kaitai.struct.translators.GoTranslator.translateAttribute(GoTranslator.scala:15)
-      at io.kaitai.struct.translators.GoTranslator.translateExpr(GoTranslator.scala:94)
-      at io.kaitai.struct.translators.GoTranslator.translate(GoTranslator.scala:27)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:588)
+      org.scalatest.exceptions.TestFailedException: &quot;static_cast&lt;[top_class_t::]block_t::innerblock_...&quot; was not equal to &quot;static_cast&lt;[]block_t::innerblock_...&quot;
+      at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -6678,7 +6786,237 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
 
         </td>
 
-        <td class="passed" title="java: other.as&lt;block::innerblock&gt;.baz">passed
+        <td class="failed" title="csharp: other.as&lt;block::innerblock&gt;.baz">failed
+
+          <div class="add-info">
+
+              <div class="message">"(([TopClass.]Block.Innerblock) (O..." was not equal to "(([]Block.Innerblock) (O..."</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;(([TopClass.]Block.Innerblock) (O...&quot; was not equal to &quot;(([]Block.Innerblock) (O...&quot;
+      at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
+      at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+      at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+      at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.invokeWithFixture$1(FunSuiteLike.scala:184)
+      at org.scalatest.FunSuiteLike.$anonfun$runTest$1(FunSuiteLike.scala:196)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:289)
+      at org.scalatest.FunSuiteLike.runTest(FunSuiteLike.scala:196)
+      at org.scalatest.FunSuiteLike.runTest$(FunSuiteLike.scala:178)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.$anonfun$runTests$1(FunSuiteLike.scala:229)
+      at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:396)
+      at scala.collection.immutable.List.foreach(List.scala:389)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:384)
+      at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:379)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:461)
+      at org.scalatest.FunSuiteLike.runTests(FunSuiteLike.scala:229)
+      at org.scalatest.FunSuiteLike.runTests$(FunSuiteLike.scala:228)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1560)
+      at org.scalatest.Suite.run(Suite.scala:1147)
+      at org.scalatest.Suite.run$(Suite.scala:1129)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.$anonfun$run$1(FunSuiteLike.scala:233)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:521)
+      at org.scalatest.FunSuiteLike.run(FunSuiteLike.scala:233)
+      at org.scalatest.FunSuiteLike.run$(FunSuiteLike.scala:232)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1560)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:314)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:507)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:106)
+      at sbt.TestRunner.run(TestFramework.scala:117)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:262)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:233)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+      at sbt.TestFunction.apply(TestFramework.scala:271)
+      at sbt.Tests$.$anonfun$toTask$1(Tests.scala:281)
+      at sbt.std.Transform$$anon$3.$anonfun$apply$2(System.scala:46)
+      at sbt.std.Transform$$anon$4.work(System.scala:66)
+      at sbt.Execute.$anonfun$submit$2(Execute.scala:262)
+      at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)
+      at sbt.Execute.work(Execute.scala:271)
+      at sbt.Execute.$anonfun$submit$1(Execute.scala:262)
+      at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:174)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:36)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+      at java.lang.Thread.run(Thread.java:748)
+</pre>
+
+          </div>
+
+        </td>
+
+        <td class="failed" title="go: other.as&lt;block::innerblock&gt;.baz">failed
+
+          <div class="add-info">
+
+              <div class="message">an implementation is missing</div>
+
+              <pre class="trace">
+      scala.NotImplementedError: an implementation is missing
+      at scala.Predef$.$qmark$qmark$qmark(Predef.scala:284)
+      at io.kaitai.struct.translators.GoTranslator.doCast(GoTranslator.scala:232)
+      at io.kaitai.struct.translators.GoTranslator.doCast(GoTranslator.scala:15)
+      at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray(CommonArraysAndCast.scala:71)
+      at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray$(CommonArraysAndCast.scala:53)
+      at io.kaitai.struct.translators.GoTranslator.doCastOrArray(GoTranslator.scala:15)
+      at io.kaitai.struct.translators.GoTranslator.translateExpr(GoTranslator.scala:86)
+      at io.kaitai.struct.translators.GoTranslator.translate(GoTranslator.scala:27)
+      at io.kaitai.struct.translators.GoTranslator.userTypeField(GoTranslator.scala:302)
+      at io.kaitai.struct.translators.GoTranslator.userTypeField(GoTranslator.scala:15)
+      at io.kaitai.struct.translators.CommonMethods.translateAttribute(CommonMethods.scala:21)
+      at io.kaitai.struct.translators.CommonMethods.translateAttribute$(CommonMethods.scala:15)
+      at io.kaitai.struct.translators.GoTranslator.translateAttribute(GoTranslator.scala:15)
+      at io.kaitai.struct.translators.GoTranslator.translateExpr(GoTranslator.scala:94)
+      at io.kaitai.struct.translators.GoTranslator.translate(GoTranslator.scala:27)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:602)
+      at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+      at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+      at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.invokeWithFixture$1(FunSuiteLike.scala:184)
+      at org.scalatest.FunSuiteLike.$anonfun$runTest$1(FunSuiteLike.scala:196)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:289)
+      at org.scalatest.FunSuiteLike.runTest(FunSuiteLike.scala:196)
+      at org.scalatest.FunSuiteLike.runTest$(FunSuiteLike.scala:178)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.$anonfun$runTests$1(FunSuiteLike.scala:229)
+      at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:396)
+      at scala.collection.immutable.List.foreach(List.scala:389)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:384)
+      at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:379)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:461)
+      at org.scalatest.FunSuiteLike.runTests(FunSuiteLike.scala:229)
+      at org.scalatest.FunSuiteLike.runTests$(FunSuiteLike.scala:228)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1560)
+      at org.scalatest.Suite.run(Suite.scala:1147)
+      at org.scalatest.Suite.run$(Suite.scala:1129)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.$anonfun$run$1(FunSuiteLike.scala:233)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:521)
+      at org.scalatest.FunSuiteLike.run(FunSuiteLike.scala:233)
+      at org.scalatest.FunSuiteLike.run$(FunSuiteLike.scala:232)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1560)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:314)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:507)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:106)
+      at sbt.TestRunner.run(TestFramework.scala:117)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:262)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:233)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+      at sbt.TestFunction.apply(TestFramework.scala:271)
+      at sbt.Tests$.$anonfun$toTask$1(Tests.scala:281)
+      at sbt.std.Transform$$anon$3.$anonfun$apply$2(System.scala:46)
+      at sbt.std.Transform$$anon$4.work(System.scala:66)
+      at sbt.Execute.$anonfun$submit$2(Execute.scala:262)
+      at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)
+      at sbt.Execute.work(Execute.scala:271)
+      at sbt.Execute.$anonfun$submit$1(Execute.scala:262)
+      at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:174)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:36)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+      at java.lang.Thread.run(Thread.java:748)
+</pre>
+
+          </div>
+
+        </td>
+
+        <td class="failed" title="java: other.as&lt;block::innerblock&gt;.baz">failed
+
+          <div class="add-info">
+
+              <div class="message">"(([TopClass.]Block.Innerblock) (o..." was not equal to "(([]Block.Innerblock) (o..."</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;(([TopClass.]Block.Innerblock) (o...&quot; was not equal to &quot;(([]Block.Innerblock) (o...&quot;
+      at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
+      at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+      at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+      at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.invokeWithFixture$1(FunSuiteLike.scala:184)
+      at org.scalatest.FunSuiteLike.$anonfun$runTest$1(FunSuiteLike.scala:196)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:289)
+      at org.scalatest.FunSuiteLike.runTest(FunSuiteLike.scala:196)
+      at org.scalatest.FunSuiteLike.runTest$(FunSuiteLike.scala:178)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.$anonfun$runTests$1(FunSuiteLike.scala:229)
+      at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:396)
+      at scala.collection.immutable.List.foreach(List.scala:389)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:384)
+      at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:379)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:461)
+      at org.scalatest.FunSuiteLike.runTests(FunSuiteLike.scala:229)
+      at org.scalatest.FunSuiteLike.runTests$(FunSuiteLike.scala:228)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1560)
+      at org.scalatest.Suite.run(Suite.scala:1147)
+      at org.scalatest.Suite.run$(Suite.scala:1129)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.$anonfun$run$1(FunSuiteLike.scala:233)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:521)
+      at org.scalatest.FunSuiteLike.run(FunSuiteLike.scala:233)
+      at org.scalatest.FunSuiteLike.run$(FunSuiteLike.scala:232)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1560)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:314)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:507)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:106)
+      at sbt.TestRunner.run(TestFramework.scala:117)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:262)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:233)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+      at sbt.TestFunction.apply(TestFramework.scala:271)
+      at sbt.Tests$.$anonfun$toTask$1(Tests.scala:281)
+      at sbt.std.Transform$$anon$3.$anonfun$apply$2(System.scala:46)
+      at sbt.std.Transform$$anon$4.work(System.scala:66)
+      at sbt.Execute.$anonfun$submit$2(Execute.scala:262)
+      at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)
+      at sbt.Execute.work(Execute.scala:271)
+      at sbt.Execute.$anonfun$submit$1(Execute.scala:262)
+      at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:174)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:36)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+      at java.lang.Thread.run(Thread.java:748)
+</pre>
+
+          </div>
 
         </td>
 
@@ -6719,38 +7057,18 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
 
         <td class="no-run" title="construct2: other.as&lt;block&gt;.bar">didn't run</td>
 
-        <td class="passed" title="cpp_stl: other.as&lt;block&gt;.bar">passed
-
-        </td>
-
-        <td class="passed" title="csharp: other.as&lt;block&gt;.bar">passed
-
-        </td>
-
-        <td class="failed" title="go: other.as&lt;block&gt;.bar">failed
+        <td class="failed" title="cpp_stl: other.as&lt;block&gt;.bar">failed
 
           <div class="add-info">
 
-              <div class="message">an implementation is missing</div>
+              <div class="message">"static_cast<[top_class_t::]block_t*>(other())->..." was not equal to "static_cast<[]block_t*>(other())->..."</div>
 
               <pre class="trace">
-      scala.NotImplementedError: an implementation is missing
-      at scala.Predef$.$qmark$qmark$qmark(Predef.scala:284)
-      at io.kaitai.struct.translators.GoTranslator.doCast(GoTranslator.scala:232)
-      at io.kaitai.struct.translators.GoTranslator.doCast(GoTranslator.scala:15)
-      at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray(CommonArraysAndCast.scala:69)
-      at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray$(CommonArraysAndCast.scala:53)
-      at io.kaitai.struct.translators.GoTranslator.doCastOrArray(GoTranslator.scala:15)
-      at io.kaitai.struct.translators.GoTranslator.translateExpr(GoTranslator.scala:86)
-      at io.kaitai.struct.translators.GoTranslator.translate(GoTranslator.scala:27)
-      at io.kaitai.struct.translators.GoTranslator.userTypeField(GoTranslator.scala:302)
-      at io.kaitai.struct.translators.GoTranslator.userTypeField(GoTranslator.scala:15)
-      at io.kaitai.struct.translators.CommonMethods.translateAttribute(CommonMethods.scala:21)
-      at io.kaitai.struct.translators.CommonMethods.translateAttribute$(CommonMethods.scala:15)
-      at io.kaitai.struct.translators.GoTranslator.translateAttribute(GoTranslator.scala:15)
-      at io.kaitai.struct.translators.GoTranslator.translateExpr(GoTranslator.scala:94)
-      at io.kaitai.struct.translators.GoTranslator.translate(GoTranslator.scala:27)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:588)
+      org.scalatest.exceptions.TestFailedException: &quot;static_cast&lt;[top_class_t::]block_t*&gt;(other())-&gt;...&quot; was not equal to &quot;static_cast&lt;[]block_t*&gt;(other())-&gt;...&quot;
+      at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -6813,7 +7131,237 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
 
         </td>
 
-        <td class="passed" title="java: other.as&lt;block&gt;.bar">passed
+        <td class="failed" title="csharp: other.as&lt;block&gt;.bar">failed
+
+          <div class="add-info">
+
+              <div class="message">"(([TopClass.]Block) (Other)).Bar" was not equal to "(([]Block) (Other)).Bar"</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;(([TopClass.]Block) (Other)).Bar&quot; was not equal to &quot;(([]Block) (Other)).Bar&quot;
+      at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
+      at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+      at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+      at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.invokeWithFixture$1(FunSuiteLike.scala:184)
+      at org.scalatest.FunSuiteLike.$anonfun$runTest$1(FunSuiteLike.scala:196)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:289)
+      at org.scalatest.FunSuiteLike.runTest(FunSuiteLike.scala:196)
+      at org.scalatest.FunSuiteLike.runTest$(FunSuiteLike.scala:178)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.$anonfun$runTests$1(FunSuiteLike.scala:229)
+      at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:396)
+      at scala.collection.immutable.List.foreach(List.scala:389)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:384)
+      at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:379)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:461)
+      at org.scalatest.FunSuiteLike.runTests(FunSuiteLike.scala:229)
+      at org.scalatest.FunSuiteLike.runTests$(FunSuiteLike.scala:228)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1560)
+      at org.scalatest.Suite.run(Suite.scala:1147)
+      at org.scalatest.Suite.run$(Suite.scala:1129)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.$anonfun$run$1(FunSuiteLike.scala:233)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:521)
+      at org.scalatest.FunSuiteLike.run(FunSuiteLike.scala:233)
+      at org.scalatest.FunSuiteLike.run$(FunSuiteLike.scala:232)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1560)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:314)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:507)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:106)
+      at sbt.TestRunner.run(TestFramework.scala:117)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:262)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:233)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+      at sbt.TestFunction.apply(TestFramework.scala:271)
+      at sbt.Tests$.$anonfun$toTask$1(Tests.scala:281)
+      at sbt.std.Transform$$anon$3.$anonfun$apply$2(System.scala:46)
+      at sbt.std.Transform$$anon$4.work(System.scala:66)
+      at sbt.Execute.$anonfun$submit$2(Execute.scala:262)
+      at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)
+      at sbt.Execute.work(Execute.scala:271)
+      at sbt.Execute.$anonfun$submit$1(Execute.scala:262)
+      at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:174)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:36)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+      at java.lang.Thread.run(Thread.java:748)
+</pre>
+
+          </div>
+
+        </td>
+
+        <td class="failed" title="go: other.as&lt;block&gt;.bar">failed
+
+          <div class="add-info">
+
+              <div class="message">an implementation is missing</div>
+
+              <pre class="trace">
+      scala.NotImplementedError: an implementation is missing
+      at scala.Predef$.$qmark$qmark$qmark(Predef.scala:284)
+      at io.kaitai.struct.translators.GoTranslator.doCast(GoTranslator.scala:232)
+      at io.kaitai.struct.translators.GoTranslator.doCast(GoTranslator.scala:15)
+      at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray(CommonArraysAndCast.scala:71)
+      at io.kaitai.struct.translators.CommonArraysAndCast.doCastOrArray$(CommonArraysAndCast.scala:53)
+      at io.kaitai.struct.translators.GoTranslator.doCastOrArray(GoTranslator.scala:15)
+      at io.kaitai.struct.translators.GoTranslator.translateExpr(GoTranslator.scala:86)
+      at io.kaitai.struct.translators.GoTranslator.translate(GoTranslator.scala:27)
+      at io.kaitai.struct.translators.GoTranslator.userTypeField(GoTranslator.scala:302)
+      at io.kaitai.struct.translators.GoTranslator.userTypeField(GoTranslator.scala:15)
+      at io.kaitai.struct.translators.CommonMethods.translateAttribute(CommonMethods.scala:21)
+      at io.kaitai.struct.translators.CommonMethods.translateAttribute$(CommonMethods.scala:15)
+      at io.kaitai.struct.translators.GoTranslator.translateAttribute(GoTranslator.scala:15)
+      at io.kaitai.struct.translators.GoTranslator.translateExpr(GoTranslator.scala:94)
+      at io.kaitai.struct.translators.GoTranslator.translate(GoTranslator.scala:27)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:602)
+      at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+      at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+      at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.invokeWithFixture$1(FunSuiteLike.scala:184)
+      at org.scalatest.FunSuiteLike.$anonfun$runTest$1(FunSuiteLike.scala:196)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:289)
+      at org.scalatest.FunSuiteLike.runTest(FunSuiteLike.scala:196)
+      at org.scalatest.FunSuiteLike.runTest$(FunSuiteLike.scala:178)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.$anonfun$runTests$1(FunSuiteLike.scala:229)
+      at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:396)
+      at scala.collection.immutable.List.foreach(List.scala:389)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:384)
+      at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:379)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:461)
+      at org.scalatest.FunSuiteLike.runTests(FunSuiteLike.scala:229)
+      at org.scalatest.FunSuiteLike.runTests$(FunSuiteLike.scala:228)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1560)
+      at org.scalatest.Suite.run(Suite.scala:1147)
+      at org.scalatest.Suite.run$(Suite.scala:1129)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.$anonfun$run$1(FunSuiteLike.scala:233)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:521)
+      at org.scalatest.FunSuiteLike.run(FunSuiteLike.scala:233)
+      at org.scalatest.FunSuiteLike.run$(FunSuiteLike.scala:232)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1560)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:314)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:507)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:106)
+      at sbt.TestRunner.run(TestFramework.scala:117)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:262)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:233)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+      at sbt.TestFunction.apply(TestFramework.scala:271)
+      at sbt.Tests$.$anonfun$toTask$1(Tests.scala:281)
+      at sbt.std.Transform$$anon$3.$anonfun$apply$2(System.scala:46)
+      at sbt.std.Transform$$anon$4.work(System.scala:66)
+      at sbt.Execute.$anonfun$submit$2(Execute.scala:262)
+      at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)
+      at sbt.Execute.work(Execute.scala:271)
+      at sbt.Execute.$anonfun$submit$1(Execute.scala:262)
+      at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:174)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:36)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+      at java.lang.Thread.run(Thread.java:748)
+</pre>
+
+          </div>
+
+        </td>
+
+        <td class="failed" title="java: other.as&lt;block&gt;.bar">failed
+
+          <div class="add-info">
+
+              <div class="message">"(([TopClass.]Block) (other())).ba..." was not equal to "(([]Block) (other())).ba..."</div>
+
+              <pre class="trace">
+      org.scalatest.exceptions.TestFailedException: &quot;(([TopClass.]Block) (other())).ba...&quot; was not equal to &quot;(([]Block) (other())).ba...&quot;
+      at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
+      at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
+      at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
+      at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+      at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+      at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+      at org.scalatest.Transformer.apply(Transformer.scala:22)
+      at org.scalatest.Transformer.apply(Transformer.scala:20)
+      at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+      at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+      at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+      at org.scalatest.FunSuite.withFixture(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.invokeWithFixture$1(FunSuiteLike.scala:184)
+      at org.scalatest.FunSuiteLike.$anonfun$runTest$1(FunSuiteLike.scala:196)
+      at org.scalatest.SuperEngine.runTestImpl(Engine.scala:289)
+      at org.scalatest.FunSuiteLike.runTest(FunSuiteLike.scala:196)
+      at org.scalatest.FunSuiteLike.runTest$(FunSuiteLike.scala:178)
+      at org.scalatest.FunSuite.runTest(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.$anonfun$runTests$1(FunSuiteLike.scala:229)
+      at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:396)
+      at scala.collection.immutable.List.foreach(List.scala:389)
+      at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:384)
+      at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:379)
+      at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:461)
+      at org.scalatest.FunSuiteLike.runTests(FunSuiteLike.scala:229)
+      at org.scalatest.FunSuiteLike.runTests$(FunSuiteLike.scala:228)
+      at org.scalatest.FunSuite.runTests(FunSuite.scala:1560)
+      at org.scalatest.Suite.run(Suite.scala:1147)
+      at org.scalatest.Suite.run$(Suite.scala:1129)
+      at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)
+      at org.scalatest.FunSuiteLike.$anonfun$run$1(FunSuiteLike.scala:233)
+      at org.scalatest.SuperEngine.runImpl(Engine.scala:521)
+      at org.scalatest.FunSuiteLike.run(FunSuiteLike.scala:233)
+      at org.scalatest.FunSuiteLike.run$(FunSuiteLike.scala:232)
+      at org.scalatest.FunSuite.run(FunSuite.scala:1560)
+      at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:314)
+      at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:507)
+      at sbt.TestRunner.runTest$1(TestFramework.scala:106)
+      at sbt.TestRunner.run(TestFramework.scala:117)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:262)
+      at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:233)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+      at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+      at sbt.TestFunction.apply(TestFramework.scala:271)
+      at sbt.Tests$.$anonfun$toTask$1(Tests.scala:281)
+      at sbt.std.Transform$$anon$3.$anonfun$apply$2(System.scala:46)
+      at sbt.std.Transform$$anon$4.work(System.scala:66)
+      at sbt.Execute.$anonfun$submit$2(Execute.scala:262)
+      at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)
+      at sbt.Execute.work(Execute.scala:271)
+      at sbt.Execute.$anonfun$submit$1(Execute.scala:262)
+      at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:174)
+      at sbt.CompletionService$$anon$2.call(CompletionService.scala:36)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+      at java.lang.Thread.run(Thread.java:748)
+</pre>
+
+          </div>
 
         </td>
 
@@ -6865,7 +7413,7 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
@@ -6955,7 +7503,7 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
       at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:340)
       at org.scalatest.Matchers$ShouldMethodHelper$.shouldMatcher(Matchers.scala:6668)
       at org.scalatest.Matchers$AnyShouldWrapper.should(Matchers.scala:6704)
-      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:593)
+      at io.kaitai.struct.translators.TranslatorSpec.$anonfun$runTest$3(TranslatorSpec.scala:607)
       at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
       at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
       at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
