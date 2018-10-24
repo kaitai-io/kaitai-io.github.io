@@ -97,7 +97,7 @@ extra_footer: |
           programming languages — cross-language, cross-platform.
         </p>
         <h1>What is Kaitai Struct?</h1>
-        <p>Kaitai Struct is a declarative language used for describe various
+        <p>Kaitai Struct is a declarative language used to describe various
           binary data structures, laid out in files or in memory: i.e. binary
           file formats, network stream packet formats, etc.
         </p>
