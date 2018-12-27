@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -116,7 +116,7 @@
                 <th v-for="key in columns"
                     @click="sortBy(key)"
                     :class="{ active: sortKey == key }">
-                    {{ key }}
+                    {{ key.replace("/", " ") }}
                     <span class="arrow" :class="sortOrders[key] > 0 ? 'asc' : 'dsc'">
                     </span>
                 </th>
@@ -147,12 +147,20 @@
         <h1>Kaitai Struct CI</h1>
 <!--        <pre>{{ testData }}</pre>-->
         <form id="search">
-            Search: <input name="query" v-model="searchQuery">
-            <input type="checkbox" v-model="skipPassed">Only failures</input>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input name="query" class="form-control" v-model="searchQuery" placeholder="Search...">
+                </div>
+                <div class="form-check col-md-6">
+                    <input type="checkbox" class="form-check-input" v-model="skipPassed" id="only-failures-checkbox">
+                    <label class="form-check-label" for="only-failures-checkbox">Only failures</label>
+                </div>
+            </div>
         </form>
         <ci-grid
             :data="gridData"
             :columns="gridColumns"
+            :passed="gridPassed"
             :filter-key="searchQuery"
             :skip-passed="skipPassed">
         </ci-grid>
@@ -183,6 +191,7 @@ Vue.component('ci-grid', {
     props: {
         data: Array,
         columns: Array,
+        passed: Object,
         filterKey: String,
         skipPassed: Boolean
     },
@@ -193,7 +202,7 @@ Vue.component('ci-grid', {
         })
         return {
             sortKey: '',
-            sortOrders: sortOrders
+            sortOrders: sortOrders,
         }
     },
     computed: {
@@ -227,13 +236,11 @@ Vue.component('ci-grid', {
             return data
         },
         passRating: function () {
-            console.log("passRating called")
-            var rating = {};
-            for (var i in this.columns) {
-                var pair = this.columns[i];
-                rating[pair] = 50;
+            var r = {};
+            for (var pair in this.passed) {
+                r[pair] = Math.round(this.passed[pair] / this.data.length * 100 * 10.0) / 10.0;
             }
-            return rating;
+            return r;
         }
     },
     filters: {
@@ -256,6 +263,7 @@ window.vue = new Vue({
         searchQuery: '',
         gridColumns: ['name'],
         gridData: [],
+        gridPassed: {},
         skipPassed: false,
     },
     created: function () {
@@ -295,6 +303,9 @@ window.vue = new Vue({
                     this.testData[testName] = this.testData[testName] || {"name": testName};
                     delete json[testName]["name"];
                     this.testData[testName][pair] = json[testName];
+                    if (this.testData[testName][pair].status === 'passed') {
+                        numPassed++;
+                    }
                 }
 
                 // Generate output
@@ -303,6 +314,7 @@ window.vue = new Vue({
                 for (var testName in this.testData) {
                     this.gridData.push(this.testData[testName]);
                 }
+                this.gridPassed[pair] = numPassed;
             });
         }
     }
