@@ -122,7 +122,14 @@
                 </th>
             </tr>
             <tr>
-                <th></th>
+                <th>Last update</th>
+                <th v-for="key in columns"
+                    v-if="key != 'name'">
+                    {{ meta[key].timestamp | humanTime }}
+                </th>
+            </tr>
+            <tr>
+                <th>Rating</th>
                 <th v-for="key in columns"
                     v-if="key != 'name'">
                     {{ passRating[key] }}%
@@ -160,7 +167,7 @@
         <ci-grid
             :data="gridData"
             :columns="gridColumns"
-            :passed="gridPassed"
+            :meta="gridMeta"
             :filter-key="searchQuery"
             :skip-passed="skipPassed">
         </ci-grid>
@@ -191,7 +198,7 @@ Vue.component('ci-grid', {
     props: {
         data: Array,
         columns: Array,
-        passed: Object,
+        meta: Object,
         filterKey: String,
         skipPassed: Boolean
     },
@@ -237,8 +244,8 @@ Vue.component('ci-grid', {
         },
         passRating: function () {
             var r = {};
-            for (var pair in this.passed) {
-                r[pair] = Math.round(this.passed[pair] / this.data.length * 100 * 10.0) / 10.0;
+            for (var pair in this.meta) {
+                r[pair] = Math.round(this.meta[pair].passed / this.data.length * 100 * 10.0) / 10.0;
             }
             return r;
         }
@@ -246,6 +253,18 @@ Vue.component('ci-grid', {
     filters: {
         capitalize: function (str) {
             return str.charAt(0).toUpperCase() + str.slice(1)
+        },
+        humanTime: function (d) {
+            var sec = (new Date() - d) / 1000;
+            if (sec < 60) {
+                return "just now";
+            } else if (sec < 60 * 60) {
+                return Math.round(sec / 60) + "m ago";
+            } else if (sec < 24 * 60 * 60) {
+                return Math.round(sec / (60 * 60)) + "h ago";
+            } else {
+                return Math.round(sec / (24 * 60 * 60)) + "d ago";
+            }
         }
     },
     methods: {
@@ -263,7 +282,7 @@ window.vue = new Vue({
         searchQuery: '',
         gridColumns: ['name'],
         gridData: [],
-        gridPassed: {},
+        gridMeta: {},
         skipPassed: false,
     },
     created: function () {
@@ -274,7 +293,7 @@ window.vue = new Vue({
             ["cpp_stl_11", "gcc4.8_linux"],
             ["cpp_stl_11", "clang3.5_linux"],
             ["cpp_stl_11", "clang7.3_osx"],
-            ["java", "oraclejdk7"],
+            ["java", "openjdk7"],
             ["java", "oraclejdk8"],
             ["javascript", "nodejs4"],
             ["javascript", "nodejs7"],
@@ -286,7 +305,7 @@ window.vue = new Vue({
         ];
         for (var i in pairs) {
             this.addOneJson(pairs[i][0], pairs[i][1]);
-        }    
+        }
     },
     methods: {
         addOneJson: function (lang, version) {
@@ -295,7 +314,9 @@ window.vue = new Vue({
             fetch("https://raw.githubusercontent.com/kaitai-io/ci_artifacts/" + pair + "/test_out/" + lang + "/ci.json").then(r =>
                 r.json()
             ).then(json => {
-                console.log("Got answer for", pair);
+                var meta = json.$meta;
+                delete json['$meta'];
+                console.log("Got answer for", pair, ", meta:", meta);
 
                 // Aggregation
                 var numPassed = 0;
@@ -314,7 +335,9 @@ window.vue = new Vue({
                 for (var testName in this.testData) {
                     this.gridData.push(this.testData[testName]);
                 }
-                this.gridPassed[pair] = numPassed;
+                meta.passed = numPassed;
+                meta.timestamp = new Date(meta.timestamp);
+                this.gridMeta[pair] = meta;
             });
         }
     }
