@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2019-03-21 00:53:39 UTC</title>
+    <title>Kaitai Struct: test results - 2019-03-28 23:45:34 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -49,7 +49,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2019-03-21 00:53:39 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2019-03-28 23:45:34 UTC</h1>
 
     <table class="table">
     <tr>
@@ -8020,17 +8020,17 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
 
         <td>43%</td>
 
+        <td>95%</td>
+
+        <td>90%</td>
+
+        <td>40%</td>
+
         <td>99%</td>
-
-        <td>91%</td>
-
-        <td>41%</td>
-
-        <td>100%</td>
 
         <td>0%</td>
 
-        <td>91%</td>
+        <td>90%</td>
 
         <td>85%</td>
 
@@ -8038,11 +8038,11 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
 
         <td></td>
 
-        <td>99%</td>
+        <td>98%</td>
+
+        <td>98%</td>
 
         <td>99%</td>
-
-        <td>100%</td>
 
     </tr>
 
@@ -8658,7 +8658,7 @@ SyntaxError: invalid syntax
 
               <div class="message">Failed</div>
 
-              <pre class="trace">bits_simple_test.go:14: &lt;nil&gt;</pre>
+              <pre class="trace">bits_simple_test.go:21: &lt;nil&gt;</pre>
 
           </div>
 
@@ -8780,7 +8780,7 @@ SyntaxError: invalid syntax
 
               <div class="message">Failed</div>
 
-              <pre class="trace">bytes_pad_term_test.go:25: &#xA;&#x9;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:25&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x73, 0x74, 0x72, 0x31}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x73, 0x74, 0x72, 0x31, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,4 @@&#xA;&#x9;&#x9;            &#x9;-([]uint8) (len=4) {&#xA;&#x9;&#x9;            &#x9;- 00000000  73 74 72 31                                       |str1|&#xA;&#x9;&#x9;            &#x9;+([]uint8) (len=20) {&#xA;&#x9;&#x9;            &#x9;+ 00000000  73 74 72 31 40 40 40 40  40 40 40 40 40 40 40 40  |str1@@@@@@@@@@@@|&#xA;&#x9;&#x9;            &#x9;+ 00000010  40 40 40 40                                       |@@@@|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestBytesPadTerm&#xA;bytes_pad_term_test.go:26: &#xA;&#x9;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:26&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x73, 0x74, 0x72, 0x32, 0x66, 0x6f, 0x6f}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x73, 0x74, 0x72, 0x32, 0x66, 0x6f, 0x6f, 0x40, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,4 @@&#xA;&#x9;&#x9;            &#x9;-([]uint8) (len=7) {&#xA;&#x9;&#x9;            &#x9;- 00000000  73 74 72 32 66 6f 6f                              |str2foo|&#xA;&#x9;&#x9;            &#x9;+([]uint8) (len=20) {&#xA;&#x9;&#x9;            &#x9;+ 00000000  73 74 72 32 66 6f 6f 40  2b 2b 2b 2b 2b 2b 2b 2b  |str2foo@++++++++|&#xA;&#x9;&#x9;            &#x9;+ 00000010  2b 2b 2b 2b                                       |++++|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestBytesPadTerm&#xA;bytes_pad_term_test.go:27: &#xA;&#x9;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:27&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x73, 0x74, 0x72, 0x2b, 0x2b, 0x2b, 0x33, 0x62, 0x61, 0x72, 0x2b, 0x2b, 0x2b}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x73, 0x74, 0x72, 0x2b, 0x2b, 0x2b, 0x33, 0x62, 0x61, 0x72, 0x2b, 0x2b, 0x2b, 0x40, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,4 @@&#xA;&#x9;&#x9;            &#x9;-([]uint8) (len=13) {&#xA;&#x9;&#x9;            &#x9;- 00000000  73 74 72 2b 2b 2b 33 62  61 72 2b 2b 2b           |str+++3bar+++|&#xA;&#x9;&#x9;            &#x9;+([]uint8) (len=20) {&#xA;&#x9;&#x9;            &#x9;+ 00000000  73 74 72 2b 2b 2b 33 62  61 72 2b 2b 2b 40 2b 2b  |str+++3bar+++@++|&#xA;&#x9;&#x9;            &#x9;+ 00000010  2b 2b 2b 2b                                       |++++|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestBytesPadTerm&#xA;bytes_pad_term_test.go:28: &#xA;&#x9;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:28&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x73, 0x74, 0x72, 0x34, 0x62, 0x61, 0x7a, 0x40}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x73, 0x74, 0x72, 0x34, 0x62, 0x61, 0x7a, 0x40, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,4 @@&#xA;&#x9;&#x9;            &#x9;-([]uint8) (len=8) {&#xA;&#x9;&#x9;            &#x9;- 00000000  73 74 72 34 62 61 7a 40                           |str4baz@|&#xA;&#x9;&#x9;            &#x9;+([]uint8) (len=20) {&#xA;&#x9;&#x9;            &#x9;+ 00000000  73 74 72 34 62 61 7a 40  2e 2e 2e 2e 2e 2e 2e 2e  |str4baz@........|&#xA;&#x9;&#x9;            &#x9;+ 00000010  2e 2e 2e 2e                                       |....|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestBytesPadTerm</pre>
+              <pre class="trace">bytes_pad_term_test.go:32: &#xA;&#x9;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:32&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x73, 0x74, 0x72, 0x31}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x73, 0x74, 0x72, 0x31, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,4 @@&#xA;&#x9;&#x9;            &#x9;-([]uint8) (len=4) {&#xA;&#x9;&#x9;            &#x9;- 00000000  73 74 72 31                                       |str1|&#xA;&#x9;&#x9;            &#x9;+([]uint8) (len=20) {&#xA;&#x9;&#x9;            &#x9;+ 00000000  73 74 72 31 40 40 40 40  40 40 40 40 40 40 40 40  |str1@@@@@@@@@@@@|&#xA;&#x9;&#x9;            &#x9;+ 00000010  40 40 40 40                                       |@@@@|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestBytesPadTerm&#xA;bytes_pad_term_test.go:33: &#xA;&#x9;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:33&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x73, 0x74, 0x72, 0x32, 0x66, 0x6f, 0x6f}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x73, 0x74, 0x72, 0x32, 0x66, 0x6f, 0x6f, 0x40, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,4 @@&#xA;&#x9;&#x9;            &#x9;-([]uint8) (len=7) {&#xA;&#x9;&#x9;            &#x9;- 00000000  73 74 72 32 66 6f 6f                              |str2foo|&#xA;&#x9;&#x9;            &#x9;+([]uint8) (len=20) {&#xA;&#x9;&#x9;            &#x9;+ 00000000  73 74 72 32 66 6f 6f 40  2b 2b 2b 2b 2b 2b 2b 2b  |str2foo@++++++++|&#xA;&#x9;&#x9;            &#x9;+ 00000010  2b 2b 2b 2b                                       |++++|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestBytesPadTerm&#xA;bytes_pad_term_test.go:34: &#xA;&#x9;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:34&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x73, 0x74, 0x72, 0x2b, 0x2b, 0x2b, 0x33, 0x62, 0x61, 0x72, 0x2b, 0x2b, 0x2b}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x73, 0x74, 0x72, 0x2b, 0x2b, 0x2b, 0x33, 0x62, 0x61, 0x72, 0x2b, 0x2b, 0x2b, 0x40, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b, 0x2b}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,4 @@&#xA;&#x9;&#x9;            &#x9;-([]uint8) (len=13) {&#xA;&#x9;&#x9;            &#x9;- 00000000  73 74 72 2b 2b 2b 33 62  61 72 2b 2b 2b           |str+++3bar+++|&#xA;&#x9;&#x9;            &#x9;+([]uint8) (len=20) {&#xA;&#x9;&#x9;            &#x9;+ 00000000  73 74 72 2b 2b 2b 33 62  61 72 2b 2b 2b 40 2b 2b  |str+++3bar+++@++|&#xA;&#x9;&#x9;            &#x9;+ 00000010  2b 2b 2b 2b                                       |++++|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestBytesPadTerm&#xA;bytes_pad_term_test.go:35: &#xA;&#x9;&#x9;Error Trace:&#x9;bytes_pad_term_test.go:35&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x73, 0x74, 0x72, 0x34, 0x62, 0x61, 0x7a, 0x40}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x73, 0x74, 0x72, 0x34, 0x62, 0x61, 0x7a, 0x40, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e, 0x2e}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,4 @@&#xA;&#x9;&#x9;            &#x9;-([]uint8) (len=8) {&#xA;&#x9;&#x9;            &#x9;- 00000000  73 74 72 34 62 61 7a 40                           |str4baz@|&#xA;&#x9;&#x9;            &#x9;+([]uint8) (len=20) {&#xA;&#x9;&#x9;            &#x9;+ 00000000  73 74 72 34 62 61 7a 40  2e 2e 2e 2e 2e 2e 2e 2e  |str4baz@........|&#xA;&#x9;&#x9;            &#x9;+ 00000010  2e 2e 2e 2e                                       |....|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestBytesPadTerm</pre>
 
           </div>
 
@@ -13158,7 +13158,13 @@ RecursionError: maximum recursion depth exceeded
 
         <td class="no-run" title="construct3: DefaultEndianExprException">didn't run</td>
 
-        <td class="passed" title="cpp_stl: DefaultEndianExprException">passed
+        <td class="leak" title="cpp_stl: DefaultEndianExprException">leak
+
+          <div class="add-info">
+
+              <div class="message">286 (24 direct, 262 indirect) bytes in 1 blocks are definitely lost in loss record 22 of 22</div>
+
+          </div>
 
         </td>
 
@@ -14828,7 +14834,7 @@ KeyError: 'len_mod'
 
               <div class="message">Failed</div>
 
-              <pre class="trace">expr_array_test.go:22: EOF</pre>
+              <pre class="trace">expr_array_test.go:29: EOF</pre>
 
           </div>
 
@@ -15199,7 +15205,7 @@ NameError: name '_io' is not defined
 
               <div class="message">Failed</div>
 
-              <pre class="trace">expr_io_pos_test.go:22: ReadBytes(-2): negative number of bytes to read</pre>
+              <pre class="trace">expr_io_pos_test.go:29: ReadBytes(-2): negative number of bytes to read</pre>
 
           </div>
 
@@ -15791,7 +15797,7 @@ AttributeError: calc_float2
 
               <div class="message">Failed</div>
 
-              <pre class="trace">if_values_test.go:36: &#xA;&#x9;&#x9;Error Trace:&#x9;if_values_test.go:36&#xA;&#x9;&#x9;Error:      &#x9;Expected nil, but got: 0&#xA;&#x9;&#x9;Test:       &#x9;TestIfValues&#xA;if_values_test.go:42: &#xA;&#x9;&#x9;Error Trace:&#x9;if_values_test.go:42&#xA;&#x9;&#x9;Error:      &#x9;Expected nil, but got: 0&#xA;&#x9;&#x9;Test:       &#x9;TestIfValues</pre>
+              <pre class="trace">if_values_test.go:43: &#xA;&#x9;&#x9;Error Trace:&#x9;if_values_test.go:43&#xA;&#x9;&#x9;Error:      &#x9;Expected nil, but got: 0&#xA;&#x9;&#x9;Test:       &#x9;TestIfValues&#xA;if_values_test.go:49: &#xA;&#x9;&#x9;Error Trace:&#x9;if_values_test.go:49&#xA;&#x9;&#x9;Error:      &#x9;Expected nil, but got: 0&#xA;&#x9;&#x9;Test:       &#x9;TestIfValues</pre>
 
           </div>
 
@@ -16907,7 +16913,7 @@ SyntaxError: invalid syntax
 
               <div class="message">Failed</div>
 
-              <pre class="trace">instance_user_array_test.go:30: EOF</pre>
+              <pre class="trace">instance_user_array_test.go:37: EOF</pre>
 
           </div>
 
@@ -19078,7 +19084,7 @@ AssertionError: b'\xe8\xe8\xe8\xe8' != b'BBBB'
 
               <div class="message">Failed</div>
 
-              <pre class="trace">process_coerce_bytes_test.go:36: &#xA;&#x9;&#x9;Error Trace:&#x9;process_coerce_bytes_test.go:36&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x42, 0x42, 0x42, 0x42}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0xe8, 0xe8, 0xe8, 0xe8}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=4) {&#xA;&#x9;&#x9;            &#x9;- 00000000  42 42 42 42                                       |BBBB|&#xA;&#x9;&#x9;            &#x9;+ 00000000  e8 e8 e8 e8                                       |....|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessCoerceBytes</pre>
+              <pre class="trace">process_coerce_bytes_test.go:43: &#xA;&#x9;&#x9;Error Trace:&#x9;process_coerce_bytes_test.go:43&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x42, 0x42, 0x42, 0x42}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0xe8, 0xe8, 0xe8, 0xe8}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=4) {&#xA;&#x9;&#x9;            &#x9;- 00000000  42 42 42 42                                       |BBBB|&#xA;&#x9;&#x9;            &#x9;+ 00000000  e8 e8 e8 e8                                       |....|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessCoerceBytes</pre>
 
           </div>
 
@@ -19226,7 +19232,7 @@ AssertionError: 3907578088 != 1111638594
 
               <div class="message">Failed</div>
 
-              <pre class="trace">process_coerce_usertype1_test.go:36: &#xA;&#x9;&#x9;Error Trace:&#x9;process_coerce_usertype1_test.go:36&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: int(1111638594)&#xA;&#x9;&#x9;            &#x9;actual  : uint32(0xe8e8e8e8)&#xA;&#x9;&#x9;Test:       &#x9;TestProcessCoerceUsertype1</pre>
+              <pre class="trace">process_coerce_usertype1_test.go:43: &#xA;&#x9;&#x9;Error Trace:&#x9;process_coerce_usertype1_test.go:43&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: int(1111638594)&#xA;&#x9;&#x9;            &#x9;actual  : uint32(0xe8e8e8e8)&#xA;&#x9;&#x9;Test:       &#x9;TestProcessCoerceUsertype1</pre>
 
           </div>
 
@@ -19321,7 +19327,7 @@ AssertionError: 3907578088 != 1111638594
 
               <div class="message">Failed</div>
 
-              <pre class="trace">process_coerce_usertype2_test.go:36: &#xA;&#x9;&#x9;Error Trace:&#x9;process_coerce_usertype2_test.go:36&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: int(1111638594)&#xA;&#x9;&#x9;            &#x9;actual  : uint32(0xe8e8e8e8)&#xA;&#x9;&#x9;Test:       &#x9;TestProcessCoerceUsertype2</pre>
+              <pre class="trace">process_coerce_usertype2_test.go:43: &#xA;&#x9;&#x9;Error Trace:&#x9;process_coerce_usertype2_test.go:43&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: int(1111638594)&#xA;&#x9;&#x9;            &#x9;actual  : uint32(0xe8e8e8e8)&#xA;&#x9;&#x9;Test:       &#x9;TestProcessCoerceUsertype2</pre>
 
           </div>
 
@@ -19414,7 +19420,7 @@ AssertionError: b'\t\xac\x8d\x8d\xed' != b'\x10\xb3\x94\x94\xf4'
 
               <div class="message">Failed</div>
 
-              <pre class="trace">process_custom_test.go:25: &#xA;&#x9;&#x9;Error Trace:&#x9;process_custom_test.go:25&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x10, 0xb3, 0x94, 0x94, 0xf4}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x9, 0xac, 0x8d, 0x8d, 0xed}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=5) {&#xA;&#x9;&#x9;            &#x9;- 00000000  10 b3 94 94 f4                                    |.....|&#xA;&#x9;&#x9;            &#x9;+ 00000000  09 ac 8d 8d ed                                    |.....|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessCustom&#xA;process_custom_test.go:26: &#xA;&#x9;&#x9;Error Trace:&#x9;process_custom_test.go:26&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x5f, 0xba, 0x7b, 0x93, 0x63, 0x23, 0x5f}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0xba, 0x7b, 0x93, 0x63, 0x23}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9;-([]uint8) (len=7) {&#xA;&#x9;&#x9;            &#x9;- 00000000  5f ba 7b 93 63 23 5f                              |_.{.c#_|&#xA;&#x9;&#x9;            &#x9;+([]uint8) (len=5) {&#xA;&#x9;&#x9;            &#x9;+ 00000000  ba 7b 93 63 23                                    |.{.c#|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessCustom&#xA;process_custom_test.go:27: &#xA;&#x9;&#x9;Error Trace:&#x9;process_custom_test.go:27&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x29, 0x33, 0xb1, 0x38, 0xb1}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x2a, 0x34, 0xb2, 0x39, 0xb2}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=5) {&#xA;&#x9;&#x9;            &#x9;- 00000000  29 33 b1 38 b1                                    |)3.8.|&#xA;&#x9;&#x9;            &#x9;+ 00000000  2a 34 b2 39 b2                                    |*4.9.|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessCustom</pre>
+              <pre class="trace">process_custom_test.go:32: &#xA;&#x9;&#x9;Error Trace:&#x9;process_custom_test.go:32&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x10, 0xb3, 0x94, 0x94, 0xf4}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x9, 0xac, 0x8d, 0x8d, 0xed}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=5) {&#xA;&#x9;&#x9;            &#x9;- 00000000  10 b3 94 94 f4                                    |.....|&#xA;&#x9;&#x9;            &#x9;+ 00000000  09 ac 8d 8d ed                                    |.....|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessCustom&#xA;process_custom_test.go:33: &#xA;&#x9;&#x9;Error Trace:&#x9;process_custom_test.go:33&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x5f, 0xba, 0x7b, 0x93, 0x63, 0x23, 0x5f}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0xba, 0x7b, 0x93, 0x63, 0x23}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9;-([]uint8) (len=7) {&#xA;&#x9;&#x9;            &#x9;- 00000000  5f ba 7b 93 63 23 5f                              |_.{.c#_|&#xA;&#x9;&#x9;            &#x9;+([]uint8) (len=5) {&#xA;&#x9;&#x9;            &#x9;+ 00000000  ba 7b 93 63 23                                    |.{.c#|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessCustom&#xA;process_custom_test.go:34: &#xA;&#x9;&#x9;Error Trace:&#x9;process_custom_test.go:34&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x29, 0x33, 0xb1, 0x38, 0xb1}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x2a, 0x34, 0xb2, 0x39, 0xb2}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=5) {&#xA;&#x9;&#x9;            &#x9;- 00000000  29 33 b1 38 b1                                    |)3.8.|&#xA;&#x9;&#x9;            &#x9;+ 00000000  2a 34 b2 39 b2                                    |*4.9.|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessCustom</pre>
 
           </div>
 
@@ -19507,7 +19513,7 @@ AssertionError: b'\t\xac\x8d\x8d\xed' != b'Hello'
 
               <div class="message">Failed</div>
 
-              <pre class="trace">process_rotate_test.go:25: &#xA;&#x9;&#x9;Error Trace:&#x9;process_rotate_test.go:25&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x48, 0x65, 0x6c, 0x6c, 0x6f}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x9, 0xac, 0x8d, 0x8d, 0xed}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=5) {&#xA;&#x9;&#x9;            &#x9;- 00000000  48 65 6c 6c 6f                                    |Hello|&#xA;&#x9;&#x9;            &#x9;+ 00000000  09 ac 8d 8d ed                                    |.....|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessRotate&#xA;process_rotate_test.go:26: &#xA;&#x9;&#x9;Error Trace:&#x9;process_rotate_test.go:26&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x57, 0x6f, 0x72, 0x6c, 0x64}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0xba, 0x7b, 0x93, 0x63, 0x23}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=5) {&#xA;&#x9;&#x9;            &#x9;- 00000000  57 6f 72 6c 64                                    |World|&#xA;&#x9;&#x9;            &#x9;+ 00000000  ba 7b 93 63 23                                    |.{.c#|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessRotate&#xA;process_rotate_test.go:27: &#xA;&#x9;&#x9;Error Trace:&#x9;process_rotate_test.go:27&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x54, 0x68, 0x65, 0x72, 0x65}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x2a, 0x34, 0xb2, 0x39, 0xb2}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=5) {&#xA;&#x9;&#x9;            &#x9;- 00000000  54 68 65 72 65                                    |There|&#xA;&#x9;&#x9;            &#x9;+ 00000000  2a 34 b2 39 b2                                    |*4.9.|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessRotate</pre>
+              <pre class="trace">process_rotate_test.go:32: &#xA;&#x9;&#x9;Error Trace:&#x9;process_rotate_test.go:32&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x48, 0x65, 0x6c, 0x6c, 0x6f}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x9, 0xac, 0x8d, 0x8d, 0xed}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=5) {&#xA;&#x9;&#x9;            &#x9;- 00000000  48 65 6c 6c 6f                                    |Hello|&#xA;&#x9;&#x9;            &#x9;+ 00000000  09 ac 8d 8d ed                                    |.....|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessRotate&#xA;process_rotate_test.go:33: &#xA;&#x9;&#x9;Error Trace:&#x9;process_rotate_test.go:33&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x57, 0x6f, 0x72, 0x6c, 0x64}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0xba, 0x7b, 0x93, 0x63, 0x23}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=5) {&#xA;&#x9;&#x9;            &#x9;- 00000000  57 6f 72 6c 64                                    |World|&#xA;&#x9;&#x9;            &#x9;+ 00000000  ba 7b 93 63 23                                    |.{.c#|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessRotate&#xA;process_rotate_test.go:34: &#xA;&#x9;&#x9;Error Trace:&#x9;process_rotate_test.go:34&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x54, 0x68, 0x65, 0x72, 0x65}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x2a, 0x34, 0xb2, 0x39, 0xb2}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=5) {&#xA;&#x9;&#x9;            &#x9;- 00000000  54 68 65 72 65                                    |There|&#xA;&#x9;&#x9;            &#x9;+ 00000000  2a 34 b2 39 b2                                    |*4.9.|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessRotate</pre>
 
           </div>
 
@@ -19672,7 +19678,7 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xac in position 1: invalid 
 
               <div class="message">Failed</div>
 
-              <pre class="trace">process_to_user_test.go:25: &#xA;&#x9;&#x9;Error Trace:&#x9;process_to_user_test.go:25&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;Hello&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;\t\xac\x8d\x8d\xed&#34;&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1 +1 @@&#xA;&#x9;&#x9;            &#x9;-Hello&#xA;&#x9;&#x9;            &#x9;+&#x9;����&#xA;&#x9;&#x9;Test:       &#x9;TestProcessToUser</pre>
+              <pre class="trace">process_to_user_test.go:32: &#xA;&#x9;&#x9;Error Trace:&#x9;process_to_user_test.go:32&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;Hello&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;\t\xac\x8d\x8d\xed&#34;&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1 +1 @@&#xA;&#x9;&#x9;            &#x9;-Hello&#xA;&#x9;&#x9;            &#x9;+&#x9;����&#xA;&#x9;&#x9;Test:       &#x9;TestProcessToUser</pre>
 
           </div>
 
@@ -19767,7 +19773,7 @@ AssertionError: b'\x8a\xd4\xcc4\x8e\xda\xd1' != b'foo bar'
 
               <div class="message">Failed</div>
 
-              <pre class="trace">process_xor4_const_test.go:26: &#xA;&#x9;&#x9;Error Trace:&#x9;process_xor4_const_test.go:26&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x66, 0x6f, 0x6f, 0x20, 0x62, 0x61, 0x72}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x8a, 0xd4, 0xcc, 0x34, 0x8e, 0xda, 0xd1}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=7) {&#xA;&#x9;&#x9;            &#x9;- 00000000  66 6f 6f 20 62 61 72                              |foo bar|&#xA;&#x9;&#x9;            &#x9;+ 00000000  8a d4 cc 34 8e da d1                              |...4...|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessXor4Const</pre>
+              <pre class="trace">process_xor4_const_test.go:33: &#xA;&#x9;&#x9;Error Trace:&#x9;process_xor4_const_test.go:33&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x66, 0x6f, 0x6f, 0x20, 0x62, 0x61, 0x72}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x8a, 0xd4, 0xcc, 0x34, 0x8e, 0xda, 0xd1}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=7) {&#xA;&#x9;&#x9;            &#x9;- 00000000  66 6f 6f 20 62 61 72                              |foo bar|&#xA;&#x9;&#x9;            &#x9;+ 00000000  8a d4 cc 34 8e da d1                              |...4...|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessXor4Const</pre>
 
           </div>
 
@@ -19862,7 +19868,7 @@ AssertionError: b'\x8a\xd4\xcc4\x8e\xda\xd1' != b'foo bar'
 
               <div class="message">Failed</div>
 
-              <pre class="trace">process_xor4_value_test.go:26: &#xA;&#x9;&#x9;Error Trace:&#x9;process_xor4_value_test.go:26&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x66, 0x6f, 0x6f, 0x20, 0x62, 0x61, 0x72}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x8a, 0xd4, 0xcc, 0x34, 0x8e, 0xda, 0xd1}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=7) {&#xA;&#x9;&#x9;            &#x9;- 00000000  66 6f 6f 20 62 61 72                              |foo bar|&#xA;&#x9;&#x9;            &#x9;+ 00000000  8a d4 cc 34 8e da d1                              |...4...|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessXor4Value</pre>
+              <pre class="trace">process_xor4_value_test.go:33: &#xA;&#x9;&#x9;Error Trace:&#x9;process_xor4_value_test.go:33&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x66, 0x6f, 0x6f, 0x20, 0x62, 0x61, 0x72}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x8a, 0xd4, 0xcc, 0x34, 0x8e, 0xda, 0xd1}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=7) {&#xA;&#x9;&#x9;            &#x9;- 00000000  66 6f 6f 20 62 61 72                              |foo bar|&#xA;&#x9;&#x9;            &#x9;+ 00000000  8a d4 cc 34 8e da d1                              |...4...|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessXor4Value</pre>
 
           </div>
 
@@ -19957,7 +19963,7 @@ AssertionError: b'\x99\x90\x90\xdf\x9d\x9e\x8d' != b'foo bar'
 
               <div class="message">Failed</div>
 
-              <pre class="trace">process_xor_const_test.go:26: &#xA;&#x9;&#x9;Error Trace:&#x9;process_xor_const_test.go:26&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x66, 0x6f, 0x6f, 0x20, 0x62, 0x61, 0x72}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x99, 0x90, 0x90, 0xdf, 0x9d, 0x9e, 0x8d}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=7) {&#xA;&#x9;&#x9;            &#x9;- 00000000  66 6f 6f 20 62 61 72                              |foo bar|&#xA;&#x9;&#x9;            &#x9;+ 00000000  99 90 90 df 9d 9e 8d                              |.......|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessXorConst</pre>
+              <pre class="trace">process_xor_const_test.go:33: &#xA;&#x9;&#x9;Error Trace:&#x9;process_xor_const_test.go:33&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x66, 0x6f, 0x6f, 0x20, 0x62, 0x61, 0x72}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x99, 0x90, 0x90, 0xdf, 0x9d, 0x9e, 0x8d}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=7) {&#xA;&#x9;&#x9;            &#x9;- 00000000  66 6f 6f 20 62 61 72                              |foo bar|&#xA;&#x9;&#x9;            &#x9;+ 00000000  99 90 90 df 9d 9e 8d                              |.......|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessXorConst</pre>
 
           </div>
 
@@ -20052,7 +20058,7 @@ AssertionError: b'\x99\x90\x90\xdf\x9d\x9e\x8d' != b'foo bar'
 
               <div class="message">Failed</div>
 
-              <pre class="trace">process_xor_value_test.go:26: &#xA;&#x9;&#x9;Error Trace:&#x9;process_xor_value_test.go:26&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x66, 0x6f, 0x6f, 0x20, 0x62, 0x61, 0x72}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x99, 0x90, 0x90, 0xdf, 0x9d, 0x9e, 0x8d}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=7) {&#xA;&#x9;&#x9;            &#x9;- 00000000  66 6f 6f 20 62 61 72                              |foo bar|&#xA;&#x9;&#x9;            &#x9;+ 00000000  99 90 90 df 9d 9e 8d                              |.......|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessXorValue</pre>
+              <pre class="trace">process_xor_value_test.go:33: &#xA;&#x9;&#x9;Error Trace:&#x9;process_xor_value_test.go:33&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x66, 0x6f, 0x6f, 0x20, 0x62, 0x61, 0x72}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x99, 0x90, 0x90, 0xdf, 0x9d, 0x9e, 0x8d}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,3 +1,3 @@&#xA;&#x9;&#x9;            &#x9; ([]uint8) (len=7) {&#xA;&#x9;&#x9;            &#x9;- 00000000  66 6f 6f 20 62 61 72                              |foo bar|&#xA;&#x9;&#x9;            &#x9;+ 00000000  99 90 90 df 9d 9e 8d                              |.......|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestProcessXorValue</pre>
 
           </div>
 
@@ -20136,6 +20142,261 @@ AssertionError: b'\x99\x90\x90\xdf\x9d\x9e\x8d' != b'foo bar'
         </td>
 
         <td class="passed" title="ruby: RecursiveOne">passed
+
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>RepeatEosBit</td>
+
+        <td></td>
+
+        <td class="failed" title="construct2: RepeatEosBit">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_repeat_eos_bit
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_eos_bit.py", line 5, in <module>
+    from repeat_eos_bit import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_eos_bit.py", line 5
+    'nibbles' / GreedyRange(???),
+                            ^
+SyntaxError: invalid syntax
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_repeat_eos_bit
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_eos_bit.py", line 5, in <module>
+    from repeat_eos_bit import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_eos_bit.py", line 5
+    'nibbles' / GreedyRange(???),
+                            ^
+SyntaxError: invalid syntax
+
+
+		</pre>
+
+          </div>
+
+        </td>
+
+        <td class="failed" title="construct3: RepeatEosBit">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_repeat_eos_bit
+Traceback (most recent call last):
+  File "/opt/pyenv/versions/3.6.3/lib/python3.6/unittest/loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/pyenv/versions/3.6.3/lib/python3.6/unittest/loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_eos_bit.py", line 5, in <module>
+    from repeat_eos_bit import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_eos_bit.py", line 5
+    'nibbles' / GreedyRange(???),
+                            ^
+SyntaxError: invalid syntax
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_repeat_eos_bit
+Traceback (most recent call last):
+  File "/opt/pyenv/versions/3.6.3/lib/python3.6/unittest/loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/pyenv/versions/3.6.3/lib/python3.6/unittest/loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_repeat_eos_bit.py", line 5, in <module>
+    from repeat_eos_bit import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/repeat_eos_bit.py", line 5
+    'nibbles' / GreedyRange(???),
+                            ^
+SyntaxError: invalid syntax
+
+
+		</pre>
+
+          </div>
+
+        </td>
+
+        <td class="failed" title="cpp_stl: RepeatEosBit">failed
+
+          <div class="add-info">
+
+              <div class="filename">/home/travis/build/kaitai-io/kaitai_struct/tests/spec/cpp_stl_98/test_repeat_eos_bit.cpp:14</div>
+
+              <div class="message">check r->nibbles()->size() == 16 failed [15 != 16]</div>
+
+          </div>
+
+        </td>
+
+        <td class="no-run" title="csharp: RepeatEosBit">didn't run</td>
+
+        <td class="no-run" title="go: RepeatEosBit">didn't run</td>
+
+        <td class="failed" title="java: RepeatEosBit">failed
+
+          <div class="add-info">
+
+              <div class="message">expected [16] but found [15]</div>
+
+              <pre class="trace">
+      
+java.lang.AssertionError: expected [16] but found [15]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at io.kaitai.struct.spec.CommonSpec.assertIntEquals(CommonSpec.java:20)
+	at io.kaitai.struct.spec.TestRepeatEosBit.testRepeatEosBit(TestRepeatEosBit.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+
+
+    </pre>
+
+          </div>
+
+        </td>
+
+        <td class="no-run" title="javascript: RepeatEosBit">didn't run</td>
+
+        <td class="no-run" title="lua: RepeatEosBit">didn't run</td>
+
+        <td class="no-run" title="perl: RepeatEosBit">didn't run</td>
+
+        <td class="no-run" title="php: RepeatEosBit">didn't run</td>
+
+        <td></td>
+
+        <td class="failed" title="python2: RepeatEosBit">failed
+
+          <div class="add-info">
+
+              <div class="message">15 != 16</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_repeat_eos_bit.py", line 10, in test_repeat_eos_bit
+    self.assertEqual(len(r.nibbles), 16)
+AssertionError: 15 != 16
+
+		</pre>
+
+          </div>
+
+        </td>
+
+        <td class="failed" title="python3: RepeatEosBit">failed
+
+          <div class="add-info">
+
+              <div class="message">15 != 16</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_repeat_eos_bit.py", line 10, in test_repeat_eos_bit
+    self.assertEqual(len(r.nibbles), 16)
+AssertionError: 15 != 16
+
+		</pre>
+
+          </div>
+
+        </td>
+
+        <td class="failed" title="ruby: RepeatEosBit">failed
+
+          <div class="add-info">
+
+              <div class="filename">./spec/ruby/repeat_eos_bit_spec.rb:6</div>
+
+              <div class="message">
+expected: 16
+     got: 15
+
+(compared using ==)
+</div>
+
+              <pre class="trace">/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-support-3.8.0/lib/rspec/support.rb:97:in `block in <module:Support>'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-support-3.8.0/lib/rspec/support.rb:106:in `notify_failure'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-expectations-3.8.2/lib/rspec/expectations/fail_with.rb:35:in `fail_with'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-expectations-3.8.2/lib/rspec/expectations/handler.rb:38:in `handle_failure'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-expectations-3.8.2/lib/rspec/expectations/handler.rb:50:in `block in handle_matcher'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-expectations-3.8.2/lib/rspec/expectations/handler.rb:27:in `with_matcher'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-expectations-3.8.2/lib/rspec/expectations/handler.rb:48:in `handle_matcher'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-expectations-3.8.2/lib/rspec/expectations/expectation_target.rb:65:in `to'
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/ruby/repeat_eos_bit_spec.rb:9:in `block (2 levels) in <top (required)>'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example.rb:254:in `instance_exec'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example.rb:254:in `block in run'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example.rb:500:in `block in with_around_and_singleton_context_hooks'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example.rb:457:in `block in with_around_example_hooks'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/hooks.rb:464:in `block in run'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/hooks.rb:602:in `run_around_example_hooks_for'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/hooks.rb:464:in `run'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example.rb:457:in `with_around_example_hooks'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example.rb:500:in `with_around_and_singleton_context_hooks'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example.rb:251:in `run'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example_group.rb:629:in `block in run_examples'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example_group.rb:625:in `map'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example_group.rb:625:in `run_examples'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example_group.rb:591:in `run'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:116:in `block (3 levels) in run_specs'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:116:in `map'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:116:in `block (2 levels) in run_specs'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/configuration.rb:1989:in `with_suite_hooks'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:111:in `block in run_specs'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/reporter.rb:74:in `report'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:110:in `run_specs'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:87:in `run'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:71:in `run'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:45:in `invoke'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/exe/rspec:4:in `<top (required)>'
+/home/travis/.rvm/gems/ruby-2.4.1/bin/rspec:23:in `load'
+/home/travis/.rvm/gems/ruby-2.4.1/bin/rspec:23:in `<main>'
+/home/travis/.rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `eval'
+/home/travis/.rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `<main>'</pre>
+
+          </div>
 
         </td>
 
@@ -20339,7 +20600,7 @@ AssertionError: b'\x99\x90\x90\xdf\x9d\x9e\x8d' != b'foo bar'
 
               <div class="message">Failed</div>
 
-              <pre class="trace">repeat_n_strz_test.go:22: EOF</pre>
+              <pre class="trace">repeat_n_strz_test.go:29: EOF</pre>
 
           </div>
 
@@ -20404,7 +20665,7 @@ AssertionError: b'\x99\x90\x90\xdf\x9d\x9e\x8d' != b'foo bar'
 
               <div class="message">Failed</div>
 
-              <pre class="trace">repeat_n_strz_double_test.go:22: EOF</pre>
+              <pre class="trace">repeat_n_strz_double_test.go:29: EOF</pre>
 
           </div>
 
@@ -20499,7 +20760,7 @@ AssertionError: <bound method Container.values of Contain[43 chars]4]))> != [1, 
 
               <div class="message">Failed</div>
 
-              <pre class="trace">repeat_until_complex_test.go:27: &#xA;&#x9;&#x9;Error Trace:&#x9;repeat_until_complex_test.go:27&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []int([]int{1, 2, 3, 4})&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0x1, 0x2, 0x3, 0x4})&#xA;&#x9;&#x9;Test:       &#x9;TestRepeatUntilComplex&#xA;repeat_until_complex_test.go:29: &#xA;&#x9;&#x9;Error Trace:&#x9;repeat_until_complex_test.go:29&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []int([]int{1, 2})&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0x1, 0x2})&#xA;&#x9;&#x9;Test:       &#x9;TestRepeatUntilComplex&#xA;repeat_until_complex_test.go:33: &#xA;&#x9;&#x9;Error Trace:&#x9;repeat_until_complex_test.go:33&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []int([]int{1, 2, 3, 4, 5, 6})&#xA;&#x9;&#x9;            &#x9;actual  : []uint16([]uint16{0x1, 0x2, 0x3, 0x4, 0x5, 0x6})&#xA;&#x9;&#x9;Test:       &#x9;TestRepeatUntilComplex&#xA;repeat_until_complex_test.go:35: &#xA;&#x9;&#x9;Error Trace:&#x9;repeat_until_complex_test.go:35&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []int([]int{1, 2, 3})&#xA;&#x9;&#x9;            &#x9;actual  : []uint16([]uint16{0x1, 0x2, 0x3})&#xA;&#x9;&#x9;Test:       &#x9;TestRepeatUntilComplex&#xA;repeat_until_complex_test.go:37: &#xA;&#x9;&#x9;Error Trace:&#x9;repeat_until_complex_test.go:37&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []int([]int{1, 2, 3, 4})&#xA;&#x9;&#x9;            &#x9;actual  : []uint16([]uint16{0x1, 0x2, 0x3, 0x4})&#xA;&#x9;&#x9;Test:       &#x9;TestRepeatUntilComplex&#xA;repeat_until_complex_test.go:39: &#xA;&#x9;&#x9;Error Trace:&#x9;repeat_until_complex_test.go:39&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []int([]int{102, 111, 111, 98, 97, 114, 0})&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0x66, 0x6f, 0x6f, 0x62, 0x61, 0x72, 0x0})&#xA;&#x9;&#x9;Test:       &#x9;TestRepeatUntilComplex</pre>
+              <pre class="trace">repeat_until_complex_test.go:34: &#xA;&#x9;&#x9;Error Trace:&#x9;repeat_until_complex_test.go:34&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []int([]int{1, 2, 3, 4})&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0x1, 0x2, 0x3, 0x4})&#xA;&#x9;&#x9;Test:       &#x9;TestRepeatUntilComplex&#xA;repeat_until_complex_test.go:36: &#xA;&#x9;&#x9;Error Trace:&#x9;repeat_until_complex_test.go:36&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []int([]int{1, 2})&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0x1, 0x2})&#xA;&#x9;&#x9;Test:       &#x9;TestRepeatUntilComplex&#xA;repeat_until_complex_test.go:40: &#xA;&#x9;&#x9;Error Trace:&#x9;repeat_until_complex_test.go:40&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []int([]int{1, 2, 3, 4, 5, 6})&#xA;&#x9;&#x9;            &#x9;actual  : []uint16([]uint16{0x1, 0x2, 0x3, 0x4, 0x5, 0x6})&#xA;&#x9;&#x9;Test:       &#x9;TestRepeatUntilComplex&#xA;repeat_until_complex_test.go:42: &#xA;&#x9;&#x9;Error Trace:&#x9;repeat_until_complex_test.go:42&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []int([]int{1, 2, 3})&#xA;&#x9;&#x9;            &#x9;actual  : []uint16([]uint16{0x1, 0x2, 0x3})&#xA;&#x9;&#x9;Test:       &#x9;TestRepeatUntilComplex&#xA;repeat_until_complex_test.go:44: &#xA;&#x9;&#x9;Error Trace:&#x9;repeat_until_complex_test.go:44&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []int([]int{1, 2, 3, 4})&#xA;&#x9;&#x9;            &#x9;actual  : []uint16([]uint16{0x1, 0x2, 0x3, 0x4})&#xA;&#x9;&#x9;Test:       &#x9;TestRepeatUntilComplex&#xA;repeat_until_complex_test.go:46: &#xA;&#x9;&#x9;Error Trace:&#x9;repeat_until_complex_test.go:46&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []int([]int{102, 111, 111, 98, 97, 114, 0})&#xA;&#x9;&#x9;            &#x9;actual  : []uint8([]byte{0x66, 0x6f, 0x6f, 0x62, 0x61, 0x72, 0x0})&#xA;&#x9;&#x9;Test:       &#x9;TestRepeatUntilComplex</pre>
 
           </div>
 
@@ -20951,7 +21212,7 @@ AssertionError: <bound method Container.values of Contain[43 chars]4]))> != [1, 
 
               <div class="message">Failed</div>
 
-              <pre class="trace">str_pad_term_test.go:25: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_test.go:25&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;str1&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;str1@@@@@@@@@@@@@@@@&#34;&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1 +1 @@&#xA;&#x9;&#x9;            &#x9;-str1&#xA;&#x9;&#x9;            &#x9;+str1@@@@@@@@@@@@@@@@&#xA;&#x9;&#x9;Test:       &#x9;TestStrPadTerm&#xA;str_pad_term_test.go:26: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_test.go:26&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;str2foo&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;str2foo@++++++++++++&#34;&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1 +1 @@&#xA;&#x9;&#x9;            &#x9;-str2foo&#xA;&#x9;&#x9;            &#x9;+str2foo@++++++++++++&#xA;&#x9;&#x9;Test:       &#x9;TestStrPadTerm&#xA;str_pad_term_test.go:27: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_test.go:27&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;str+++3bar+++&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;str+++3bar+++@++++++&#34;&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1 +1 @@&#xA;&#x9;&#x9;            &#x9;-str+++3bar+++&#xA;&#x9;&#x9;            &#x9;+str+++3bar+++@++++++&#xA;&#x9;&#x9;Test:       &#x9;TestStrPadTerm&#xA;str_pad_term_test.go:28: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_test.go:28&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;str4baz@&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;str4baz@............&#34;&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1 +1 @@&#xA;&#x9;&#x9;            &#x9;-str4baz@&#xA;&#x9;&#x9;            &#x9;+str4baz@............&#xA;&#x9;&#x9;Test:       &#x9;TestStrPadTerm</pre>
+              <pre class="trace">str_pad_term_test.go:32: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_test.go:32&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;str1&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;str1@@@@@@@@@@@@@@@@&#34;&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1 +1 @@&#xA;&#x9;&#x9;            &#x9;-str1&#xA;&#x9;&#x9;            &#x9;+str1@@@@@@@@@@@@@@@@&#xA;&#x9;&#x9;Test:       &#x9;TestStrPadTerm&#xA;str_pad_term_test.go:33: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_test.go:33&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;str2foo&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;str2foo@++++++++++++&#34;&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1 +1 @@&#xA;&#x9;&#x9;            &#x9;-str2foo&#xA;&#x9;&#x9;            &#x9;+str2foo@++++++++++++&#xA;&#x9;&#x9;Test:       &#x9;TestStrPadTerm&#xA;str_pad_term_test.go:34: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_test.go:34&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;str+++3bar+++&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;str+++3bar+++@++++++&#34;&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1 +1 @@&#xA;&#x9;&#x9;            &#x9;-str+++3bar+++&#xA;&#x9;&#x9;            &#x9;+str+++3bar+++@++++++&#xA;&#x9;&#x9;Test:       &#x9;TestStrPadTerm&#xA;str_pad_term_test.go:35: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_test.go:35&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;str4baz@&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;str4baz@............&#34;&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1 +1 @@&#xA;&#x9;&#x9;            &#x9;-str4baz@&#xA;&#x9;&#x9;            &#x9;+str4baz@............&#xA;&#x9;&#x9;Test:       &#x9;TestStrPadTerm</pre>
 
           </div>
 
@@ -21016,7 +21277,7 @@ AssertionError: <bound method Container.values of Contain[43 chars]4]))> != [1, 
 
               <div class="message">Failed</div>
 
-              <pre class="trace">str_pad_term_empty_test.go:25: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_empty_test.go:25&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;@@@@@@@@@@@@@@@@@@@@&#34;&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1 +1 @@&#xA;&#x9;&#x9;            &#x9;-&#xA;&#x9;&#x9;            &#x9;+@@@@@@@@@@@@@@@@@@@@&#xA;&#x9;&#x9;Test:       &#x9;TestStrPadTermEmpty&#xA;str_pad_term_empty_test.go:26: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_empty_test.go:26&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;@@@@@@@@++++++++++++&#34;&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1 +1 @@&#xA;&#x9;&#x9;            &#x9;-&#xA;&#x9;&#x9;            &#x9;+@@@@@@@@++++++++++++&#xA;&#x9;&#x9;Test:       &#x9;TestStrPadTermEmpty&#xA;str_pad_term_empty_test.go:27: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_empty_test.go:27&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;@tr+++3bar+++@++++++&#34;&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1 +1 @@&#xA;&#x9;&#x9;            &#x9;-&#xA;&#x9;&#x9;            &#x9;+@tr+++3bar+++@++++++&#xA;&#x9;&#x9;Test:       &#x9;TestStrPadTermEmpty&#xA;str_pad_term_empty_test.go:28: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_empty_test.go:28&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;@&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;@@@@@@@@............&#34;&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1 +1 @@&#xA;&#x9;&#x9;            &#x9;-@&#xA;&#x9;&#x9;            &#x9;+@@@@@@@@............&#xA;&#x9;&#x9;Test:       &#x9;TestStrPadTermEmpty</pre>
+              <pre class="trace">str_pad_term_empty_test.go:32: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_empty_test.go:32&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;@@@@@@@@@@@@@@@@@@@@&#34;&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1 +1 @@&#xA;&#x9;&#x9;            &#x9;-&#xA;&#x9;&#x9;            &#x9;+@@@@@@@@@@@@@@@@@@@@&#xA;&#x9;&#x9;Test:       &#x9;TestStrPadTermEmpty&#xA;str_pad_term_empty_test.go:33: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_empty_test.go:33&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;@@@@@@@@++++++++++++&#34;&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1 +1 @@&#xA;&#x9;&#x9;            &#x9;-&#xA;&#x9;&#x9;            &#x9;+@@@@@@@@++++++++++++&#xA;&#x9;&#x9;Test:       &#x9;TestStrPadTermEmpty&#xA;str_pad_term_empty_test.go:34: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_empty_test.go:34&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;@tr+++3bar+++@++++++&#34;&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1 +1 @@&#xA;&#x9;&#x9;            &#x9;-&#xA;&#x9;&#x9;            &#x9;+@tr+++3bar+++@++++++&#xA;&#x9;&#x9;Test:       &#x9;TestStrPadTermEmpty&#xA;str_pad_term_empty_test.go:35: &#xA;&#x9;&#x9;Error Trace:&#x9;str_pad_term_empty_test.go:35&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: &#34;@&#34;&#xA;&#x9;&#x9;            &#x9;actual  : &#34;@@@@@@@@............&#34;&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1 +1 @@&#xA;&#x9;&#x9;            &#x9;-@&#xA;&#x9;&#x9;            &#x9;+@@@@@@@@............&#xA;&#x9;&#x9;Test:       &#x9;TestStrPadTermEmpty</pre>
 
           </div>
 
@@ -21389,7 +21650,13 @@ AssertionError: <bound method Container.values of Contain[43 chars]4]))> != [1, 
 
         </td>
 
-        <td class="passed" title="cpp_stl: SwitchManualIntElse">passed
+        <td class="leak" title="cpp_stl: SwitchManualIntElse">leak
+
+          <div class="add-info">
+
+              <div class="message">80 bytes in 2 blocks are definitely lost in loss record 14 of 22</div>
+
+          </div>
 
         </td>
 
@@ -21491,7 +21758,13 @@ AssertionError: <bound method Container.values of Contain[43 chars]4]))> != [1, 
 
         <td class="no-run" title="construct3: SwitchManualIntSizeElse">didn't run</td>
 
-        <td class="passed" title="cpp_stl: SwitchManualIntSizeElse">passed
+        <td class="leak" title="cpp_stl: SwitchManualIntSizeElse">leak
+
+          <div class="add-info">
+
+              <div class="message">195 (40 direct, 155 indirect) bytes in 1 blocks are definitely lost in loss record 21 of 22</div>
+
+          </div>
 
         </td>
 
@@ -21652,7 +21925,13 @@ AssertionError: <bound method Container.values of Contain[43 chars]4]))> != [1, 
 
         </td>
 
-        <td class="passed" title="cpp_stl: SwitchManualStrElse">passed
+        <td class="leak" title="cpp_stl: SwitchManualStrElse">leak
+
+          <div class="add-info">
+
+              <div class="message">80 bytes in 2 blocks are definitely lost in loss record 15 of 22</div>
+
+          </div>
 
         </td>
 
@@ -21823,7 +22102,7 @@ AssertionError: <bound method Container.values of Contain[43 chars]4]))> != [1, 
 
               <div class="message">Failed</div>
 
-              <pre class="trace">term_bytes_test.go:22: EOF</pre>
+              <pre class="trace">term_bytes_test.go:29: EOF</pre>
 
           </div>
 
@@ -21888,7 +22167,7 @@ AssertionError: <bound method Container.values of Contain[43 chars]4]))> != [1, 
 
               <div class="message">Failed</div>
 
-              <pre class="trace">term_strz_test.go:22: EOF</pre>
+              <pre class="trace">term_strz_test.go:29: EOF</pre>
 
           </div>
 
@@ -22091,7 +22370,7 @@ AssertionError: 102 != 101
 
               <div class="message">Failed</div>
 
-              <pre class="trace">type_ternary_test.go:29: &#xA;&#x9;&#x9;Error Trace:&#x9;type_ternary_test.go:29&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: int(101)&#xA;&#x9;&#x9;            &#x9;actual  : uint8(0x66)&#xA;&#x9;&#x9;Test:       &#x9;TestTypeTernary</pre>
+              <pre class="trace">type_ternary_test.go:36: &#xA;&#x9;&#x9;Error Trace:&#x9;type_ternary_test.go:36&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: int(101)&#xA;&#x9;&#x9;            &#x9;actual  : uint8(0x66)&#xA;&#x9;&#x9;Test:       &#x9;TestTypeTernary</pre>
 
           </div>
 
@@ -22343,7 +22622,7 @@ AssertionError: b'x\x9cKT(,\xcdL\xceVH*\xca/\xcfSH\xcb\xafP[37 chars]\x7f' != b'
 
               <div class="message">Failed</div>
 
-              <pre class="trace">zlib_with_header_78_test.go:25: &#xA;&#x9;&#x9;Error Trace:&#x9;zlib_with_header_78_test.go:25&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x61, 0x20, 0x71, 0x75, 0x69, 0x63, 0x6b, 0x20, 0x62, 0x72, 0x6f, 0x77, 0x6e, 0x20, 0x66, 0x6f, 0x78, 0x20, 0x6a, 0x75, 0x6d, 0x70, 0x73, 0x20, 0x6f, 0x76, 0x65, 0x72}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x78, 0x9c, 0x4b, 0x54, 0x28, 0x2c, 0xcd, 0x4c, 0xce, 0x56, 0x48, 0x2a, 0xca, 0x2f, 0xcf, 0x53, 0x48, 0xcb, 0xaf, 0x50, 0xc8, 0x2a, 0xcd, 0x2d, 0x28, 0x56, 0xc8, 0x2f, 0x4b, 0x2d, 0x2, 0x0, 0x94, 0xbd, 0xa, 0x7f}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,4 +1,5 @@&#xA;&#x9;&#x9;            &#x9;-([]uint8) (len=28) {&#xA;&#x9;&#x9;            &#x9;- 00000000  61 20 71 75 69 63 6b 20  62 72 6f 77 6e 20 66 6f  |a quick brown fo|&#xA;&#x9;&#x9;            &#x9;- 00000010  78 20 6a 75 6d 70 73 20  6f 76 65 72              |x jumps over|&#xA;&#x9;&#x9;            &#x9;+([]uint8) (len=36) {&#xA;&#x9;&#x9;            &#x9;+ 00000000  78 9c 4b 54 28 2c cd 4c  ce 56 48 2a ca 2f cf 53  |x.KT(,.L.VH*./.S|&#xA;&#x9;&#x9;            &#x9;+ 00000010  48 cb af 50 c8 2a cd 2d  28 56 c8 2f 4b 2d 02 00  |H..P.*.-(V./K-..|&#xA;&#x9;&#x9;            &#x9;+ 00000020  94 bd 0a 7f                                       |....|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestZlibWithHeader78</pre>
+              <pre class="trace">zlib_with_header_78_test.go:32: &#xA;&#x9;&#x9;Error Trace:&#x9;zlib_with_header_78_test.go:32&#xA;&#x9;&#x9;Error:      &#x9;Not equal: &#xA;&#x9;&#x9;            &#x9;expected: []byte{0x61, 0x20, 0x71, 0x75, 0x69, 0x63, 0x6b, 0x20, 0x62, 0x72, 0x6f, 0x77, 0x6e, 0x20, 0x66, 0x6f, 0x78, 0x20, 0x6a, 0x75, 0x6d, 0x70, 0x73, 0x20, 0x6f, 0x76, 0x65, 0x72}&#xA;&#x9;&#x9;            &#x9;actual  : []byte{0x78, 0x9c, 0x4b, 0x54, 0x28, 0x2c, 0xcd, 0x4c, 0xce, 0x56, 0x48, 0x2a, 0xca, 0x2f, 0xcf, 0x53, 0x48, 0xcb, 0xaf, 0x50, 0xc8, 0x2a, 0xcd, 0x2d, 0x28, 0x56, 0xc8, 0x2f, 0x4b, 0x2d, 0x2, 0x0, 0x94, 0xbd, 0xa, 0x7f}&#xA;&#x9;&#x9;            &#x9;&#xA;&#x9;&#x9;            &#x9;Diff:&#xA;&#x9;&#x9;            &#x9;--- Expected&#xA;&#x9;&#x9;            &#x9;+++ Actual&#xA;&#x9;&#x9;            &#x9;@@ -1,4 +1,5 @@&#xA;&#x9;&#x9;            &#x9;-([]uint8) (len=28) {&#xA;&#x9;&#x9;            &#x9;- 00000000  61 20 71 75 69 63 6b 20  62 72 6f 77 6e 20 66 6f  |a quick brown fo|&#xA;&#x9;&#x9;            &#x9;- 00000010  78 20 6a 75 6d 70 73 20  6f 76 65 72              |x jumps over|&#xA;&#x9;&#x9;            &#x9;+([]uint8) (len=36) {&#xA;&#x9;&#x9;            &#x9;+ 00000000  78 9c 4b 54 28 2c cd 4c  ce 56 48 2a ca 2f cf 53  |x.KT(,.L.VH*./.S|&#xA;&#x9;&#x9;            &#x9;+ 00000010  48 cb af 50 c8 2a cd 2d  28 56 c8 2f 4b 2d 02 00  |H..P.*.-(V./K-..|&#xA;&#x9;&#x9;            &#x9;+ 00000020  94 bd 0a 7f                                       |....|&#xA;&#x9;&#x9;            &#x9; }&#xA;&#x9;&#x9;Test:       &#x9;TestZlibWithHeader78</pre>
 
           </div>
 
