@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kaitai Struct: test results - 2019-03-28 23:45:34 UTC</title>
+    <title>Kaitai Struct: test results - 2019-03-29 20:50:41 UTC</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -49,7 +49,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Kaitai Struct: build and test results, 2019-03-28 23:45:34 UTC</h1>
+    <h1>Kaitai Struct: build and test results, 2019-03-29 20:50:41 UTC</h1>
 
     <table class="table">
     <tr>
@@ -8022,7 +8022,7 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
 
         <td>95%</td>
 
-        <td>90%</td>
+        <td>89%</td>
 
         <td>40%</td>
 
@@ -8030,17 +8030,17 @@ tmp1[len(tmp1) - ]1]&quot; was not equal to &quot;t[his.A[len(this.A)-]1]&quot;
 
         <td>0%</td>
 
-        <td>90%</td>
+        <td>89%</td>
 
-        <td>85%</td>
+        <td>84%</td>
 
         <td>0%</td>
 
         <td></td>
 
-        <td>98%</td>
+        <td>99%</td>
 
-        <td>98%</td>
+        <td>99%</td>
 
         <td>99%</td>
 
@@ -14012,41 +14012,11 @@ ModuleNotFoundError: No module named 'default_endian_expr_is_le'
 
         <td></td>
 
-        <td class="failed" title="python2: EnumForUnknownId">failed
-
-          <div class="add-info">
-
-              <div class="message">ValueError not raised</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_enum_for_unknown_id.py", line 9, in test_enum_for_unknown_id
-    pass
-AssertionError: ValueError not raised
-
-		</pre>
-
-          </div>
+        <td class="passed" title="python2: EnumForUnknownId">passed
 
         </td>
 
-        <td class="failed" title="python3: EnumForUnknownId">failed
-
-          <div class="add-info">
-
-              <div class="message">ValueError not raised</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_enum_for_unknown_id.py", line 9, in test_enum_for_unknown_id
-    pass
-AssertionError: ValueError not raised
-
-		</pre>
-
-          </div>
+        <td class="passed" title="python3: EnumForUnknownId">passed
 
         </td>
 
@@ -16997,6 +16967,265 @@ SyntaxError: invalid syntax
         </td>
 
         <td class="passed" title="ruby: Integers">passed
+
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>IoLocalVar</td>
+
+        <td></td>
+
+        <td class="failed" title="construct2: IoLocalVar">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_io_local_var
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_io_local_var.py", line 5, in <module>
+    from io_local_var import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/io_local_var.py", line 9, in <module>
+    'always_null' / If(stream_tell(this.mess_up._io) < 0, Int8ub),
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 125, in stream_tell
+    raise StreamError("stream.tell() failed")
+StreamError: stream.tell() failed
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_io_local_var
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_io_local_var.py", line 5, in <module>
+    from io_local_var import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/io_local_var.py", line 9, in <module>
+    'always_null' / If(stream_tell(this.mess_up._io) < 0, Int8ub),
+  File "/home/travis/.local/lib/python2.7/site-packages/construct/core.py", line 125, in stream_tell
+    raise StreamError("stream.tell() failed")
+StreamError: stream.tell() failed
+
+
+		</pre>
+
+          </div>
+
+        </td>
+
+        <td class="failed" title="construct3: IoLocalVar">failed
+
+          <div class="add-info">
+
+              <div class="message">Failed to import test module: test_io_local_var
+Traceback (most recent call last):
+  File "/home/travis/.local/lib/python3.6/site-packages/construct/core.py", line 123, in stream_tell
+    return stream.tell()
+TypeError: __call__() missing 1 required positional argument: 'obj'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/pyenv/versions/3.6.3/lib/python3.6/unittest/loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/pyenv/versions/3.6.3/lib/python3.6/unittest/loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_io_local_var.py", line 5, in <module>
+    from io_local_var import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/io_local_var.py", line 9, in <module>
+    'always_null' / If(stream_tell(this.mess_up._io) < 0, Int8ub),
+  File "/home/travis/.local/lib/python3.6/site-packages/construct/core.py", line 125, in stream_tell
+    raise StreamError("stream.tell() failed")
+construct.core.StreamError: stream.tell() failed
+</div>
+
+              <pre class="trace">
+
+ImportError: Failed to import test module: test_io_local_var
+Traceback (most recent call last):
+  File "/home/travis/.local/lib/python3.6/site-packages/construct/core.py", line 123, in stream_tell
+    return stream.tell()
+TypeError: __call__() missing 1 required positional argument: 'obj'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/pyenv/versions/3.6.3/lib/python3.6/unittest/loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/pyenv/versions/3.6.3/lib/python3.6/unittest/loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/construct/test_io_local_var.py", line 5, in <module>
+    from io_local_var import _schema
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/compiled/construct/io_local_var.py", line 9, in <module>
+    'always_null' / If(stream_tell(this.mess_up._io) < 0, Int8ub),
+  File "/home/travis/.local/lib/python3.6/site-packages/construct/core.py", line 125, in stream_tell
+    raise StreamError("stream.tell() failed")
+construct.core.StreamError: stream.tell() failed
+
+
+		</pre>
+
+          </div>
+
+        </td>
+
+        <td class="no-run" title="cpp_stl: IoLocalVar">didn't run</td>
+
+        <td class="no-run" title="csharp: IoLocalVar">didn't run</td>
+
+        <td class="no-run" title="go: IoLocalVar">didn't run</td>
+
+        <td class="failed" title="java: IoLocalVar">failed
+
+          <div class="add-info">
+
+              <div class="message">../../src/full256.bin</div>
+
+              <pre class="trace">
+      
+java.nio.file.NoSuchFileException: ../../src/full256.bin
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newFileChannel(UnixFileSystemProvider.java:177)
+	at java.nio.channels.FileChannel.open(FileChannel.java:287)
+	at java.nio.channels.FileChannel.open(FileChannel.java:335)
+	at io.kaitai.struct.ByteBufferKaitaiStream.<init>(ByteBufferKaitaiStream.java:28)
+	at io.kaitai.struct.testformats.IoLocalVar.fromFile(IoLocalVar.java:12)
+	at io.kaitai.struct.spec.TestIoLocalVar.testIoLocalVar(TestIoLocalVar.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+
+
+    </pre>
+
+          </div>
+
+        </td>
+
+        <td class="no-run" title="javascript: IoLocalVar">didn't run</td>
+
+        <td class="no-run" title="lua: IoLocalVar">didn't run</td>
+
+        <td class="no-run" title="perl: IoLocalVar">didn't run</td>
+
+        <td class="no-run" title="php: IoLocalVar">didn't run</td>
+
+        <td></td>
+
+        <td class="failed" title="python2: IoLocalVar">failed
+
+          <div class="add-info">
+
+              <div class="message">[Errno 2] No such file or directory: 'src/full256.bin'</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_io_local_var.py", line 9, in test_io_local_var
+    with IoLocalVar.from_file('src/full256.bin') as r:
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 33, in from_file
+    f = open(filename, 'rb')
+IOError: [Errno 2] No such file or directory: 'src/full256.bin'
+
+		</pre>
+
+          </div>
+
+        </td>
+
+        <td class="failed" title="python3: IoLocalVar">failed
+
+          <div class="add-info">
+
+              <div class="message">[Errno 2] No such file or directory: 'src/full256.bin'</div>
+
+              <pre class="trace">
+
+Traceback (most recent call last):
+  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_io_local_var.py", line 9, in test_io_local_var
+    with IoLocalVar.from_file('src/full256.bin') as r:
+  File "/home/travis/build/kaitai-io/kaitai_struct/runtime/python/kaitaistruct.py", line 33, in from_file
+    f = open(filename, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'src/full256.bin'
+
+		</pre>
+
+          </div>
+
+        </td>
+
+        <td class="failed" title="ruby: IoLocalVar">failed
+
+          <div class="add-info">
+
+              <div class="filename">./spec/ruby/io_local_var_spec.rb:6</div>
+
+              <div class="message">No such file or directory @ rb_sysopen - src/full256.bin</div>
+
+              <pre class="trace">/home/travis/build/kaitai-io/kaitai_struct/runtime/ruby/lib/kaitai/struct/struct.rb:117:in `initialize'
+/home/travis/build/kaitai-io/kaitai_struct/runtime/ruby/lib/kaitai/struct/struct.rb:117:in `open'
+/home/travis/build/kaitai-io/kaitai_struct/runtime/ruby/lib/kaitai/struct/struct.rb:117:in `open'
+/home/travis/build/kaitai-io/kaitai_struct/runtime/ruby/lib/kaitai/struct/struct.rb:26:in `from_file'
+/home/travis/build/kaitai-io/kaitai_struct/tests/spec/ruby/io_local_var_spec.rb:7:in `block (2 levels) in <top (required)>'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example.rb:254:in `instance_exec'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example.rb:254:in `block in run'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example.rb:500:in `block in with_around_and_singleton_context_hooks'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example.rb:457:in `block in with_around_example_hooks'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/hooks.rb:464:in `block in run'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/hooks.rb:602:in `run_around_example_hooks_for'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/hooks.rb:464:in `run'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example.rb:457:in `with_around_example_hooks'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example.rb:500:in `with_around_and_singleton_context_hooks'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example.rb:251:in `run'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example_group.rb:629:in `block in run_examples'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example_group.rb:625:in `map'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example_group.rb:625:in `run_examples'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example_group.rb:591:in `run'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:116:in `block (3 levels) in run_specs'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:116:in `map'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:116:in `block (2 levels) in run_specs'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/configuration.rb:1989:in `with_suite_hooks'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:111:in `block in run_specs'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/reporter.rb:74:in `report'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:110:in `run_specs'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:87:in `run'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:71:in `run'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:45:in `invoke'
+/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/exe/rspec:4:in `<top (required)>'
+/home/travis/.rvm/gems/ruby-2.4.1/bin/rspec:23:in `load'
+/home/travis/.rvm/gems/ruby-2.4.1/bin/rspec:23:in `<main>'
+/home/travis/.rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `eval'
+/home/travis/.rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `<main>'</pre>
+
+          </div>
 
         </td>
 
@@ -20232,15 +20461,7 @@ SyntaxError: invalid syntax
 
         </td>
 
-        <td class="failed" title="cpp_stl: RepeatEosBit">failed
-
-          <div class="add-info">
-
-              <div class="filename">/home/travis/build/kaitai-io/kaitai_struct/tests/spec/cpp_stl_98/test_repeat_eos_bit.cpp:14</div>
-
-              <div class="message">check r->nibbles()->size() == 16 failed [15 != 16]</div>
-
-          </div>
+        <td class="passed" title="cpp_stl: RepeatEosBit">passed
 
         </td>
 
@@ -20248,51 +20469,7 @@ SyntaxError: invalid syntax
 
         <td class="no-run" title="go: RepeatEosBit">didn't run</td>
 
-        <td class="failed" title="java: RepeatEosBit">failed
-
-          <div class="add-info">
-
-              <div class="message">expected [16] but found [15]</div>
-
-              <pre class="trace">
-      
-java.lang.AssertionError: expected [16] but found [15]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:389)
-	at org.testng.Assert.assertEquals(Assert.java:399)
-	at io.kaitai.struct.spec.CommonSpec.assertIntEquals(CommonSpec.java:20)
-	at io.kaitai.struct.spec.TestRepeatEosBit.testRepeatEosBit(TestRepeatEosBit.java:13)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.TestNG.privateMain(TestNG.java:1385)
-	at org.testng.TestNG.main(TestNG.java:1354)
-
-
-    </pre>
-
-          </div>
+        <td class="passed" title="java: RepeatEosBit">passed
 
         </td>
 
@@ -20306,97 +20483,15 @@ java.lang.AssertionError: expected [16] but found [15]
 
         <td></td>
 
-        <td class="failed" title="python2: RepeatEosBit">failed
-
-          <div class="add-info">
-
-              <div class="message">15 != 16</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_repeat_eos_bit.py", line 10, in test_repeat_eos_bit
-    self.assertEqual(len(r.nibbles), 16)
-AssertionError: 15 != 16
-
-		</pre>
-
-          </div>
+        <td class="passed" title="python2: RepeatEosBit">passed
 
         </td>
 
-        <td class="failed" title="python3: RepeatEosBit">failed
-
-          <div class="add-info">
-
-              <div class="message">15 != 16</div>
-
-              <pre class="trace">
-
-Traceback (most recent call last):
-  File "/home/travis/build/kaitai-io/kaitai_struct/tests/spec/python/test_repeat_eos_bit.py", line 10, in test_repeat_eos_bit
-    self.assertEqual(len(r.nibbles), 16)
-AssertionError: 15 != 16
-
-		</pre>
-
-          </div>
+        <td class="passed" title="python3: RepeatEosBit">passed
 
         </td>
 
-        <td class="failed" title="ruby: RepeatEosBit">failed
-
-          <div class="add-info">
-
-              <div class="filename">./spec/ruby/repeat_eos_bit_spec.rb:6</div>
-
-              <div class="message">
-expected: 16
-     got: 15
-
-(compared using ==)
-</div>
-
-              <pre class="trace">/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-support-3.8.0/lib/rspec/support.rb:97:in `block in <module:Support>'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-support-3.8.0/lib/rspec/support.rb:106:in `notify_failure'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-expectations-3.8.2/lib/rspec/expectations/fail_with.rb:35:in `fail_with'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-expectations-3.8.2/lib/rspec/expectations/handler.rb:38:in `handle_failure'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-expectations-3.8.2/lib/rspec/expectations/handler.rb:50:in `block in handle_matcher'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-expectations-3.8.2/lib/rspec/expectations/handler.rb:27:in `with_matcher'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-expectations-3.8.2/lib/rspec/expectations/handler.rb:48:in `handle_matcher'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-expectations-3.8.2/lib/rspec/expectations/expectation_target.rb:65:in `to'
-/home/travis/build/kaitai-io/kaitai_struct/tests/spec/ruby/repeat_eos_bit_spec.rb:9:in `block (2 levels) in <top (required)>'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example.rb:254:in `instance_exec'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example.rb:254:in `block in run'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example.rb:500:in `block in with_around_and_singleton_context_hooks'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example.rb:457:in `block in with_around_example_hooks'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/hooks.rb:464:in `block in run'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/hooks.rb:602:in `run_around_example_hooks_for'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/hooks.rb:464:in `run'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example.rb:457:in `with_around_example_hooks'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example.rb:500:in `with_around_and_singleton_context_hooks'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example.rb:251:in `run'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example_group.rb:629:in `block in run_examples'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example_group.rb:625:in `map'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example_group.rb:625:in `run_examples'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/example_group.rb:591:in `run'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:116:in `block (3 levels) in run_specs'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:116:in `map'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:116:in `block (2 levels) in run_specs'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/configuration.rb:1989:in `with_suite_hooks'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:111:in `block in run_specs'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/reporter.rb:74:in `report'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:110:in `run_specs'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:87:in `run'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:71:in `run'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:45:in `invoke'
-/home/travis/.rvm/gems/ruby-2.4.1/gems/rspec-core-3.8.0/exe/rspec:4:in `<top (required)>'
-/home/travis/.rvm/gems/ruby-2.4.1/bin/rspec:23:in `load'
-/home/travis/.rvm/gems/ruby-2.4.1/bin/rspec:23:in `<main>'
-/home/travis/.rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `eval'
-/home/travis/.rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `<main>'</pre>
-
-          </div>
+        <td class="passed" title="ruby: RepeatEosBit">passed
 
         </td>
 
@@ -21654,7 +21749,7 @@ AssertionError: <bound method Container.values of Contain[43 chars]4]))> != [1, 
 
           <div class="add-info">
 
-              <div class="message">80 bytes in 2 blocks are definitely lost in loss record 14 of 22</div>
+              <div class="message">80 bytes in 2 blocks are definitely lost in loss record 15 of 22</div>
 
           </div>
 
@@ -21929,7 +22024,7 @@ AssertionError: <bound method Container.values of Contain[43 chars]4]))> != [1, 
 
           <div class="add-info">
 
-              <div class="message">80 bytes in 2 blocks are definitely lost in loss record 15 of 22</div>
+              <div class="message">80 bytes in 2 blocks are definitely lost in loss record 14 of 22</div>
 
           </div>
 
