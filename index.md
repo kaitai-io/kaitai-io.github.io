@@ -62,7 +62,7 @@ extra_footer: |
           <div class="media">
             <div class="media-left"><i class="fa fa-fw fa-3x fa-battery-full"></i></div>
             <div class="media-body">
-              <p><strong>Packed with tools and samples:</strong> includes <a href="https://github.com/kaitai-io/kaitai_struct_compiler">a compiler</a>, <a href="https://ide.kaitai.io/">an IDE</a>, a <a href="https://github.com/kaitai-io/kaitai_struct_visualizer/">visualizer</a> and <a href="#format-gallery">library of format specs</a></p>
+              <p><strong>Packed with tools and samples:</strong> includes <a href="https://github.com/kaitai-io/kaitai_struct_compiler">a compiler</a>, <a href="https://ide.kaitai.io/">an IDE</a>, a <a href="https://github.com/kaitai-io/kaitai_struct_visualizer/">visualizer</a> and <a href="//formats.kaitai.io">massive library of popular formats</a></p>
             </div>
           </div>
         </div>
@@ -304,15 +304,16 @@ puts "height = #{g.logical_screen.image_height}"</code></pre>
           <div class="col-sm-9">
             <p>There is an official .deb repository
               available for Debian / Ubuntu-based
-              distributions. The repository is hosted at BinTray
-              and signed with BinTray GPG key
-              (<code>379CE192D401AB61</code>), so it's necessary
-              to import that key first if your box haven't used
-              any BinTray repositories beforehand:
+              distributions. Just add it and install a package:
             </p>
-            <pre>sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net --recv 379CE192D401AB61</pre>
-            <p>Then just add our repository and install a package from it:</p>
-            <pre>echo "deb https://dl.bintray.com/kaitai-io/debian jessie main" | sudo tee /etc/apt/sources.list.d/kaitai.list
+            <pre># Import GPG key, if you never used any BinTray repos before
+sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net --recv 379CE192D401AB61
+
+# Add stable repository
+echo "deb https://dl.bintray.com/kaitai-io/debian jessie main" | sudo tee /etc/apt/sources.list.d/kaitai.list
+# ... or unstable repository
+echo "deb https://dl.bintray.com/kaitai-io/debian_unstable jessie main" | sudo tee /etc/apt/sources.list.d/kaitai.list
+
 sudo apt-get update
 sudo apt-get install kaitai-struct-compiler</pre>
           </div>
@@ -366,6 +367,7 @@ sudo apt-get install kaitai-struct-compiler</pre>
               and run it.
             </p>
             <p><a class="btn btn-success" href="https://dl.bintray.com/kaitai-io/universal/0.8/kaitai-struct-compiler-0.8.zip"><i class="fa fa-download"></i> Download</a> — stable v0.8, 6.8 MiB</p>
+            <p><a class="btn btn-default" href="https://bintray.com/kaitai-io/universal_unstable/kaitai-struct-compiler/_latestVersion"><i class="fa fa-download"></i> Download</a> — latest development (unstable) build — <a href="https://bintray.com/kaitai-io/universal_unstable/kaitai-struct-compiler/_latestVersion"><img src="https://api.bintray.com/packages/kaitai-io/universal_unstable/kaitai-struct-compiler/images/download.svg" /></a></p>
           </div>
           <div class="col-sm-3">
             <h4>Requirements</h4>
