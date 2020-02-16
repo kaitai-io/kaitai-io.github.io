@@ -407,15 +407,15 @@ sudo apt-get install kaitai-struct-compiler</pre>
       <li>
         Runtime libraries:
         <ul>
-          <li>C++/STL — MIT</li>
-          <li>C# — MIT</li>
-          <li>Java — MIT</li>
-          <li>JavaScript — Apache v2</li>
-          <li>Lua — MIT</li>
-          <li>Perl — MIT</li>
-          <li>PHP — MIT</li>
-          <li>Python — MIT</li>
-          <li>Ruby — MIT</li>
+          <li><a href="https://github.com/kaitai-io/kaitai_struct_cpp_stl_runtime">C++/STL</a> — MIT</li>
+          <li><a href="https://github.com/kaitai-io/kaitai_struct_csharp_runtime">C#</a> — MIT</li>
+          <li><a href="https://github.com/kaitai-io/kaitai_struct_java_runtime">Java</a> — MIT</li>
+          <li><a href="https://github.com/kaitai-io/kaitai_struct_javascript_runtime">JavaScript</a> — Apache v2</li>
+          <li><a href="https://github.com/kaitai-io/kaitai_struct_lua_runtime">Lua</a> — MIT</li>
+          <li><a href="https://github.com/kaitai-io/kaitai_struct_perl_runtime">Perl</a> — MIT</li>
+          <li><a href="https://github.com/kaitai-io/kaitai_struct_php_runtime">PHP</a> — MIT</li>
+          <li><a href="https://github.com/kaitai-io/kaitai_struct_python_runtime">Python</a> — MIT</li>
+          <li><a href="https://github.com/kaitai-io/kaitai_struct_ruby_runtime">Ruby</a> — MIT</li>
         </ul>
       </li>
     </ul>
