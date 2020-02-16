@@ -253,8 +253,8 @@ System.out.println("height = " + g.logicalScreen().imageHeight());</code></pre>
         <div role="tabpanel" class="tab-pane" id="example-javascript">
           <pre><code class="javascript">var g = new Gif(new KaitaiStream(someArrayBuffer));
 
-console.log("width = " + g.logicalScreen().imageWidth());
-console.log("height = " + g.logicalScreen().imageHeight());</code></pre>
+console.log("width = " + g.logicalScreen.imageWidth);
+console.log("height = " + g.logicalScreen.imageHeight);</code></pre>
         </div>
         <div role="tabpanel" class="tab-pane" id="example-perl">
           <pre><code class="perl">my $g = Gif-&gt;from_file("path/to/some.gif");
