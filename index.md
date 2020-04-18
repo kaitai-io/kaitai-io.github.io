@@ -41,11 +41,12 @@ extra_footer: |
                     <li>Go (*)</li>
                     <li>Java</li>
                     <li>JavaScript</li>
+                    <li>Lua</li>
                   </ul>
                 </div>
                 <div class="col-sm-6">
                   <ul>
-                    <li>Lua</li>
+                    <li>Nim</li>
                     <li>Perl</li>
                     <li>PHP</li>
                     <li>Python</li>
@@ -213,8 +214,8 @@ types:
         </li>
       </ul>
       <p>This <code>.ksy</code> file can be compiled it
-        into <code>gif.cpp</code> / <code>Gif.cs</code>
-        / <code>Gif.java</code> / <code>Gif.js</code> / <code>Gif.pm</code>
+        into <code>gif.cpp</code> / <code>Gif.cs</code> / <code>Gif.java</code>
+        / <code>Gif.js</code> / <code>gif.nim</code> / <code>Gif.pm</code>
         / <code>Gif.php</code> / <code>gif.py</code> / <code>gif.rb</code> and
         then one can instantly load .gif file and access, for example, it’s
         width and height.
@@ -224,6 +225,7 @@ types:
         <li role="presentation"><a href="#example-csharp" role="tab" data-toggle="tab">C#</a></li>
         <li role="presentation" class="active"><a href="#example-java" role="tab" data-toggle="tab">Java</a></li>
         <li role="presentation"><a href="#example-javascript" role="tab" data-toggle="tab">JavaScript</a></li>
+        <li role="presentation"><a href="#example-nim" role="tab" data-toggle="tab">Nim</a></li>
         <li role="presentation"><a href="#example-perl" role="tab" data-toggle="tab">Perl</a></li>
         <li role="presentation"><a href="#example-php" role="tab" data-toggle="tab">PHP</a></li>
         <li role="presentation"><a href="#example-python" role="tab" data-toggle="tab">Python</a></li>
@@ -255,6 +257,12 @@ System.out.println("height = " + g.logicalScreen().imageHeight());</code></pre>
 
 console.log("width = " + g.logicalScreen.imageWidth);
 console.log("height = " + g.logicalScreen.imageHeight);</code></pre>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="example-nim">
+          <pre><code class="cs">let g = Gif.fromFile("path/to/some.gif")
+
+echo "width = " & $g.logicalScreen.imageWidth
+echo "height = " & $g.logicalScreen.imageHeight</code></pre>
         </div>
         <div role="tabpanel" class="tab-pane" id="example-perl">
           <pre><code class="perl">my $g = Gif-&gt;from_file("path/to/some.gif");
@@ -412,6 +420,7 @@ sudo apt-get install kaitai-struct-compiler</pre>
           <li><a href="https://github.com/kaitai-io/kaitai_struct_java_runtime">Java</a> — MIT</li>
           <li><a href="https://github.com/kaitai-io/kaitai_struct_javascript_runtime">JavaScript</a> — Apache v2</li>
           <li><a href="https://github.com/kaitai-io/kaitai_struct_lua_runtime">Lua</a> — MIT</li>
+          <li><a href="https://github.com/kaitai-io/kaitai_struct_nim_runtime">Nim</a> — MIT</li>
           <li><a href="https://github.com/kaitai-io/kaitai_struct_perl_runtime">Perl</a> — MIT</li>
           <li><a href="https://github.com/kaitai-io/kaitai_struct_php_runtime">PHP</a> — MIT</li>
           <li><a href="https://github.com/kaitai-io/kaitai_struct_python_runtime">Python</a> — MIT</li>
