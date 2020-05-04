@@ -449,6 +449,7 @@ sudo apt-get install kaitai-struct-compiler</pre>
                     <li><a href="https://mitmproxy.org/">mitmproxy</a> — an interactive man-in-the-middle traffic inspection and modification tool</li>
                     <li><a href="https://www.kismetwireless.net/">Kismet</a> — wireless network detector, sniffer, and intrusion detection system</li>
                     <li><a href="https://github.com/Deep-Symmetry/beat-link-trigger">Beat Link Trigger</a> — music performer app to trigger events based on Pioneer CDJs output</li>
+                    <li><a href="https://github.com/Mahlet-Inc/hobbits">Hobbits</a> — multi-platform GUI for bit-based analysis, processing, and visualization</li>
                 </ul>
                 <p>
                     If your project also uses Kaitai Struct, please drop us a line :)
