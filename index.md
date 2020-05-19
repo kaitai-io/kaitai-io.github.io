@@ -7,7 +7,7 @@ extra_footer: |
 <div class="jumbotron">
   <div class="container">
     <div class="col-sm-3" style="height: 434px">
-      <center><img src="/img/kaitai_16x_dark.png" width="256" height="256" alt="[Kaitai logo]" /></center>
+      <div style="margin: 0px auto"><img src="/img/kaitai_16x_dark.png" width="256" height="256" alt="[Kaitai logo]" /></div>
       <div class="well" style="text-align: center; width: 100%; margin-top: 72px">
         <p><small>
           0.8 <a href="news/2018/02/05/kaitai-struct-v0.8-released.html">released 2018-02-05</a>
@@ -367,7 +367,7 @@ sudo apt-get install kaitai-struct-compiler</pre>
               and run it.
             </p>
             <p><a class="btn btn-success" href="https://dl.bintray.com/kaitai-io/universal/0.8/kaitai-struct-compiler-0.8.zip"><i class="fa fa-download"></i> Download</a> — stable v0.8, 6.8 MiB</p>
-            <p><a class="btn btn-default" href="https://bintray.com/kaitai-io/universal_unstable/kaitai-struct-compiler/_latestVersion"><i class="fa fa-download"></i> Download</a> — latest development (unstable) build — <a href="https://bintray.com/kaitai-io/universal_unstable/kaitai-struct-compiler/_latestVersion"><img src="https://api.bintray.com/packages/kaitai-io/universal_unstable/kaitai-struct-compiler/images/download.svg" /></a></p>
+            <p><a class="btn btn-default" href="https://bintray.com/kaitai-io/universal_unstable/kaitai-struct-compiler/_latestVersion"><i class="fa fa-download"></i> Download</a> — latest development (unstable) build — <a href="https://bintray.com/kaitai-io/universal_unstable/kaitai-struct-compiler/_latestVersion"><img src="https://api.bintray.com/packages/kaitai-io/universal_unstable/kaitai-struct-compiler/images/download.svg" alt="[Download]" /></a></p>
           </div>
           <div class="col-sm-3">
             <h4>Requirements</h4>
