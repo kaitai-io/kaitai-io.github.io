@@ -345,7 +345,7 @@ sudo apt-get install kaitai-struct-compiler</pre>
           <div class="col-sm-9">
             <p>Windows versions are avalable as MSI format installer. If you want a portable version that requires no installation, download our universal .zip build instead.</p>
             <p><a class="btn btn-success" href="https://dl.bintray.com/kaitai-io/universal/0.8/kaitai-struct-compiler-0.8.msi"><i class="fa fa-download"></i> Download</a> — stable v0.8, 7.0 MiB</p>
-            <p><a class="btn btn-default" href="https://ci.appveyor.com/project/GreyCat/kaitai-struct/build/artifacts"><i class="fa fa-download"></i> Download</a> — latest development (unstable) build</p>
+            <p><a class="btn btn-default" href="https://ci.appveyor.com/project/kaitai-io/kaitai-struct/build/artifacts"><i class="fa fa-download"></i> Download</a> — latest development (unstable) build</p>
           </div>
           <div class="col-sm-3">
             <h4>Requirements</h4>
