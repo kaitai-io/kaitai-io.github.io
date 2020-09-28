@@ -126,7 +126,7 @@ extra_footer: |
             access its components
           </li>
         </ul>
-        <p>Check out <a href="http://doc.kaitai.io/">documentation</a> for more information.</p>
+        <p>Check out <a href="//doc.kaitai.io/">documentation</a> for more information.</p>
       </div>
       <div class="col-sm-4">
         <pre><code class="yaml">meta:
@@ -281,7 +281,7 @@ puts "width = #{g.logical_screen.image_width}"
 puts "height = #{g.logical_screen.image_height}"</code></pre>
         </div>
         Of course, this example shows only very limited subset of what Kaitai
-        Struct can do. Please refer to <a href="http://doc.kaitai.io/">documentation</a> for more
+        Struct can do. Please refer to <a href="//doc.kaitai.io/">documentation</a> for more
         insights.
       </div>
     </div>
@@ -439,7 +439,7 @@ sudo apt-get install kaitai-struct-compiler</pre>
                     supported target languages.
                 </p>
                 <p>
-                    <a href="http://formats.kaitai.io/" class="btn btn-success">Format Gallery &gt;&gt;</a>
+                    <a href="//formats.kaitai.io/" class="btn btn-success">Format Gallery &gt;&gt;</a>
                 </p>
             </div>
             <div class="col-sm-6">

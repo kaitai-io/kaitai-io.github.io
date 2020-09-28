@@ -41,21 +41,21 @@ Python declarative parser/builder.
   * Switchable default endianness: `meta/endian` can now contain a
     switch-like structure (with `switch-on` and `cases`), akin to
     switchable types
-    ([docs](http://doc.kaitai.io/user_guide.html#calc-endian)).
+    ([docs](//doc.kaitai.io/user_guide.html#calc-endian)).
   * Parametric user-defined types: one can use `type: my_type(arg1,
     arg2, arg3)` to pass arguments into user type
-    ([docs](http://doc.kaitai.io/user_guide.html#param-types)).
+    ([docs](//doc.kaitai.io/user_guide.html#param-types)).
   * Custom processing types: one can use `process:
     my_process_name(arg1, arg2, arg3)` to invoke custom processing
     routine, implemented in imperative language
-    ([docs](http://doc.kaitai.io/user_guide.html#custom-process)).
+    ([docs](//doc.kaitai.io/user_guide.html#custom-process)).
   * In repetitions, index of current repetition can be accessed using
     `_index` in expressions
-    ([docs](http://doc.kaitai.io/user_guide.html#repeat-index)).
+    ([docs](//doc.kaitai.io/user_guide.html#repeat-index)).
   * Verbose enums: now one can specify documentation and other useful
     information relevant to enums using verbose enum declaration
     format
-    ([docs](http://doc.kaitai.io/user_guide.html#verbose-enums)).
+    ([docs](//doc.kaitai.io/user_guide.html#verbose-enums)).
   * `meta/xref` key can be used for adding cross-references of a
     format specifications (like relevant RFC entries, Wikidata
     entries, ISO / IEEE / JIS / DIN / GOST standard numbers, PRONOM
