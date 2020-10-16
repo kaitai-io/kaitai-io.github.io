@@ -24,8 +24,8 @@ from a file / stream and provide access to its contents in a nice,
 easy-to-comprehend API.
 
 With the previous 0.8 release, Kaitai project celebrated 1000 stars on GitHub,
-and until 0.9 version, it has collected more than [2000 stars](https://github.com/kaitai-io/kaitai_struct/)!
-Thank you for your support!
+and until 0.9 version, it has collected more than [2000 stars](https://github.com/kaitai-io/kaitai_struct/stargazers).
+Thank you all for your support!
 
 This version introduces C++11 target (which uses smart pointers),
 several handy features (like `valid`ations and little-endian bit integers),
@@ -103,7 +103,7 @@ fixes a lot of bugs and includes quite a few infrastructure improvements.
   * https://formats.kaitai.io/ is rebuilt automatically with CI/CD
   * Brand new modular CI/CD system for compiler, underlying
     CI-agnostic, working on multiple different OSes in parallel
-    (Linux, Windows, macOS) and showing status at https://ci.kaitai.io/
+    (Linux, Windows, macOS) and showing status at [https://ci.kaitai.io/](https://ci.kaitai.io/)
   * Generate test assertion specs from language-agnostic [KST specs](https://doc.kaitai.io/kst.html)
 
 </div>
