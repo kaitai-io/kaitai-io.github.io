@@ -100,7 +100,7 @@ extra_footer: |
                             0.7 released 2017-03-22
                     </small></p>
                     <p>
-                        <a href="../index.html#download" class="btn btn-primary">Download <i class="fa fa-download"></i></a>
+                        <a href="/#download" class="btn btn-primary">Download <i class="fa fa-download"></i></a>
                     </p>
                     <p>
                         <a href="https://ide.kaitai.io/" class="btn btn-success">Try it in Web IDE <i class="fa fa-gears"></i></a>

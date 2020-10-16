@@ -115,7 +115,7 @@ fixes a lot of bugs and includes quite a few infrastructure improvements.
                             0.9 released 2020-10-16
                     </small></p>
                     <p>
-                        <a href="/index.html#download" class="btn btn-primary">Download <i class="fa fa-download"></i></a>
+                        <a href="/#download" class="btn btn-primary">Download <i class="fa fa-download"></i></a>
                     </p>
                     <p>
                         <a href="https://ide.kaitai.io/" class="btn btn-success">Try it in Web IDE <i class="fa fa-gears"></i></a>

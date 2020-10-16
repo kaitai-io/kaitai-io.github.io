@@ -33,9 +33,9 @@ extra_footer: |
                     and provide access to its contents in a nice,
                     easy-to-comprehend API.
                 </p>
-                
+
                 <h2>Release highlights</h2>
-        
+
                 <ul>
                     <li>Languages support:</li>
                     <ul>
@@ -75,7 +75,7 @@ extra_footer: |
                             0.4 released 2016-08-09
                     </small></p>
                     <p>
-                        <a href="../index.html#download" class="btn btn-primary">Download <i class="fa fa-download"></i></a>
+                        <a href="/#download" class="btn btn-primary">Download <i class="fa fa-download"></i></a>
                     </p>
                     <p>
                         <a href="../repl/index.html" class="btn btn-success">Try in browser <i class="fa fa-gears"></i></a>

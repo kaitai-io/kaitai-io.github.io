@@ -120,7 +120,7 @@ extra_footer: |
                             0.6 released 2017-02-04
                     </small></p>
                     <p>
-                        <a href="../index.html#download" class="btn btn-primary">Download <i class="fa fa-download"></i></a>
+                        <a href="/#download" class="btn btn-primary">Download <i class="fa fa-download"></i></a>
                     </p>
                     <p>
                         <a href="../repl/index.html" class="btn btn-success">Try in browser <i class="fa fa-gears"></i></a>

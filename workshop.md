@@ -20,7 +20,7 @@ permalink: /workshop/
 <h3>Hardcore (console)</h3>
 
 <ul>
-  <li><a href="../index.html#download">Compiler</a> — requires Java Runtime Environment (JRE)</li>
+  <li><a href="/#download">Compiler</a> — requires Java Runtime Environment (JRE)</li>
   <li><a href="https://github.com/kaitai-io/kaitai_struct_visualizer#downloading-and-installing">Visualizer</a> — requires Ruby</li>
   <li>C++ / C# / Java / JavaScript / Perl / PHP / Python / Ruby</li>
 </ul>
