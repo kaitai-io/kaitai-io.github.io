@@ -223,6 +223,7 @@ types:
       <ul class="nav nav-pills" role="tablist">
         <li role="presentation"><a href="#example-cpp-stl" role="tab" data-toggle="tab">C++/STL</a></li>
         <li role="presentation"><a href="#example-csharp" role="tab" data-toggle="tab">C#</a></li>
+        <li role="presentation"><a href="#example-go" role="tab" data-toggle="tab">Go</a></li>
         <li role="presentation" class="active"><a href="#example-java" role="tab" data-toggle="tab">Java</a></li>
         <li role="presentation"><a href="#example-javascript" role="tab" data-toggle="tab">JavaScript</a></li>
         <li role="presentation"><a href="#example-nim" role="tab" data-toggle="tab">Nim</a></li>
@@ -245,6 +246,14 @@ std::cout &lt;&lt; "height = " &lt;&lt; g.logical_screen()-&gt;image_height() &l
 
 Console.WriteLine("width = " + g.LogicalScreen.ImageWidth);
 Console.WriteLine("height = " + g.LogicalScreen.ImageHeight);</code></pre>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="example-go">
+          <pre><code class="go">file, err := os.Open("path/to/some.gif")
+g := NewGif()
+err = g.Read(kaitai.NewStream(file), g, g)
+
+fmt.Printf("width = %d\n", g.LogicalScreen.ImageWidth)
+fmt.Printf("height = %d\n", g.LogicalScreen.ImageHeight)</code></pre>
         </div>
         <div role="tabpanel" class="tab-pane active" id="example-java">
           <pre><code class="java">Gif g = Gif.fromFile("path/to/some.gif");
