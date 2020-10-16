@@ -100,7 +100,7 @@ fixes a lot of bugs and includes quite a few infrastructure improvements.
 * Infrastructure updates:
   * Unstable binary builds are available for all platforms after every CI build at Bintray ([#63](https://github.com/kaitai-io/kaitai_struct/issues/63))
   * KSY language reference replaced with [documentation](https://doc.kaitai.io/ksy_diagram.html) generated from JSON schema
-  * https://formats.kaitai.io/ is rebuilt automatically with CI/CD
+  * [https://formats.kaitai.io/](https://formats.kaitai.io/) is rebuilt automatically with CI/CD
   * Brand new modular CI/CD system for compiler, underlying
     CI-agnostic, working on multiple different OSes in parallel
     (Linux, Windows, macOS) and showing status at [https://ci.kaitai.io/](https://ci.kaitai.io/)
