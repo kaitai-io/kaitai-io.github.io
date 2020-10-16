@@ -38,7 +38,7 @@ extra_footer: |
                   <ul>
                     <li>C++/STL</li>
                     <li>C#</li>
-                    <li>Go (*)</li>
+                    <li>Go <i class="fa fa-wrench"></i></li>
                     <li>Java</li>
                     <li>JavaScript</li>
                     <li>Lua</li>
@@ -46,7 +46,7 @@ extra_footer: |
                 </div>
                 <div class="col-sm-6">
                   <ul>
-                    <li>Nim</li>
+                    <li>Nim <i class="fa fa-wrench"></i></li>
                     <li>Perl</li>
                     <li>PHP</li>
                     <li>Python</li>
@@ -72,7 +72,7 @@ extra_footer: |
             <div class="media-left"><i class="fa fa-fw fa-3x fa-code-fork"></i></div>
             <div class="media-body">
               <p><strong>Free & open source:</strong> feel free to use, modify and join the project</p>
-<p style="font-size: 14px; font-style: italic; margin-left: 35px">(*) entry-level support</p>
+<p style="font-size: 14px; font-style: italic; margin-left: 35px"><i class="fa fa-wrench"></i> entry-level support</p>
             </div>
           </div>
         </div>
@@ -417,21 +417,21 @@ sudo apt-get install kaitai-struct-compiler</pre>
         <ul>
           <li><a href="https://github.com/kaitai-io/kaitai_struct_cpp_stl_runtime">C++/STL</a> — MIT</li>
           <li><a href="https://github.com/kaitai-io/kaitai_struct_csharp_runtime">C#</a> — MIT</li>
-          <li><a href="https://github.com/kaitai-io/kaitai_struct_go_runtime">Go <i class="fa fa-wrench"></i></a> — MIT</li>
+          <li><a href="https://github.com/kaitai-io/kaitai_struct_go_runtime">Go</a> <i class="fa fa-wrench text-danger"></i> — MIT</li>
           <li><a href="https://github.com/kaitai-io/kaitai_struct_java_runtime">Java</a> — MIT</li>
           <li><a href="https://github.com/kaitai-io/kaitai_struct_javascript_runtime">JavaScript</a> — Apache v2</li>
           <li><a href="https://github.com/kaitai-io/kaitai_struct_lua_runtime">Lua</a> — MIT</li>
-          <li><a href="https://github.com/kaitai-io/kaitai_struct_nim_runtime">Nim <i class="fa fa-wrench"></i></a> — MIT</li>
+          <li><a href="https://github.com/kaitai-io/kaitai_struct_nim_runtime">Nim</a> <i class="fa fa-wrench text-danger"></i> — MIT</li>
           <li><a href="https://github.com/kaitai-io/kaitai_struct_perl_runtime">Perl</a> — MIT</li>
           <li><a href="https://github.com/kaitai-io/kaitai_struct_php_runtime">PHP</a> — MIT</li>
           <li><a href="https://github.com/kaitai-io/kaitai_struct_python_runtime">Python</a> — MIT</li>
           <li><a href="https://github.com/kaitai-io/kaitai_struct_ruby_runtime">Ruby</a> — MIT</li>
-          <li><a href="https://github.com/kaitai-io/kaitai_struct_rust_runtime">Rust <i class="fa fa-wrench"></i></a> — MIT</li>
-          <li><a href="https://github.com/kaitai-io/kaitai_struct_swift_runtime">Swift <i class="fa fa-wrench"></i></a> — MIT</li>
+          <li><a href="https://github.com/kaitai-io/kaitai_struct_rust_runtime">Rust</a> <i class="fa fa-wrench text-danger"></i> — MIT</li>
+          <li><a href="https://github.com/kaitai-io/kaitai_struct_swift_runtime">Swift</a> <i class="fa fa-wrench text-danger"></i> — MIT</li>
         </ul>
       </li>
     </ul>
-    <p><i class="fa fa-wrench"></i> — work-in-progress</p>
+    <p style="font-style: italic"><i class="fa fa-wrench text-danger"></i> work in progress</p>
   </div>
 </section>
 
