@@ -4,3 +4,6 @@ markdown: kramdown
 
 plugins:
   - jekyll-redirect-from
+
+exclude:
+    - README.md
