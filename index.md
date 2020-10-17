@@ -115,7 +115,7 @@ extra_footer: |
         </p>
         <ul>
           <li>Describe the format — i.e. create a <code>.ksy</code> file</li>
-          <li>Use the visualizer to debug the format and ensure that it parses data properly</li>
+          <li>Use a visualizer to debug the format and ensure that it parses data properly</li>
           <li>Compile the <code>.ksy</code> file into a target language source file and include
             that file into your project
           </li>
