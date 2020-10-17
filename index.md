@@ -38,7 +38,7 @@ extra_footer: |
                   <ul>
                     <li>C++/STL</li>
                     <li>C#</li>
-                    <li>Go <i class="fa fa-wrench"></i></li>
+                    <li>Go <i class="fa fa-wrench text-muted"></i></li>
                     <li>Java</li>
                     <li>JavaScript</li>
                     <li>Lua</li>
@@ -46,7 +46,7 @@ extra_footer: |
                 </div>
                 <div class="col-sm-6">
                   <ul>
-                    <li>Nim <i class="fa fa-wrench"></i></li>
+                    <li>Nim <i class="fa fa-wrench text-muted"></i></li>
                     <li>Perl</li>
                     <li>PHP</li>
                     <li>Python</li>
@@ -72,7 +72,7 @@ extra_footer: |
             <div class="media-left"><i class="fa fa-fw fa-3x fa-code-fork"></i></div>
             <div class="media-body">
               <p><strong>Free & open source:</strong> feel free to use, modify and join the project</p>
-<p style="font-size: 14px; font-style: italic; margin-left: 35px"><i class="fa fa-wrench"></i> entry-level support</p>
+<p style="font-size: 14px; font-style: italic; margin-left: 35px"><i class="fa fa-wrench text-muted"></i> entry-level support</p>
             </div>
           </div>
         </div>
