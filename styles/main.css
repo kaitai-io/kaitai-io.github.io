@@ -12,7 +12,7 @@ pre, code, #source, #compiled {
     color: #e9d9cf;
 }
 
-.jumbotron h1, .jumbotron i, .jumbotron strong {
+.jumbotron h1, .jumbotron .fa-3x, .jumbotron strong {
     color: #ffffff;
 }
 
