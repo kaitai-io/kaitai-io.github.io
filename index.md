@@ -85,16 +85,16 @@ extra_footer: |
     <div class="row">
       <div class="col-sm-8">
         <p>Reading and writing binary formats is hard, especially if
-          it's interchange format that should work across multitude of
+          it’s an interchange format that should work across a multitude of
           platforms and languages.
         </p>
         <p>Have you ever found yourself writing repetitive,
           error-prone and hard-to-debug code that reads binary data structures
-          from file / network stream and somehow represents them in memory for
+          from files or network streams and somehow represents them in memory for
           easier access?
         </p>
         <p>Kaitai Struct tries to make this job easier — you only have to
-          describe binary format once and then everybody can use it from their
+          describe the binary format once and then everybody can use it from their
           programming languages — cross-language, cross-platform.
         </p>
         <h1>What is Kaitai Struct?</h1>
@@ -106,28 +106,28 @@ extra_footer: |
           Struct language (<code>.ksy</code> file) and then can be compiled with
           <code>ksc</code> into source files in one of the supported programming
           languages. These modules will include a generated code for a parser
-          that can read described data structure from a file / stream and give
+          that can read the described data structure from a file or stream and give
           access to it in a nice, easy-to-comprehend API.
         </p>
         <h2 id="using-ks-in-your-project">Using KS in your project</h2>
-        <p>Typically, using formats described in KS in your project, involves the
+        <p>Typically, using formats described in KS in your project involves the
           following steps:
         </p>
         <ul>
           <li>Describe the format — i.e. create a <code>.ksy</code> file</li>
-          <li>Use visualizer to debug the format and ensure that it parses data properly</li>
-          <li>Compile <code>.ksy</code> file into target language source file and include
+          <li>Use a visualizer to debug the format and ensure that it parses data properly</li>
+          <li>Compile the <code>.ksy</code> file into a target language source file and include
             that file into your project
           </li>
-          <li>Add KS runtime library for your particular language into your
+          <li>Add the KS runtime library for your particular language into your
             project (don’t worry, it’s small and it’s there mostly to ensure
             readability of generated code)
           </li>
-          <li>Use generated class(es) to parse your binary file / stream and
+          <li>Use the generated class(es) to parse your binary file or stream and
             access its components
           </li>
         </ul>
-        <p>Check out <a href="//doc.kaitai.io/">documentation</a> for more information.</p>
+        <p>Check out the <a href="//doc.kaitai.io/">documentation</a> for more information.</p>
       </div>
       <div class="col-sm-4">
         <pre><code class="yaml">meta:
@@ -160,7 +160,7 @@ seq:
   <div class="container">
   <h1>Quick start</h1>
   <p>Consider this simple <code>.ksy</code> format description file that
-    describes header of a GIF file (a popular web image format):
+    describes the header of a GIF image file:
   </p>
   <div class="row">
     <div class="col-sm-4">
@@ -194,21 +194,21 @@ types:
         type: u1</code></pre>
     </div>
     <div class="col-sm-8">
-      <p>It declares that GIF file usually has <code>.gif</code> extension and uses
+      <p>It declares that a GIF file usually has a <code>.gif</code> extension and uses
         little-endian integer encoding. The file itself starts with two
         blocks: first comes <code>header</code> and then comes <code>logical_screen</code>:
       </p>
       <ul>
-        <li>“Header” consists of “magic” string of 3 bytes (“GIF”) that
+        <li>“Header” consists of a “magic” string of 3 bytes (“GIF”) that
           identifies that it’s a GIF file starting and then there are 3 more
-          bytes that identify format version (<code>87a</code> or <code>89a</code>).
+          bytes that identify the format version (<code>87a</code> or <code>89a</code>).
         </li>
         <li>
           “Logical screen descriptor” is a block of integers:
           <ul>
             <li><code>image_width</code> and <code>image_height</code> are 2-byte unsigned ints</li>
             <li><code>flags</code>, <code>bg_color_index</code> and <code>pixel_aspect_ratio</code> take 1-byte
-              unsigned int each
+              unsigned ints each
             </li>
           </ul>
         </li>
@@ -217,7 +217,7 @@ types:
         into <code>gif.cpp</code> / <code>Gif.cs</code> / <code>Gif.java</code>
         / <code>Gif.js</code> / <code>gif.nim</code> / <code>Gif.pm</code>
         / <code>Gif.php</code> / <code>gif.py</code> / <code>gif.rb</code> and
-        then one can instantly load .gif file and access, for example, it’s
+        then one can instantly load a .gif file and access, for example, its
         width and height.
       </p>
       <ul class="nav nav-pills" role="tablist">
@@ -297,8 +297,8 @@ print("height = %d" % (g.logical_screen.image_height))</code></pre>
 puts "width = #{g.logical_screen.image_width}"
 puts "height = #{g.logical_screen.image_height}"</code></pre>
         </div>
-        Of course, this example shows only very limited subset of what Kaitai
-        Struct can do. Please refer to <a href="//doc.kaitai.io/">documentation</a> for more
+        Of course, this example shows only a very limited subset of what Kaitai
+        Struct can do. Please refer to the <a href="//doc.kaitai.io/">documentation</a> for more
         insights.
       </div>
     </div>
@@ -310,7 +310,7 @@ puts "height = #{g.logical_screen.image_height}"</code></pre>
     <h1>Downloading and installing</h1>
     <ul class="nav nav-pills" role="tablist">
       <li role="presentation" class="active"><a href="#download-linux-deb" role="tab" data-toggle="tab">Linux .deb</a></li>
-      <li role="presentation"><a href="#download-mac-homebrew" role="tab" data-toggle="tab">Mac OS X - Homebrew</a></li>
+      <li role="presentation"><a href="#download-mac-homebrew" role="tab" data-toggle="tab">macOS - Homebrew</a></li>
       <li role="presentation"><a href="#download-windows" role="tab" data-toggle="tab">Windows</a></li>
       <li role="presentation"><a href="#download-universal" role="tab" data-toggle="tab">Universal .zip</a></li>
       <li role="presentation"><a href="#download-source" role="tab" data-toggle="tab">Source</a></li>
@@ -320,7 +320,7 @@ puts "height = #{g.logical_screen.image_height}"</code></pre>
         <div class="row">
           <div class="col-sm-9">
             <p>There is an official .deb repository
-              available for Debian / Ubuntu-based
+              available for Debian and Ubuntu-based
               distributions. Just add it and install a package:
             </p>
             <pre># Import GPG key, if you never used any BinTray repos before
@@ -351,7 +351,7 @@ sudo apt-get install kaitai-struct-compiler</pre>
           <div class="col-sm-3">
             <h4>Requirements</h4>
             <ul>
-              <li>Mac OS X</li>
+              <li>macOS</li>
               <li><a href="https://brew.sh">Homebrew</a></li>
             </ul>
           </div>
@@ -360,7 +360,7 @@ sudo apt-get install kaitai-struct-compiler</pre>
       <div role="tabpanel" class="tab-pane" id="download-windows">
         <div class="row">
           <div class="col-sm-9">
-            <p>Windows versions are avalable as MSI format installer. If you want a portable version that requires no installation, download our universal .zip build instead.</p>
+            <p>Windows versions are available as an MSI format installer. If you want a portable version that requires no installation, download our universal .zip build instead.</p>
             <p><a class="btn btn-success" href="https://dl.bintray.com/kaitai-io/universal/0.9/kaitai-struct-compiler.msi"><i class="fa fa-download"></i> Download</a> — stable v0.9, 9.8 MiB</p>
             <p><a class="btn btn-default" href="https://ci.appveyor.com/project/kaitai-io/kaitai-struct/build/artifacts"><i class="fa fa-download"></i> Download</a> — latest development (unstable) build</p>
           </div>
@@ -379,7 +379,7 @@ sudo apt-get install kaitai-struct-compiler</pre>
             <p>"Universal" builds are downloadable as
               a .zip file that includes all the required
               .jar files bundled and launcher scripts
-              for Linux / Mac OS X / Windows systems. No
+              for Linux / macOS / Windows systems. No
               installation required, one can just unpack
               and run it.
             </p>
@@ -389,7 +389,7 @@ sudo apt-get install kaitai-struct-compiler</pre>
           <div class="col-sm-3">
             <h4>Requirements</h4>
             <ul>
-              <li>Linux / Mac OS X / Windows system</li>
+              <li>Linux / macOS / Windows system</li>
               <li>a working <a href="http://java.com/download/">Java Runtime Environment</a> installation</li>
             </ul>
           </div>
@@ -398,10 +398,10 @@ sudo apt-get install kaitai-struct-compiler</pre>
       <div role="tabpanel" class="tab-pane" id="download-source">
         <div class="row">
           <div class="col-sm-9">
-            <p>If you prefer to build your tools from source, or just want to see how KS works, the easiest way to check out whole project is to download main (umbrella) project repository that already includes all other parts as sub-modules. Use:</p>
+            <p>If you prefer to build your tools from source, or just want to see how KS works, the easiest way to check out the whole project is to download the main (umbrella) repository that already includes all other parts as sub-modules. Use:</p>
             <pre>git clone --recursive https://github.com/kaitai-io/kaitai_struct.git</pre>
             <p>Note the <code>--recursive</code> option.</p>
-            <p>Alternatively, one can check out individual sub-projects that consitute Kaitai Struct suite. See <a href="https://github.com/kaitai-io/kaitai_struct">GitHub project page</a> for details.</p>
+            <p>Alternatively, one can check out individual sub-projects that consitute the Kaitai Struct suite. See the <a href="https://github.com/kaitai-io/kaitai_struct">GitHub project page</a> for details.</p>
           </div>
           <div class="col-sm-3">
             <h4>Requirements</h4>
@@ -447,14 +447,13 @@ sudo apt-get install kaitai-struct-compiler</pre>
 <section id="format-gallery">
     <div class="container">
         <h1>Built with Kaitai Struct</h1>
-
         <div class="row">
             <div class="col-sm-6">
                 <p>
                     We maintain a
                     growing <a href="https://github.com/kaitai-io/kaitai_struct_formats">free
                     / open source repository</a> of file formats
-                    and protocols specifications. Visit our format
+                    and protocol specifications. Visit our format
                     gallery to view the showcase of that
                     repository with documentation, block diagrams
                     and ready-made parser libraries in all
