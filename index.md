@@ -54,6 +54,7 @@ extra_footer: |
                   </ul>
                 </div>
               </div>
+<p style="font-size: 14px; font-style: italic; margin-left: 35px"><i class="fa fa-wrench"></i> entry-level support</p>
             </div>
           </div>
         </div>
@@ -72,7 +73,6 @@ extra_footer: |
             <div class="media-left"><i class="fa fa-fw fa-3x fa-code-fork"></i></div>
             <div class="media-body">
               <p><strong>Free & open source:</strong> feel free to use, modify and join the project</p>
-<p style="font-size: 14px; font-style: italic; margin-left: 35px"><i class="fa fa-wrench"></i> entry-level support</p>
             </div>
           </div>
         </div>
