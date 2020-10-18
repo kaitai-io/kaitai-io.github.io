@@ -16,7 +16,7 @@ pre, code, #source, #compiled {
     color: #ffffff;
 }
 
-.jumbotron a {
+.jumbotron a:not(.btn) {
     color: #8cc0ed;
 }
 
