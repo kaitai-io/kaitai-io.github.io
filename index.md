@@ -1,8 +1,6 @@
 ---
 layout: default
 title: Try it
-extra_footer: |
-  <script src="/js/scroller.js"></script>
 ---
 <div class="jumbotron">
   <div class="container">
