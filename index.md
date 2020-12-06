@@ -211,7 +211,7 @@ types:
           </ul>
         </li>
       </ul>
-      <p>This <code>.ksy</code> file can be compiled it
+      <p>This <code>.ksy</code> file can be compiled
         into <code>gif.cpp</code> / <code>Gif.cs</code> / <code>Gif.java</code>
         / <code>Gif.js</code> / <code>gif.nim</code> / <code>Gif.pm</code>
         / <code>Gif.php</code> / <code>gif.py</code> / <code>gif.rb</code> and
