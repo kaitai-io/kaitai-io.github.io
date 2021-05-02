@@ -324,7 +324,7 @@ puts "height = #{g.logical_screen.image_height}"</code></pre>
       <div role="tabpanel" class="tab-pane active" id="download-linux-deb">
         <div class="row">
           <div class="col-sm-9">
-            <p>The stable <code>kaitai-struct-compiler</code> versions are currently uploaded to <a href="https://github.com/kaitai-io/kaitai_struct_compiler/releases/">https://github.com/kaitai-io/kaitai_struct_compiler/releases/</a> (see <a href="#bintray-sunset-callout">box above</a>). Just download the <code>.deb</code> package and install it:
+            <p>The stable <code>kaitai-struct-compiler</code> versions are currently uploaded to <a href="https://github.com/kaitai-io/kaitai_struct_compiler/releases" target="_blank" rel="noopener">https://github.com/kaitai-io/kaitai_struct_compiler/releases</a> (see <a href="#bintray-sunset-callout">box above</a>). Just download the <code>.deb</code> package and install it:
             </p>
             <pre>curl -LO https://github.com/kaitai-io/kaitai_struct_compiler/releases/download/0.9/kaitai-struct-compiler_0.9_all.deb
 sudo apt-get install ./kaitai-struct-compiler_0.9_all.deb</pre>
