@@ -397,7 +397,9 @@ sudo apt-get install ./kaitai-struct-compiler_0.9_all.deb</pre>
           <div class="col-sm-9">
             <p>If you prefer to build your tools from source, or just want to see how KS works, the easiest way to check out the whole project is to download the main (umbrella) repository that already includes all other parts as submodules. Use:</p>
             <pre>git clone --recurse-submodules https://github.com/kaitai-io/kaitai_struct.git</pre>
-            <p>Note the <code>--recurse-submodules</code> option.</p>
+            <div class="bs-callout bs-callout-info">
+              <p>Note the <code>--recurse-submodules</code> option. If you forget to specify it, equivalently run <code>git submodule update --init --recursive</code> afterwards.</p>
+            </div>
             <p>Alternatively, one can check out individual sub-projects that consitute the Kaitai Struct suite. See the <a href="https://github.com/kaitai-io/kaitai_struct">GitHub project page</a> for details.</p>
           </div>
           <div class="col-sm-3">
