@@ -306,6 +306,13 @@ puts "height = #{g.logical_screen.image_height}"</code></pre>
 <section id="download">
   <div class="container">
     <h1>Downloading and installing</h1>
+    <div class="anchor-container" id="bintray-sunset-callout">
+      <div class="bs-callout bs-callout-warning">
+        <h4>2021-05-02 &mdash; Temporarily using GitHub Releases for compiler distributions</h4>
+        <p>As of <time datetime="2021-05-02">May 2, 2021</time>, JFrog Bintray (a distribution service where we hosted the compiler artifacts for years) has been sunset, so we moved all stable compiler versions to GitHub Releases <a href="https://github.com/kaitai-io/kaitai_struct_compiler/releases" target="_blank" rel="noopener">in the kaitai_struct_compiler repository</a>. The installation commands below are updated accordingly. Development (unstable) builds that were hosted on Bintray (Linux .deb and Universal .zip) are not available right now (until we set up the new distribution system).</p>
+        <p>We're currently setting up an alternative repository to replace Bintray, which will be available on a custom domain <code>packages.kaitai.io</code> to be future-proof, so stay tuned!</p>
+      </div>
+  </div>
     <ul class="nav nav-pills" role="tablist">
       <li role="presentation" class="active"><a href="#download-linux-deb" role="tab" data-toggle="tab">Linux .deb</a></li>
       <li role="presentation"><a href="#download-mac-homebrew" role="tab" data-toggle="tab">macOS - Homebrew</a></li>
@@ -317,20 +324,10 @@ puts "height = #{g.logical_screen.image_height}"</code></pre>
       <div role="tabpanel" class="tab-pane active" id="download-linux-deb">
         <div class="row">
           <div class="col-sm-9">
-            <p>There is an official .deb repository
-              available for Debian and Ubuntu-based
-              distributions. Just add it and install a package:
+            <p>The stable <code>kaitai-struct-compiler</code> versions are currently uploaded to <a href="https://github.com/kaitai-io/kaitai_struct_compiler/releases/">https://github.com/kaitai-io/kaitai_struct_compiler/releases/</a> (see <a href="#bintray-sunset-callout">box above</a>). Just download the <code>.deb</code> package and install it:
             </p>
-            <pre># Import GPG key, if you never used any BinTray repos before
-sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net --recv 379CE192D401AB61
-
-# Add stable repository
-echo "deb https://dl.bintray.com/kaitai-io/debian jessie main" | sudo tee /etc/apt/sources.list.d/kaitai.list
-# ... or unstable repository
-echo "deb https://dl.bintray.com/kaitai-io/debian_unstable jessie main" | sudo tee /etc/apt/sources.list.d/kaitai.list
-
-sudo apt-get update
-sudo apt-get install kaitai-struct-compiler</pre>
+            <pre>curl -LO https://github.com/kaitai-io/kaitai_struct_compiler/releases/download/0.9/kaitai-struct-compiler_0.9_all.deb
+sudo apt-get install ./kaitai-struct-compiler_0.9_all.deb</pre>
           </div>
           <div class="col-sm-3">
             <h4>Requirements</h4>
@@ -361,7 +358,7 @@ sudo apt-get install kaitai-struct-compiler</pre>
         <div class="row">
           <div class="col-sm-9">
             <p>Windows versions are available as an MSI format installer. If you want a portable version that requires no installation, download our universal .zip build instead.</p>
-            <p><a class="btn btn-success" href="https://dl.bintray.com/kaitai-io/universal/0.9/kaitai-struct-compiler.msi"><i class="fa fa-download"></i> Download</a> — stable v0.9, 9.8 MiB</p>
+            <p><a class="btn btn-success" href="https://github.com/kaitai-io/kaitai_struct_compiler/releases/download/0.9/kaitai-struct-compiler.msi"><i class="fa fa-download"></i> Download</a> — stable v0.9, 9.8 MiB</p>
             <p><a class="btn btn-default" href="https://ci.appveyor.com/project/kaitai-io/kaitai-struct/build/artifacts"><i class="fa fa-download"></i> Download</a> — latest development (unstable) build</p>
           </div>
           <div class="col-sm-3">
@@ -384,7 +381,7 @@ sudo apt-get install kaitai-struct-compiler</pre>
               and run it.
             </p>
             <p><a class="btn btn-success" href="https://dl.bintray.com/kaitai-io/universal/0.9/kaitai-struct-compiler-0.9.zip"><i class="fa fa-download"></i> Download</a> — stable v0.9, 9.5 MiB</p>
-            <p><a class="btn btn-default" href="https://bintray.com/kaitai-io/universal_unstable/kaitai-struct-compiler/_latestVersion#files"><i class="fa fa-download"></i> Download</a> — latest development (unstable) build — <a href="https://bintray.com/kaitai-io/universal_unstable/kaitai-struct-compiler/_latestVersion#files"><img src="https://api.bintray.com/packages/kaitai-io/universal_unstable/kaitai-struct-compiler/images/download.svg" alt="[Download]" /></a></p>
+            <p><a class="btn btn-default disabled" href="#0"><i class="fa fa-download"></i> Download</a> — <del class="text-danger">latest development (unstable) build</del> — currently not available (see <a href="#bintray-sunset-callout">box above</a>)</p>
           </div>
           <div class="col-sm-3">
             <h4>Requirements</h4>
