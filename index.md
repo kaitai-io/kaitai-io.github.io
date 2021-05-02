@@ -380,7 +380,7 @@ sudo apt-get install ./kaitai-struct-compiler_0.9_all.deb</pre>
               installation required, one can just unpack
               and run it.
             </p>
-            <p><a class="btn btn-success" href="https://dl.bintray.com/kaitai-io/universal/0.9/kaitai-struct-compiler-0.9.zip"><i class="fa fa-download"></i> Download</a> — stable v0.9, 9.5 MiB</p>
+            <p><a class="btn btn-success" href="https://github.com/kaitai-io/kaitai_struct_compiler/releases/download/0.9/kaitai-struct-compiler-0.9.zip"><i class="fa fa-download"></i> Download</a> — stable v0.9, 9.5 MiB</p>
             <p><a class="btn btn-default disabled" href="#0"><i class="fa fa-download"></i> Download</a> — <del class="text-danger">latest development (unstable) build</del> — currently not available (see <a href="#bintray-sunset-callout">box above</a>)</p>
           </div>
           <div class="col-sm-3">
