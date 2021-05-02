@@ -22,6 +22,18 @@ gem install jekyll bundler
 
 If this fails, follow the [Jekyll installation guide](https://jekyllrb.com/docs/installation/) for your OS.
 
+### Installing Jekyll plugins
+
+The site uses these plugins (see `plugins` key in [`_config.yml`](./_config.yml)):
+
+- [`jekyll-redirect-from`](https://github.com/jekyll/jekyll-redirect-from)
+
+Install them using:
+
+```bash
+gem install jekyll-redirect-from
+```
+
 ### Jekyll commands
 
 To build the site and place the generated files into the `_site/` folder, run:
