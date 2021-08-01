@@ -101,16 +101,6 @@ section.news h1 {
     }
 }
 
-/* REPL */
-
-#source {
-    background: #232323;
-}
-
-#source, #compiled {
-    height: 500px;
-}
-
 .anchor-container {
     padding-top: 60px;
     margin-top: -50px; /* navbar height */
