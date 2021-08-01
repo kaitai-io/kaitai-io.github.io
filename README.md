@@ -48,4 +48,4 @@ However, this is pretty useless for local testing, because it runs only once, an
 jekyll serve
 ```
 
-It builds the site, lanuches a local server at http://127.0.0.1:4000/, watches the source files and rebuilds the site every time they are changed. This makes the testing much easier.
+It builds the site, launches a local server at http://127.0.0.1:4000/, watches the source files and rebuilds the site every time they are changed. This makes the testing much easier.
