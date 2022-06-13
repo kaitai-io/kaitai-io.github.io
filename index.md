@@ -348,7 +348,7 @@ sudo apt-get install ./kaitai-struct-compiler_0.9_all.deb</pre>
           <div class="col-sm-3">
             <h4>Requirements</h4>
             <ul>
-              <li>macOS</li>
+              <li>macOS (or Linux)</li>
               <li><a href="https://brew.sh">Homebrew</a></li>
             </ul>
           </div>
