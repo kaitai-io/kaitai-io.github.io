@@ -340,8 +340,9 @@ sudo apt-get install ./kaitai-struct-compiler_0.9_all.deb</pre>
       <div role="tabpanel" class="tab-pane" id="download-mac-homebrew">
         <div class="row">
           <div class="col-sm-9">
-            <p>There is a formula now available within Homebrew that you can use to install
-              <a href="https://formulae.brew.sh/formula/kaitai-struct-compiler">kaitai-struct-compiler</a>:
+            <p>There is a
+              <a href="https://formulae.brew.sh/formula/kaitai-struct-compiler">Homebrew formula</a>
+              that you can use to install <code>kaitai-struct-compiler</code>:
             </p>
             <pre>brew install kaitai-struct-compiler</pre>
           </div>
