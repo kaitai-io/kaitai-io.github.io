@@ -224,6 +224,7 @@ types:
         <li role="presentation"><a href="#example-go" role="tab" data-toggle="tab">Go</a></li>
         <li role="presentation" class="active"><a href="#example-java" role="tab" data-toggle="tab">Java</a></li>
         <li role="presentation"><a href="#example-javascript" role="tab" data-toggle="tab">JavaScript</a></li>
+        <li role="presentation"><a href="#example-lua" role="tab" data-toggle="tab">Lua</a></li>
         <li role="presentation"><a href="#example-nim" role="tab" data-toggle="tab">Nim</a></li>
         <li role="presentation"><a href="#example-perl" role="tab" data-toggle="tab">Perl</a></li>
         <li role="presentation"><a href="#example-php" role="tab" data-toggle="tab">PHP</a></li>
@@ -264,6 +265,12 @@ System.out.println("height = " + g.logicalScreen().imageHeight());</code></pre>
 
 console.log("width = " + g.logicalScreen.imageWidth);
 console.log("height = " + g.logicalScreen.imageHeight);</code></pre>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="example-lua">
+          <pre><code class="lua">local g = Gif:from_file("path/to/some.gif")
+
+print("width = " .. g.logical_screen.image_width)
+print("height = " .. g.logical_screen.image_height)</code></pre>
         </div>
         <div role="tabpanel" class="tab-pane" id="example-nim">
           <pre><code class="cs">let g = Gif.fromFile("path/to/some.gif")
