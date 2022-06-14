@@ -249,7 +249,7 @@ Console.WriteLine("height = " + g.LogicalScreen.ImageHeight);</code></pre>
         <div role="tabpanel" class="tab-pane" id="example-go">
           <pre><code class="go">file, err := os.Open("path/to/some.gif")
 g := NewGif()
-err = g.Read(kaitai.NewStream(file), g, g)
+err = g.Read(kaitai.NewStream(file), nil, g)
 
 fmt.Printf("width = %d\n", g.LogicalScreen.ImageWidth)
 fmt.Printf("height = %d\n", g.LogicalScreen.ImageHeight)</code></pre>
