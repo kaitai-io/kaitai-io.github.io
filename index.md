@@ -322,14 +322,36 @@ puts "height = #{g.logical_screen.image_height}"</code></pre>
       </div>
   </div>
     <ul class="nav nav-pills" role="tablist">
-      <li role="presentation" class="active"><a href="#download-linux-deb" role="tab" data-toggle="tab">Linux .deb</a></li>
-      <li role="presentation"><a href="#download-mac-homebrew" role="tab" data-toggle="tab">macOS - Homebrew</a></li>
-      <li role="presentation"><a href="#download-windows" role="tab" data-toggle="tab">Windows</a></li>
-      <li role="presentation"><a href="#download-universal" role="tab" data-toggle="tab">Universal .zip</a></li>
+      <li role="presentation" class="active"><a href="#download-universal" role="tab" data-toggle="tab">Universal .zip</a></li>
+      <li role="presentation"><a href="#download-linux-deb" role="tab" data-toggle="tab">Linux .deb</a></li>
+      <li role="presentation"><a href="#download-windows" role="tab" data-toggle="tab">Windows .msi</a></li>
+      <li role="presentation"><a href="#download-mac-homebrew" role="tab" data-toggle="tab">macOS — Homebrew</a></li>
       <li role="presentation"><a href="#download-source" role="tab" data-toggle="tab">Source</a></li>
     </ul>
     <div class="tab-content" style="margin-top: 20px; min-height: 300px">
-      <div role="tabpanel" class="tab-pane active" id="download-linux-deb">
+      <div role="tabpanel" class="tab-pane active" id="download-universal">
+        <div class="row">
+          <div class="col-sm-9">
+            <p>"Universal" builds are downloadable as
+              a .zip file that includes all the required
+              .jar files bundled and launcher scripts
+              for Linux / macOS / Windows systems. No
+              installation required, one can just unpack
+              and run it.
+            </p>
+            <p><a class="btn btn-success" href="https://github.com/kaitai-io/kaitai_struct_compiler/releases/download/0.9/kaitai-struct-compiler-0.9.zip"><i class="fa fa-download"></i> Download</a> — stable v0.9, 9.5 MiB</p>
+            <p><a class="btn btn-default disabled" href="#0"><i class="fa fa-download"></i> Download</a> — <del class="text-danger">latest development (unstable) build</del> — currently not available (see <a href="#bintray-sunset-callout">box above</a>)</p>
+          </div>
+          <div class="col-sm-3">
+            <h4>Requirements</h4>
+            <ul>
+              <li>Linux / macOS / Windows system</li>
+              <li>a working <a href="http://java.com/download/">Java Runtime Environment</a> installation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="download-linux-deb">
         <div class="row">
           <div class="col-sm-9">
             <p>The stable <code>kaitai-struct-compiler</code> versions are currently uploaded to <a href="https://github.com/kaitai-io/kaitai_struct_compiler/releases" target="_blank" rel="noopener">https://github.com/kaitai-io/kaitai_struct_compiler/releases</a> (see <a href="#bintray-sunset-callout">box above</a>). Just download the <code>.deb</code> package and install it:
@@ -341,24 +363,6 @@ sudo apt-get install ./kaitai-struct-compiler_0.9_all.deb</pre>
             <h4>Requirements</h4>
             <ul>
               <li>.deb-based Linux distribution (Debian, Ubuntu, etc)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div role="tabpanel" class="tab-pane" id="download-mac-homebrew">
-        <div class="row">
-          <div class="col-sm-9">
-            <p>There is a
-              <a href="https://formulae.brew.sh/formula/kaitai-struct-compiler">Homebrew formula</a>
-              that you can use to install <code>kaitai-struct-compiler</code>:
-            </p>
-            <pre>brew install kaitai-struct-compiler</pre>
-          </div>
-          <div class="col-sm-3">
-            <h4>Requirements</h4>
-            <ul>
-              <li>macOS (or Linux)</li>
-              <li><a href="https://brew.sh">Homebrew</a></li>
             </ul>
           </div>
         </div>
@@ -379,24 +383,20 @@ sudo apt-get install ./kaitai-struct-compiler_0.9_all.deb</pre>
           </div>
         </div>
       </div>
-      <div role="tabpanel" class="tab-pane" id="download-universal">
+      <div role="tabpanel" class="tab-pane" id="download-mac-homebrew">
         <div class="row">
           <div class="col-sm-9">
-            <p>"Universal" builds are downloadable as
-              a .zip file that includes all the required
-              .jar files bundled and launcher scripts
-              for Linux / macOS / Windows systems. No
-              installation required, one can just unpack
-              and run it.
+            <p>There is a
+              <a href="https://formulae.brew.sh/formula/kaitai-struct-compiler">Homebrew formula</a>
+              that you can use to install <code>kaitai-struct-compiler</code>:
             </p>
-            <p><a class="btn btn-success" href="https://github.com/kaitai-io/kaitai_struct_compiler/releases/download/0.9/kaitai-struct-compiler-0.9.zip"><i class="fa fa-download"></i> Download</a> — stable v0.9, 9.5 MiB</p>
-            <p><a class="btn btn-default disabled" href="#0"><i class="fa fa-download"></i> Download</a> — <del class="text-danger">latest development (unstable) build</del> — currently not available (see <a href="#bintray-sunset-callout">box above</a>)</p>
+            <pre>brew install kaitai-struct-compiler</pre>
           </div>
           <div class="col-sm-3">
             <h4>Requirements</h4>
             <ul>
-              <li>Linux / macOS / Windows system</li>
-              <li>a working <a href="http://java.com/download/">Java Runtime Environment</a> installation</li>
+              <li>macOS (or Linux)</li>
+              <li><a href="https://brew.sh">Homebrew</a></li>
             </ul>
           </div>
         </div>
