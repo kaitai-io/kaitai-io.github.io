@@ -32,13 +32,13 @@ Struct in your projects.
 
 * General compilation improvements:
   * Prevent referring to non-existent enum members as <code>my_enum::<del>unknown_member</del></code> ([8dcd1be](https://github.com/kaitai-io/kaitai_struct_compiler/commit/8dcd1be8ee2dd87b7637a2d01b0bf65e1c2e932f))
-  * Prevent duplicate member names in enum definition ([1cbaff9](https://github.com/kaitai-io/kaitai_struct_compiler/commit/1cbaff9be2a1fd6b9b2196e46be7c96ac4f87290)) - they're incompatible with the concept of enum in all target languages
+  * Prevent duplicate member names in enum definition ([1cbaff9](https://github.com/kaitai-io/kaitai_struct_compiler/commit/1cbaff9be2a1fd6b9b2196e46be7c96ac4f87290)) — they're incompatible with the concept of enum in all target languages
   * Ensure that IDs of `params` are unique and don't collide with `seq` fields or `instances` within a type ([#923](https://github.com/kaitai-io/kaitai_struct/issues/923))
   * Allow whitespace in type invocation: even `type: ' nested :: type ( 1 + 2 , data ) '` now works ([#792](https://github.com/kaitai-io/kaitai_struct/issues/792))
-  * Add style warnings reporting non-standard names for size fields (should use `len_` + subject) and repeat count fields (should use `num_` + subject) - see [style guide](https://doc.kaitai.io/ksy_style_guide.html#attr-id)
+  * Add style warnings reporting non-standard names for size fields (should use `len_` + subject) and repeat count fields (should use `num_` + subject) — see [style guide](https://doc.kaitai.io/ksy_style_guide.html#attr-id)
     * they are only recommendations and don't prevent compilation
     * only available in the command-line `kaitai-struct-compiler` on the JVM platform (not in the Web IDE or in the JavaScript build [at npm](https://www.npmjs.com/package/kaitai-struct-compiler))
-  * Add the ability to report multiple problems at once instead of stopping after the first error - used for "type validation" errors and style warnings for now (only on JVM compiler builds, not JS builds)
+  * Add the ability to report multiple problems at once instead of stopping after the first error — used for "type validation" errors and style warnings for now (only on JVM compiler builds, not JS builds)
   * Improve readability of problems listed in the compiler output
   * Force UTF-8 as output encoding in generated files (don't rely on system defaults)
   * `--ksc-json-output`: add `warnings` at the same level as `errors`, don't use octal escapes (e.g. "~~`\274`~~" &#x27F6; "`\u00bc`") in string values (invalid in JSON)
@@ -67,10 +67,10 @@ Struct in your projects.
   * Nim: fix `encoding: ASCII` on Windows ([#960](https://github.com/kaitai-io/kaitai_struct/issues/960))
   * Perl: fix array literals, implement all byte array operations, `substring` and `str.to_i(2)` methods
   * PHP: support PHP 8 ([php#8](https://github.com/kaitai-io/kaitai_struct_php_runtime/issues/8))
-  * Python: generated parsers no longer import `pkg_resources`, which caused performance and usability issues ([#804](https://github.com/kaitai-io/kaitai_struct/issues/804)) - the runtime library API version check now compares tuples instead
+  * Python: generated parsers no longer import `pkg_resources`, which caused performance and usability issues ([#804](https://github.com/kaitai-io/kaitai_struct/issues/804)) — the runtime library API version check now compares tuples instead
   * Python: `read_bytes` checks if a large read request (8 MiB or more) can be satisfied, even before any bytes are read ([python#61](https://github.com/kaitai-io/kaitai_struct_python_runtime/issues/61))
   * Ruby: validation error messages now display byte arrays as hex dumps, similar to Java ([ruby#4](https://github.com/kaitai-io/kaitai_struct_ruby_runtime/issues/4))
-  * (Java - already in 0.9), Lua, PHP: fix translation of unsigned 64-bit integer literals - i.e. from `2**63 = 0x8000_0000_0000_0000` to `2**64 - 1 = 0xffff_ffff_ffff_ffff` ([fd7f308](https://github.com/kaitai-io/kaitai_struct_compiler/commit/fd7f308c67e8eacee98a647bbbbfb2792505bc64), Lua: [#837](https://github.com/kaitai-io/kaitai_struct/issues/837))
+  * (Java — already in 0.9), Lua, PHP: fix translation of unsigned 64-bit integer literals — i.e. from `2**63 = 0x8000_0000_0000_0000` to `2**64 - 1 = 0xffff_ffff_ffff_ffff` ([fd7f308](https://github.com/kaitai-io/kaitai_struct_compiler/commit/fd7f308c67e8eacee98a647bbbbfb2792505bc64), Lua: [#837](https://github.com/kaitai-io/kaitai_struct/issues/837))
     * these languages don't have actual 64-bit unsigned integers, but they do have 64-bit *signed* integers, so the result will be negative, but all 64 bits of precision will be preserved
   * Fix translation of integer `-2**63 = -0x8000_0000_0000_0000` ([e33828a](https://github.com/kaitai-io/kaitai_struct_compiler/commit/e33828a6d2dd7f41ed246f0bf80a3097d8f5c95e))
 * Generated code style improvements:
