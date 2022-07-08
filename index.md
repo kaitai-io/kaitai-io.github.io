@@ -8,7 +8,7 @@ title: Try it
       <div style="margin: 0px auto"><img src="/img/kaitai_16x_dark.png" width="256" height="256" alt="[Kaitai logo]" /></div>
       <div class="well" style="text-align: center; width: 100%; margin-top: 72px">
         <p><small>
-          0.9 <a href="news/2020/10/16/kaitai-struct-v0.9-released.html">released 2020-10-16</a>
+          0.10 <a href="{% post_url 2022-07-08-kaitai-struct-v0.10-released %}">released 2022-07-08</a>
           </small>
         </p>
         <a href="#download" class="btn btn-primary">Download <i class="fa fa-download"></i></a>
@@ -334,8 +334,8 @@ puts "height = #{g.logical_screen.image_height}"</code></pre>
           <div class="col-sm-9">
             <p>The stable <code>kaitai-struct-compiler</code> versions are currently uploaded to <a href="https://github.com/kaitai-io/kaitai_struct_compiler/releases" target="_blank" rel="noopener">https://github.com/kaitai-io/kaitai_struct_compiler/releases</a> (see <a href="#bintray-sunset-callout">box above</a>). Just download the <code>.deb</code> package and install it:
             </p>
-            <pre>curl -LO https://github.com/kaitai-io/kaitai_struct_compiler/releases/download/0.9/kaitai-struct-compiler_0.9_all.deb
-sudo apt-get install ./kaitai-struct-compiler_0.9_all.deb</pre>
+            <pre>curl -LO https://github.com/kaitai-io/kaitai_struct_compiler/releases/download/0.10/kaitai-struct-compiler_0.10_all.deb
+sudo apt-get install ./kaitai-struct-compiler_0.10_all.deb</pre>
           </div>
           <div class="col-sm-3">
             <h4>Requirements</h4>
@@ -367,7 +367,7 @@ sudo apt-get install ./kaitai-struct-compiler_0.9_all.deb</pre>
         <div class="row">
           <div class="col-sm-9">
             <p>Windows versions are available as an MSI format installer. If you want a portable version that requires no installation, download our universal .zip build instead.</p>
-            <p><a class="btn btn-success" href="https://github.com/kaitai-io/kaitai_struct_compiler/releases/download/0.9/kaitai-struct-compiler.msi"><i class="fa fa-download"></i> Download</a> — stable v0.9, 9.8 MiB</p>
+            <p><a class="btn btn-success" href="https://github.com/kaitai-io/kaitai_struct_compiler/releases/download/0.10/kaitai-struct-compiler-0.10.msi"><i class="fa fa-download"></i> Download</a> — stable v0.10, 7.7 MiB</p>
             <p><a class="btn btn-default" href="https://ci.appveyor.com/project/kaitai-io/kaitai-struct/build/artifacts"><i class="fa fa-download"></i> Download</a> — latest development (unstable) build</p>
           </div>
           <div class="col-sm-3">
@@ -389,7 +389,7 @@ sudo apt-get install ./kaitai-struct-compiler_0.9_all.deb</pre>
               installation required, one can just unpack
               and run it.
             </p>
-            <p><a class="btn btn-success" href="https://github.com/kaitai-io/kaitai_struct_compiler/releases/download/0.9/kaitai-struct-compiler-0.9.zip"><i class="fa fa-download"></i> Download</a> — stable v0.9, 9.5 MiB</p>
+            <p><a class="btn btn-success" href="https://github.com/kaitai-io/kaitai_struct_compiler/releases/download/0.10/kaitai-struct-compiler-0.10.zip"><i class="fa fa-download"></i> Download</a> — stable v0.10, 7.4 MiB</p>
             <p><a class="btn btn-default disabled" href="#0"><i class="fa fa-download"></i> Download</a> — <del class="text-danger">latest development (unstable) build</del> — currently not available (see <a href="#bintray-sunset-callout">box above</a>)</p>
           </div>
           <div class="col-sm-3">
