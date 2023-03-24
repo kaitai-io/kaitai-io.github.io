@@ -54,11 +54,11 @@
                 <ul class="nav navbar-nav">
                     <li{% if page.url == '/' %} class="active"{% endif %}><a href="{{ root_path }}#what-is-it">What is it?</a></li>
                     <li><a href="{{ root_path }}#quick-start">Quick Start</a></li>
-                    <li><a href="{{ root_path }}#download">Download</a></li>
-                    <li><a href="//formats.kaitai.io/">Format Gallery</a></li>
+                    <li><a href="{{ root_path }}#download">Download</a></li>                    
                     {% assign news_prefix = '/news/' %}
                     {% assign page_url_start = page.url | slice: 0, news_prefix.size %}
                     <li{% if page_url_start == news_prefix %} class="active"{% endif %}><a href="/news/">News</a></li>
+                    <li><a href="//formats.kaitai.io/">Format Gallery</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="https://ide.kaitai.io/">Try it &mdash; Web IDE</a></li>
