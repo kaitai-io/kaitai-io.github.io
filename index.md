@@ -480,7 +480,7 @@ sudo apt-get install ./kaitai-struct-compiler_0.10_all.deb</pre>
                     <li><a href="https://www.kismetwireless.net/">Kismet</a> — wireless network detector, sniffer, and intrusion detection system</li>
                     <li><a href="https://github.com/Deep-Symmetry/beat-link-trigger">Beat Link Trigger</a> — music performer app to trigger events based on Pioneer CDJs output</li>
                     <li><a href="https://github.com/Mahlet-Inc/hobbits">Hobbits</a> — multi-platform GUI for bit-based analysis, processing, and visualization</li>
-                    <li><a href="https://www.zaproxy.org/">OWASP ZAP</a> — the world's most wildly used web app scanner</li>
+                    <li><a href="https://www.zaproxy.org/">OWASP ZAP</a> — the world's most widely used web app scanner</li>
                 </ul>
                 <p>
                     If your project also uses Kaitai Struct, please drop us a line :)
