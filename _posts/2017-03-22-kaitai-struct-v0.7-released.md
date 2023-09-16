@@ -39,7 +39,7 @@ extra_footer: |
 <ul>
 <li>New ksy features:
 <ul>
-<li>Type importing system: <code>meta/import</code> can be used to import other types as first-class citizens in current compilation unit; &quot;opaque types&quot; are now disabled by default (see below)</li>
+<li>Type importing system: <code>meta/imports</code> can be used to import other types as first-class citizens in current compilation unit; &quot;opaque types&quot; are now disabled by default (see below)</li>
 <li>Byte-terminated notation (<code>terminator</code>, <code>include</code> and <code>consume</code>) can be now used not only for strings, but also for any byte types and user types</li>
 <li><code>pad-right</code> to remove declare excess right padding (usually with 0s)</li>
 <li>User types can now use <code>parent: expression</code> to enforce a specific parent for an object, or <code>parent: false</code> to disable parenting at all (and, subsequently, remove it from parent type inferring process)</li>
