@@ -17,7 +17,7 @@ Jekyll configuration is present in file [`_config.yml`](./_config.yml). Possible
 You need to have [Jekyll](https://jekyllrb.com/) installed on your machine to be able to build the generated site locally. Run `jekyll --version` to find out. If you don't have it, try running:
 
 ```bash
-gem install jekyll bundler
+gem install jekyll
 ```
 
 If this fails, follow the [Jekyll installation guide](https://jekyllrb.com/docs/installation/) for your OS.
@@ -42,10 +42,10 @@ To build the site and place the generated files into the `_site/` folder, run:
 jekyll build
 ```
 
-However, this is pretty useless for local testing, because it runs only once, and you would need to run this every time you make a change in the source files. Much more useful command is:
+For local development, however, using `jekyll build` is inconvenient because it only runs once, so you would have to run it manually after each change to the source files. Much more useful command is:
 
 ```bash
 jekyll serve
 ```
 
-It builds the site, launches a local server at http://127.0.0.1:4000/, watches the source files and rebuilds the site every time they are changed. This makes the testing much easier.
+It builds the site, launches a local server at http://127.0.0.1:4000/, watches the source files and rebuilds the site every time they are changed. This makes local development much easier.
