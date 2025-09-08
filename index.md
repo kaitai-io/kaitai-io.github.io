@@ -49,6 +49,7 @@ title: Try it
                     <li>PHP</li>
                     <li>Python</li>
                     <li>Ruby</li>
+                    <li>Rust</li>
                   </ul>
                 </div>
               </div>
@@ -231,6 +232,7 @@ types:
         <li role="presentation"><a href="#example-php" role="tab" data-toggle="tab">PHP</a></li>
         <li role="presentation"><a href="#example-python" role="tab" data-toggle="tab">Python</a></li>
         <li role="presentation"><a href="#example-ruby" role="tab" data-toggle="tab">Ruby</a></li>
+        <li role="presentation"><a href="#example-rust" role="tab" data-toggle="tab">Rust</a></li>
       </ul>
       <div class="tab-content" style="margin-top: 6px">
         <div role="tabpanel" class="tab-pane" id="example-cpp-stl">
@@ -302,6 +304,15 @@ print("height = %d" % (g.logical_screen.image_height))</code></pre>
 
 puts "width = #{g.logical_screen.image_width}"
 puts "height = #{g.logical_screen.image_height}"</code></pre>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="example-rust">
+          <pre><code class="rust">let bytes = fs::read("path/to/some.gif").unwrap();
+let io = BytesReader::from(bytes);
+let g: OptRc&lt;Gif&gt; = Gif::read_into(&io, None, None).unwrap();
+
+println!("width = {}", *g.logical_screen().image_width());
+println!("width = {}", *g.logical_screen().image_height());
+</code></pre>
         </div>
         Of course, this example shows only a very limited subset of what Kaitai
         Struct can do. Please refer to the <a href="//doc.kaitai.io/">documentation</a> for more
@@ -444,7 +455,7 @@ sudo apt-get install ./kaitai-struct-compiler_0.11_all.deb</pre>
           <li><a href="https://github.com/kaitai-io/kaitai_struct_php_runtime">PHP</a> — MIT</li>
           <li><a href="https://github.com/kaitai-io/kaitai_struct_python_runtime">Python</a> — MIT</li>
           <li><a href="https://github.com/kaitai-io/kaitai_struct_ruby_runtime">Ruby</a> — MIT</li>
-          <li><a href="https://github.com/kaitai-io/kaitai_struct_rust_runtime">Rust</a> <i class="fa fa-wrench text-muted"></i> — MIT</li>
+          <li><a href="https://github.com/kaitai-io/kaitai_struct_rust_runtime">Rust</a> — MIT</li>
           <li><a href="https://github.com/kaitai-io/kaitai_struct_swift_runtime">Swift</a> <i class="fa fa-wrench text-muted"></i> — MIT</li>
         </ul>
       </li>
