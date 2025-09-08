@@ -311,7 +311,7 @@ let io = BytesReader::from(bytes);
 let g: OptRc&lt;Gif&gt; = Gif::read_into(&io, None, None).unwrap();
 
 println!("width = {}", *g.logical_screen().image_width());
-println!("width = {}", *g.logical_screen().image_height());
+println!("height = {}", *g.logical_screen().image_height());
 </code></pre>
         </div>
         Of course, this example shows only a very limited subset of what Kaitai
