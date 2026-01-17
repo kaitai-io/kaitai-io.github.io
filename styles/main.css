@@ -7,6 +7,14 @@ pre, code, #source, #compiled {
     font-family: 'Share Tech Mono';
 }
 
+pre {
+    background: #f3f3f3;
+}
+
+pre code.hljs {
+    padding: 0;
+}
+
 .jumbotron {
     background: #773b37;
     color: #e9d9cf;

@@ -129,7 +129,7 @@ title: Try it
         <p>Check out the <a href="//doc.kaitai.io/">documentation</a> for more information.</p>
       </div>
       <div class="col-sm-4">
-        <pre><code class="yaml">meta:
+        <pre><code class="language-yaml">meta:
   id: tcp_segment
   endian: be
 seq:
@@ -142,7 +142,7 @@ seq:
   - id: ack_num
     type: u4</code></pre>
         <p style="text-align: center"><i class="fa fa-3x fa-arrow-down"></i></p>
-        <pre><code class="java">public class TcpSegment extends KaitaiStruct {
+        <pre><code class="language-java">public class TcpSegment extends KaitaiStruct {
     // ...
     private void _read() throws IOException {
         this.srcPort = _io.readU2be();
@@ -163,7 +163,7 @@ seq:
   </p>
   <div class="row">
     <div class="col-sm-4">
-      <pre><code class="yaml">meta:
+      <pre><code class="language-yaml">meta:
   id: gif
   file-extension: gif
   endian: le
@@ -236,7 +236,7 @@ types:
       </ul>
       <div class="tab-content" style="margin-top: 6px">
         <div role="tabpanel" class="tab-pane" id="example-cpp-stl">
-          <pre><code class="cpp">std::ifstream ifs("path/to/some.gif", std::ifstream::binary);
+          <pre><code class="language-cpp">std::ifstream ifs("path/to/some.gif", std::ifstream::binary);
 kaitai::kstream ks(&ifs);
 gif_t g = gif_t(&ks);
 
@@ -244,13 +244,13 @@ std::cout &lt;&lt; "width = " &lt;&lt; g.logical_screen()-&gt;image_width() &lt;
 std::cout &lt;&lt; "height = " &lt;&lt; g.logical_screen()-&gt;image_height() &lt;&lt; std::endl;</code></pre>
         </div>
         <div role="tabpanel" class="tab-pane" id="example-csharp">
-          <pre><code class="cs">Gif g = Gif.FromFile("path/to/some.gif");
+          <pre><code class="language-csharp">Gif g = Gif.FromFile("path/to/some.gif");
 
 Console.WriteLine("width = " + g.LogicalScreen.ImageWidth);
 Console.WriteLine("height = " + g.LogicalScreen.ImageHeight);</code></pre>
         </div>
         <div role="tabpanel" class="tab-pane" id="example-go">
-          <pre><code class="go">file, err := os.Open("path/to/some.gif")
+          <pre><code class="language-go">file, err := os.Open("path/to/some.gif")
 g := NewGif()
 err = g.Read(kaitai.NewStream(file), nil, g)
 
@@ -258,55 +258,55 @@ fmt.Printf("width = %d\n", g.LogicalScreen.ImageWidth)
 fmt.Printf("height = %d\n", g.LogicalScreen.ImageHeight)</code></pre>
         </div>
         <div role="tabpanel" class="tab-pane active" id="example-java">
-          <pre><code class="java">Gif g = Gif.fromFile("path/to/some.gif");
+          <pre><code class="language-java">Gif g = Gif.fromFile("path/to/some.gif");
 
 System.out.println("width = " + g.logicalScreen().imageWidth());
 System.out.println("height = " + g.logicalScreen().imageHeight());</code></pre>
         </div>
         <div role="tabpanel" class="tab-pane" id="example-javascript">
-          <pre><code class="javascript">var g = new Gif(new KaitaiStream(someArrayBuffer));
+          <pre><code class="language-javascript">var g = new Gif(new KaitaiStream(someArrayBuffer));
 
 console.log("width = " + g.logicalScreen.imageWidth);
 console.log("height = " + g.logicalScreen.imageHeight);</code></pre>
         </div>
         <div role="tabpanel" class="tab-pane" id="example-lua">
-          <pre><code class="lua">local g = Gif:from_file("path/to/some.gif")
+          <pre><code class="language-lua">local g = Gif:from_file("path/to/some.gif")
 
 print("width = " .. g.logical_screen.image_width)
 print("height = " .. g.logical_screen.image_height)</code></pre>
         </div>
         <div role="tabpanel" class="tab-pane" id="example-nim">
-          <pre><code class="cs">let g = Gif.fromFile("path/to/some.gif")
+          <pre><code class="language-csharp">let g = Gif.fromFile("path/to/some.gif")
 
 echo "width = " & $g.logicalScreen.imageWidth
 echo "height = " & $g.logicalScreen.imageHeight</code></pre>
         </div>
         <div role="tabpanel" class="tab-pane" id="example-perl">
-          <pre><code class="perl">my $g = Gif-&gt;from_file("path/to/some.gif");
+          <pre><code class="language-perl">my $g = Gif-&gt;from_file("path/to/some.gif");
 
 print("width = ", $g-&gt;logical_screen()-&gt;image_width(), "\n");
 print("height = ", $g-&gt;logical_screen()-&gt;image_height(), "\n");</code></pre>
         </div>
         <div role="tabpanel" class="tab-pane" id="example-php">
-          <pre><code class="php">$g = Gif::fromFile("path/to/some.gif");
+          <pre><code class="language-php">$g = Gif::fromFile("path/to/some.gif");
 
 print("width = " . $g-&gt;logicalScreen()-&gt;imageWidth() . "\n");
 print("height = " . $g-&gt;logicalScreen()-&gt;imageHeight() . "\n");</code></pre>
         </div>
         <div role="tabpanel" class="tab-pane" id="example-python">
-          <pre><code class="python">g = Gif.from_file("path/to/some.gif")
+          <pre><code class="language-python">g = Gif.from_file("path/to/some.gif")
 
 print(f"width = {g.logical_screen.image_width}")
 print(f"height = {g.logical_screen.image_height}")</code></pre>
         </div>
         <div role="tabpanel" class="tab-pane" id="example-ruby">
-          <pre><code class="ruby">g = Gif.from_file("path/to/some.gif")
+          <pre><code class="language-ruby">g = Gif.from_file("path/to/some.gif")
 
 puts "width = #{g.logical_screen.image_width}"
 puts "height = #{g.logical_screen.image_height}"</code></pre>
         </div>
         <div role="tabpanel" class="tab-pane" id="example-rust">
-          <pre><code class="rust">let bytes = fs::read("path/to/some.gif").unwrap();
+          <pre><code class="language-rust">let bytes = fs::read("path/to/some.gif").unwrap();
 let io = BytesReader::from(bytes);
 let g: OptRc&lt;Gif&gt; = Gif::read_into(&io, None, None).unwrap();
 
