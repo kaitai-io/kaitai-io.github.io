@@ -26,7 +26,7 @@ This release finally brings **serialization** support for Java and Python! It ad
 
 Many of the improvements in this version were supported [by the NLnet Foundation](https://nlnet.nl/project/Kaitai-Rust/).
 
-This is the last version of Kaitai Struct to support Python 2.7 and Ruby 1.9.3 - 2.3. Future versions will require at least Python 3.4 (or possibly even higher, see [#821](https://github.com/kaitai-io/kaitai_struct/issues/821)) and Ruby 2.4.
+This is the last version of Kaitai Struct that supports Python 2.7, Python 3.4 - 3.7 and Ruby 1.9.3 - 2.3. Future versions will require at least Python 3.8 (see [#821](https://github.com/kaitai-io/kaitai_struct/issues/821)) and Ruby 2.4 (unblocks [ruby#8](https://github.com/kaitai-io/kaitai_struct_ruby_runtime/issues/8)).
 
 ## Release highlights
 
