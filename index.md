@@ -296,8 +296,8 @@ print("height = " . $g-&gt;logicalScreen()-&gt;imageHeight() . "\n");</code></pr
         <div role="tabpanel" class="tab-pane" id="example-python">
           <pre><code class="python">g = Gif.from_file("path/to/some.gif")
 
-print("width = %d" % (g.logical_screen.image_width))
-print("height = %d" % (g.logical_screen.image_height))</code></pre>
+print(f"width = {g.logical_screen.image_width}")
+print(f"height = {g.logical_screen.image_height}")</code></pre>
         </div>
         <div role="tabpanel" class="tab-pane" id="example-ruby">
           <pre><code class="ruby">g = Gif.from_file("path/to/some.gif")
