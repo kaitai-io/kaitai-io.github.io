@@ -335,7 +335,7 @@ println!("height = {}", *g.logical_screen().image_height());
     <ul class="nav nav-pills" role="tablist">
       <li role="presentation" class="active"><a href="#download-linux-deb" role="tab" data-toggle="tab">Linux .deb</a></li>
       <li role="presentation"><a href="#download-mac-homebrew" role="tab" data-toggle="tab">macOS - Homebrew</a></li>
-      <li role="presentation"><a href="#download-windows" role="tab" data-toggle="tab">Windows</a></li>
+      <li role="presentation"><a href="#download-windows" role="tab" data-toggle="tab">Windows .msi</a></li>
       <li role="presentation"><a href="#download-universal" role="tab" data-toggle="tab">Universal .zip</a></li>
       <li role="presentation"><a href="#download-source" role="tab" data-toggle="tab">Source</a></li>
     </ul>
