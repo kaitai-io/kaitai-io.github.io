@@ -144,7 +144,7 @@ seq:
         <p style="text-align: center"><i class="fa fa-3x fa-arrow-down"></i></p>
         <pre><code class="language-java">public class TcpSegment extends KaitaiStruct {
     // ...
-    private void _read() throws IOException {
+    private void _read() {
         this.srcPort = _io.readU2be();
         this.dstPort = _io.readU2be();
         this.seqNum = _io.readU4be();
