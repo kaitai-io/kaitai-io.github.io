@@ -216,7 +216,7 @@ types:
         into <code>gif.cpp</code> / <code>Gif.cs</code> / <code>gif.go</code>
         / <code>Gif.java</code> / <code>Gif.js</code> / <code>gif.lua</code>
         / <code>gif.nim</code> / <code>Gif.pm</code> / <code>Gif.php</code>
-        / <code>gif.py</code> / <code>gif.rb</code> and
+        / <code>gif.py</code> / <code>gif.rb</code> / <code>gif.rs</code> and
         then one can instantly load a .gif file and access, for example, its
         width and height.
       </p>
