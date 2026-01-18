@@ -385,7 +385,7 @@ sudo apt-get install ./kaitai-struct-compiler_0.11_all.deb</pre>
             <h4>Requirements</h4>
             <ul>
               <li>Windows</li>
-              <li><a href="https://whichjdk.com/" target="_blank" rel="noopener">Java</a> (the latest LTS version 21 recommended, at least Java 8 required), <a href="https://whichjdk.com/#what-is-the-difference-between-jdk-and-jre" target="_blank" rel="noopener">JDK or JRE</a> at your option</li>
+              <li><a href="https://whichjdk.com/" target="_blank" rel="noopener">Java</a> (LTS version 21 recommended, at least Java 8 required), <a href="https://whichjdk.com/#what-is-the-difference-between-jdk-and-jre" target="_blank" rel="noopener">JDK or JRE</a> at your option</li>
             </ul>
           </div>
         </div>
@@ -407,7 +407,7 @@ sudo apt-get install ./kaitai-struct-compiler_0.11_all.deb</pre>
             <h4>Requirements</h4>
             <ul>
               <li>Linux / macOS / Windows system</li>
-              <li><a href="https://whichjdk.com/" target="_blank" rel="noopener">Java</a> (the latest LTS version 21 recommended, at least Java 8 required), <a href="https://whichjdk.com/#what-is-the-difference-between-jdk-and-jre" target="_blank" rel="noopener">JDK or JRE</a> at your option</li>
+              <li><a href="https://whichjdk.com/" target="_blank" rel="noopener">Java</a> (LTS version 21 recommended, at least Java 8 required), <a href="https://whichjdk.com/#what-is-the-difference-between-jdk-and-jre" target="_blank" rel="noopener">JDK or JRE</a> at your option</li>
             </ul>
           </div>
         </div>
@@ -427,7 +427,7 @@ sudo apt-get install ./kaitai-struct-compiler_0.11_all.deb</pre>
             <h4>Requirements</h4>
             <ul>
               <li><a href="https://git-scm.com/">git</a></li>
-              <li><a href="https://whichjdk.com/" target="_blank" rel="noopener">Java</a> (the latest LTS version 21 recommended, at least Java 8 required), <a href="https://whichjdk.com/#what-is-the-difference-between-jdk-and-jre" target="_blank" rel="noopener">JDK or JRE</a> at your option</li>
+              <li><a href="https://whichjdk.com/" target="_blank" rel="noopener">Java</a> (LTS version 21 recommended, at least Java 8 required), <a href="https://whichjdk.com/#what-is-the-difference-between-jdk-and-jre" target="_blank" rel="noopener">JDK or JRE</a> at your option</li>
               <li><a href="http://www.scala-sbt.org/">sbt</a></li>
               <li>POSIX shell for test automation</li>
             </ul>
