@@ -290,8 +290,8 @@ print("height = ", $g-&gt;logical_screen()-&gt;image_height(), "\n");</code></pr
         <div role="tabpanel" class="tab-pane" id="example-php">
           <pre><code class="language-php">$g = Gif::fromFile("path/to/some.gif");
 
-print("width = " . $g-&gt;logicalScreen()-&gt;imageWidth() . "\n");
-print("height = " . $g-&gt;logicalScreen()-&gt;imageHeight() . "\n");</code></pre>
+echo "width = " . $g-&gt;logicalScreen()-&gt;imageWidth() . "\n";
+echo "height = " . $g-&gt;logicalScreen()-&gt;imageHeight() . "\n";</code></pre>
         </div>
         <div role="tabpanel" class="tab-pane" id="example-python">
           <pre><code class="language-python">g = Gif.from_file("path/to/some.gif")
