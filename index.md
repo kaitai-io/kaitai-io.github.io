@@ -5,7 +5,7 @@ title: Try it
 <div class="jumbotron">
   <div class="container">
     <div class="col-sm-3" style="height: 434px">
-      <div style="margin: 0px auto"><img src="/img/kaitai_16x_dark.png" width="256" height="256" alt="[Kaitai logo]" /></div>
+      <img class="img-responsive center-block" src="/img/kaitai_16x_dark.png" width="256" height="256" alt="[Kaitai logo]" />
       <div class="well" style="text-align: center; width: 100%; margin-top: 72px">
         <p><small>
           0.11 <a href="{% post_url 2025-09-07-kaitai-struct-v0.11-released %}">released 2025-09-07</a>
